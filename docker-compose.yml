@@ -1,9 +1,9 @@
 
-name: tutorfi
+name: pollination
 
 services:
-  pgsql:
-    container_name: pgsql
+  postgres:
+    container_name: postgres
     image: postgres:16-alpine
     restart: always
     environment:
@@ -21,7 +21,7 @@ services:
     volumes:
       - ./api:/app
     depends_on:
-      - pgsql
+      - postgres
 
   front-end:
     container_name: front-end

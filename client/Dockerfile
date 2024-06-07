@@ -1,4 +1,4 @@
-FROM node:22-alpine3.19
+FROM node:22-alpine
 
 WORKDIR /app
 
@@ -8,4 +8,4 @@ RUN npm install
 
 COPY . /app
 
-CMD npm run dev -H 0.0.0.0
+CMD npm run dev -- -H 0.0.0.0

@@ -1,12 +1,10 @@
-RUN python:3.12.3-alpine
+FROM python:3.12.3-alpine
 
-WORKDIR /app/server
+WORKDIR /app
 
-COPY Pipfile Pipfile.lock ./
+COPY Pipfile Pipfile.lock .
 
 RUN pip install pipenv
 RUN pipenv install --ignore-pipfile --system --dev
-
-COPY . /app/server
 
 CMD python wsgi.py
