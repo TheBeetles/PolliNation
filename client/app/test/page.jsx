@@ -56,7 +56,7 @@ export default function Test() {
           <h2>
             Learn <span>-&gt;</span>
           </h2>
-          <p>Don't Do THIS Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Don&apos;t Do THIS Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
         </a>
 
         <a

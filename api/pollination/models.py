@@ -1,13 +1,14 @@
-from uuid import uuid4
-from pollination import db
+'''
+Contains the table representations of the database
+'''
+
 import string
 import random
+from uuid import uuid4
+from pollination import db
 
 
-'''
-BELOW THIS ARE EXAMPLES
-'''
-
+# BELOW THIS ARE EXAMPLES
 
 def get_uuid():
     '''Returns a unique id in hex'''
