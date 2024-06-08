@@ -8,8 +8,12 @@ flask = "*"
 flask-cors = "*"
 flask-bcrypt = "*"
 python-dotenv = "*"
+flask-sqlalchemy = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
+pylint = "*"
+pylint-flask = "*"
 
 [requires]
 python_version = "3.11"
