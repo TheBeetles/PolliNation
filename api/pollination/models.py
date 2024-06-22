@@ -21,11 +21,11 @@ def get_basic_id():
                                   + string.ascii_lowercase, k=6))
 
 
-class Team(db.Model):
+class User(db.Model):
     '''
     Only allows people with the team id to create an account
     '''
-    __tablename__ = "team"
+    __tablename__ = "User"
     id = db.Column(db.String(32), primary_key=True,
                    unique=True, default=get_uuid)
     alt_id = db.Column(db.String(6), unique=True, default=get_basic_id)

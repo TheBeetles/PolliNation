@@ -5,6 +5,9 @@ WORKDIR /app
 COPY Pipfile Pipfile.lock .
 
 RUN pip install pipenv
+
+COPY . .
+
 RUN pipenv install --ignore-pipfile --system --dev
 
 CMD python wsgi.py
