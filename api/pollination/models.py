@@ -57,6 +57,9 @@ class File(db.Model):
 
 
 class Species(db.Model):
+    '''
+    Contains a database of species to search for
+    '''
     __tablename__ = "Species"
     id = db.Column(db.Integer, primary_key=True, unique=True)
     plant = db.Column(db.Boolean)
