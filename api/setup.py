@@ -1,3 +1,4 @@
+# pylint: skip-file
 from pollination import db
 from pollination.models import User
 
