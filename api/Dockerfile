@@ -10,4 +10,4 @@ COPY . .
 
 RUN pipenv install --ignore-pipfile --system --dev
 
-CMD python wsgi.py
+CMD python setup.py && python wsgi.py

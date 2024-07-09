@@ -1,11 +1,11 @@
 # pylint: skip-file
-from pollination import db
+from pollination import db, bcrypt
 from pollination.models import User
 
 if __name__ == "__main__":
     db.drop_all()
     db.create_all()
-
-    user = User(username="moo", email="testing@gmail.com")
+    hash = bcrypt.generate_password_hash("moo").decode('utf-8')
+    user = User(username="moo", password=hash)
     db.session.add(user)
     db.session.commit()
