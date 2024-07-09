@@ -29,7 +29,7 @@ class User(db.Model):
                    unique=True, default=get_uuid)
     alt_id = db.Column(db.String(6), unique=True, default=get_basic_id)
     username = db.Column(db.Text, unique=True)
-
+    email = db.Column(db.Text, unique=True)
     file = db.Relationship('File', back_populates='user',
                            cascade='all, delete', passive_deletes=True)
     # Determine what access level the function is at

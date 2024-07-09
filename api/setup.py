@@ -6,6 +6,6 @@ if __name__ == "__main__":
     db.drop_all()
     db.create_all()
 
-    user = User(name="moo", email="testing@gmail.com")
+    user = User(username="moo", email="testing@gmail.com")
     db.session.add(user)
     db.session.commit()
