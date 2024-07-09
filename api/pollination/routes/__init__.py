@@ -1,11 +1,11 @@
 '''
 Contains the initial api routes
 '''
-from pollination import app, bcrypt, login_manager, db
-from pollination.models import User, File, Species
 from flask import request, jsonify
 from flask_login import login_user, current_user, logout_user
 from flask_login import login_required, fresh_login_required
+from pollination import app, bcrypt, login_manager, db
+from pollination.models import User, File, Species
 
 
 @login_manager.unauthorized_handler
