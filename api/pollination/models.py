@@ -1,8 +1,8 @@
 '''
 Contains the table representations of the database
 '''
-from flask_login import UserMixin
 from uuid import uuid4
+from flask_login import UserMixin
 from pollination import db
 from pollination import login_manager
 
