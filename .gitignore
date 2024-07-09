@@ -1,4 +1,4 @@
 .vscode
 instance
 .devcontainer
-.env
+api/.env
