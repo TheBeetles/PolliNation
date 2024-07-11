@@ -24,7 +24,7 @@ export default function LoginPage() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
       <Image src={pollinationImage} alt="Pollination Logo" width={200} height={150} />
-      <h1>Login</h1>
+      <h1>Welcome!</h1>
       <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
         <input
           type="text"
