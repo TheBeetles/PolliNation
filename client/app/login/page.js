@@ -15,6 +15,7 @@ export default function LoginPage() {
     // Add login logic here (e.g., API call)
     console.log('Username:', username);
     console.log('Password:', password);
+    router.push('/scan-species')
   };
 
   const handleCreateProfile = () => {
