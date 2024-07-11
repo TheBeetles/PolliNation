@@ -22,8 +22,14 @@ export default function ScanSpeciesPage() {
   };
 
   const handleScanInsect = () => {
+<<<<<<< Updated upstream
     setIsCameraOpen(true); // Open camera/photo upload options
     setSelectedImage(null); // Reset selected image when scanning insect
+=======
+    // Add your scan insect logic here
+    console.log('Scan an Insect clicked');
+    router.push('/scan-species/scan-insect')
+>>>>>>> Stashed changes
   };
 
   const handleScanImage = () => {
