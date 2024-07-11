@@ -17,7 +17,7 @@ export default function CreateProfilePage() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-      <Image src={pollinationImage} alt="Pollination" width={200} height={150} />
+      <Image src={pollinationImage} alt="Pollination Logo" width={200} height={150} />
       <h1>Create Profile</h1>
       <form onSubmit={handleCreateProfile} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
         <input
@@ -36,7 +36,7 @@ export default function CreateProfilePage() {
           required
           style={{ marginBottom: '10px', padding: '10px', fontSize: '16px' }}
         />
-        <button type="submit" style={{ padding: '10px', fontSize: '16px' }}>Create Profile</button>
+        <button type="submit" style={{ padding: '10px', fontSize: '16px', cursor: 'pointer' }}>Create Profile</button>
       </form>
     </div>
   );

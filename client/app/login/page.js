@@ -23,8 +23,8 @@ export default function LoginPage() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-      <Image src={pollinationImage} alt="Pollination" width={200} height={150} />
-      <h1>Welcome!</h1>
+      <Image src={pollinationImage} alt="Pollination Logo" width={200} height={150} />
+      <h1>Login</h1>
       <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
         <input
           type="text"
@@ -42,9 +42,9 @@ export default function LoginPage() {
           required
           style={{ marginBottom: '10px', padding: '10px', fontSize: '16px' }}
         />
-        <button type="submit" style={{ padding: '10px', fontSize: '16px' }}>Login</button>
+        <button type="submit" style={{ padding: '10px', fontSize: '16px', cursor: 'pointer' }}>Login</button>
       </form>
-      <button onClick={handleCreateProfile} style={{ marginTop: '20px', padding: '10px', fontSize: '16px' }}>Create Profile</button>
+      <button onClick={handleCreateProfile} style={{ marginTop: '20px', padding: '10px', fontSize: '16px', cursor: 'pointer' }}>Create Profile</button>
     </div>
   );
 }
