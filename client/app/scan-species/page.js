@@ -15,6 +15,7 @@ export default function ScanSpeciesPage() {
   const handleScanInsect = () => {
     // Add your scan insect logic here
     console.log('Scan an Insect clicked');
+    router.push('/species-information/insect-information')
   };
 
   const handleSavedSpecies = () => {
