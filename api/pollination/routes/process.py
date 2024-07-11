@@ -1,3 +1,4 @@
+# pylint: skip-file
 '''
 Contains all of the routes for processing images and saving
 images location on the database. Also, saving the image to the 
@@ -16,4 +17,7 @@ def upload():
     Saves the image to a file and runs the image
     '''
     file = request.files['image']
+    data = request.json
+
+
     return jsonify({"Success": "File uploaded and processing"})

@@ -36,14 +36,12 @@ def register():
         return jsonify({"Invalid": "Username already exists"})
 
     # Create the User
-    hash = bcrypt.generate_password_hash(data['password']).decode('utf-8')
-    user = User(username=data['username'], password=hash)
+    pw_hash = bcrypt.generate_password_hash(data['password']).decode('utf-8')
+    user = User(username=data['username'], password=pw_hash)
     db.session.add(user)
     db.session.commit()
 
     return jsonify({"Success": "Account created"})
-
-
 
 
 @app.route('/api/login', methods=['POST'])
@@ -109,8 +107,8 @@ def change_password():
     if (user is None):
         return jsonify({"Invalid": "Username does not exist"})
     logout_user()
-    hash = bcrypt.generate_password_hash(data['password']).decode('utf-8')
-    user.password = hash
+    pw_hash = bcrypt.generate_password_hash(data['password']).decode('utf-8')
+    user.password = pw_hash
     db.session.commit()
     return jsonify({"Success": "User password changed"}), 200
 
