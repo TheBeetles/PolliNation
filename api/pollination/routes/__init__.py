@@ -11,9 +11,39 @@ from pollination.models import User, File, Species
 @login_manager.unauthorized_handler
 def unauthorized():
     '''
-    Unauthorized 
+    Unauthorized handler
     '''
     return jsonify({"Invalid": "Unauthorized"}), 401
+
+
+@app.route('/api/register', methods=['POST'])
+def register():
+    '''
+    Creates a account for that user
+    '''
+    data = request.json
+
+    if (data is None):
+        return jsonify({"Invalid": "Incorrect username or password"}), 401
+    if (data.get('username') is None):
+        return jsonify({"Invalid": "Incorrect username or password"}), 401
+    if (data.get('password') is None):
+        return jsonify({"Invalid": "Incorrect username or password"}), 401
+
+    user = db.session.scalars(db.select(User).filter_by(username=data['username'])).first()
+
+    if (user is not None):
+        return jsonify({"Invalid": "Username already exists"})
+
+    # Create the User
+    hash = bcrypt.generate_password_hash(data['password']).decode('utf-8')
+    user = User(username=data['username'], password=hash)
+    db.session.add(user)
+    db.session.commit()
+
+    return jsonify({"Success": "Account created"})
+
+
 
 
 @app.route('/api/login', methods=['POST'])
@@ -31,7 +61,7 @@ def login():
         return jsonify({"Invalid": "Incorrect username or password"}), 401
 
     user = db.session.scalars(db.select(User)
-                              .filter_by(username=data['username'])).one()
+                              .filter_by(username=data['username'])).first()
 
     if (user is None or user.password is None):
         # save value as a cookie
@@ -65,6 +95,23 @@ def change_password():
     Change password of the User
     ADD BELOW
     '''
+    data = request.json
+
+    if (data is None):
+        return jsonify({"Invalid": "Incorrect username or password"}), 401
+    if (data.get('username') is None):
+        return jsonify({"Invalid": "Incorrect username or password"}), 401
+    if (data.get('password') is None):
+        return jsonify({"Invalid": "Incorrect username or password"}), 401
+
+    user = db.session.scalars(db.select(User).filter_by(username=data['username'])).first()
+
+    if (user is None):
+        return jsonify({"Invalid": "Username does not exist"})
+    logout_user()
+    hash = bcrypt.generate_password_hash(data['password']).decode('utf-8')
+    user.password = hash
+    db.session.commit()
     return jsonify({"Success": "User password changed"}), 200
 
 
