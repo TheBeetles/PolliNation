@@ -1,4 +1,3 @@
-// app/scan-species/page.js
 'use client';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -8,14 +7,13 @@ export default function ScanSpeciesPage() {
   const router = useRouter();
 
   const handleScanPlant = () => {
-    // Add your scan plant logic here
-    console.log('Scan a Plant clicked');
+    // Navigate to the scan plant page
+    router.push('/scan-plant');
   };
 
   const handleScanInsect = () => {
-    // Add your scan insect logic here
-    console.log('Scan an Insect clicked');
-    router.push('/species-information/insect-information')
+    // Navigate to the scan insect page
+    router.push('/scan-insect');
   };
 
   const handleSavedSpecies = () => {
