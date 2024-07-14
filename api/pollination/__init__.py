@@ -27,3 +27,4 @@ db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
 from pollination import routes  # noqa
+from pollination.routes import process  # noqa

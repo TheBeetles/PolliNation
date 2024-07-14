@@ -18,6 +18,11 @@ def get_uuid():
     return uuid4().hex
 
 
+def get_basic_id():
+    '''Returns a unique id of easy typeable string'''
+    return ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=6))
+
+
 class User(db.Model, UserMixin):
     '''
     Only allows people with the team id to create an account
@@ -44,6 +49,7 @@ class File(db.Model):
     '''
     __tablename__ = "File"
     id = db.Column(db.Integer, primary_key=True, unique=True)
+    alt_id = db.Column(db.String(7), unique=True, default=get_basic_id)
     user_id = db.Column(db.String(32), db.ForeignKey('User.id',
                                                      ondelete="CASCADE"), nullable=False)
     location = db.Column(db.Text)
