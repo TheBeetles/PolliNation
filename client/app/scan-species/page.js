@@ -17,19 +17,13 @@ export default function ScanSpeciesPage() {
   }, []);
 
   const handleScanPlant = () => {
-    console.log('Scan a Plant clicked');
-    // Add scan plant logic here
+    // Navigate to the scan plant page
+    router.push('/scan-plant');
   };
 
   const handleScanInsect = () => {
-<<<<<<< Updated upstream
-    setIsCameraOpen(true); // Open camera/photo upload options
-    setSelectedImage(null); // Reset selected image when scanning insect
-=======
-    // Add your scan insect logic here
-    console.log('Scan an Insect clicked');
-    router.push('/scan-species/scan-insect')
->>>>>>> Stashed changes
+    // Navigate to the scan insect page
+    router.push('/scan-insect');
   };
 
   const handleScanImage = () => {
