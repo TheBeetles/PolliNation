@@ -1,10 +1,20 @@
-'use client';
-import { useRouter } from 'next/navigation';
+'use client'
 import Image from 'next/image';
-import scanIcon from '../images/scan-icon.png'; // Assuming you have a scan icon image in this path
+import scanIcon from '../images/scan-icon.png'; // Correct relative path
+import { useRouter } from 'next/navigation'; // Import from next/navigation instead of next/router
+import { useEffect, useState } from 'react';
 
 export default function ScanSpeciesPage() {
   const router = useRouter();
+  const [isCameraOpen, setIsCameraOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    // Check if we're in the client-side environment
+    if (typeof window !== 'undefined') {
+      // Additional client-side initialization logic can go here
+    }
+  }, []);
 
   const handleScanPlant = () => {
     // Navigate to the scan plant page
@@ -16,32 +26,87 @@ export default function ScanSpeciesPage() {
     router.push('/scan-insect');
   };
 
-  const handleSavedSpecies = () => {
-    // Navigate to saved species page
-    router.push('/saved-species');
+  const handleScanImage = () => {
+    if (selectedImage) {
+      // Process the scanned image logic here
+      console.log('Scan Image button clicked');
+    }
   };
 
   const handleLogout = () => {
-    // Add your logout logic here
     console.log('Logout clicked');
-    router.push('/login')
+    router.navigate('/login'); // Navigate to login page
+    // Add logout logic here
+  };
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setSelectedImage(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleCameraCapture = () => {
+    // Logic to handle camera capture
+    // This function can be customized based on the requirements for capturing photos
+    console.log('Capture Photo button clicked');
+  };
+
+  const handleBack = () => {
+    setIsCameraOpen(false);
+    setSelectedImage(null);
   };
 
   return (
     <div style={styles.container}>
       <button onClick={handleLogout} style={styles.logoutButton}>Logout</button>
-      <div style={styles.scanContainer}>
-        <div onClick={handleScanPlant} style={styles.scanBox}>
-          <Image src={scanIcon} alt="Scan a Plant" width={100} height={100} />
-          <p style={styles.scanText}>Scan a Plant</p>
+      {!isCameraOpen && (
+        <div style={styles.scanContainer}>
+          <div onClick={handleScanPlant} style={styles.scanBox}>
+            <Image src={scanIcon} alt="Scan a Plant" width={100} height={100} />
+            <p style={styles.scanText}>Scan a Plant</p>
+          </div>
+          <p style={styles.orText}>OR</p>
+          <div onClick={handleScanInsect} style={styles.scanBox}>
+            <Image src={scanIcon} alt="Scan an Insect" width={100} height={100} />
+            <p style={styles.scanText}>Scan an Insect</p>
+          </div>
         </div>
-        <p style={styles.orText}>OR</p>
-        <div onClick={handleScanInsect} style={styles.scanBox}>
-          <Image src={scanIcon} alt="Scan an Insect" width={100} height={100} />
-          <p style={styles.scanText}>Scan an Insect</p>
+      )}
+      {isCameraOpen && (
+        <div style={styles.cameraContainer}>
+          <button onClick={handleBack} style={styles.backButton}>&#8592; Back</button>
+          <h2 style={styles.title}>Take Photo or Choose Existing Image</h2>
+          <div style={styles.imageContainer}>
+            {selectedImage ? (
+              <img src={selectedImage} alt="Selected" style={styles.selectedImage} />
+            ) : (
+              <div style={styles.placeholder}>
+                <Image src={scanIcon} alt="Placeholder" width={100} height={100} />
+                No Image Selected
+              </div>
+            )}
+          </div>
+          <input 
+            type="file"
+            accept="image/*"
+            capture="camera"
+            style={styles.fileInput}
+            onChange={handleFileChange}
+          />
+          <button
+            onClick={handleCameraCapture}
+            disabled={!selectedImage} // Disable the button if no image is selected
+            style={styles.savedSpeciesButton}
+          >
+            Scan Image
+          </button>
         </div>
-      </div>
-      <button onClick={handleSavedSpecies} style={styles.savedSpeciesButton}>Saved Species</button>
+      )}
     </div>
   );
 }
@@ -55,7 +120,7 @@ const styles = {
     height: '80vh',
     backgroundColor: '#fff',
     padding: '20px',
-    fontfamily: 'Inter',
+    fontFamily: 'Inter', // Corrected fontfamily to fontFamily
   },
   logoutButton: {
     alignSelf: 'flex-end',
@@ -95,6 +160,54 @@ const styles = {
   orText: {
     fontSize: '24px',
     color: '#000',
+  },
+  cameraContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100vh',
+    backgroundColor: '#fff',
+    padding: '20px',
+    fontFamily: 'Inter',
+  },
+  backButton: {
+    alignSelf: 'flex-start',
+    fontSize: '24px',
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+  },
+  title: {
+    fontSize: '24px',
+    margin: '20px 0',
+  },
+  imageContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '300px',
+    height: '300px',
+    border: '1px solid #ccc',
+    borderRadius: '10px',
+    overflow: 'hidden',
+    marginBottom: '20px',
+  },
+  selectedImage: {
+    width: '100%',
+    height: 'auto',
+  },
+  placeholder: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    height: '100%',
+    color: '#aaa',
+  },
+  fileInput: {
+    marginTop: '20px',
   },
   savedSpeciesButton: {
     padding: '10px 20px',
