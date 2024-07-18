@@ -1,0 +1,17 @@
+/* components/Camera.module.css */
+.video {
+   width: 100%;
+   height: auto;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   margin-top: 10px;
+ }
+ .button {
+   margin-top: 10px;
+ }
+ .image {
+   margin-top: 10px;
+   max-width: 100%;
+   height: auto;
+ }
+ 

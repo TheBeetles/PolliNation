@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import scanIcon from '../images/scan-icon.png';
+import Camera from '../components/Camera';
 import { useState } from 'react';
 
 export default function ScanInsectPage() {
@@ -33,6 +34,7 @@ export default function ScanInsectPage() {
         ) : (
           <div style={styles.placeholder}>
             <Image src={scanIcon} alt="Placeholder" width={100} height={100} />
+            <Camera />
             No Image Selected
           </div>
         )}
