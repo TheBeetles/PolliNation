@@ -1,5 +1,6 @@
 // app/create-profile/page.js
 'use client';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
 import pollinationImage from '../images/pollination.png';
@@ -7,12 +8,14 @@ import pollinationImage from '../images/pollination.png';
 export default function CreateProfilePage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
 
   const handleCreateProfile = (e) => {
     e.preventDefault();
     // Add profile creation logic here (e.g., API call)
     console.log('Username:', username);
     console.log('Password:', password);
+    router.push('/login')
   };
 
   return (
