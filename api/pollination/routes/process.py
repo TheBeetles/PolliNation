@@ -5,11 +5,28 @@ images location on the database. Also, saving the image to the
 filesystem
 '''
 import os
+import time
+import threading
 from flask import request, jsonify, send_from_directory
 from flask_login import current_user, login_required
 from pollination import app, db
 from pollination.models import User, File, Species
 
+
+class BackgroundTasks(threading.Thread):
+    def run(self, *args, **kwargs):
+        print("Testings")
+        time.sleep(1)
+        print("Testing")
+
+
+@app.route('/api/image/process', methods=['POST'])
+@login_required
+def process():
+    file = request.files['image']
+    if file.filename == "":
+        return jsonify({"Invalid": "Please have a filename"})
+    
 
 @app.route('/api/image/upload', methods=['POST'])
 @login_required
