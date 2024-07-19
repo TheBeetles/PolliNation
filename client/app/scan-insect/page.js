@@ -33,7 +33,7 @@ export default function ScanInsectPage() {
           <img src={selectedImage} alt="Selected" style={styles.selectedImage} />
         ) : (
           <div style={styles.placeholder}>
-            <Image src={scanIcon} alt="Placeholder" width={100} height={100} />
+            {/* <Image src={scanIcon} alt="Placeholder" width={100} height={100} /> */}
             <Camera />
             No Image Selected
           </div>
@@ -78,8 +78,8 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '300px',
-    height: '300px',
+    width: '350px',
+    height: '100%',
     border: '1px solid #ccc',
     borderRadius: '10px',
     overflow: 'hidden',
@@ -95,7 +95,7 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
-    height: '100%',
+    height: '100vh',
     color: '#B3E576',
   },
   fileInput: {
