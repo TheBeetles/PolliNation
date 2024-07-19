@@ -1,10 +1,15 @@
-/* Camera.module.css */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .video {
@@ -12,23 +17,28 @@
   max-width: 80vw;
   border: 1px solid #ccc;
   border-radius: 8px;
-  margin-bottom: 20px;
 }
 
 .select {
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 10px 0;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 16px;
 }
 
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button {
   padding: 10px 20px;
-  margin: 10px;
+  margin: 20px 10px;
   border-radius: 8px;
   border: none;
-  background-color: #007bff;
+  background-color: #c5f687;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -36,7 +46,7 @@
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #a5d667;
 }
 
 .image {
@@ -44,5 +54,4 @@
   max-width: 600px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  margin-bottom: 20px;
 }

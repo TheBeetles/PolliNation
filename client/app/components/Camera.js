@@ -83,7 +83,7 @@ const Camera = () => {
   return (
     <div className={styles.container}>
       {!photo && (
-        <div>
+        <div className={styles.wrapper}>
           <select
             onChange={(e) => setSelectedDeviceId(e.target.value)}
             value={selectedDeviceId}
@@ -100,10 +100,12 @@ const Camera = () => {
         </div>
       )}
       {photo && (
-        <div>
+        <div className={styles.wrapper}>
           <img src={photo} alt="Captured" className={styles.image} />
-          <button className={styles.button} onClick={uploadPhoto}>Upload Photo</button>
-          <button className={styles.button} onClick={retakePhoto}>Retake Photo</button>
+          <div className={styles.buttonWrapper}>
+            <button className={styles.button} onClick={uploadPhoto}>Upload Photo</button>
+            <button className={styles.button} onClick={retakePhoto}>Retake Photo</button>
+          </div>
         </div>
       )}
       <canvas ref={canvasRef} style={{ display: 'none' }}></canvas>
