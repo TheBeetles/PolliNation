@@ -1,0 +1,44 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   background-color: #fff;
+   padding: 20px;
+   font-family: 'Inter';
+ }
+
+ .title {
+   font-size: 24px;
+   margin: 20px 0;
+   color: #B3E576;
+ }
+ 
+ .imageContainer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 350px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+ }
+ 
+ .selectedImage {
+   width: 100%;
+   height: auto;
+ }
+ 
+ .placeholder {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   width: 100%;
+   color: #B3E576;
+ }
+ 
+ .fileInput {
+   margin-top: 20px;
+ }
+ 
