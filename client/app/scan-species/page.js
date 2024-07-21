@@ -8,14 +8,14 @@ export default function ScanSpeciesPage() {
   const router = useRouter();
 
   const handleScanPlant = () => {
-    // Add your scan plant logic here
-    console.log('Scan a Plant clicked');
+    console.log('Scan an Insect clicked');
+    router.push('/scan-plant')
   };
 
   const handleScanInsect = () => {
     // Add your scan insect logic here
     console.log('Scan an Insect clicked');
-    router.push('/species-information/insect-information')
+    router.push('/scan-insect')
   };
 
   const handleSavedSpecies = () => {
