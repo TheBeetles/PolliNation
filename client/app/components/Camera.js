@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from './Camera.module.css';
 
 const Camera = () => {
+  const router = useRouter();
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [devices, setDevices] = useState([]);
@@ -71,8 +73,9 @@ const Camera = () => {
       },
         body: photo
     });
+    const data = await response.json();
     if (response.ok) {
-      window.location.href = "/species-information/insect-information";
+      router.push("/species-information/insect-information/" + data['image']);
     } else {
       console.log(response);
     }

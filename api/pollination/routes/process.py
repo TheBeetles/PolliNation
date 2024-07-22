@@ -12,7 +12,7 @@ import base64
 import re
 from PIL import Image
 from io import BytesIO
-from flask import request, jsonify, send_from_directory
+from flask import request, jsonify, send_from_directory, send_file
 from flask_login import current_user, login_required
 from pollination import app, db
 from pollination.models import User, File, Species
@@ -41,7 +41,6 @@ def upload():
     ADD MAX IMAGE SIZE
     ADD extension type
     '''
-    print(request.data, file=sys.stderr)
     image_data = re.sub('^data:image/.+;base64,', '', request.data.decode('utf-8'))
     im = Image.open(BytesIO(base64.b64decode(image_data)))
 
@@ -57,20 +56,25 @@ def upload():
     im.save(f'./storage/{user.id}/{obj.alt_id}.png')
     # saves as its alt id on file server
     # run process in the background
-    return jsonify({"Success": "File uploaded and processing"})
+    return jsonify({"Success": "File uploaded and processing", "image": obj.alt_id})
 
 
-@app.route('/api/image/get/<image>', methods=['GET'])
+@app.route('/api/image/get/<search_query>', methods=['GET'])
 @login_required
-def download(image):
+def pls(search_query):
     '''
-    Sends user images
+    Sends user images not working
     '''
     user: User = current_user
 
-    file: File = db.session.scalars(db.select(File).filter_by(user_id=user.id, alt_id=image)).first()
+    file: File = db.session.scalars(db.select(File).filter_by(user_id=user.id,
+                                                              alt_id=search_query)).first()
+    if file is None:
+        return "No file found"
 
-    return send_from_directory(file.location, file.alt_id)
+    print(file.location, file=sys.stderr)
+    print(os.curdir, file=sys.stderr)
+    return send_from_directory(f"../{file.location}", file.alt_id + '.png')
 
 
 @app.route('/api/image/all', methods=['GET'])
@@ -80,7 +84,7 @@ def get_all():
     Get all images
     '''
     user: User = current_user
-    file: list[File] = db.session.scalars(db.select(File).filter_by(user.id)).all()
+    file: list[File] = db.session.scalars(db.select(File).filter_by(user_id = user.id)).all()
 
     data: list[str] = []
     for x in file:
