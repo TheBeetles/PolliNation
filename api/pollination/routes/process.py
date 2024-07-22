@@ -5,8 +5,13 @@ images location on the database. Also, saving the image to the
 filesystem
 '''
 import os
+import sys
 import time
 import threading
+import base64
+import re
+from PIL import Image
+from io import BytesIO
 from flask import request, jsonify, send_from_directory
 from flask_login import current_user, login_required
 from pollination import app, db
@@ -26,7 +31,7 @@ def process():
     file = request.files['image']
     if file.filename == "":
         return jsonify({"Invalid": "Please have a filename"})
-    
+
 
 @app.route('/api/image/upload', methods=['POST'])
 @login_required
@@ -36,17 +41,20 @@ def upload():
     ADD MAX IMAGE SIZE
     ADD extension type
     '''
-    file = request.files['image']
-    if file.filename == "":
-        return jsonify({"Invalid": "Please have a filename"})
+    print(request.data, file=sys.stderr)
+    image_data = re.sub('^data:image/.+;base64,', '', request.data.decode('utf-8'))
+    im = Image.open(BytesIO(base64.b64decode(image_data)))
+
     user: User = current_user
-    location: str = f"./{user.id}"
-    obj: File = File(user_id=user.id, location=location, file_name=file.filename)
+    location: str = f"./storage/{user.id}"
+    obj: File = File(user_id=user.id, location=location, file_name="image")
     db.session.add(obj)
     db.session.commit()
 
     os.mkdir(location)
-    file.save(os.path.join(location, obj.alt_id))
+
+    im.save(f'./storage/{user.id}/{obj.alt_id}.png')
+    # saves as its alt id on file server
     # run process in the background
     return jsonify({"Success": "File uploaded and processing"})
 
@@ -61,7 +69,7 @@ def download(image):
 
     file: File = db.session.scalars(db.select(File).filter_by(user_id=user.id, alt_id=image)).first()
 
-    return send_from_directory(file.location, file.file_name)
+    return send_from_directory(file.location, file.alt_id)
 
 
 @app.route('/api/image/all', methods=['GET'])

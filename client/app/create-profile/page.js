@@ -10,13 +10,23 @@ export default function CreateProfilePage() {
   const [password, setPassword] = useState('');
   const router = useRouter();
 
-  const handleCreateProfile = (e) => {
+  const handleCreateProfile = async (e) => {
     e.preventDefault();
-    // Add profile creation logic here (e.g., API call)
-    console.log('Username:', username);
-    console.log('Password:', password);
-    router.push('/login')
+    const res = await fetch('/api/register', {
+      method: 'POST',
+      body: JSON.stringify({
+        username,
+        password
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      }
+    });
+    if (res.ok) {
+      router.push('/login');
+    }
   };
+
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>

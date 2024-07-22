@@ -3,8 +3,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import insectImage from '../../images/insect.png';
+import verifyUser from '../components/verify';
 
 export default function SpeciesInformation() {
+  verifyUser();
   return (
     <>
       <Head>

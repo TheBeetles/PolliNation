@@ -63,12 +63,13 @@ const Camera = () => {
   };
 
   const uploadPhoto = async () => {
-    const response = await fetch('/api/upload', {
+    const response = await fetch('/api/image/upload', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'image/png'
+        // 'Content-Disposition': `attachment; filename="image"`
       },
-      body: JSON.stringify({ image: photo }),
+        body: photo
     });
 
     const result = await response.json();

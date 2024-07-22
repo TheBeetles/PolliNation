@@ -1,11 +1,16 @@
 // app/scan-species/page.js
 'use client';
 import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import verifyUser from '../components/verify';
 import Image from 'next/image';
 import scanIcon from '../images/scan-icon.png'; // Assuming you have a scan icon image in this path
 
 export default function ScanSpeciesPage() {
   const router = useRouter();
+  const [error, setError] = useState('');
+
+  verifyUser();
 
   const handleScanPlant = () => {
     console.log('Scan an Insect clicked');
@@ -23,10 +28,16 @@ export default function ScanSpeciesPage() {
     router.push('/saved-species');
   };
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
     // Add your logout logic here
-    console.log('Logout clicked');
-    router.push('/login')
+    const res = await fetch('/api/logout', {
+      method: 'GET',
+    });
+    if (res.ok) {
+      router.push('/login')
+    } else {
+      setError('Something went wrong');
+    }
   };
 
   return (
@@ -44,6 +55,7 @@ export default function ScanSpeciesPage() {
         </div>
       </div>
       <button onClick={handleSavedSpecies} style={styles.savedSpeciesButton}>Saved Species</button>
+      <h1 style={{ color: 'red' }}> { error } </h1>
     </div>
   );
 }

@@ -2,10 +2,11 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import placeholder from '../images/pollination.png';
+import verifyUser from '../components/verify';
 
 export default function SavedSpeciesPage() { 
     const router = useRouter();
-
+    verifyUser();
     const handleGoBackButton = () => { 
         console.log('Go Back Button clicked');
         router.push('/scan-species');

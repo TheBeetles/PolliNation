@@ -95,7 +95,6 @@ def logout():
     Logout the user
     '''
     user: User = current_user
-    logout()
     user.alt_id = None
     db.session.commit()
 
