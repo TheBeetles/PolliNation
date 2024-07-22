@@ -51,7 +51,8 @@ def upload():
     db.session.add(obj)
     db.session.commit()
 
-    os.mkdir(location)
+    if (not os.path.exists(location)):
+        os.mkdir(location)
 
     im.save(f'./storage/{user.id}/{obj.alt_id}.png')
     # saves as its alt id on file server

@@ -71,9 +71,11 @@ const Camera = () => {
       },
         body: photo
     });
-
-    const result = await response.json();
-    console.log(result);
+    if (response.ok) {
+      window.location.href = "/species-information/insect-information";
+    } else {
+      console.log(response);
+    }
   };
 
   const retakePhoto = () => {

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import insectImage from '../../images/insect.png';
-import verifyUser from '../components/verify';
+import verifyUser from '../../components/verify';
 
 export default function SpeciesInformation() {
   verifyUser();
@@ -27,6 +27,7 @@ export default function SpeciesInformation() {
           width={800}
           height={450}
           className="main-image"
+          priority={true}
         />
         <div className="content">
           <section className="about">
