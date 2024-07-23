@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from './Camera.module.css';
 
 const Camera = () => {
+  const router = useRouter();
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [devices, setDevices] = useState([]);
@@ -63,16 +65,20 @@ const Camera = () => {
   };
 
   const uploadPhoto = async () => {
-    const response = await fetch('/api/upload', {
+    const response = await fetch('/api/image/upload', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'image/png'
+        // 'Content-Disposition': `attachment; filename="image"`
       },
-      body: JSON.stringify({ image: photo }),
+        body: photo
     });
-
-    const result = await response.json();
-    console.log(result);
+    const data = await response.json();
+    if (response.ok) {
+      router.push("/species-information/insect-information/" + data['image']);
+    } else {
+      console.log(response);
+    }
   };
 
   const retakePhoto = () => {

@@ -1,16 +1,46 @@
 // app/saved-species/saved-species.js
 'use client';
 import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import placeholder from '../images/pollination.png';
+import verifyUser from '../components/verify';
 
 export default function SavedSpeciesPage() { 
     const router = useRouter();
-
+    const [data, setData] = useState([]);
+    const [image, setImage] = useState('');
+    verifyUser();
     const handleGoBackButton = () => { 
         console.log('Go Back Button clicked');
         router.push('/scan-species');
     };
 
+    useEffect(() => {
+        const response = async () => {
+            const val = await fetch('/api/image/all', {
+              method: 'GET'
+            }).then(
+                (r) => { return r.json(); }
+            );
+            setData(val['data']);
+        }
+        response();
+    },[]);
+        
+    useEffect(() => {
+    const response = async () => {
+        const res = await fetch('/api/image/get/' + data[0], {
+          method: 'GET'
+        }).then((r) => {return r.blob();}).then(
+          (thing) => {
+            const objectURL = URL.createObjectURL(thing);
+            setImage(objectURL);
+          }
+        );
+    };
+    response();
+  }, [data]); 
+    
     return (
         <div style={{
             position: 'relative',
@@ -108,7 +138,7 @@ export default function SavedSpeciesPage() {
                         justifyContent: 'center',
                         alignItems: 'center',
                     }}>
-                        <img src={placeholder} alt="Insect" style={{
+                        <img src={image} alt="Insect" style={{
                             width: '100%',
                             height: '100%',
                             objectFit: 'cover',

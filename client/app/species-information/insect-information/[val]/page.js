@@ -2,9 +2,30 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import insectImage from '../../images/insect.png';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import insectImage from '../../../images/insect.png';
+import verifyUser from '../../../components/verify';
 
-export default function SpeciesInformation() {
+export default function SpeciesInformation({ params }) {
+  verifyUser();
+  const router = useRouter();
+  const [image, setImage] = useState('');
+  const route = '/api/image/get/' + params.val;
+
+  useEffect(() => {
+    const response = async () => {
+        const res = await fetch(route, {
+          method: 'GET'
+        }).then((r) => {return r.blob();}).then(
+          (thing) => {
+            const objectURL = URL.createObjectURL(thing);
+            setImage(objectURL);
+          }
+        );
+    };
+    response();
+  }, []); 
   return (
     <>
       <Head>
@@ -20,11 +41,12 @@ export default function SpeciesInformation() {
           <p>Invasive Species in <span className="location">Albany, NY</span></p>
         </header>
         <Image
-          src={insectImage}
+          src={image}
           alt="Spotted Lanternfly"
           width={800}
           height={450}
           className="main-image"
+          priority={true}
         />
         <div className="content">
           <section className="about">

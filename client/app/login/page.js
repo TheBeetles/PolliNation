@@ -1,21 +1,44 @@
 // app/login/page.js
 'use client';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import pollinationImage from '../images/pollination.png';
+import verify from '../components/verify';
 
 export default function LoginPage() {
   const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [thing, setThing] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleLogin = (e) => {
+  // const redirect = async () => {
+  //   const res = await verify();
+  //   if (res) {
+  //     router.push('/scan-species');
+  //   }
+  // }
+  // redirect();
+
+  const handleLogin = async (e) => {
     e.preventDefault();
     // Add login logic here (e.g., API call)
-    console.log('Username:', username);
-    console.log('Password:', password);
-    router.push('/scan-species')
+    const res = await fetch('/api/login', {
+      method: 'POST',
+      body: JSON.stringify({
+        username,
+        password
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+      }
+    });
+    if (res.ok) {
+      router.push('/scan-species');
+    } else {
+      setError('Incorrect username or password');
+    }
   };
 
   const handleCreateProfile = () => {
@@ -31,7 +54,7 @@ export default function LoginPage() {
           type="text"
           placeholder="Username"
           value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          onChange={(e) => {setUsername(e.target.value); setError('');}}
           required
           style={{ marginBottom: '10px', padding: '10px', fontSize: '16px' }}
         />
@@ -39,11 +62,12 @@ export default function LoginPage() {
           type="password"
           placeholder="Password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => {setPassword(e.target.value); setError('');}}
           required
           style={{ marginBottom: '10px', padding: '10px', fontSize: '16px' }}
         />
         <button type="submit" style={{ padding: '10px', fontSize: '16px', cursor: 'pointer' }}>Login</button>
+        <h3 style={{ color: 'red' }}> { error } </h3>
       </form>
       <button onClick={handleCreateProfile} style={{ marginTop: '20px', padding: '10px', fontSize: '16px', cursor: 'pointer' }}>Create Profile</button>
     </div>

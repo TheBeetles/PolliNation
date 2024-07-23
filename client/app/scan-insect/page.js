@@ -6,10 +6,12 @@ import Camera from '../components/Camera';
 import { useState } from 'react';
 import styles from '../components/ScanInsectPlant.module.css';
 import BackButton from '../components/BackButton';
+import verifyUser from '../components/verify';
 
 export default function ScanInsectPage() {
   const router = useRouter();
   const [selectedImage, setSelectedImage] = useState(null);
+  verifyUser();
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
