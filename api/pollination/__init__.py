@@ -27,5 +27,7 @@ class Base(DeclarativeBase):
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
-from pollination import routes  # noqa
-from pollination.routes import process  # noqa
+# from pollination import routes  # noqa
+from pollination.user import User
+from pollination.files import File
+from pollination.species import Species

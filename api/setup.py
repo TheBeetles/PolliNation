@@ -1,6 +1,6 @@
 # pylint: skip-file
 from pollination import db, bcrypt
-from pollination.models import User
+from pollination.user import User
 
 if __name__ == "__main__":
     db.drop_all()
