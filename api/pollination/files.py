@@ -1,9 +1,10 @@
+# flake8: noqa
+# pylint: skip-file
 '''
-Contains the table representations of the database
+Contains the File class and routes
 '''
 import random
 import string
-from pollination import db
 
 import os
 import sys
@@ -13,7 +14,7 @@ from PIL import Image
 from io import BytesIO
 from flask import request, jsonify, send_from_directory
 from flask_login import current_user, login_required
-from pollination import app
+from pollination import app, db
 from pollination.user import User
 
 
@@ -36,20 +37,26 @@ class File(db.Model):
     file_name = db.Column(db.Text)
     user = db.Relationship('User', back_populates='file')
 
-    @app.route('/api/image/process', methods=['POST'])
+    @app.route('/api/image/delete', methods=['POST'])
     @login_required
-    def process():
-        file = request.files['image']
-        if file.filename == "":
-            return jsonify({"Invalid": "Please have a filename"})
+    def delete():
+        '''
+        Deletes the image
+        '''
+        data = request.json
+
+        if (data is None):
+            return jsonify({"Invalid": "No data sent"})
+
+        db.session.scalars(db.select(File).filter_by(alt_id=data.get("id")))
+
+        return jsonify({"Success": "Deleted file"})
 
     @app.route('/api/image/upload', methods=['POST'])
     @login_required
     def upload():
         '''
         Saves the image to a file and runs the image
-        ADD MAX IMAGE SIZE
-        ADD extension type
         '''
         image_data = re.sub('^data:image/.+;base64,', '', request.data.decode('utf-8'))
         im = Image.open(BytesIO(base64.b64decode(image_data)))
@@ -70,7 +77,7 @@ class File(db.Model):
 
     @app.route('/api/image/get/<search_query>', methods=['GET'])
     @login_required
-    def pls(search_query):
+    def get_image(search_query):
         '''
         Sends user images not working
         '''
@@ -101,5 +108,8 @@ class File(db.Model):
         return jsonify({"Success": "worked", "data": data})
 
     def __repr__(self):
+        '''
+        formats the File class when printing
+        '''
         return f"File('{self.location}', '{self.bug_name}', \
                       '{self.file_name}')"

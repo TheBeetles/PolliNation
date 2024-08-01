@@ -1,15 +1,15 @@
+# flake8: noqa
+# pylint: skip-file
 '''
-Contains the table representations of the database
+Contains the user class and routes
 '''
 from uuid import uuid4
 from flask_login import UserMixin
-from pollination import db
-from pollination import login_manager
-
 from flask import request, jsonify
 from flask_login import login_user, current_user, logout_user
 from flask_login import login_required
-from pollination import app, bcrypt
+from pollination import app, bcrypt, db
+from pollination import login_manager
 
 
 @login_manager.user_loader
@@ -57,13 +57,15 @@ class User(db.Model, UserMixin):
         if (data.get('password') is None):
             return jsonify({"Invalid": "Incorrect username or password"}), 401
 
-        user = db.session.scalars(db.select(User).filter_by(username=data['username'])).first()
+        user = db.session.scalars(db.select(User).filter_by(
+            username=data['username'])).first()
 
         if (user is not None):
             return jsonify({"Invalid": "Username already exists"})
 
         # Create the User
-        pw_hash = bcrypt.generate_password_hash(data['password']).decode('utf-8')
+        pw_hash = bcrypt.generate_password_hash(
+            data['password']).decode('utf-8')
         user = User(username=data['username'], password=pw_hash)
         db.session.add(user)
         db.session.commit()
@@ -85,14 +87,15 @@ class User(db.Model, UserMixin):
             return jsonify({"Invalid": "Incorrect username or password"}), 401
 
         user: User = db.session.scalars(db.select(User)
-                                  .filter_by(username=data['username'])).first()
+                                        .filter_by(username=data['username'])).first()
 
         if (user is None or user.password is None):
             # save value as a cookie
             return jsonify({"Invalid": "Incorrect username or password"}), 401
             # return "Invalid"
 
-        pass_check = bcrypt.check_password_hash(user.password, data['password'])
+        pass_check = bcrypt.check_password_hash(
+            user.password, data['password'])
         if (pass_check is False):
             return jsonify({"Invalid": "Incorrect username or password"}), 401
             # return "Invalid"
