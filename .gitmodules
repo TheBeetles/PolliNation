@@ -1,0 +1,3 @@
+[submodule "nature-id"]
+	path = nature-id
+	url = https://github.com/joergmlpts/nature-id.git
