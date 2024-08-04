@@ -12,6 +12,7 @@ psycopg2-binary = "*"
 flask-sqlalchemy = "*"
 flask-login = "*"
 pillow = "*"
+tflite-runtime = "*"
 
 [dev-packages]
 pylint = "*"
