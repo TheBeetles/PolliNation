@@ -49,8 +49,18 @@ class File(db.Model):
         if (data is None):
             return jsonify({"Invalid": "No data sent"})
 
-        db.session.scalars(db.select(File).filter_by(user_id=current_user.id, alt_id=data.get("id")))
+        if (type(data.get("id")) is not list):
+            return jsonify({"Invalid": "Incorrect datatype"})
 
+        # checks for the file and removes it in the file system and db
+        for i in data.get("id"):
+            file: File = db.session.scalars(db.select(File).filter_by(
+                user_id=current_user.id, alt_id=i)).first()
+            if (file is not None):
+                os.remove(f"{file.location}/{file.alt_id}.png")
+                db.session.delete(file)
+
+        db.session.commit()
         return jsonify({"Success": "Deleted file"})
 
     @app.route('/api/image/<typeObject>/upload', methods=['POST'])
@@ -59,7 +69,8 @@ class File(db.Model):
         '''
         Saves the image to a file and runs the image
         '''
-        image_data = re.sub('^data:image/.+;base64,', '', request.data.decode('utf-8'))
+        image_data = re.sub('^data:image/.+;base64,', '',
+                            request.data.decode('utf-8'))
         im = Image.open(BytesIO(base64.b64decode(image_data)))
 
         user: User = current_user
@@ -70,7 +81,8 @@ class File(db.Model):
         if typeObject == "insect":
             bug = True
 
-        obj: File = File(user_id=user.id, location=location, file_name="image", is_bug=bug)
+        obj: File = File(user_id=user.id, location=location,
+                         file_name="image", is_bug=bug)
         db.session.add(obj)
         db.session.commit()
 
@@ -104,7 +116,8 @@ class File(db.Model):
         Get all images
         '''
         user: User = current_user
-        file: list[File] = db.session.scalars(db.select(File).filter_by(user_id = user.id)).all()
+        file: list[File] = db.session.scalars(
+            db.select(File).filter_by(user_id=user.id)).all()
 
         plantData: list[str] = []
         insectData: list[str] = []
