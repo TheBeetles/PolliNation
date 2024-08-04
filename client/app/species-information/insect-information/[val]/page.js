@@ -40,13 +40,12 @@ export default function SpeciesInformation({ params }) {
           <h1>Spotted Lanternfly</h1>
           <p>Invasive Species in <span className="location">Albany, NY</span></p>
         </header>
-        <Image
+        <img
           src={image}
           alt="Spotted Lanternfly"
           width={800}
           height={450}
           className="main-image"
-          priority={true}
         />
         <div className="content">
           <section className="about">

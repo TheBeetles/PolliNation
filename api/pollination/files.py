@@ -35,6 +35,7 @@ class File(db.Model):
     location = db.Column(db.Text)
     bug_name = db.Column(db.Text)
     file_name = db.Column(db.Text)
+    is_bug = db.Column(db.Boolean, nullable=False)
     user = db.Relationship('User', back_populates='file')
 
     @app.route('/api/image/delete', methods=['POST'])
@@ -48,13 +49,13 @@ class File(db.Model):
         if (data is None):
             return jsonify({"Invalid": "No data sent"})
 
-        db.session.scalars(db.select(File).filter_by(alt_id=data.get("id")))
+        db.session.scalars(db.select(File).filter_by(user_id=current_user.id, alt_id=data.get("id")))
 
         return jsonify({"Success": "Deleted file"})
 
-    @app.route('/api/image/upload', methods=['POST'])
+    @app.route('/api/image/<typeObject>/upload', methods=['POST'])
     @login_required
-    def upload():
+    def upload(typeObject):
         '''
         Saves the image to a file and runs the image
         '''
@@ -63,7 +64,13 @@ class File(db.Model):
 
         user: User = current_user
         location: str = f"./storage/{user.id}"
-        obj: File = File(user_id=user.id, location=location, file_name="image")
+
+        # checks what type is in use
+        bug: bool = False
+        if typeObject == "insect":
+            bug = True
+
+        obj: File = File(user_id=user.id, location=location, file_name="image", is_bug=bug)
         db.session.add(obj)
         db.session.commit()
 
@@ -88,8 +95,6 @@ class File(db.Model):
         if file is None:
             return "No file found"
 
-        print(file.location, file=sys.stderr)
-        print(os.curdir, file=sys.stderr)
         return send_from_directory(f"../{file.location}", file.alt_id + '.png')
 
     @app.route('/api/image/all', methods=['GET'])
@@ -101,11 +106,15 @@ class File(db.Model):
         user: User = current_user
         file: list[File] = db.session.scalars(db.select(File).filter_by(user_id = user.id)).all()
 
-        data: list[str] = []
+        plantData: list[str] = []
+        insectData: list[str] = []
         for x in file:
-            data.append(x.alt_id)
-
-        return jsonify({"Success": "worked", "data": data})
+            if (x.is_bug):
+                insectData.append(x.alt_id)
+            else:
+                plantData.append(x.alt_id)
+        print(insectData, file=sys.stderr)
+        return jsonify({"Success": "worked", "insect": insectData, "plant": plantData})
 
     def __repr__(self):
         '''

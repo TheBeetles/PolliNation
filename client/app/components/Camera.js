@@ -65,11 +65,16 @@ const Camera = () => {
   };
 
   const uploadPhoto = async () => {
-    const response = await fetch('/api/image/upload', {
+    var query = ''
+    if (window.location.pathname === "/scan-plant") {
+      query = 'plant';
+    } else {
+      query = 'insect';
+    }
+    const response = await fetch('/api/image/' + query + '/upload', {
       method: 'POST',
       headers: {
         'Content-Type': 'image/png'
-        // 'Content-Disposition': `attachment; filename="image"`
       },
         body: photo
     });
