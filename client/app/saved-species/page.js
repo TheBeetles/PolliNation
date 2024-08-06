@@ -135,6 +135,7 @@ export default function SavedSpeciesPage() {
                 }}>
                     {/* Placeholder images for Plants */}
                     {plantImage.map(plant => (
+                        <a href={("species-information/" + plant.id)}>
                         <div key={plant.id} style={{
                             width: '100px',
                             height: '100px',
@@ -152,6 +153,7 @@ export default function SavedSpeciesPage() {
                                 objectFit: 'cover',
                             }}/>
                         </div>
+                        </a>
                     ))}
                 </div> }
                 { !toggle &&
@@ -162,6 +164,7 @@ export default function SavedSpeciesPage() {
                 }}>
                     {/* Placeholder images for Insects */}
                     {insectImage.map(insect => (
+                        <a href={("species-information/" + insect.id)}>
                         <div key={insect.id} style={{
                             width: '100px',
                             height: '100px',
@@ -178,6 +181,7 @@ export default function SavedSpeciesPage() {
                                 objectFit: 'cover',
                             }}/>
                         </div>
+                        </a>
                     ))}
                 </div>}
             </div>
