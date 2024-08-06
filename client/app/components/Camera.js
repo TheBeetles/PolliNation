@@ -80,7 +80,7 @@ const Camera = () => {
     });
     const data = await response.json();
     if (response.ok) {
-      router.push("/species-information" + data['image']);
+      router.push("/species-information/" + data['image']);
     } else {
       console.log(response);
     }
