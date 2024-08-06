@@ -4,8 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import insectImage from '../../../images/insect.png';
-import verifyUser from '../../../components/verify';
+import insectImage from '../../images/insect.png';
+import verifyUser from '../../components/verify';
 
 export default function SpeciesInformation({ params }) {
   verifyUser();
