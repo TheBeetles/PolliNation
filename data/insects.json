@@ -85,31 +85,31 @@
     },
     "Phantom crane fly": {
       "scientific": "Bittacomorpha clavipes",
-      "description": "A crane fly with long, slender legs and a distinctive flight pattern. Often seen near water.",
+      "description": "A type of crane fly with a long, thin body and six long, slender legs displaying a black and white block pattern. Often seen near water.",
       "native": true,
-      "living": "Prefers wetlands, marshes, and streams. Larvae feed on decaying organic matter, adults feed on nectar.",
+      "living": "Prefers wetlands, marshes, and streams. Larvae feed on decaying organic matter, assisting in the process of decomposition. Adults feed on small aphids and other insects",
       "future": "Support by preserving wetland habitats and avoiding pollution in these areas."
     },
     "Eastern pine elfin": {
       "scientific": "Callophrys niphon",
-      "description": "A small butterfly with brown and gray coloring, often found near pine trees.",
+      "description": "A small brown butterfly with gray and black coloring, often found near pine and oak trees.",
       "native": true,
       "living": "Found in pine forests and woodlands. Larvae feed on pine needles, adults feed on nectar from early spring flowers.",
       "future": "Support by preserving pine forests and planting native flowers that bloom in early spring."
     },
     "Bald-faced hornet": {
       "scientific": "Dolichovespula maculata",
-      "description": "A large wasp with a distinctive black and white pattern. Known for its aggressive defense of its nest.",
+      "description": "A large black wasp with ivory markings. They act as natural pest controllers",
       "native": true,
-      "living": "Prefers forests, gardens, and suburban areas. Feeds on nectar, tree sap, and other insects.",
-      "future": "Support by providing nesting sites like trees and shrubs. Avoid destroying nests unless they pose a direct threat."
+      "living": "Prefers forests, gardens, and suburban areas. Feeds on nectar, tree sap, and other insects, particularly flies, caterpillars, beetles, and other types of wasps. Thus, they are polinators integral to balanced, healthy ecosystems. They commonly nest in trees, bushes, rock overhangs and under the eaves of residential buildings.",
+      "future": "While tempting to exterminate, avoid destroying nests unless they pose a direct threat."
     },
     "Io moth": {
       "scientific": "Automeris io",
-      "description": "A colorful moth with distinctive eye spots on its hindwings, used to deter predators.",
+      "description": "A colorful yellow and pink moth with distinctive eye spots on its hindwings, used to deter predators. They are pollinators of night-blooming plants. While adult io moths are harmless, watch out for their caterpillars- they're green with a read and white stripe and spines all along their backs, and are poisonous to humans!",
       "native": true,
-      "living": "Found in forests, gardens, and meadows. Larvae feed on a variety of trees and shrubs, adults feed on nectar.",
-      "future": "Support by planting a variety of host plants for larvae and nectar-producing flowers for adults."
+      "living": "Found in forests, gardens, and meadows. Larvae feed on a variety of trees and shrubs, while adults little to no food save for occasional nector from flowers. Despite this, they are still pollinators!",
+      "future": "Support by planting a variety of host plants for larvae, such as cherry, redbud, willow, wisteria, sassafras, currant, and hibiscus. Plant night-blooming flowers, such as tuberose, moonflower, gardenia, and four o'clocks."
     },
     "Sigmoid prominent": {
       "scientific": "Clostera albosigma",
