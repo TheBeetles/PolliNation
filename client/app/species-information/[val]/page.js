@@ -63,7 +63,7 @@ export default function SpeciesInformation({ params }) {
       <BackButton onClick={handleBack}></BackButton>
         <header className="header">
           <h1>{speciesData.name || speciesData.Failed}</h1> 
-          { speciesData.name === null && <p>{speciesData.native ? 'Native' : <span className="location">Invasive</span>} Species</p>}
+          { speciesData.name !== undefined && <p>{speciesData.native ? 'Native' : <span className="location">Invasive</span>} Species</p>}
         </header>
         <img
           src={image}
@@ -72,7 +72,7 @@ export default function SpeciesInformation({ params }) {
           height={450}
           className="main-image"
         />
-        { speciesData.name === null && <div className="content">
+        { speciesData.name !== undefined && <div className="content">
           <section className="about">
             <h2>About</h2>
             <p><strong>Scientific Name:</strong> {speciesData.scientific}</p>

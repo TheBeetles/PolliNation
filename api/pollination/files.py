@@ -108,14 +108,23 @@ class File(db.Model):
                                  f"{location}/{obj.alt_id}.jpg"],
                                 capture_output=True, text=True)
 
-        print(result.stdout, file=sys.stderr)
         lastline = result.stdout.split('\n')[-2]
-        if 'species' in lastline:
-            print(lastline, file=sys.stderr)
-        else:
-            print(lastline, file=sys.stderr)
-        # print(result.stderr, file=sys.stderr)
+        if 'species' not in lastline:
+            return jsonify({"Success": "File uploaded and processing", "image": obj.alt_id})
+        lastline = lastline.split("(")
 
+        if len(lastline) != 2:
+            return jsonify({"Success": "File uploaded and processing", "image": obj.alt_id})
+
+        print(lastline, file=sys.stderr)
+        lastline = lastline[1][:-1]
+        data: Species = db.session.scalars(
+            db.select(Species).filter_by(scientific=lastline)).first()
+        if data is None:
+            return jsonify({"Success": "File uploaded and processing", "image": obj.alt_id})
+
+        obj.species_id = data.id
+        db.session.commit()
         # saves as its alt id on file server
         # run process in the background
         return jsonify({"Success": "File uploaded and processing", "image": obj.alt_id})
