@@ -1,4 +1,193 @@
 {
+    "Black Birch": {
+        "scientific": "Betula lenta",
+        "description": "Black Birch, also known as Sweet Birch, is known for its aromatic bark, which is a source of wintergreen oil. It has dark, shiny bark when young, which turns to a more textured and dark color with age.",
+        "native": true,
+        "living": "Prefers full sun to partial shade and moist, well-drained soils. Requires regular watering but can tolerate short periods of drought.",
+        "future": "To support this native species, plant it in suitable habitats and avoid disturbing existing populations. Manage competing vegetation and monitor for pests and diseases."
+    },
+    "Stinging Nettle": {
+        "scientific": "Urtica dioica",
+        "description": "Stinging Nettle is a herbaceous perennial plant known for its stinging hairs that cause a painful reaction upon contact. It is also used in traditional medicine and as a source of fiber.",
+        "native": true,
+        "living": "Thrives in rich, moist soils and can be found in partial to full shade. It prefers areas with consistent moisture but can adapt to a variety of soil types.",
+        "future": "Support its growth by maintaining moist, fertile soil. Control its spread in areas where it might become too aggressive. Harvest carefully to use for its medicinal properties."
+    },
+    "American Chestnut": {
+        "scientific": "Castanea dentata",
+        "description": "The American Chestnut was once a dominant tree in eastern forests before being decimated by chestnut blight. Efforts are underway to develop blight-resistant varieties.",
+        "native": true,
+        "living": "Prefers well-drained, acidic soils and full sun. Requires regular watering, especially in dry periods.",
+        "future": "Support restoration efforts by planting blight-resistant hybrids. Protect young trees from pests and ensure they have adequate space and resources to grow."
+    },
+    "American Beech": {
+        "scientific": "Fagus grandifolia",
+        "description": "American Beech is a large deciduous tree known for its smooth, gray bark and toothed leaves. It produces beechnuts, which are an important food source for wildlife.",
+        "native": true,
+        "living": "Grows well in rich, well-drained soils with full sun to partial shade. Requires moderate watering.",
+        "future": "Protect from diseases like Beech Bark Disease. Preserve existing stands and promote natural regeneration by controlling deer populations and other competitive vegetation."
+    },
+    "Tamarack": {
+        "scientific": "Larix laricina",
+        "description": "Tamarack, also known as Eastern Larch, is a deciduous conifer that loses its needles in winter. It is known for its beautiful golden fall color and adaptability to wet soils.",
+        "native": true,
+        "living": "Prefers full sun and wet to moist, acidic soils. Can tolerate poorly drained sites and seasonal flooding.",
+        "future": "Promote wetland conservation to support Tamarack populations. Plant in appropriate habitats and manage competing vegetation."
+    },
+    "Jerusalem Artichoke": {
+        "scientific": "Helianthus tuberosus",
+        "description": "Jerusalem Artichoke, also known as Sunchoke, is a perennial sunflower cultivated for its edible tubers. It has tall stems with yellow flowers.",
+        "native": true,
+        "living": "Thrives in full sun and well-drained soils. Requires moderate watering and can tolerate drought once established.",
+        "future": "Encourage its cultivation for food. Manage its spread in garden settings as it can become invasive."
+    },
+    "Virginia Spring Beauty": {
+        "scientific": "Claytonia virginica",
+        "description": "Virginia Spring Beauty is a low-growing perennial wildflower with delicate pink or white flowers that bloom in early spring. It is an important early-season nectar source for pollinators.",
+        "native": true,
+        "living": "Prefers moist, well-drained soils and partial to full shade. Requires minimal watering once established.",
+        "future": "Protect existing populations and plant in shaded gardens or naturalized areas. Avoid disturbing its habitat and ensure it has adequate moisture."
+    },
+    "Mayapple": {
+        "scientific": "Podophyllum peltatum",
+        "description": "Mayapple is a woodland perennial with umbrella-like leaves and white flowers that produce yellow fruits. All parts of the plant, except the ripe fruit, are toxic.",
+        "native": true,
+        "living": "Grows best in rich, moist, well-drained soils and partial to full shade. Requires regular watering, especially during dry periods.",
+        "future": "Support by maintaining healthy woodland habitats. Be cautious of its toxicity and avoid planting in areas accessible to children or pets."
+    },
+    "Hedge Bindweed": {
+        "scientific": "Calystegia sepium",
+        "description": "Hedge Bindweed is a perennial vine with large, white, trumpet-shaped flowers. It can be aggressive and is known to smother other plants.",
+        "native": true,
+        "living": "Prefers full sun to partial shade and moist, well-drained soils. Requires moderate watering.",
+        "future": "Manage its spread in garden settings by regularly trimming and removing new shoots. Support its growth in wild areas where it does not threaten other plant species."
+    },
+    "Wingstem": {
+        "scientific": "Verbesina alternifolia",
+        "description": "Wingstem is a tall perennial with distinctive winged stems and bright yellow flowers. It provides nectar for pollinators and seeds for birds.",
+        "native": true,
+        "living": "Thrives in moist, well-drained soils and full sun to partial shade. Requires regular watering, especially in dry periods.",
+        "future": "Encourage its growth in pollinator gardens and naturalized areas. Ensure it has adequate moisture and space to grow without competition."
+    },
+    "Large Yellow Lady's Slipper": {
+        "scientific": "Cypripedium parviflorum var. pubescens",
+        "description": "A striking orchid with large, yellow slipper-shaped flowers. It is notable for its intricate pollination mechanism involving insects.",
+        "native": true,
+        "living": "Prefers partial shade to full sun and moist, well-drained soils rich in organic matter.",
+        "future": "Protect natural habitats and avoid picking wild plants. Support conservation efforts and native plant nurseries."
+    },
+    "Mile-a-minute Weed": {
+        "scientific": "Persicaria perfoliata",
+        "description": "A fast-growing, invasive vine with triangular leaves and small, blue fruits. It is known for smothering native plants.",
+        "native": false,
+        "living": "Thrives in full sun and moist, well-drained soils but can tolerate a variety of conditions.",
+        "future": "Remove and properly dispose of the plant before it sets seed. Use mechanical, chemical, or biological control methods as appropriate."
+    },
+    "Yellow Rattle": {
+        "scientific": "Rhinanthus minor",
+        "description": "A semi-parasitic plant that attaches to the roots of grasses and other plants, reducing their growth. It has yellow, tubular flowers.",
+        "native": true,
+        "living": "Prefers full sun to partial shade and well-drained, fertile soils.",
+        "future": "Promote biodiversity by including in native wildflower mixes. Manage meadows and grasslands to maintain balanced ecosystems."
+    },
+    "Allegheny Blackberry": {
+        "scientific": "Rubus allegheniensis",
+        "description": "A common blackberry species with arching canes and edible black fruits. It is valuable for wildlife and human consumption.",
+        "native": true,
+        "living": "Prefers full sun to partial shade and well-drained, fertile soils. Requires regular watering, especially during fruiting season.",
+        "future": "Plant in home gardens and natural areas. Control excessive spread through regular pruning and removal of unwanted canes."
+    },
+    "Lesser Celandine": {
+        "scientific": "Ficaria verna",
+        "description": "An invasive, low-growing plant with bright yellow flowers and glossy, heart-shaped leaves. It forms dense mats, outcompeting native species.",
+        "native": false,
+        "living": "Prefers moist, shaded environments but can tolerate a range of conditions.",
+        "future": "Remove by hand or with appropriate herbicides before it flowers and sets seed. Monitor areas regularly to prevent reestablishment."
+    },
+    "Spotted Water Hemlock": {
+        "scientific": "Cicuta maculata",
+        "description": "A highly toxic plant with clusters of small, white flowers and spotted stems. It is one of the most poisonous plants in North America.",
+        "native": true,
+        "living": "Prefers wet, marshy areas and full sun to partial shade.",
+        "future": "Educate the public about its toxicity. Avoid disturbing natural habitats where it grows and keep children and pets away."
+    },
+    "Indian Pipe": {
+        "scientific": "Monotropa uniflora",
+        "description": "A unique, non-photosynthetic plant that is ghostly white and relies on mycorrhizal fungi for nutrients. It has a single, drooping flower.",
+        "native": true,
+        "living": "Prefers shaded, moist, and decaying organic matter-rich environments in forests.",
+        "future": "Protect forest habitats and avoid disturbing the soil where it grows. Appreciate and observe without picking or transplanting."
+    },
+    "Arrowwood Viburnum": {
+        "scientific": "Viburnum dentatum",
+        "description": "A versatile shrub with serrated leaves, white flower clusters, and blue-black fruits. It provides food and habitat for wildlife.",
+        "native": true,
+        "living": "Prefers full sun to partial shade and moist, well-drained soils. Tolerant of various soil types.",
+        "future": "Plant in gardens and natural areas to support wildlife. Prune to maintain shape and remove dead or diseased branches."
+    },
+    "Yellow Sweetclover": {
+        "scientific": "Melilotus officinalis",
+        "description": "An invasive biennial plant with fragrant, yellow flower spikes and trifoliate leaves. It fixes nitrogen in the soil but can outcompete natives.",
+        "native": false,
+        "living": "Prefers full sun and well-drained soils. Tolerant of poor soil conditions.",
+        "future": "Control spread through mowing or herbicide application before it sets seed. Monitor and manage infested areas regularly."
+    },
+    "White Turtlehead": {
+        "scientific": "Chelone glabra",
+        "description": "A native perennial with white, turtlehead-shaped flowers. It is an important host plant for the Baltimore Checkerspot butterfly.",
+        "native": true,
+        "living": "Prefers partial shade to full sun and wet, acidic soils.",
+        "future": "Plant in gardens and natural areas to support pollinators and butterflies. Maintain moist soil conditions and control competing vegetation."
+    },
+    "Swamp Rose-Mallow": {
+    "scientific": "Hibiscus moscheutos",
+    "description": "Swamp Rose-Mallow is a large, showy flowering plant native to wetlands in the eastern United States. It has large, pink or white flowers with a distinct maroon center.",
+    "native": true,
+    "living": "Prefers full sun to partial shade and thrives in wet, marshy conditions. Requires consistent moisture.",
+    "future": "To support Swamp Rose-Mallow, ensure that wetland habitats are preserved and protected from development and pollution. Plant it in garden areas with similar wet conditions."
+    },
+    "Butterfly Pea": {
+        "scientific": "Clitoria mariana",
+        "description": "Butterfly Pea is a herbaceous perennial plant with striking blue flowers, often found in open woods and meadows.",
+        "native": true,
+        "living": "Prefers full sun to partial shade and well-drained soil. Requires moderate watering.",
+        "future": "Support Butterfly Pea by preserving natural meadows and open woods. Plant it in gardens to attract pollinators."
+    },
+    "Amur Honeysuckle": {
+        "scientific": "Lonicera maackii",
+        "description": "Amur Honeysuckle is an invasive shrub native to Asia, known for its rapid growth and ability to outcompete native plants. It has white to yellow fragrant flowers and red berries.",
+        "native": false,
+        "living": "Grows in a wide range of conditions from full sun to deep shade. Tolerates various soil types and moisture levels.",
+        "future": "Manage its population by removing it from natural areas and replacing it with native shrubs. Avoid planting it and educate others about its invasive nature."
+    },
+    "Western Sword Fern": {
+        "scientific": "Polystichum munitum",
+        "description": "Western Sword Fern is an evergreen fern with long, sword-shaped fronds, commonly found in the understory of moist, coastal forests.",
+        "native": true,
+        "living": "Prefers partial to full shade and moist, well-drained soil. Requires consistent moisture, especially during dry periods.",
+        "future": "Support Western Sword Fern by maintaining forest understory habitats and planting it in shaded garden areas to promote native biodiversity."
+    },
+    "Winterberry": {
+        "scientific": "Ilex verticillata",
+        "description": "Winterberry is a deciduous holly known for its bright red berries that persist into winter, providing food for birds and visual interest.",
+        "native": true,
+        "living": "Prefers full sun to partial shade and moist, acidic soils. Tolerates wet conditions.",
+        "future": "Support Winterberry by planting it in suitable garden areas and conserving wetland habitats. Its berries provide essential winter food for wildlife."
+    },
+    "Early Blue Violet": {
+        "scientific": "Viola adunca",
+        "description": "Early Blue Violet is a small, perennial herb with heart-shaped leaves and delicate blue flowers, often found in open woods and meadows.",
+        "native": true,
+        "living": "Prefers partial shade and moist, well-drained soil. Requires moderate watering.",
+        "future": "Support Early Blue Violet by preserving natural meadows and forest edges. Plant it in gardens to attract pollinators and support biodiversity."
+    },
+    "Red Elderberry": {
+        "scientific": "Sambucus racemosa var. racemosa",
+        "description": "Red Elderberry is a large shrub with clusters of white flowers and bright red berries. It provides food for birds and other wildlife.",
+        "native": true,
+        "living": "Prefers partial to full shade and moist, well-drained soil. Requires moderate to high moisture levels.",
+        "future": "Support Red Elderberry by planting it in suitable habitats and gardens. Its berries are an important food source for wildlife, especially birds."
+    },
     "Garlic Mustard": {
       "scientific": "Alliaria petiolata",
       "description": "Garlic Mustard is a biennial flowering plant native to Europe, Asia, and northwestern Africa. It has heart-shaped, toothed leaves and small, white, four-petaled flowers. This invasive species disrupts native plant communities by competing for resources.",
@@ -96,5 +285,82 @@
       "native": true,
       "living": "Prefers partial to full shade and moist, well-drained soils. Often found growing on shaded, mossy rocks and cliffs.",
       "future": "To support Walking Fern, protect rocky, shaded habitats from disturbance. Avoid removing moss and leaf litter from forest floors"
+    },
+    "Bulblet Fern": {
+        "scientific": "Cystopteris bulbifera",
+        "description": "Bulblet Fern is a delicate fern characterized by its long, creeping rhizomes and distinctive bulblets on the underside of its fronds. It is commonly found in moist, shaded environments and rocky crevices.",
+        "native": true,
+        "living": "Prefers partial to full shade and requires consistently moist, well-drained soil. It thrives in cool, humid conditions.",
+        "future": "To support this native fern, ensure it has ample shade and moisture. Avoid disturbing its natural habitat and consider planting it in shaded garden areas to promote its growth."
+    },
+    "Spinulose Woodfern": {
+        "scientific": "Dryopteris carthusiana",
+        "description": "Spinulose Woodfern is a hardy, semi-evergreen fern with finely divided fronds that have a lacy appearance. It is adaptable and can be found in a variety of forested habitats.",
+        "native": true,
+        "living": "Prefers partial to full shade and moist, well-drained soil. It can tolerate a range of soil types and conditions, from dry to wet.",
+        "future": "To support this native fern, provide shaded areas with adequate moisture. Protect its habitat from deforestation and excessive human activity."
+    },
+    "Intermediate Woodfern": {
+        "scientific": "Dryopteris intermedia",
+        "description": "Intermediate Woodfern is a semi-evergreen fern with a robust, upright growth habit and finely divided fronds. It is common in rich, deciduous forests and rocky slopes.",
+        "native": true,
+        "living": "Thrives in partial to full shade and moist, well-drained soil. Prefers humus-rich environments with consistent moisture.",
+        "future": "To support this native fern, maintain shaded, moist areas in natural and garden settings. Minimize habitat disruption and consider planting in shaded garden areas."
+    },
+    "Marsh Fern": {
+        "scientific": "Thelypteris palustris",
+        "description": "Marsh Fern is a deciduous fern found in wetland areas, such as marshes, swamps, and wet meadows. It has slender, upright fronds that form dense colonies.",
+        "native": true,
+        "living": "Requires partial shade to full sun and consistently moist to wet soil. It thrives in wetlands and areas with high water availability.",
+        "future": "To support this native fern, protect and restore wetland habitats. Ensure it has access to ample water and consider planting in wetland restoration projects."
+    },
+    "Oak Fern": {
+        "scientific": "Gymnocarpium dryopteris",
+        "description": "Oak Fern is a small, deciduous fern with triangular, delicate fronds. It is often found in moist, shaded forests and rocky areas.",
+        "native": true,
+        "living": "Prefers partial to full shade and moist, well-drained soil. It thrives in cool, humid environments.",
+        "future": "To support this native fern, maintain shaded, moist areas in natural and garden settings. Avoid habitat disruption and protect from excessive human activity."
+    },
+    "Ostrich Fern": {
+        "scientific": "Matteuccia struthiopteris",
+        "description": "Ostrich Fern is a large, deciduous fern known for its tall, feather-like fronds. It is often found in moist woodlands and along riverbanks.",
+        "native": true,
+        "living": "Thrives in partial to full shade and moist, well-drained soil. Prefers rich, humus-laden environments with consistent moisture.",
+        "future": "To support this native fern, ensure it has shaded, moist areas to grow. Protect its natural habitat and consider planting in shaded, moist garden areas."
+    },
+    "Sensitive Fern": {
+        "scientific": "Onoclea sensibilis",
+        "description": "Sensitive Fern is a deciduous fern known for its broad, bright green fronds. It is found in wetland areas and moist woodlands.",
+        "native": true,
+        "living": "Requires partial shade to full sun and consistently moist to wet soil. It thrives in wetlands and areas with high water availability.",
+        "future": "To support this native fern, protect and restore wetland habitats. Ensure it has access to ample water and consider planting in wetland restoration projects."
+    },
+    "Grass Pink": {
+        "scientific": "Calopogon tuberosus",
+        "description": "Grass Pink is a native orchid with vibrant pink flowers that bloom in late spring to early summer. It is found in bogs, wet meadows, and other wetland areas.",
+        "native": true,
+        "living": "Prefers full sun to partial shade and consistently moist, acidic soil. It thrives in wetland environments.",
+        "future": "To support this native orchid, protect and restore wetland habitats. Avoid disturbing its natural environment and consider planting in wetland restoration projects."
+    },
+    "Pinxterbloom Azalea": {
+    "scientific": "Rhododendron periclymenoides",
+    "description": "Pinxterbloom Azalea is a deciduous shrub with showy, fragrant, pink to white flowers. It blooms in early spring and is commonly found in woodland areas.",
+    "native": true,
+    "living": "Thrives in partial shade and prefers moist, acidic soils. Often found in forested areas and along streams.",
+    "future": "To support Pinxterbloom Azalea, preserve woodland habitats and avoid disturbing forest understories. Consider planting in shaded garden areas to promote biodiversity."
+    },
+    "Gray Dogwood": {
+        "scientific": "Cornus racemosa",
+        "description": "Gray Dogwood is a deciduous shrub or small tree with white flowers that bloom in late spring. It produces white berries and has a dense, spreading habit. It is often found in moist thickets and woodland edges.",
+        "native": true,
+        "living": "Prefers full sun to partial shade and moist, well-drained soils. Tolerates a variety of soil types.",
+        "future": "To support Gray Dogwood, protect natural thickets and forest edges. Plant in areas that can benefit from soil stabilization and provide food for wildlife."
+    },
+    "Marsh Woundwort": {
+        "scientific": "Stachys palustris",
+        "description": "Marsh Woundwort is a perennial herb with square stems, opposite leaves, and spikes of pink to purple flowers. It is often found in wetland areas and can spread aggressively.",
+        "native": false,
+        "living": "Thrives in full sun to partial shade and prefers wet, marshy soils. Commonly found in wetlands and along water bodies.",
+        "future": "To manage its population, monitor wetland areas for signs of spreading and remove plants before they establish. Use mechanical or chemical control methods as needed."
     }
 }  
