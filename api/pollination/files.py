@@ -109,7 +109,7 @@ class File(db.Model):
                                 capture_output=True, text=True)
 
         print(result.stdout, file=sys.stderr)
-        print(result.stderr, file=sys.stderr)
+        # print(result.stderr, file=sys.stderr)
 
         # saves as its alt id on file server
         # run process in the background

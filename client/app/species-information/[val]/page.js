@@ -6,11 +6,13 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import insectImage from '../../images/insect.png';
 import verifyUser from '../../components/verify';
+import BackButton from '../../components/BackButton';
 
 export default function SpeciesInformation({ params }) {
   verifyUser();
   const router = useRouter();
   const [image, setImage] = useState('');
+  const [info, setInfo] = useState({});
   const route = '/api/image/get/' + params.val;
 
   useEffect(() => {
@@ -23,9 +25,18 @@ export default function SpeciesInformation({ params }) {
             setImage(objectURL);
           }
         );
+        const res1 = await fetch('/api/get/image/info/' + params.val, {
+            method: 'GET'
+        });
+        const data = await res1.json();
+        setInfo(data);
     };
     response();
   }, []); 
+  
+  const handleBack = () => {
+    history.back();
+  }
   return (
     <>
       <Head>
@@ -33,6 +44,7 @@ export default function SpeciesInformation({ params }) {
         <meta name="description" content="Information about the Spotted Lanternfly" />
       </Head>
       <div className="species-container">
+        <BackButton onClick={handleBack}></BackButton>
         <header className="header">
           <Link href="/">
             {/* <a className="back-button">←</a> */}
