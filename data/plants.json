@@ -341,14 +341,14 @@
         "native": true,
         "living": "Prefers full sun to partial shade and consistently moist, acidic soil. It thrives in wetland environments.",
         "future": "To support this native orchid, protect and restore wetland habitats. Avoid disturbing its natural environment and consider planting in wetland restoration projects."
-    },
-    "Pinxterbloom Azalea": {
-    "scientific": "Rhododendron periclymenoides",
-    "description": "Pinxterbloom Azalea is a deciduous shrub with showy, fragrant, pink to white flowers. It blooms in early spring and is commonly found in woodland areas.",
-    "native": true,
-    "living": "Thrives in partial shade and prefers moist, acidic soils. Often found in forested areas and along streams.",
-    "future": "To support Pinxterbloom Azalea, preserve woodland habitats and avoid disturbing forest understories. Consider planting in shaded garden areas to promote biodiversity."
-    },
+        },
+        "Pinxterbloom Azalea": {
+        "scientific": "Rhododendron periclymenoides",
+        "description": "Pinxterbloom Azalea is a deciduous shrub with showy, fragrant, pink to white flowers. It blooms in early spring and is commonly found in woodland areas.",
+        "native": true,
+        "living": "Thrives in partial shade and prefers moist, acidic soils. Often found in forested areas and along streams.",
+        "future": "To support Pinxterbloom Azalea, preserve woodland habitats and avoid disturbing forest understories. Consider planting in shaded garden areas to promote biodiversity."
+        },
     "Gray Dogwood": {
         "scientific": "Cornus racemosa",
         "description": "Gray Dogwood is a deciduous shrub or small tree with white flowers that bloom in late spring. It produces white berries and has a dense, spreading habit. It is often found in moist thickets and woodland edges.",
@@ -362,5 +362,47 @@
         "native": false,
         "living": "Thrives in full sun to partial shade and prefers wet, marshy soils. Commonly found in wetlands and along water bodies.",
         "future": "To manage its population, monitor wetland areas for signs of spreading and remove plants before they establish. Use mechanical or chemical control methods as needed."
+    },
+    "Blazing star": {
+        "scientific": "Mentzelia laevicaulis",
+        "description": "Commonly known as the blazing star or smoothstem blazingstar, it is a flowering plant with large yellow flowers and a distinctive star-shaped appearance.",
+        "native": true,
+        "living": "Thrives in dry, rocky soils and open areas with plenty of sunlight. It is drought-tolerant and prefers well-drained soil.",
+        "future": "Support by planting in dry, sunny areas with rocky or well-drained soils. Avoid overwatering and ensure it has plenty of sunlight."
+    },
+    "Water smartweed": {
+        "scientific": "Persicaria amphibia",
+        "description": "Known as water smartweed or amphibious bistort, it is an aquatic or semi-aquatic plant with lance-shaped leaves and small pink to white flowers.",
+        "native": true,
+        "living": "Found in wet habitats such as ponds, lakes, and slow-moving streams. It thrives in both aquatic and terrestrial environments.",
+        "future": "Support by maintaining healthy wetland habitats. Avoid disrupting its natural aquatic environments and ensure water bodies are clean and free of pollutants."
+    },
+    "Turkey tangle fogfruit": {
+        "scientific": "Phyla nodiflora",
+        "description": "Also known as turkey tangle fogfruit, it is a low-growing perennial herb with small white to pink flowers clustered in rounded heads.",
+        "native": true,
+        "living": "Prefers moist, well-drained soils and is often found in lawns, gardens, and along roadsides. It is tolerant of a wide range of conditions but prefers sunny locations.",
+        "future": "Support by planting in moist, well-drained soils in sunny areas. It can be used as ground cover in gardens and lawns. Regular watering will help it establish."
+    },
+    "Henderson's shooting star": {
+        "scientific": "Primula hendersonii",
+        "description": "Commonly known as Henderson's shooting star, it is a perennial wildflower with distinctive nodding pink to purple flowers that resemble shooting stars.",
+        "native": true,
+        "living": "Thrives in moist, shady areas such as woodlands and along stream banks. Prefers well-drained soils and partial shade.",
+        "future": "Support by planting in moist, shaded areas with well-drained soils. Avoid direct sunlight and ensure the soil remains consistently moist."
+    },
+    "Salsify": {
+        "scientific": "Tragopogon porrifolius",
+        "description": "Also known as salsify or oyster plant, it is a biennial plant with purple flowers and a long, edible taproot that tastes similar to oysters.",
+        "native": false,
+        "living": "Prefers well-drained soils and full sun. Often found in meadows, fields, and roadsides. It is drought-tolerant once established.",
+        "future": "Control by removing plants before they set seed to prevent spread. Encourage native alternatives in meadows and fields to reduce competition."
+    },
+    "Vinegar weed": {
+        "scientific": "Trichostema lanceolatum",
+        "description": "Known as vinegar weed, it is an aromatic herb with lance-shaped leaves and small, blue to purple flowers.",
+        "native": true,
+        "living": "Found in dry, open habitats such as chaparral, coastal sage scrub, and grasslands. Prefers well-drained soils and full sun.",
+        "future": "Support by planting in dry, sunny areas with well-drained soils. It is drought-tolerant and requires minimal water once established."
     }
 }  
