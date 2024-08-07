@@ -4,45 +4,69 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import insectImage from '../../images/insect.png';
+//import insectImage from '../../images/insect.png';
 import verifyUser from '../../components/verify';
 
 export default function SpeciesInformation({ params }) {
   verifyUser();
   const router = useRouter();
+  /* speciesData is the state variable that will hold information about the species
+  fetched from the server. setSpeciesData is the state setter function to update
+  speciesData. speciesData initialized to null. */
+  const [speciesData, setSpeciesData] = useState(null);
   const [image, setImage] = useState('');
   const route = '/api/image/get/' + params.val;
 
   useEffect(() => {
-    const response = async () => {
-        const res = await fetch(route, {
-          method: 'GET'
-        }).then((r) => {return r.blob();}).then(
-          (thing) => {
-            const objectURL = URL.createObjectURL(thing);
-            setImage(objectURL);
-          }
-        );
+    const fetchSpeciesData = async () => {
+      const res = await fetch(route, {
+        method: 'GET',
+      });
+      const data = await res.json();
+      setSpeciesData(data);
     };
-    response();
-  }, []); 
+    const fetchImage = async () => {
+      const res = await fetch('/api/image/get/' + params.val, {
+        method: 'GET',
+      });
+      const blob = await res.blob();
+      const objectURL = URL.createObjectURL(blob);
+      setImage(objectURL);
+    };
+
+    fetchSpeciesData();
+    fetchImage();
+  }, [params.val]);
+
+  if (!speciesData) {
+    return <p>Loading...</p>;
+  }
+  //rendering data
+  /* Information fields:
+    - speciesData.name is for common name
+    - speciesData.native displays Native or Invasive
+    - speciesData.scientific retrieves scientific name
+    - speciesData.description retrieves descriptions
+    - speciesData.living retrieves living conditions
+    - speciesData.future retrieves future actions
+  */
   return (
     <>
       <Head>
         <title>Species Information</title>
-        <meta name="description" content="Information about the Spotted Lanternfly" />
+        <meta name="description" content={`Information about ${speciesData.name}`} />
       </Head>
       <div className="species-container">
         <header className="header">
           <Link href="/">
-            {/* <a className="back-button">←</a> */}
+            <a className="back-button">←</a>
           </Link>
-          <h1>Spotted Lanternfly</h1>
-          <p>Invasive Species in <span className="location">Albany, NY</span></p>
+          <h1>{speciesData.name}</h1> 
+          <p>{speciesData.native ? 'Native' : 'Invasive'} Species in <span className="location">Albany, NY</span></p>
         </header>
         <img
           src={image}
-          alt="Spotted Lanternfly"
+          alt={speciesData.name}
           width={800}
           height={450}
           className="main-image"
@@ -50,14 +74,16 @@ export default function SpeciesInformation({ params }) {
         <div className="content">
           <section className="about">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+            <p><strong>Scientific Name:</strong> {speciesData.scientific}</p>
+            <p>{speciesData.description}</p>
           </section>
-          <section className="action">
-            <h2>Take Action</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-            <Link href="#">
-              {/* <a className="learn-more">Learn More</a> */}
-            </Link>
+          <section className="living-conditions">
+            <h2>Living Conditions</h2>
+            <p>{speciesData.living}</p>
+          </section>
+          <section className="future-actions">
+            <h2>Future Actions</h2>
+            <p>{speciesData.future}</p>
           </section>
         </div>
       </div>
@@ -96,14 +122,8 @@ export default function SpeciesInformation({ params }) {
         .content {
           padding: 20px;
         }
-        .about, .action {
+        .about, .living-conditions, .future-actions {
           margin-bottom: 20px;
-        }
-        .learn-more {
-          display: inline-block;
-          margin-top: 10px;
-          color: blue;
-          text-decoration: underline;
         }
       `}</style>
     </>
