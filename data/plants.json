@@ -1,0 +1,100 @@
+{
+    "Garlic Mustard": {
+      "scientific": "Alliaria petiolata",
+      "description": "Garlic Mustard is a biennial flowering plant native to Europe, Asia, and northwestern Africa. It has heart-shaped, toothed leaves and small, white, four-petaled flowers. This invasive species disrupts native plant communities by competing for resources.",
+      "native": false,
+      "living": "Prefers partial shade but can tolerate full sun; thrives in moist, rich soils but can grow in a variety of soil conditions.",
+      "future": "To manage its population, remove plants before they set seed, typically in early spring. Ensure all roots are removed to prevent regrowth. Dispose of plants in a way that prevents seed spread."
+    },
+    "Lady Fern": {
+      "scientific": "Athyrium filix-femina",
+      "description": "The Lady Fern is a deciduous fern native to much of North America. It has delicate, lacy fronds and can grow up to 3 feet tall. This plant is often found in moist, shaded woodland areas.",
+      "native": true,
+      "living": "Thrives in partial to full shade and prefers moist, well-drained soils. Requires regular watering, especially in dry periods.",
+      "future": "To support Lady Fern populations, preserve forest habitats and avoid disturbing moist, shaded areas where they grow. Consider planting in shaded garden areas to promote biodiversity."
+    },
+    "Yellow Water-lily": {
+      "scientific": "Nuphar lutea",
+      "description": "The Yellow Water-lily is an aquatic plant with large, heart-shaped leaves and bright yellow, cup-shaped flowers. It is native to temperate regions of the Northern Hemisphere and commonly found in still or slow-moving waters.",
+      "native": true,
+      "living": "Requires full sun and grows in shallow water, typically 1 to 5 feet deep. Prefers still or slow-moving waters with muddy or silty bottoms.",
+      "future": "To support Yellow Water-lily, protect wetland habitats from pollution and development. Avoid introducing non-native aquatic plants that could compete with them for resources."
+    },
+    "European Mountain Ash": {
+      "scientific": "Sorbus aucuparia",
+      "description": "European Mountain Ash, also known as Rowan, is a deciduous tree native to Europe and Asia. It has pinnate leaves and clusters of white flowers that develop into bright red berries. It is often planted as an ornamental tree.",
+      "native": false,
+      "living": "Prefers full sun to partial shade and well-drained soils. Tolerates a range of soil types, including clay and sandy soils.",
+      "future": "To manage its population, monitor for signs of spreading in natural areas and remove seedlings before they establish. Plant native trees and shrubs to enhance local biodiversity."
+    },
+    "American Sycamore": {
+      "scientific": "Platanus occidentalis",
+      "description": "The American Sycamore is a large deciduous tree native to eastern and central North America. It is known for its mottled bark, large lobed leaves, and round seed balls. It can grow over 100 feet tall and is often found in riparian areas.",
+      "native": true,
+      "living": "Thrives in full sun and moist, well-drained soils. Often found along streams and rivers, where it benefits from consistent water supply.",
+      "future": "To support American Sycamore, protect riparian habitats and maintain healthy water quality. Plant in areas prone to erosion to help stabilize soil and provide shade."
+    },
+    "Water Speedwell": {
+      "scientific": "Veronica anagallis-aquatica",
+      "description": "Water Speedwell is an aquatic or semi-aquatic plant with lance-shaped leaves and small, blue flowers. It is native to Europe but can be found in wetlands and along water bodies in North America.",
+      "native": true,
+      "living": "Grows in full sun to partial shade and prefers wet, marshy soils. Often found in shallow water or on muddy banks.",
+      "future": "To support Water Speedwell, protect wetland areas from pollution and drainage. Avoid disturbing natural water bodies where they grow."
+    },
+    "Indian Hemp": {
+      "scientific": "Apocynum cannabinum",
+      "description": "Indian Hemp is a perennial plant native to North America. It has slender, branching stems, narrow leaves, and small, greenish-white flowers. The plant produces a milky sap and was traditionally used by Native Americans for its strong fibers.",
+      "native": true,
+      "living": "Prefers full sun and moist to dry soils. Often found in prairies, along roadsides, and in open woodlands.",
+      "future": "To support Indian Hemp, preserve open habitats and prairies. Avoid using herbicides in areas where it grows and consider planting in restoration projects."
+    },
+    "Common Cocklebur": {
+      "scientific": "Xanthium strumarium",
+      "description": "Common Cocklebur is an annual plant native to North America. It has broad, rough leaves and produces burs that stick to fur and clothing. The plant can be toxic to livestock if ingested.",
+      "native": true,
+      "living": "Grows in full sun and prefers disturbed soils, such as along roadsides and in fields. Tolerates a range of soil types.",
+      "future": "To manage its population, remove plants before they set seed. Monitor areas for regrowth and use mechanical or chemical control methods as needed."
+    },
+    "Panicledleaf Ticktrefoil": {
+      "scientific": "Desmodium paniculatum",
+      "description": "Panicledleaf Ticktrefoil is a perennial herb native to North America. It has compound leaves and produces small, pink to purple flowers. The plant is known for its adhesive seed pods that stick to clothing and animal fur.",
+      "native": true,
+      "living": "Prefers full sun to partial shade and well-drained soils. Commonly found in prairies, open woodlands, and along roadsides.",
+      "future": "To support Panicledleaf Ticktrefoil, maintain open habitats and avoid using herbicides. Consider planting in prairie restoration projects to promote biodiversity."
+    },
+    "Spatterdock": {
+      "scientific": "Nuphar advena",
+      "description": "Spatterdock, also known as Cow Lily, is an aquatic plant native to eastern North America. It has large, heart-shaped leaves and yellow, cup-shaped flowers. The plant provides important habitat for aquatic wildlife.",
+      "native": true,
+      "living": "Requires full sun and grows in shallow water, typically 1 to 3 feet deep. Prefers still or slow-moving waters with muddy or silty bottoms.",
+      "future": "To support Spatterdock, protect wetland habitats and water quality. Avoid introducing non-native aquatic plants that could compete with them for resources."
+    },
+    "St. John's Wort": {
+      "scientific": "Hypericum perforatum",
+      "description": "St. John's Wort is a perennial herb native to Europe, Asia, and North Africa. It has yellow flowers with black dots and is known for its medicinal properties. It is considered invasive in some parts of North America.",
+      "native": false,
+      "living": "Prefers full sun and well-drained soils. Can grow in a variety of soil types, including sandy and rocky soils.",
+      "future": "To manage its population, remove plants before they set seed. Use mechanical or chemical control methods as needed. Encourage planting of native species in areas where it is invasive."
+    },
+    "Shinleaf": {
+      "scientific": "Pyrola elliptica",
+      "description": "Shinleaf is a perennial herb native to North America. It has evergreen, elliptical leaves and produces small, white to pinkish flowers. It is commonly found in shaded, forested areas.",
+      "native": true,
+      "living": "Thrives in partial to full shade and prefers moist, acidic soils. Often found in coniferous and mixed forests.",
+      "future": "To support Shinleaf, preserve forest habitats and avoid disturbing shaded, wooded areas. Consider planting in shaded garden areas to promote biodiversity."
+    },
+    "Dissected Grape Fern": {
+      "scientific": "Botrychium dissectum",
+      "description": "Dissected Grape Fern is a perennial fern native to North America. It has finely divided fronds and produces spores on separate fertile fronds. The plant is often found in shaded, forested areas.",
+      "native": true,
+      "living": "Prefers partial to full shade and moist, well-drained soils. Commonly found in deciduous and mixed forests.",
+      "future": "To support Dissected Grape Fern, preserve forest habitats and avoid disturbing shaded, wooded areas. Consider planting in shaded garden areas to promote biodiversity."
+    },
+    "Walking Fern": {
+      "scientific": "Asplenium rhizophyllum",
+      "description": "Walking Fern is a small, perennial fern native to eastern North America. It has long, slender fronds that root at their tips, allowing the plant to 'walk' across the forest floor. It is often found on shaded, rocky outcrops.",
+      "native": true,
+      "living": "Prefers partial to full shade and moist, well-drained soils. Often found growing on shaded, mossy rocks and cliffs.",
+      "future": "To support Walking Fern, protect rocky, shaded habitats from disturbance. Avoid removing moss and leaf litter from forest floors"
+    }
+}  
