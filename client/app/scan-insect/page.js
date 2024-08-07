@@ -28,12 +28,21 @@ export default function ScanInsectPage() {
     }
   };
 
-  const uploadPhoto  = () => {
+  const uploadPhoto  = async () => {
     /* upload photo to model code goes here */
-  };
-
-  const uploadNewPhoto = () => {
-    // setPhoto('');
+    const response = await fetch('/api/image/insect/upload', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'image/jpg'
+      },
+        body: selectedImage
+    });
+    const data = await response.json();
+    if (response.ok) {
+      router.push("/species-information/" + data['image']);
+    } else {
+      console.log(response);
+    }
   };
 
   const initiateFileChange = () => {
@@ -73,7 +82,18 @@ export default function ScanInsectPage() {
             <img src={selectedImage} alt="Selected" className={styles.selectedImage} />
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <button className={cameraStyles.button} onClick={uploadPhoto}>Upload Photo</button>
-              <button className={cameraStyles.button} onClick={uploadNewPhoto}>Choose New</button>
+            <button onClick={initiateFileChange} className={cameraStyles.button}>
+              <input
+                type="file"
+                accept="image/*"
+                capture="camera"
+                className={cameraStyles.button}
+                onChange={handleFileChange}
+                ref={fileInputRef}
+                style={{ display: 'none' }}
+              />
+             Choose New
+            </button>
             </div>
           </div>
         ) : (
