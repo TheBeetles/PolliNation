@@ -43,7 +43,7 @@ class Species(db.Model):
 
         species: Species = file.species
         if (species is None):
-            return jsonify({"Failed": "species not found"})
+            return jsonify({"Failed": "Species not found"})
 
         return jsonify({"is_bug": species.is_bug, "name": species.name,
                         "scientific": species.scientific,

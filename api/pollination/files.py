@@ -109,6 +109,11 @@ class File(db.Model):
                                 capture_output=True, text=True)
 
         print(result.stdout, file=sys.stderr)
+        lastline = result.stdout.split('\n')[-2]
+        if 'species' in lastline:
+            print(lastline, file=sys.stderr)
+        else:
+            print(lastline, file=sys.stderr)
         # print(result.stderr, file=sys.stderr)
 
         # saves as its alt id on file server

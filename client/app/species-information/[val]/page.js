@@ -1,11 +1,11 @@
 'use client'
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 //import insectImage from '../../images/insect.png';
 import verifyUser from '../../components/verify';
+import BackButton from '../../components/BackButton';
 
 export default function SpeciesInformation({ params }) {
   verifyUser();
@@ -22,25 +22,26 @@ export default function SpeciesInformation({ params }) {
       const res = await fetch(route, {
         method: 'GET',
       });
-      const data = await res.json();
-      setSpeciesData(data);
-    };
-    const fetchImage = async () => {
-      const res = await fetch('/api/image/get/' + params.val, {
-        method: 'GET',
-      });
       const blob = await res.blob();
       const objectURL = URL.createObjectURL(blob);
       setImage(objectURL);
+    };
+    const fetchImage = async () => {
+      const res = await fetch('/api/get/image/info/' + params.val, {
+        method: 'GET',
+      });
+      const data = await res.json();
+      setSpeciesData(data);
     };
 
     fetchSpeciesData();
     fetchImage();
   }, [params.val]);
 
-  if (!speciesData) {
-    return <p>Loading...</p>;
-  }
+    const handleBack = () => {
+        history.back();
+    }
+
   //rendering data
   /* Information fields:
     - speciesData.name is for common name
@@ -52,17 +53,17 @@ export default function SpeciesInformation({ params }) {
   */
   return (
     <>
-      <Head>
+      {speciesData === null && <h1>Loading...</h1>}
+      {speciesData !== null && <Head>
         <title>Species Information</title>
         <meta name="description" content={`Information about ${speciesData.name}`} />
-      </Head>
+      </Head>}
+      {speciesData !== null &&
       <div className="species-container">
+      <BackButton onClick={handleBack}></BackButton>
         <header className="header">
-          <Link href="/">
-            <a className="back-button">←</a>
-          </Link>
-          <h1>{speciesData.name}</h1> 
-          <p>{speciesData.native ? 'Native' : 'Invasive'} Species in <span className="location">Albany, NY</span></p>
+          <h1>{speciesData.name || speciesData.Failed}</h1> 
+          { speciesData.name === null && <p>{speciesData.native ? 'Native' : <span className="location">Invasive</span>} Species</p>}
         </header>
         <img
           src={image}
@@ -71,7 +72,7 @@ export default function SpeciesInformation({ params }) {
           height={450}
           className="main-image"
         />
-        <div className="content">
+        { speciesData.name === null && <div className="content">
           <section className="about">
             <h2>About</h2>
             <p><strong>Scientific Name:</strong> {speciesData.scientific}</p>
@@ -85,8 +86,9 @@ export default function SpeciesInformation({ params }) {
             <h2>Future Actions</h2>
             <p>{speciesData.future}</p>
           </section>
-        </div>
-      </div>
+        </div> }
+      </div>}
+
       <style jsx>{`
         .species-container {
           max-width: 800px;
