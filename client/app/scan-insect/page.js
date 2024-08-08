@@ -56,6 +56,7 @@ export default function ScanInsectPage() {
       });
       
       alert(data['Failed']);
+      setLoaded(true);
     }
   };
 
