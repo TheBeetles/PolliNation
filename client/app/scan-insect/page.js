@@ -89,7 +89,7 @@ export default function ScanInsectPage() {
             <img src={selectedImage} alt="Selected" className={styles.selectedImage} />
           ) : (
             <div className={styles.placeholder}>
-              <Camera />
+              <Camera setLoaded={setLoaded}/>
             </div>
           )}
         </div> }

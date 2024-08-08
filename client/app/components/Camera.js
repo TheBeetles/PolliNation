@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './Camera.module.css';
 
-const Camera = () => {
+const Camera = ({ setLoaded }) => {
   const router = useRouter();
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
@@ -65,6 +65,9 @@ const Camera = () => {
   };
 
   const uploadPhoto = async () => {
+
+    setLoaded(false);
+
     var query = ''
     if (window.location.pathname === "/scan-plant") {
       query = 'plant';
@@ -94,6 +97,8 @@ const Camera = () => {
       
       alert(data['Failed']);
     }
+
+    setLoaded(true);
   };
 
   const retakePhoto = () => {
