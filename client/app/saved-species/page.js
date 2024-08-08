@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import placeholder from '../images/pollination.png';
 import verifyUser from '../components/verify';
+import styles from '../components/Camera.module.css'
 
 export default function SavedSpeciesPage() { 
     const router = useRouter();
@@ -93,38 +94,31 @@ export default function SavedSpeciesPage() {
             </button>
             { toggle && <h1 style={{
                 marginBottom: '10px',
-                color: '#2E8B57',
+                color: '#B3E576',
                 fontSize: '24px',
             }}>
-                Plants List
+                Plant List
             </h1>}
             { !toggle && <h1 style={{
                 marginBottom: '10px',
-                color: '#2E8B57',
+                color: '#B3E576',
                 fontSize: '24px',
             }}>
                 Insect List
             </h1>}
-                <button onClick={toggleTrue} style={{
-                    padding: '10px',
-                    fontSize: '16px',
-                    backgroundColor: '#4CAF50',
-                    color: 'white',
-                    borderRadius: '10px',
+            <div style={{ display: 'flex' }}>
+                <button className={styles.button} onClick={toggleTrue} style={{
                 }}>
                     Plants
                 </button>
-                <button onClick={toggleFalse} style={{
-                    padding: '10px',
-                    fontSize: '16px',
-                    backgroundColor: '#4CAF50',
-                    color: 'white',
-                    borderRadius: '10px',
+                <button className={styles.button} onClick={toggleFalse} style={{
                 }}>
                     Insects
                 </button>
+            </div>
             <div style={{
                 display: 'flex',
+                justifyContent: 'center',
                 width: '100%',
                 paddingBottom: '2em',
             }}>
@@ -134,7 +128,6 @@ export default function SavedSpeciesPage() {
                     gridTemplateColumns: 'repeat(3, 1fr)',
                     gap: '10px',
                 }}>
-                    {/* Placeholder images for Plants */}
                     {plantImage.map(plant => (
                         <a href={("species-information/" + plant.id)}>
                         <div key={plant.id} style={{
@@ -163,7 +156,6 @@ export default function SavedSpeciesPage() {
                     gridTemplateColumns: 'repeat(3, 1fr)',
                     gap: '10px',
                 }}>
-                    {/* Placeholder images for Insects */}
                     {insectImage.map(insect => (
                         <a href={("species-information/" + insect.id)}>
                         <div key={insect.id} style={{
