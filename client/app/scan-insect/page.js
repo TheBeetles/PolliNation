@@ -43,7 +43,17 @@ export default function ScanInsectPage() {
     if (response.ok) {
       router.push("/species-information/" + data['image']);
     } else {
-      console.log(response);
+      const res = await fetch('/api/image/delete', {
+          method: 'POST',
+          body: JSON.stringify({
+              "id": data['image']
+          }),
+          headers: {
+            'Content-type': 'application/json; charset=UTF-8'
+          }
+      });
+      
+      alert(data['Failed']);
     }
   };
 
@@ -62,7 +72,7 @@ export default function ScanInsectPage() {
   return (
     <div className={styles.container}>
       <BackButton onClick={handleBack}></BackButton>
-      <h2 className={styles.title}>Take Photo or Choose Existing Image</h2>
+      <h2 className={styles.title}>Take Photo or Choose Existing Image for Insect</h2>
 
       <button onClick={toggleInput} className={cameraStyles.button}>
         Toggle Photo Upload Method
