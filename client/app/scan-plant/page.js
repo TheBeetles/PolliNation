@@ -74,7 +74,7 @@ export default function ScanInsectPage() {
 
   return (
     <>
-      {loaded == false && <div className={styles.container} style={{ height: '100vh', padding: '0' }}><Image src={loadingBar} alt="Loading Bar" width={400} /></div>}
+      {loaded == false && <div className={styles.container} style={{ height: '97vh', padding: '0' }}><Image src={loadingBar} alt="Loading Bar" width={400} /></div>}
       {loaded == true &&
       <div className={styles.container}>
         <BackButton onClick={handleBack}></BackButton>

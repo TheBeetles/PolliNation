@@ -69,7 +69,7 @@ export default function SpeciesInformation({ params }) {
   */
   return (
     <>
-      {speciesData === null && <div className={styles.container} style={{ height: '100vh', padding: '0' }}><Image src={loadingBar} alt="Loading Bar" width={400} /></div>}
+      {speciesData === null && <div className={styles.container} style={{ height: '97vh', padding: '0' }}><Image src={loadingBar} alt="Loading Bar" width={400} /></div>}
       {speciesData !== null && <Head>
         <title>Species Information</title>
         <meta name="description" content={`Information about ${speciesData.name}`} />
