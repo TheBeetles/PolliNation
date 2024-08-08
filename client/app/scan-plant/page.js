@@ -57,8 +57,6 @@ export default function ScanInsectPage() {
       
       alert(data['Failed']);
     }
-
-    setLoaded(true);
   };
 
   const initiateFileChange = () => {
@@ -67,6 +65,7 @@ export default function ScanInsectPage() {
 
   const toggleInput = () => {
     setToggle(!toggle);
+    setSelectedImage(null);
   };
 
   const handleBack = () => {
