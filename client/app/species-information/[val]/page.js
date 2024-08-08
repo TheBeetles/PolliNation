@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 //import insectImage from '../../images/insect.png';
 import verifyUser from '../../components/verify';
 import BackButton from '../../components/BackButton';
+import styles from '../../components/Camera.module.css'
 
 export default function SpeciesInformation({ params }) {
   verifyUser();
@@ -38,9 +39,13 @@ export default function SpeciesInformation({ params }) {
     fetchImage();
   }, [params.val]);
 
-    const handleBack = () => {
-        history.back();
-    }
+  const handleBack = () => {
+      history.back();
+  }
+
+  const handleRemoveSpecies = () => {
+    /* backend code for remove species here */
+  }
 
   //rendering data
   /* Information fields:
@@ -60,9 +65,12 @@ export default function SpeciesInformation({ params }) {
       </Head>}
       {speciesData !== null &&
       <div className="species-container">
-      <BackButton onClick={handleBack}></BackButton>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <BackButton onClick={handleBack}></BackButton>
+          <button onClick={handleRemoveSpecies} className={styles.button}>Remove Species</button>
+        </div>
         <header className="header">
-          <h1>{speciesData.name || speciesData.Failed}</h1> 
+          <h1>{speciesData.name || speciesData.Failed}</h1>
           { speciesData.name !== undefined && <p>{speciesData.native ? 'Native' : <span className="location">Invasive</span>} Species</p>}
         </header>
         <img

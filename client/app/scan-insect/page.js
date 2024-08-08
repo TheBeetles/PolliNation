@@ -29,7 +29,9 @@ export default function ScanInsectPage() {
   };
 
   const uploadPhoto  = async () => {
-    /* upload photo to model code goes here */
+
+    document.body.classList.add('hide-all');
+
     const response = await fetch('/api/image/insect/upload', {
       method: 'POST',
       headers: {
@@ -76,7 +78,7 @@ export default function ScanInsectPage() {
         )}
       </div> }
 
-      { !toggle && <div className={styles.imageContainer} style={{ padding: '1em 0'}}>
+      { !toggle && <div className={styles.imageContainer} style={{ margin: '0'}}>
         {selectedImage ? (
           <div>
             <img src={selectedImage} alt="Selected" className={styles.selectedImage} />

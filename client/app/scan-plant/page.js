@@ -28,6 +28,9 @@ export default function ScanInsectPage() {
     }
   };
   const uploadPhoto  = async () => {
+
+    
+
     const response = await fetch('/api/image/plant/upload', {
       method: 'POST',
       headers: {
@@ -78,7 +81,7 @@ export default function ScanInsectPage() {
         )}
       </div> }
 
-      { !toggle && <div className={styles.imageContainer} style={{ padding: '1em 0'}}>
+      { !toggle && <div className={styles.imageContainer} style={{ margin: '0'}}>
         {selectedImage ? (
           <div>
             <img src={selectedImage} alt="Selected" className={styles.selectedImage} />
