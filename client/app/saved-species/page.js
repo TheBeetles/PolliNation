@@ -126,6 +126,7 @@ export default function SavedSpeciesPage() {
             <div style={{
                 display: 'flex',
                 width: '100%',
+                paddingBottom: '2em',
             }}>
                 { toggle &&
                 <div style={{
