@@ -96,9 +96,8 @@ const Camera = ({ setLoaded }) => {
       });
       
       alert(data['Failed']);
+      setLoaded(true);
     }
-
-    setLoaded(true);
   };
 
   const retakePhoto = () => {
