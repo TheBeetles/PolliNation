@@ -3,10 +3,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-//import insectImage from '../../images/insect.png';
 import verifyUser from '../../components/verify';
 import BackButton from '../../components/BackButton';
 import styles from '../../components/Camera.module.css'
+import loadingBar from '../../images/loading-bar.png'
 
 export default function SpeciesInformation({ params }) {
   verifyUser();
@@ -69,7 +69,7 @@ export default function SpeciesInformation({ params }) {
   */
   return (
     <>
-      {speciesData === null && <h1>Loading...</h1>}
+      {speciesData === null && <div className={styles.container} style={{ height: '100vh', padding: '0' }}><Image src={loadingBar} alt="Loading Bar" width={400} /></div>}
       {speciesData !== null && <Head>
         <title>Species Information</title>
         <meta name="description" content={`Information about ${speciesData.name}`} />
