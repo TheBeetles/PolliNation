@@ -37,6 +37,7 @@ class File(db.Model):
 
     location = db.Column(db.Text)
     bug_name = db.Column(db.Text)
+    percentage = db.Column(db.String)
     file_name = db.Column(db.Text)
     is_bug = db.Column(db.Boolean, nullable=False)
     user = db.Relationship('User', back_populates='file')
@@ -53,16 +54,12 @@ class File(db.Model):
         if (data is None):
             return jsonify({"Invalid": "No data sent"})
 
-        if (type(data.get("id")) is not list):
-            return jsonify({"Invalid": "Incorrect datatype"})
-
         # checks for the file and removes it in the file system and db
-        for i in data.get("id"):
-            file: File = db.session.scalars(db.select(File).filter_by(
-                user_id=current_user.id, alt_id=i)).first()
-            if (file is not None):
-                os.remove(f"{file.location}/{file.alt_id}.png")
-                db.session.delete(file)
+        file: File = db.session.scalars(db.select(File).filter_by(
+            user_id=current_user.id, alt_id=data.get("id"))).first()
+        if (file is not None):
+            os.remove(f"./{file.location}/{file.alt_id}.jpg")
+            db.session.delete(file)
 
         db.session.commit()
         return jsonify({"Success": "Deleted file"})
@@ -110,19 +107,23 @@ class File(db.Model):
 
         lastline = result.stdout.split('\n')[-2]
         if 'species' not in lastline:
-            return jsonify({"Success": "File uploaded and processing", "image": obj.alt_id})
+            return jsonify({"Failed": "Unknown Species", "image": obj.alt_id}), 422
         lastline = lastline.split("(")
 
         if len(lastline) != 2:
-            return jsonify({"Success": "File uploaded and processing", "image": obj.alt_id})
+            return jsonify({"Failed": "Unknown Species", "image": obj.alt_id}), 422
 
         print(lastline, file=sys.stderr)
+        info = lastline[0].split('species')
         lastline = lastline[1][:-1]
         data: Species = db.session.scalars(
             db.select(Species).filter_by(scientific=lastline)).first()
         if data is None:
-            return jsonify({"Success": "File uploaded and processing", "image": obj.alt_id})
+            data: Species = Species(is_bug=bug, name=info[1].strip(), scientific=lastline)
+            db.session.add(data)
+            db.session.commit()
 
+        obj.percentage = info[0].strip()
         obj.species_id = data.id
         db.session.commit()
         # saves as its alt id on file server

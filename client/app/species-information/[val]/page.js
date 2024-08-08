@@ -43,8 +43,19 @@ export default function SpeciesInformation({ params }) {
       history.back();
   }
 
-  const handleRemoveSpecies = () => {
-    /* backend code for remove species here */
+  const handleRemoveSpecies = async () => {
+    const res = await fetch('/api/image/delete', {
+        method: 'POST',
+        body: JSON.stringify({
+            "id": params.val
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8'
+        }
+    });
+    if (res.ok) {
+        history.back();
+    }
   }
 
   //rendering data
@@ -70,8 +81,9 @@ export default function SpeciesInformation({ params }) {
           <button onClick={handleRemoveSpecies} className={styles.button}>Remove Species</button>
         </div>
         <header className="header">
-          <h1>{speciesData.name || speciesData.Failed}</h1>
-          { speciesData.name !== undefined && <p>{speciesData.native ? 'Native' : <span className="location">Invasive</span>} Species</p>}
+          <h1>{speciesData.name || speciesData.scientific || speciesData.Failed} ({speciesData.percentage})</h1>
+          { (speciesData.native !== undefined && speciesData.native !== null) && 
+              <p>{speciesData.native ? 'Native' : <span className="location">Invasive</span>} Species</p>}
         </header>
         <img
           src={image}
@@ -80,7 +92,8 @@ export default function SpeciesInformation({ params }) {
           height={450}
           className="main-image"
         />
-        { speciesData.name !== undefined && <div className="content">
+        { !speciesData.description && <h2> Information not avaliable </h2> }
+        { speciesData.description && <div className="content">
           <section className="about">
             <h2>About</h2>
             <p><strong>Scientific Name:</strong> {speciesData.scientific}</p>

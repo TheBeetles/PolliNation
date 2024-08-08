@@ -45,7 +45,7 @@ if __name__ == "__main__":
     os.mkdir(location)
     plant: Species = db.session.scalars(
         db.select(Species).filter_by(scientific="Persicaria amphibia")).first()
-    file: File = File(user_id=user.id, location=location,
+    file: File = File(user_id=user.id, location=location, percentage="97.6%",
                       file_name="thing.jpg", is_bug=False, species_id=plant.id)
     db.session.add(file)
     db.session.commit()
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     plant: Species = db.session.scalars(
         db.select(Species).filter_by(scientific="Tragopogon porrifolius")).first()
-    file: File = File(user_id=user.id, location=location,
+    file: File = File(user_id=user.id, location=location, percentage="100.0%",
                       file_name="things.jpg", is_bug=False, species_id=plant.id)
     db.session.add(file)
     db.session.commit()
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     location = f"./storage/{user.id}"
     insect: Species = db.session.scalars(
         db.select(Species).filter_by(name="Buff-tailed bumblebee")).first()
-    file: File = File(user_id=user.id, location=location,
+    file: File = File(user_id=user.id, location=location, percentage="99.6%",
                       file_name="bombus.jpg", is_bug=True, species_id=insect.id)
     db.session.add(file)
     db.session.commit()
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     # creation of example images
     insect: Species = db.session.scalars(
         db.select(Species).filter_by(scientific="Halyomorpha halys")).first()
-    file: File = File(user_id=user.id, location=location,
+    file: File = File(user_id=user.id, location=location, percentage="66.2%",
                       file_name="stink_bug.jpg", is_bug=True, species_id=insect.id)
     db.session.add(file)
     db.session.commit()

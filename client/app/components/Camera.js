@@ -82,7 +82,17 @@ const Camera = () => {
     if (response.ok) {
       router.push("/species-information/" + data['image']);
     } else {
-      console.log(response);
+      const res = await fetch('/api/image/delete', {
+          method: 'POST',
+          body: JSON.stringify({
+              "id": data['image']
+          }),
+          headers: {
+            'Content-type': 'application/json; charset=UTF-8'
+          }
+      });
+      
+      alert(data['Failed']);
     }
   };
 

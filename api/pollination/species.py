@@ -46,6 +46,7 @@ class Species(db.Model):
             return jsonify({"Failed": "Species not found"})
 
         return jsonify({"is_bug": species.is_bug, "name": species.name,
+                        "percentage": file.percentage,
                         "scientific": species.scientific,
                         "future": species.future,
                         "native": species.native,
