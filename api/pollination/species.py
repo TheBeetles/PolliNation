@@ -30,6 +30,10 @@ class Species(db.Model):
     @app.route('/api/get/image/info/<data>', methods=['GET'])
     @login_required
     def info(data):
+        '''
+        Gets the information of the species and sends
+        to the user
+        '''
         user: User = current_user
 
         if (data is None):

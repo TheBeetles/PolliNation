@@ -1,6 +1,8 @@
 # flake8: noqa
 # pylint: skip-file
-
+'''
+This is the init file to set all of the variables
+'''
 from flask import Flask
 from flask_cors import CORS
 from flask_bcrypt import Bcrypt
@@ -27,7 +29,7 @@ class Base(DeclarativeBase):
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
-# from pollination import routes  # noqa
+# inits all the classes and the routes
 from pollination.user import User
 from pollination.files import File
 from pollination.species import Species

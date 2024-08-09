@@ -2,6 +2,7 @@
 # pylint: skip-file
 '''
 Contains the File class and routes
+This processes all images and uploads
 '''
 import random
 import string
@@ -68,12 +69,14 @@ class File(db.Model):
     @login_required
     def upload(typeObject):
         '''
-        Saves the image to a file and runs the image
+        Saves the image to a file and processes the image
         '''
         from pollination import Species
 
+        # Removes the beginning of the data
         image_data = re.sub('^data:image/.+;base64,', '',
                             request.data.decode('utf-8'))
+        # Converts the base64 to an image
         im = Image.open(BytesIO(base64.b64decode(image_data)))
 
         user: User = current_user
@@ -89,6 +92,7 @@ class File(db.Model):
         else:
             typeObject = "plants"
 
+        # adds new data to the database
         obj: File = File(user_id=user.id, location=location,
                          file_name="image", is_bug=bug)
         db.session.add(obj)
@@ -100,11 +104,13 @@ class File(db.Model):
         im = im.convert('RGB')
         im.save(f'./storage/{user.id}/{obj.alt_id}.jpg')
 
+        # Runs the model
         result = subprocess.run(["python", "./nature-id/nature_id.py",
                                  "-m", f"{typeObject}",
                                  f"{location}/{obj.alt_id}.jpg"],
                                 capture_output=True, text=True)
 
+        # parses the output of the result
         lastline = result.stdout.split('\n')[-2]
         if 'species' not in lastline:
             return jsonify({"Failed": "Unknown Species", "image": obj.alt_id}), 422
@@ -116,6 +122,7 @@ class File(db.Model):
         print(lastline, file=sys.stderr)
         info = lastline[0].split('species')
         lastline = lastline[1][:-1]
+        # checks to see if the data is in the database
         data: Species = db.session.scalars(
             db.select(Species).filter_by(scientific=lastline)).first()
         if data is None:

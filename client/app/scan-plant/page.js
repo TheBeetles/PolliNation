@@ -18,7 +18,8 @@ export default function ScanInsectPage() {
   const [toggle, setToggle] = useState(false);
   const [loaded, setLoaded] = useState(true);
   verifyUser();
-
+  
+  // sets the state of the image
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -30,10 +31,10 @@ export default function ScanInsectPage() {
     }
   };
 
+  // Makes a request to the api to scan the videos
   const uploadPhoto  = async () => {
 
     setLoaded(false);
-
     const response = await fetch('/api/image/plant/upload', {
       method: 'POST',
       headers: {
@@ -45,6 +46,7 @@ export default function ScanInsectPage() {
     if (response.ok) {
       router.push("/species-information/" + data['image']);
     } else {
+      // run a delete image call if the species is unknown
       const res = await fetch('/api/image/delete', {
           method: 'POST',
           body: JSON.stringify({
@@ -53,8 +55,7 @@ export default function ScanInsectPage() {
           headers: {
             'Content-type': 'application/json; charset=UTF-8'
           }
-      });
-      
+      });      
       alert(data['Failed']);
       setLoaded(true);
     }

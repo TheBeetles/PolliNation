@@ -13,6 +13,7 @@ export default async function verifyUser() {
 }
 
 export async function verify() {
+  // sends a request to ensure cookie login
   const res = await fetch('/api/verify', {
     method: 'GET',
   });

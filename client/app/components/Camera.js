@@ -11,6 +11,7 @@ const Camera = ({ setLoaded }) => {
   const [photo, setPhoto] = useState('');
 
   useEffect(() => {
+    // shows a list of devices
     const getDevices = async () => {
       const allDevices = await navigator.mediaDevices.enumerateDevices();
       const videoDevices = allDevices.filter(device => device.kind === 'videoinput');
@@ -22,7 +23,8 @@ const Camera = ({ setLoaded }) => {
 
     getDevices();
   }, []);
-
+  
+  // enables the camera
   const startCamera = async () => {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       try {
@@ -52,6 +54,7 @@ const Camera = ({ setLoaded }) => {
   }, [selectedDeviceId]);
 
   const takePhoto = () => {
+    // sets the image to base64
     const width = videoRef.current.videoWidth;
     const height = videoRef.current.videoHeight;
 
@@ -66,8 +69,8 @@ const Camera = ({ setLoaded }) => {
 
   const uploadPhoto = async () => {
 
+    // sends an request to send the image
     setLoaded(false);
-
     var query = ''
     if (window.location.pathname === "/scan-plant") {
       query = 'plant';
@@ -85,6 +88,7 @@ const Camera = ({ setLoaded }) => {
     if (response.ok) {
       router.push("/species-information/" + data['image']);
     } else {
+      // sends a delete if the response is not ok
       const res = await fetch('/api/image/delete', {
           method: 'POST',
           body: JSON.stringify({
