@@ -1,90 +1,57 @@
-'use client'
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import insectImage from '../../images/insect.png';
+// 'use client' directive for Next.js to indicate this is a client-side component
+'use client';
 
-export default function SpeciesInformation() {
+// Import necessary hooks and components
+import { useRouter } from 'next/navigation'; // For navigation within the app
+import { useState } from 'react'; // For managing local state
+import Image from 'next/image'; // For optimized image rendering in Next.js
+import pollinationImage from '../images/pollination.png'; // Importing the image to be used in the component
+
+// Define the LoginPage component
+export default function LoginPage() {
+  const router = useRouter(); // Initialize router for navigation
+  const [username, setUsername] = useState(''); // State variable for username input
+  const [password, setPassword] = useState(''); // State variable for password input
+
+  // Function to handle form submission
+  const handleLogin = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    // Add login logic here (e.g., API call)
+    console.log('Username:', username); // Log the entered username
+    console.log('Password:', password); // Log the entered password
+    router.push('/scan-species'); // Navigate to the scan-species page
+  };
+
+  // Function to navigate to the create-profile page
+  const handleCreateProfile = () => {
+    router.push('/create-profile'); // Navigate to the create-profile page
+  };
+
+  // Render the component UI
   return (
-    <>
-      <Head>
-        <title>Species Information</title>
-        <meta name="description" content="Information about the Spotted Lanternfly" />
-      </Head>
-      <div className="species-container">
-        <header className="header">
-          <Link href="/">
-            {/* <a className="back-button">←</a> */}
-          </Link>
-          <h1>Spotted Lanternfly</h1>
-          <p>Invasive Species in <span className="location">Albany, NY</span></p>
-        </header>
-        <Image
-          src={insectImage}
-          alt="Spotted Lanternfly"
-          width={800}
-          height={450}
-          className="main-image"
-        />
-        <div className="content">
-          <section className="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
-          </section>
-          <section className="action">
-            <h2>Take Action</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
-            <Link href="#">
-              {/* <a className="learn-more">Learn More</a> */}
-            </Link>
-          </section>
-        </div>
-      </div>
-      <style jsx>{`
-        .species-container {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 20px;
-          background-color: white;
-          border-radius: 8px;
-          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .header {
-          text-align: center;
-          padding-bottom: 20px;
-        }
-        .back-button {
-          position: absolute;
-          top: 20px;
-          left: 20px;
-          font-size: 24px;
-          text-decoration: none;
-        }
-        .header h1 {
-          margin-top: 0;
-        }
-        .location {
-          color: red;
-          font-weight: bold;
-        }
-        .main-image {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-        }
-        .content {
-          padding: 20px;
-        }
-        .about, .action {
-          margin-bottom: 20px;
-        }
-        .learn-more {
-          display: inline-block;
-          margin-top: 10px;
-          color: blue;
-          text-decoration: underline;
-        }
-      `}</style>
-    </>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+      <Image src={pollinationImage} alt="Pollination Logo" width={200} height={150} /> {/* Render the image */}
+      <h1>Welcome!</h1> {/* Heading for the page */}
+      <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+          style={{ marginBottom: '10px', padding: '10px', fontSize: '16px' }}
+        /> {/* Input field for the username */}
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+          style={{ marginBottom: '10px', padding: '10px', fontSize: '16px' }}
+        /> {/* Input field for the password */}
+        <button type="submit" style={{ padding: '10px', fontSize: '16px', cursor: 'pointer' }}>Login</button> {/* Submit button for login */}
+      </form>
+      <button onClick={handleCreateProfile} style={{ marginTop: '20px', padding: '10px', fontSize: '16px', cursor: 'pointer' }}>Create Profile</button> {/* Button to navigate to create profile page */}
+    </div>
   );
 }
