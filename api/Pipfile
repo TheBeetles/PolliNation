@@ -11,6 +11,10 @@ python-dotenv = "*"
 psycopg2-binary = "*"
 flask-sqlalchemy = "*"
 flask-login = "*"
+pillow = "*"
+requests = "*"
+tflite-runtime = "*"
+numpy = "==1.26.4"
 
 [dev-packages]
 pylint = "*"
