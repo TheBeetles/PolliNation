@@ -15,6 +15,7 @@ pillow = "*"
 requests = "*"
 tflite-runtime = "*"
 numpy = "==1.26.4"
+pytest = "*"
 
 [dev-packages]
 pylint = "*"
