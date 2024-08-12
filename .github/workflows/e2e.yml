@@ -57,7 +57,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pipenv
-        pipenv install pytest-playwright
+        pipenv install --system
     - name: Ensure browsers are installed
       run: playwright install --with-deps
     - name: Run your tests
