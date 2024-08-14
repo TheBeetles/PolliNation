@@ -1,0 +1,44 @@
+name: pollination-e2e
+
+services:
+  postgres:
+    image: postgres:16-bullseye
+    container_name: postgres
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "sh -c 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}'"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    environment:
+      POSTGRES_USER: usr
+      POSTGRES_DB: master
+      POSTGRES_PASSWORD: pwd
+      PGPORT: 5433
+    ports:
+      - "5433:5433"
+  back-end:
+    container_name: back-end
+    build:
+      context: ./api
+      dockerfile: Dockerfile.e2e
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./api:/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  front-end:
+    container_name: front-end
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+
+  
