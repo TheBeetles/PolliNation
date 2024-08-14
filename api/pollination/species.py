@@ -1,8 +1,6 @@
-# pylint: skip-file
 '''
 Contains the table representations of the database
 '''
-import sys
 from flask import request, jsonify
 from flask_login import current_user, login_required
 from pollination import app, db, File, User

@@ -1,5 +1,3 @@
-# flake8: noqa
-# pylint: skip-file
 '''
 Contains the user class and routes
 '''

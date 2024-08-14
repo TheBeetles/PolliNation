@@ -1,5 +1,3 @@
-# flake8: noqa
-# pylint: skip-file
 '''
 This is the init file to set all of the variables
 '''

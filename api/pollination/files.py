@@ -1,5 +1,3 @@
-# flake8: noqa
-# pylint: skip-file
 '''
 Contains the File class and routes
 This processes all images and uploads
