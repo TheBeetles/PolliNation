@@ -1,4 +1,4 @@
-name: pollination-test
+name: pollination
 
 services:
   postgres:
@@ -29,3 +29,15 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+  front-end:
+    container_name: front-end
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+
+  
