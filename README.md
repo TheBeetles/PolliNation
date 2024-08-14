@@ -1,8 +1,9 @@
 [![Linter](https://github.com/TheBeetles/PolliNation/actions/workflows/linter.yml/badge.svg?event=push)](https://github.com/TheBeetles/PolliNation/actions/workflows/linter.yml)
 # PolliNation
-Checkout the github wiki [link](https://github.com/TheBeetles/PolliNation/wiki)
 
 ### Installation
+
+Checkout the github wiki for the <b>installation guide:</b> [link](https://github.com/TheBeetles/PolliNation/wiki)
 
 ### How to Use
 

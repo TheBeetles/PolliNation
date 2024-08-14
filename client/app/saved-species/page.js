@@ -20,7 +20,7 @@ export default function SavedSpeciesPage() {
     useEffect(() => {
         const res = async () => {
             const val = await fetch('/api/image/all', {
-              method: 'GET'
+                method: 'GET'
             }).then(
                 (r) => { return r.json(); }
             );
@@ -32,29 +32,29 @@ export default function SavedSpeciesPage() {
     useEffect(() => {
         const response = async () => {
             if (data['insect'] !== undefined) {
-              for (let i = 0; i < data['insect'].length; i++) {
+                for (let i = 0; i < data['insect'].length; i++) {
                 const res = await fetch('/api/image/get/' + data['insect'][i], {
-                  method: 'GET'
+                    method: 'GET'
                 }).then((r) => {return r.blob();}).then(
-                  (thing) => {
+                    (thing) => {
                     const objectURL = URL.createObjectURL(thing);
                         insectImage.push({ id: data['insect'][i], image: objectURL});
-                  }
+                    }
                 );
-              }
+                }
             }
             if (data['plant'] !== undefined) {
-              for (let i = 0; i < data['plant'].length; i++) {
+                for (let i = 0; i < data['plant'].length; i++) {
                 const res = await fetch('/api/image/get/' + data['plant'][i], {
-                  method: 'GET'
+                    method: 'GET'
                 }).then((r) => {return r.blob();}).then(
-                  (thing) => {
+                    (thing) => {
                     const objectURL = URL.createObjectURL(thing);
                         plantImage.push({ id: data['plant'][i], image: objectURL});
-                      // setPlantImage([...plantImage, { id: data['plant'][i], image: objectURL}]);
-                  }
+                        // setPlantImage([...plantImage, { id: data['plant'][i], image: objectURL}]);
+                    }
                 );
-              }
+                }
             }
 
             setInsectImage([...insectImage]);
