@@ -1,4 +1,8 @@
 # pylint: skip-file
+'''
+THIS IS A SETUP SCRIPT
+It creates the accounts
+'''
 import json
 import shutil
 import os
@@ -34,7 +38,7 @@ if __name__ == "__main__":
                               native=v['native'], living=v['living'], future=v['future'], is_bug=False)
             db.session.add(species)
 
-    # example accounts
+    # Creation of account
     hash = bcrypt.generate_password_hash("moo").decode('utf-8')
     user = User(username="moo", password=hash)
     db.session.add(user)
@@ -62,6 +66,7 @@ if __name__ == "__main__":
     subprocess.run(['cp', './nature-id/plant_images/Tragopogon_porrifolius.jpg',
                    f'./storage/{user.id}/{file.alt_id}.jpg'])
 
+    # Creation of example images
     hash = bcrypt.generate_password_hash("frog").decode('utf-8')
     user = User(username="frog", password=hash)
     db.session.add(user)
