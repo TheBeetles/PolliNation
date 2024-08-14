@@ -515,7 +515,8 @@ ignore-signatures=yes
 min-similarity-lines=4
 
 [MASTER]
-ignore-paths=pollination
+ignore-paths=pollination,
+             test_unit
 [SPELLING]
 
 # Limits count of emitted suggestions for spelling mistakes.
