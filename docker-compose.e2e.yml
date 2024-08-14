@@ -21,7 +21,7 @@ services:
     container_name: back-end
     build:
       context: ./api
-      dockerfile: Dockerfile.e2e
+      dockerfile: Dockerfile.test
     ports:
       - "5000:5000"
     volumes:
