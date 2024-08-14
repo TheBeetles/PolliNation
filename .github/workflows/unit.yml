@@ -24,6 +24,6 @@ jobs:
         pip install pipenv
         pipenv install --system
     - name: Start docker containers tests
-      run: cd .. & docker compose -f ./docker-compose.test.yml up -d
+      run: docker compose -f ../docker-compose.test.yml up -d
     - name: Run unit tests
       run: pytest

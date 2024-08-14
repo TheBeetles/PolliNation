@@ -3,7 +3,7 @@ name: pollination-e2e
 services:
   postgres:
     image: postgres:16-bullseye
-    container_name: postgres
+    container_name: postgres-e2e
     restart: always
     healthcheck:
       test: ["CMD-SHELL", "sh -c 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}'"]
@@ -18,7 +18,7 @@ services:
     ports:
       - "5433:5433"
   back-end:
-    container_name: back-end
+    container_name: back-end-e2e
     build:
       context: ./api
       dockerfile: Dockerfile.e2e
@@ -31,7 +31,7 @@ services:
         condition: service_healthy
 
   front-end:
-    container_name: front-end
+    container_name: front-end-e2e
     build:
       context: ./client
       dockerfile: Dockerfile
