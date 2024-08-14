@@ -3,3 +3,4 @@ instance
 .devcontainer
 api/.env
 storage
+__pycache__
