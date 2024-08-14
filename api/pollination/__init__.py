@@ -14,6 +14,7 @@ from config import Config
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './storage'
+app.config['TESTING'] = False
 CORS(app)
 app.config.from_object(Config)
 app.app_context().push()
