@@ -32,7 +32,7 @@ def test_delete(client):
 def test_get_image(client):
     response = client.post("/api/login", json={
         "username": "frog",
-        "passoword": "frog"
+        "password": "frog"
     })
 
     assert response.status_code == 200
@@ -57,7 +57,7 @@ def test_get_image(client):
 def test_get_all(client):
     response = client.post("/api/login", json={
         "username": "frog",
-        "passoword": "frog"
+        "password": "frog"
     })
 
     assert response.status_code == 200
