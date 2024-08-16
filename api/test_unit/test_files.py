@@ -74,10 +74,10 @@ def test_get_all(client):
 
     assert response.status_code == 200
 
-    assert len(response.json["plant"]) == len(file)
+    assert len(response.json["insect"]) == len(file)
 
     for i in range(len(file)):
-        assert response.json["plant"][i] == file[i].alt_id
+        assert file[i].alt_id in response.json["insect"][i]
 
     response = client.get("/api/logout")
 
