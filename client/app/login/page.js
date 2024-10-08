@@ -13,17 +13,9 @@ export default function LoginPage() {
   const [thing, setThing] = useState(false);
   const [error, setError] = useState('');
 
-  // const redirect = async () => {
-  //   const res = await verify();
-  //   if (res) {
-  //     router.push('/scan-species');
-  //   }
-  // }
-  // redirect();
-
   const handleLogin = async (e) => {
     e.preventDefault();
-    // Add login logic here (e.g., API call)
+    // api call
     const res = await fetch('/api/login', {
       method: 'POST',
       body: JSON.stringify({

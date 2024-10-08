@@ -1,10 +1,9 @@
-// app/scan-species/page.js
 'use client';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import verifyUser from '../components/verify';
 import Image from 'next/image';
-import scanIcon from '../images/scan-icon.png'; // Assuming you have a scan icon image in this path
+import scanIcon from '../images/scan-icon.png';
 
 export default function ScanSpeciesPage() {
   const router = useRouter();
@@ -18,18 +17,15 @@ export default function ScanSpeciesPage() {
   };
 
   const handleScanInsect = () => {
-    // Add your scan insect logic here
     console.log('Scan an Insect clicked');
     router.push('/scan-insect')
   };
 
   const handleSavedSpecies = () => {
-    // Navigate to saved species page
     router.push('/saved-species');
   };
 
   const handleLogout = async () => {
-    // Add your logout logic here
     const res = await fetch('/api/logout', {
       method: 'GET',
     });

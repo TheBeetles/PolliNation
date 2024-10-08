@@ -1,4 +1,4 @@
-FROM python:3.12.3-alpine
+FROM python:3.11.9-bookworm
 
 WORKDIR /app
 
@@ -10,4 +10,4 @@ COPY . .
 
 RUN pipenv install --ignore-pipfile --system --dev
 
-CMD python setup.py && python wsgi.py
+CMD python setup.py && pytest && python wsgi.py

@@ -514,7 +514,9 @@ ignore-signatures=yes
 # Minimum lines number of a similarity.
 min-similarity-lines=4
 
-
+[MASTER]
+ignore-paths=pollination,
+             test_unit
 [SPELLING]
 
 # Limits count of emitted suggestions for spelling mistakes.

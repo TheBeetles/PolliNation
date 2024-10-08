@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './Camera.module.css';
 
-const Camera = () => {
+const Camera = ({ setLoaded }) => {
   const router = useRouter();
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
@@ -11,6 +11,7 @@ const Camera = () => {
   const [photo, setPhoto] = useState('');
 
   useEffect(() => {
+    // shows a list of devices
     const getDevices = async () => {
       const allDevices = await navigator.mediaDevices.enumerateDevices();
       const videoDevices = allDevices.filter(device => device.kind === 'videoinput');
@@ -22,7 +23,8 @@ const Camera = () => {
 
     getDevices();
   }, []);
-
+  
+  // enables the camera
   const startCamera = async () => {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       try {
@@ -52,6 +54,7 @@ const Camera = () => {
   }, [selectedDeviceId]);
 
   const takePhoto = () => {
+    // sets the image to base64
     const width = videoRef.current.videoWidth;
     const height = videoRef.current.videoHeight;
 
@@ -65,19 +68,39 @@ const Camera = () => {
   };
 
   const uploadPhoto = async () => {
-    const response = await fetch('/api/image/upload', {
+
+    // sends an request to send the image
+    setLoaded(false);
+    var query = ''
+    if (window.location.pathname === "/scan-plant") {
+      query = 'plant';
+    } else {
+      query = 'insect';
+    }
+    const response = await fetch('/api/image/' + query + '/upload', {
       method: 'POST',
       headers: {
         'Content-Type': 'image/png'
-        // 'Content-Disposition': `attachment; filename="image"`
       },
         body: photo
     });
     const data = await response.json();
     if (response.ok) {
-      router.push("/species-information/insect-information/" + data['image']);
+      router.push("/species-information/" + data['image']);
     } else {
-      console.log(response);
+      // sends a delete if the response is not ok
+      const res = await fetch('/api/image/delete', {
+          method: 'POST',
+          body: JSON.stringify({
+              "id": data['image']
+          }),
+          headers: {
+            'Content-type': 'application/json; charset=UTF-8'
+          }
+      });
+      
+      alert(data['Failed']);
+      setLoaded(true);
     }
   };
 
