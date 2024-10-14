@@ -1,0 +1,23 @@
+Database Management System (DBMS):
+- special software program that helps users create and maintain a database
+- is not the actual database; it is an application that creates, maintains, updates, deletes, secures/protects information from the actual dtaabase
+
+C.R.U.D: core 4 operations we want the database management system to perform for us in the database
+- Create (create information in the database, creating new database entries)
+- Read/Retrieve (getting the stored information)
+- Update (updating existing information)
+- Delete (Deleting information in the database)
+
+Two Types of Databases:
+
+1. Relational Databases (SQL/Sequel)
+- organizes data into one or more tables
+    - each table has columns and rows
+    - a unique key identifies each row
+
+2. Non-Relational (noSQL/not just SQL)
+- data is NOT organized in a traditional table
+    - key-value stores
+    - documents (JSON, XML, etc)
+    - Graphs
+    - Flexible tables
