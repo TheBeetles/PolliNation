@@ -2,7 +2,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import placeholder from '../images/pollination.png';
+import placeholder from '../images/pollination.png';  // Assuming you have a placeholder image
 import verifyUser from '../components/verify';
 import styles from '../components/Camera.module.css'
 
@@ -51,7 +51,6 @@ export default function SavedSpeciesPage() {
                     (thing) => {
                     const objectURL = URL.createObjectURL(thing);
                         plantImage.push({ id: data['plant'][i], image: objectURL});
-                        // setPlantImage([...plantImage, { id: data['plant'][i], image: objectURL}]);
                     }
                 );
                 }
@@ -69,6 +68,7 @@ export default function SavedSpeciesPage() {
     const toggleTrue = () => {
         setToggle(true);
     }
+
     return (
         <div style={{
             position: 'relative',
@@ -125,26 +125,26 @@ export default function SavedSpeciesPage() {
                 { toggle &&
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(3, 1fr)',
+                    gridTemplateColumns: 'repeat(4, 1fr)', // Set to 4 columns
                     gap: '10px',
                 }}>
                     {plantImage.map(plant => (
-                        <a href={("species-information/" + plant.id)}>
-                        <div key={plant.id} style={{
+                        <a href={("species-information/" + plant.id)} key={plant.id}>
+                        <div style={{
                             width: '100px',
                             height: '100px',
-                            border: '2px solid #000000',
+                            borderRadius: '50%', // Circular shape
+                            border: '2px solid #B3E576', // Green border
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            backgroundImage: placeholder,
-                            backgroundSize: 'contain',
-                            backgroundRepeat: 'no-repeat',
+                            backgroundColor: '#F0F0F0',
                         }}>
-                            <img src={plant.image} alt="Insect" style={{
+                            <img src={plant.image || placeholder} alt="Plant" style={{
                                 width: '100%',
                                 height: '100%',
                                 objectFit: 'cover',
+                                borderRadius: '50%', // Circular image
                             }}/>
                         </div>
                         </a>
@@ -153,25 +153,26 @@ export default function SavedSpeciesPage() {
                 { !toggle &&
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(3, 1fr)',
+                    gridTemplateColumns: 'repeat(4, 1fr)', // Set to 4 columns
                     gap: '10px',
                 }}>
                     {insectImage.map(insect => (
-                        <a href={("species-information/" + insect.id)}>
-                        <div key={insect.id} style={{
+                        <a href={("species-information/" + insect.id)} key={insect.id}>
+                        <div style={{
                             width: '100px',
                             height: '100px',
-                            border: '2px solid #000000',
+                            borderRadius: '50%', // Circular shape
+                            border: '2px solid #B3E576', // Green border
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            backgroundSize: 'contain',
-                            backgroundRepeat: 'no-repeat',
+                            backgroundColor: '#F0F0F0',
                         }}>
-                            <img src={insect.image} alt="Insect" style={{
+                            <img src={insect.image || placeholder} alt="Insect" style={{
                                 width: '100%',
                                 height: '100%',
                                 objectFit: 'cover',
+                                borderRadius: '50%', // Circular image
                             }}/>
                         </div>
                         </a>
