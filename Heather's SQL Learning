@@ -1,23 +1,61 @@
-Database Management System (DBMS):
+## Database Management System (DBMS):
 - special software program that helps users create and maintain a database
 - is not the actual database; it is an application that creates, maintains, updates, deletes, secures/protects information from the actual dtaabase
 
-C.R.U.D: core 4 operations we want the database management system to perform for us in the database
+## C.R.U.D: core 4 operations we want the database management system to perform for us in the database
 - Create (create information in the database, creating new database entries)
 - Read/Retrieve (getting the stored information)
 - Update (updating existing information)
 - Delete (Deleting information in the database)
 
-Two Types of Databases:
+## Two Types of Databases:
 
-1. Relational Databases (SQL/Sequel)
+### 1. Relational Databases (SQL/Sequel)
 - organizes data into one or more tables
     - each table has columns and rows
     - a unique key identifies each row
 
-2. Non-Relational (noSQL/not just SQL)
+### 2. Non-Relational (noSQL/not just SQL)
 - data is NOT organized in a traditional table
     - key-value stores
     - documents (JSON, XML, etc)
     - Graphs
     - Flexible tables
+
+## Tables and Keys
+![Student Table](C:/Users/Heather/Pictures/Screenshots/student_table.png)
+- each column defines a single attribute (of student)
+- each row encompasses an entire object (student)
+- should always have one column designated to the **primary key**: an attribute that uniquely defines the row/object/student in the database
+    - primary key can be anything; can be a number, a string of text- as long as it uniquely identifies that specific row
+    - surrogate key: a primary key that has no mapping in the real world; ex) using the value 3 as a key vs. using a student's actual ID or email
+    - natural key: a primary key that does have a mapping in the real world and not just in the database
+    - foreign key: an attribute of a row that stores the primary key of a row in another database table; a key that indicates where the object is in anothertable; foreign key **defines relationships** between tables
+
+![Employee Table](C:/Users/Heather/Pictures/Screenshots/employee_table.png)
+- branch_id is a foreign key defining the id of the branch the employee belongs to
+- super_id is a foreign key defining the employee within that same employee table that supervises the employee in question
+
+- composite key: a key that needs two attributes
+
+## SQL Basics
+- SQL (Structured Query Language): language for interacting with Relational Database Management Systems (software applications used to create and maintain relational databases)
+    - ex) create, retrieve, update, delete data; create and manage databases; design and create dtabase tables; perform administration tasks
+### SQL is a hybrid language of four types:
+1. Data Query Language (DQL)
+- use SQL to write queries to return information stored in the database
+2. Data Definition Language (DDL)
+- use SQL to define database schemas (database layouts- what tables it will contain, what columns it will have, what their datatypes will be..)
+3. Data Control Language (DCL)
+- use SQL to control access to the data in the database (configure users and permissions)
+4. Data Manipulation Language (DML)
+- use SQL to insert, update, and delete data from the database
+
+## Queries
+- a query is a set of instructions given to RDBMS in SQL to retrieve certain pieces of information for you
+- ex)
+```sql
+    SELECT employee.name, employee.age
+    FROM employee
+    WHERE employee.salary > 30000
+- returns every employee in the employee table whose salary is above $30,000
