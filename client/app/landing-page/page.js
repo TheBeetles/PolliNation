@@ -7,7 +7,7 @@ import pollinationImage from '../images/pollination.png';
 
 import styles from '../components/LandingPage.module.css'
 
-export default function LoginPage() {
+export default function LandingPage() {
   const router = useRouter();
   const [error, setError] = useState('');
 
