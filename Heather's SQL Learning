@@ -83,7 +83,8 @@ CREATE TABLE student (
     name VARCHAR(20),
     # final attribute to store is student's major
     major VARCHAR(20)
-    # another way to define primary key: PRIMARY KEY(student_id)
+    # another way to define primary key- at end of schema, provide:
+    PRIMARY KEY(student_id)
 );
 
 # to output the Fields, Types, and Null, Key, and Default statuses of each field of the student table:
@@ -117,3 +118,62 @@ INSERT INTO student VALUES(2, 'Kate', 'Sociology');
 INSERT INTO student(student_id, major) VALUES(3, 'Claire');
 INSERT INTO student VALUES(4, 'Jack', 'Biology');
 INSERT INTO student VALUES(5, 'Mike', 'Computer Science');
+
+## Value Constraints/Key Words
+- within database schema, certain keywords can be added after attributes to provide additional guidelines to how they store information
+1. NOT NULL
+- ex) name VARCHAR(20) NOT NULL: NOT NULL indicates NULL cannot be inserted as a value for name
+2. UNIQUE
+- ex) name VARCHAR(20) UNIQUE: UNIQUE indicates that the "major" field must be unique for every row in the table, i.e, no two student entries can have the same major
+3. DEFAULT 'value'
+- ex) major VARCHAR(20) DEFAULT 'undecided': if the specified field (major) is left blank, assigns a default value for it
+4. AUTO_INCREMENT
+- ex) student_id INT AUTO_INCREMENT: especially helpful when working with primary keys; specifies that the data entered in this field will be automatically incremented each time a row is added
+- with this constraint, you will leave primary key field empty; will start at the value 1 by default
+- OR set a default start value, such as 100, in the table creation statement with CREATE TABLE student() AUTO_INCREMENT = 100;
+
+## Update Existing Information in Table
+### Update the name of a field/column:
+    UPDATE databaseName
+    SET field = 'New value'
+    WHERE field = 'Old value'
+ex) Update the biology field in the student database to only be bio:
+```SQL
+    UPDATE student
+    SET major = 'Bio'
+    WHERE major = 'Biology';
+- those three lines are only ONE SQL query
+
+ex) to update the major to Comp Sci of the student who's student id is 4:
+```SQL
+    UPDATE student
+    SET major = 'Comp Sci'
+    WHERE student_id = 4;
+
+ex) update the student table so that both the majors of Bio and Chemistry are renamed to Biochemistry:
+```SQL
+    UPDATE student
+    SET major = 'Biochemistry'
+    WHERE major = 'Bio' OR major = 'Chemistry';
+
+ex) make multiple updates at once by updating the name to Tom and major to undecided for whichever student has a student id of 1:
+```SQL
+    UPDATE student
+    SET name = 'Tom', major = 'undecided'
+    WHERE student_id = 1;
+
+ex) to make an update that applies to every single row in the table such as by changing every major to undecided:
+    UPDATE student
+    SET major = 'undecided';
+
+## Delete Existing Information From Table
+ex) to delete all the rows inside the student table (delete everything from table):
+    DELETE FROM student;
+
+ex) to delete only the entry/student with the primary key of 5 from the table:
+    DELETE FROM student
+    WHERE student_id = 5;
+
+ex) to delete any entry/student from the table with a name of Tom and major of undecided:
+    DELETE FROM student
+    WHERE name = 'Tom' AND major = 'undecided'
