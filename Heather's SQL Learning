@@ -59,3 +59,61 @@
     FROM employee
     WHERE employee.salary > 30000
 - returns every employee in the employee table whose salary is above $30,000
+
+## SQL Datatypes:
+1. INT Whole numbers
+2. DECIMAL(M,N) Decimal Numbers, Exact Value; M is total number of digits we want to store for this number; N is number of digits we want to store after the decimal point
+3. VARCHAR(1) String of text of length 1
+4. BLOB Binary Large Object, Stores large amounts of binary data
+5. DATE 'YYY-MM-DD'
+5. TIMESTAMP 'YYY-MM-DD HH:MM:SS'
+- typical SQL writing convention: write SQL reserve words in ALL CAPS
+- every command in SQL needs to end in a semicolon
+
+## Creating Tables
+- Let's create the student table 
+![Student Table](C:/Users/Heather/Pictures/Screenshots/student_table.png)
+
+```sql
+# define database schema for student database:
+CREATE TABLE student (
+    # first attribute of this table is the integer student id, which is also a primary key
+    student_id INT PRIMARY KEY,
+    # next attribute is student's name, with a maximum name length of 20
+    name VARCHAR(20),
+    # final attribute to store is student's major
+    major VARCHAR(20)
+    # another way to define primary key: PRIMARY KEY(student_id)
+);
+
+# to output the Fields, Types, and Null, Key, and Default statuses of each field of the student table:
+DESCRIBE student;
+
+# to delete student table:
+DROP TABLE student;
+
+# to modify the table by adding a column:
+ALTER TABLE student ADD gpa DECIMAL(3, 2); #adds a column for gpa of type decimal with 3 total digits and 2 occuring after the decimal place to the table
+
+# to modify the table by dropping/deleting a column:
+ALTER TABLE student DROP COLUMN gpa;
+
+## Inserting Data into Tables
+```sql
+
+#insert the following values into the student table; data must be inserted in the same order it is defined in the schema
+INSERT INTO student VALUES(1, 'Jack', 'Biology'); #after running this, this should return "Rows affected: 1" to indicate that we filled in 1 row of the table
+#^ after running, this line can be repeatedly modified (such as by changing it to 2, 'Kate', 'Sociology'), and all prior entries will still be reserved while still adding the new information
+
+# return all the information in the table:
+SELECT * FROM student;
+
+# to add an entry/object with empty fields, ex) unknown major, modify the prior INSERT statement to designate the specific fields in student that you have info for:
+INSERT INTO student(student_id, name) VALUES(2, 'Kate'); #since no major was provided for Kate, the value under major for row 3 will be NULL
+
+### code to fully populate student database, leaving Claire's major NULL:
+INSERT INTO student VALUES(1, 'Jack', 'Biology');
+INSERT INTO student VALUES(2, 'Kate', 'Sociology');
+INSERT INTO student(student_id, major) VALUES(3, 'Claire');
+INSERT INTO student VALUES(4, 'Jack', 'Biology');
+INSERT INTO student VALUES(5, 'Mike', 'Computer Science');
