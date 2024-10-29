@@ -40,7 +40,7 @@ export default function LoginPage() {
       position: 'relative',
       margin: '0',
       padding: '0',
-      overflow: 'hidden' // Ensure no overflow issues
+      overflow: 'hidden' // Ensure circles are visible and contained within the page
     }}>
       {/* Background Circles - Top Right */}
       <div style={{
@@ -51,27 +51,27 @@ export default function LoginPage() {
         width: '100px',
         height: '100px',
         borderRadius: '50%',
-        zIndex: '-1'
+        zIndex: '0' // Set z-index lower than other elements
       }}></div>
       <div style={{
         position: 'absolute',
-        top: '10%',
+        top: '15%',
         right: '15%',
         backgroundColor: '#B7F58C',
-        width: '150px',
-        height: '150px',
+        width: '140px',
+        height: '140px',
         borderRadius: '50%',
-        zIndex: '-1'
+        zIndex: '0'
       }}></div>
       <div style={{
         position: 'absolute',
-        top: '25%',
-        right: '5%',
+        top: '30%',
+        right: '10%',
         backgroundColor: '#B7F58C',
         width: '75px',
         height: '75px',
         borderRadius: '50%',
-        zIndex: '-1'
+        zIndex: '0'
       }}></div>
 
       {/* Background Circles - Bottom Left */}
@@ -83,32 +83,32 @@ export default function LoginPage() {
         width: '100px',
         height: '100px',
         borderRadius: '50%',
-        zIndex: '-1'
+        zIndex: '0'
       }}></div>
       <div style={{
         position: 'absolute',
-        bottom: '10%',
+        bottom: '15%',
         left: '15%',
         backgroundColor: '#B7F58C',
-        width: '150px',
-        height: '150px',
+        width: '140px',
+        height: '140px',
         borderRadius: '50%',
-        zIndex: '-1'
+        zIndex: '0'
       }}></div>
       <div style={{
         position: 'absolute',
-        bottom: '25%',
-        left: '5%',
+        bottom: '30%',
+        left: '10%',
         backgroundColor: '#B7F58C',
         width: '75px',
         height: '75px',
         borderRadius: '50%',
-        zIndex: '-1'
+        zIndex: '0'
       }}></div>
 
       {/* Form Section */}
       <h1 style={{ fontFamily: 'Arial, sans-serif', color: '#333', marginBottom: '20px' }}>Welcome!</h1>
-      <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
+      <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', width: '300px', zIndex: '1' }}>
         <label style={{ fontSize: '18px', marginBottom: '5px' }}>Username:</label>
         <input
           type="text"
