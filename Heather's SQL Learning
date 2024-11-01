@@ -177,3 +177,40 @@ ex) to delete only the entry/student with the primary key of 5 from the table:
 ex) to delete any entry/student from the table with a name of Tom and major of undecided:
     DELETE FROM student
     WHERE name = 'Tom' AND major = 'undecided'
+
+## Queries to narrow down returned results:
+```SQL
+    --means select/return every column from the student table
+    SELECT * 
+    FROM student;
+
+--means select/return only the name and major columns from the student table
+    SELECT name, major
+    FROM student;
+```
+### to sort the results by a specified order, add the command:
+    - ORDER BY name; --names will be sorted in alphabetical order, ascending by default
+    - to sort in descending: ORDER BY name DESC;
+
+### you can also sort returned items by information in a different, non-returned column, such as sorting by student_id:
+```SQL
+    SELECT student, major
+    FROM student
+    ORDER BY student_id; --sorts students and their corresponding majors by the student's id, in ascending order
+```
+
+### to sort a result by one column, then another:
+```SQL
+    SELECT *
+    FROM student
+    ORDER BY major, student_id --returns all students/rows in student database, sorted by major first, then if any students have the same major, will sort by student_id
+
+### you can limit the number of results returned by your query with the command:
+- LIMIT 2; --returns only two students/rows
+
+### to filter results that meet certain requirements:
+```SQL
+    SELECT *
+    FROM student
+    WHERE major = 'Biology' or name = 'Kate'; --return only rows/entries/students where either the major field is biology or the name field is Kate
+```
