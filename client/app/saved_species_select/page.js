@@ -61,3 +61,123 @@ export default function SavedSpeciesPage() {
         };
         response();
     }, [data]);
+const toggleFalse = () => {
+        setToggle(false);
+    }
+        
+    const toggleTrue = () => {
+        setToggle(true);
+    }
+    return (
+        <div style={{
+            position: 'relative',
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            padding: '20px',
+        }}>
+            <button onClick={handleGoBackButton} style={{
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                padding: '10px',
+                fontSize: '16px',
+                cursor: 'pointer',
+                backgroundColor: '#B3E576',
+                color: 'white',
+                borderRadius: '20px',
+                border: 'none',
+            }}>
+                Back
+            </button>
+            { toggle && <h1 style={{
+                marginBottom: '10px',
+                color: '#B3E576',
+                fontSize: '24px',
+            }}>
+                Plant List
+            </h1>}
+            { !toggle && <h1 style={{
+                marginBottom: '10px',
+                color: '#B3E576',
+                fontSize: '24px',
+            }}>
+                Insect List
+            </h1>}
+            <div style={{ display: 'flex' }}>
+                <button className={styles.button} onClick={toggleTrue} style={{
+                }}>
+                    Plants
+                </button>
+                <button className={styles.button} onClick={toggleFalse} style={{
+                }}>
+                    Insects
+                </button>
+            </div>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                width: '100%',
+                paddingBottom: '2em',
+            }}>
+                { toggle &&
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(3, 1fr)',
+                    gap: '10px',
+                }}>
+                    {plantImage.map(plant => (
+                        <a href={("species-information/" + plant.id)}>
+                        <div key={plant.id} style={{
+                            width: '100px',
+                            height: '100px',
+                            border: '2px solid #000000',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            backgroundImage: placeholder,
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                        }}>
+                            <img src={plant.image} alt="Insect" style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                            }}/>
+                        </div>
+                        </a>
+                    ))}
+                </div> }
+                { !toggle &&
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(3, 1fr)',
+                    gap: '10px',
+                }}>
+                    {insectImage.map(insect => (
+                        <a href={("species-information/" + insect.id)}>
+                        <div key={insect.id} style={{
+                            width: '100px',
+                            height: '100px',
+                            border: '2px solid #000000',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                        }}>
+                            <img src={insect.image} alt="Insect" style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                            }}/>
+                        </div>
+                        </a>
+                    ))}
+                </div>}
+            </div>
+        </div>
+    );
+}
+
