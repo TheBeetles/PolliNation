@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
    <div className={styles.container}>
       <div id={styles.navLeft} className={styles.subContainer}>
-        <Image src={pollinationImage} id={styles.favicon}/>
+        <Image src={pollinationImage} alt="PolliNation Logo" id={styles.favicon}/>
         <h3 className={styles.navElement}>PolliNation</h3>
       </div>
       <div id={styles.navRight} className={styles.subContainer}>
