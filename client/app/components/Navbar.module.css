@@ -1,0 +1,46 @@
+.container {
+   width: 100%;
+   height: 14vh;
+   position: relative;
+   color: black;
+   display: flex;
+   background-color: #FFFDD0;
+   align-items: center;
+   font-family: 'Inter', sans-serif;
+   margin: 0 0.5em;
+}
+
+.subContainer {
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+   width: 50vw;
+   height: 14vh;
+}
+
+#favicon {
+   max-height: 100%;
+   width: 10%;
+   object-fit: contain;
+}
+
+.navElement {
+   padding: 0 0.75em;
+   /* font-weight: 700; */
+}
+
+#navLeft {
+   display: flex;
+   justify-content: flex-start;
+}
+
+#navRight {
+   display: flex;
+   justify-content: flex-end;
+}
+
+#signUp {
+   background-color: #C5F681;
+   border-radius: 10px;
+   padding: 10px;
+}
