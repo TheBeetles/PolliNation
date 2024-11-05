@@ -45,11 +45,11 @@ export default function ScanSpeciesPage() {
       <h1 style={styles.headerText}>Hello User!</h1>
       <div style={styles.scanContainer}>
         <div onClick={handleScanPlant} style={styles.scanBox}>
-          <Image src={scanIcon} alt="Scan a Plant" width={100} height={100} />
+          <Image src={scanIcon} alt="Scan a Plant" width={220} height={220} />
           <p style={styles.scanText}>Scan Plant</p>
         </div>
         <div onClick={handleScanInsect} style={styles.scanBox}>
-          <Image src={scanIcon} alt="Scan an Insect" width={100} height={100} />
+          <Image src={scanIcon} alt="Scan an Insect" width={220} height={220} />
           <p style={styles.scanText}>Scan Insect</p>
         </div>
       </div>
@@ -75,7 +75,10 @@ const styles = {
   headerText: {
     fontSize: '36px',
     color: '#000',
-    marginBottom: '20px',
+    position: 'absolute', 
+    top: '20px', 
+    left: '20px', 
+    marginBottom: '10px',
   },
   scanContainer: {
     display: 'flex',
@@ -89,15 +92,15 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '300px',
-    height: '300px',
+    width: '375px',
+    height: '375px',
     backgroundColor: '#C5F681',
     borderRadius: '50%',
     cursor: 'pointer',
   },
   scanText: {
     marginTop: '10px',
-    fontSize: '24px',
+    fontSize: '40px',
     color: '#000',
   },
   savedSpeciesButton: {
@@ -132,7 +135,7 @@ const styles = {
     fontSize: '16px',
     borderRadius: '20px',
     backgroundColor: '#1B5E20',
-    color: '#FF',
+    color: '#FFF',
     border: 'none',
     cursor: 'pointer',
   },
