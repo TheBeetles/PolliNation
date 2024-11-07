@@ -36,7 +36,8 @@
 - branch_id is a foreign key defining the id of the branch the employee belongs to
 - super_id is a foreign key defining the employee within that same employee table that supervises the employee in question
 
-- composite key: a key that needs two attributes
+- compound primary key/composite key: a key that needs two attributes
+    - necessary when one column cannot uniquely identify one row on its own (there exists multiple of the same entry in one column)
 
 ## SQL Basics
 - SQL (Structured Query Language): language for interacting with Relational Database Management Systems (software applications used to create and maintain relational databases)
@@ -204,13 +205,102 @@ ex) to delete any entry/student from the table with a name of Tom and major of u
     SELECT *
     FROM student
     ORDER BY major, student_id --returns all students/rows in student database, sorted by major first, then if any students have the same major, will sort by student_id
+```
 
 ### you can limit the number of results returned by your query with the command:
-- LIMIT 2; --returns only two students/rows
+```SQL
+    SELECT *
+    FROM student
+    LIMIT 2;
+```
 
-### to filter results that meet certain requirements:
+### putting together:
+```SQL
+    SELECT *
+    FROM student
+    ORDER BY student_id DESC
+    LIMIT 2;
+```
+### filtering results by certain requirements:
 ```SQL
     SELECT *
     FROM student
     WHERE major = 'Biology' or name = 'Kate'; --return only rows/entries/students where either the major field is biology or the name field is Kate
 ```
+
+### Comparison operators
+- <, >, <=, >=, =, <> (not equal to), AND, OR
+```SQL
+    SELECT name, major
+    FROM student
+    WHERE student <> 'Chemistry'; --student_id < 3;
+    -- WHERE student_id <= 3 AND name <> 'Jack';
+```
+
+### IN keyword
+- creates a set of values and filters results based on their presence in that set
+```SQL
+    SELECT *
+    FROM student
+    WHERE name IN ('Claire', 'Kate', 'Mike'); --Select only students whose names are in this set of values
+```
+
+### Putting together
+```SQL
+    SELECT *
+    FROM student
+    WHERE major IN ('Biology', 'Chemistry') AND student_id > 2; -- return only students whose major is either biology or chemistry and whose student_id is greater than 2
+```
+
+## Coding the company database
+C:\Users\Heather\Pictures\Screenshots\CompanyDatabase
+- creating the employee table:
+```SQL
+    CREATE TABLE employee (
+    -- define all the columns
+    emp_id INT PRIMARY_KEY, -- mark as primary key for table
+    first_name VARCHAR(40),
+    last_name VARCHAR(40),
+    birth_day DATE,
+    sex VARCHAR(1),
+    salary INT,
+    -- the following two are foreign keys; however, they can't be declared as foreign keys yet as the tables they belong to don't yet exist
+    super_id INT, -- even though it points to the emp_id of this very table (employee), the employee table doesn't actually exist yet, so we must execute its creation first, then add code to alter
+    branch_id INT
+    );
+```
+- branch table:
+```SQL
+    CREATE TABLE branch (
+    -- define all the columns
+    branch_id INT PRIMARY_KEY, -- mark as primary key for table
+    branch_name VARCHAR(40),
+    mgr_id INT, -- foriegn key, but can't declare as such yet
+    mgr_start_day DATE,
+    FOREIGN KEY(mgr_id) REFERENCES employee(emp_id) ON DELETE SET NULL
+    );
+```
+- update employee tabel to declare foreign keys
+``` SQL
+    ALTER TABLE employee
+    ADD FOREIGN KEY(branch_id)
+    REFERENCES branch(branch_id)
+    ON DELETE SET NULL;
+
+    ALTER TABLE employee
+    ADD FOREIGN KEY(super_id)
+    REFERENCES employee(emp_id)
+    ON DELETE SET NULL;
+```
+- add client table
+``` SQL
+    CREATE TABLE client (
+    client_id INT PRIMARY KEY,
+    client_name VARCHAR(40),
+    branch_id INT,
+    FOREIGN KEY(branch_id) REFERENCES branch(branch_id) 
+    );
+
+```
+
+
