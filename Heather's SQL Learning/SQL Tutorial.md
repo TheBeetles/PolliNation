@@ -252,7 +252,7 @@ ex) to delete any entry/student from the table with a name of Tom and major of u
     WHERE major IN ('Biology', 'Chemistry') AND student_id > 2; -- return only students whose major is either biology or chemistry and whose student_id is greater than 2
 ```
 
-## Coding the company database
+## Let's create the tables for the company database
 C:\Users\Heather\Pictures\Screenshots\CompanyDatabase
 - creating the employee table:
 ```SQL
@@ -292,7 +292,7 @@ C:\Users\Heather\Pictures\Screenshots\CompanyDatabase
     REFERENCES employee(emp_id)
     ON DELETE SET NULL;
 ```
-- add client table
+- create client table
 ``` SQL
     CREATE TABLE client (
     client_id INT PRIMARY KEY,
@@ -302,5 +302,33 @@ C:\Users\Heather\Pictures\Screenshots\CompanyDatabase
     );
 
 ```
-
+- create works_with table (involves composite primary key)
+``` SQL
+    CREATE TABLE works_with (
+    emp_id INT,
+    client_id INT,
+    total_sales INT,
+    PRIMARY KEY(emp_id, client_id),
+    -- the two keys constituting the composite key are also foreign keys, i.e, they point to existing id's in existing tables
+    FOREIGN KEY(emp_id) REFERENCES employee(emp_id) ON DELETE CASCADE,
+    FOREIGN KEY(client_id) REFERENCES client(client)id) ON DELETE CASCADE;
+    )
+```
+- create branch supplier table
+``` SQL
+    CREATE TABLE branch_supplier (
+    branch_id INT,
+    supplier_name VARCHAR(40),
+    supply_type VARCHAR(40),
+    PRIMARY KEY(branch_id, supplier_name),
+    FOREIGN KEY(branch_id) REFERENCES branch(branch_id) ON DELETE CASCADE;
+    )
+```
+## Now, inserting data into company database
+### Insert data for the corporate branch 
+- (a staged approach to emphasize concepts)
+```SQL
+    INSERT INTO employee VALUES(100, 'David', 'Wallace', '1967-11-17', 'M', 250000, NULL, NULL); --super_id and branch_id are NULL as the branch 1 entry in the branch table hasn't been added yet
+    INSERT INTO branch VALUES(1, 'Corporate', 100, '2--6-02-09'); -- creates branch 1 entry
+```
 
