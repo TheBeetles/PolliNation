@@ -70,7 +70,7 @@ const styles = {
     height: '100vh',
     backgroundColor: '#FFFDD0',
     padding: '20px',
-    fontFamily: 'Arial, sans-serif',
+    fontFamily: 'Verdana, sans-serif',
   },
   headerText: {
     fontSize: '36px',
