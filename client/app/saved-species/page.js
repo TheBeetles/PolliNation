@@ -25,15 +25,18 @@ export default function SavedSpeciesPage() {
     };
 
     return (
-        <div style={{
-            position: 'relative',
-            height: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            padding: '20px',
-            backgroundColor: '#FFFDD0',
-        }}>
+        <div 
+            style={{
+                position: 'relative',
+                height: '100vh',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                padding: '20px',
+                backgroundColor: '#FFFDD0',
+                fontFamily: 'Verdana, sans-serif', 
+            }}
+        >
             {/* Back Button */}
             <button onClick={handleGoBackButton} style={{
                 position: 'absolute',
@@ -42,7 +45,7 @@ export default function SavedSpeciesPage() {
                 padding: '10px',
                 fontSize: '16px',
                 cursor: 'pointer',
-                backgroundColor: '#B3E576',
+                backgroundColor: '#1B5E20',
                 color: 'white',
                 borderRadius: '20px',
                 border: 'none',
@@ -55,7 +58,6 @@ export default function SavedSpeciesPage() {
                 marginBottom: '50px',
                 color: '#000',
                 fontSize: '45px',
-                fontWeight: 'bold',
             }}>
                 Saved Species
             </h1>
@@ -63,7 +65,7 @@ export default function SavedSpeciesPage() {
             {/* Plant and Insect Categories */}
             <div style={{
                 display: 'flex',
-                gap: '60px', 
+                gap: '60px',
             }}>
                 {/* Plant Button */}
                 <div onClick={handlePlantClick} style={{
@@ -88,7 +90,6 @@ export default function SavedSpeciesPage() {
                     <span style={{
                         color: '#000',
                         fontSize: '32px',
-                        fontWeight: 'bold',
                         position: 'absolute',
                         bottom: '20px',
                     }}>
@@ -119,7 +120,6 @@ export default function SavedSpeciesPage() {
                     <span style={{
                         color: '#000',
                         fontSize: '32px',
-                        fontWeight: 'bold',
                         position: 'absolute',
                         bottom: '20px',
                     }}>
