@@ -2,8 +2,8 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
-import takePhotoIcon from '../images/scan-icon.png'; 
-import uploadImageIcon from '../images/scan-icon.png'; 
+import takePhotoIcon from '../images/camera_scan.jpg'; 
+import uploadImageIcon from '../images/upload_scan.jpg'; 
 
 export default function ScanSpeciesPage() {
   const router = useRouter();
@@ -27,11 +27,15 @@ export default function ScanSpeciesPage() {
       
       <div style={styles.actionContainer}>
         <div onClick={handleTakePhoto} style={styles.actionButton}>
-          <Image src={takePhotoIcon} alt="Take Photo" width={100} height={100} />
+          <div style={styles.imageWrapper}>
+            <Image src={takePhotoIcon} alt="Take Photo" layout="fill" objectFit="contain" />
+          </div>
           <p style={styles.actionText}>Take Photo</p>
         </div>
         <div onClick={handleUploadImage} style={styles.actionButton}>
-          <Image src={uploadImageIcon} alt="Upload Image" width={100} height={100} />
+          <div style={styles.imageWrapper}>
+            <Image src={uploadImageIcon} alt="Upload Image" layout="fill" objectFit="contain" />
+          </div>
           <p style={styles.actionText}>Upload Image</p>
         </div>
       </div>
@@ -51,7 +55,7 @@ const styles = {
     justifyContent: 'center',
     height: '100vh',
     backgroundColor: '#FFFDD0',
-    fontFamily: 'Arial, sans-serif',
+    fontFamily: 'Verdana, sans-serif',
   },
   headerText: {
     fontSize: '36px',
@@ -71,17 +75,23 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '360px', 
-    height: '360px', 
+    width: '360px',
+    height: '360px',
     backgroundColor: '#C5F681',
     borderRadius: '50%',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     cursor: 'pointer',
     transition: 'transform 0.2s ease',
+    textAlign: 'center',
+  },
+  imageWrapper: {
+    position: 'relative',
+    width: '150px',
+    height: '150px',
   },
   actionText: {
     marginTop: '10px',
-    fontSize: '20px',
+    fontSize: '24px',
     color: '#333',
     fontWeight: '500',
   },
@@ -104,4 +114,3 @@ const styles = {
     marginTop: '20px',
   },
 };
-
