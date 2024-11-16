@@ -49,3 +49,56 @@ def get_species_info(name):
         # Print any error and return None
         print(f"Error fetching data for {name}: {e}")
         return None
+    
+# Function to parse the ChatGPT response into a structured JSON-compatible format
+# Returns parsed species information as a dictionary
+def parse_species_info(name, cgpt_response):
+    try:
+        # Split the raw response into lines and extract key data
+        lines = cgpt_response.split("\n")
+        scientific = lines[0].split(":")[1].strip()
+        description = lines[1].split(":")[1].strip()
+        native = lines[2].split(":")[1].strip().lower() == "true"
+        living = lines[3].split(":")[1].strip()
+        future = lines[4].split(":")[1].strip()
+        # Return the data in the desired format
+        return {
+            name: {
+                "scientific": scientific,
+                "description": description,
+                "native": native,
+                "living": living,
+                "future": future,
+            }
+        }
+    except Exception as e:
+        # Print an error message if parsing fails
+        print(f"Error parsing data for {name}: {e}")
+        return None
+
+# Main function to process a labelmap and generate JSON file with species information
+# labelmap_file (str): Path to the labelmap CSV file; output_file (str): Path to save the generated JSON file
+def process_labelmap(labelmap_file, output_file):
+    # Read species names from the labelmap
+    species_list = read_labelmap(labelmap_file)
+    species_data = {}
+    
+    # Loop through each species name and query ChatGPT
+    for species in species_list:
+        print(f"Fetching data for: {species}")  # Log progress
+        cgpt_response = get_species_info(species)  # Get raw data from ChatGPT
+        if cgpt_response:
+            # Parse the data into JSON format
+            parsed_data = parse_species_info(species, cgpt_response)
+            if parsed_data:
+                # Update the overall dictionary with parsed data
+                species_data.update(parsed_data)
+    
+    # Save the final data to a JSON file
+    with open(output_file, "w") as json_file:
+        json.dump(species_data, json_file, indent=4)
+    print(f"Data saved to {output_file}")  # Log completion
+
+# Run the script for insects and plants
+process_labelmap(insect_labelmap_file, insects_output_file)
+process_labelmap(plant_labelmap_file, plants_output_file)    
