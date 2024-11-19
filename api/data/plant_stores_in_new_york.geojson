@@ -1,0 +1,1708 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-11-05T21:58:55Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/354753772",
+        "name": "Willow Tree",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.0204032,
+          44.6673349
+        ]
+      },
+      "id": "node/354753772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/354793308",
+        "name": "Green Thumb Therapy",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3077506,
+          44.4787336
+        ]
+      },
+      "id": "node/354793308"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/714416881",
+        "addr:city": "Wynantskill",
+        "addr:housenumber": "500",
+        "addr:postcode": "12198",
+        "addr:state": "NY",
+        "addr:street": "West Sand Lake Road",
+        "name": "Patroon Nursery",
+        "shop": "garden_centre",
+        "url": "http://patroonnursery.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6181276,
+          42.6619518
+        ]
+      },
+      "id": "node/714416881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/730216382",
+        "addr:city": "Latham",
+        "addr:country": "US",
+        "addr:housenumber": "240",
+        "addr:postcode": "12110",
+        "addr:state": "NY",
+        "addr:street": "Wade Road Extension",
+        "name": "George's Market & Nursery",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7673847,
+          42.7599904
+        ]
+      },
+      "id": "node/730216382"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/751694169",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5099097,
+          41.2029358
+        ]
+      },
+      "id": "node/751694169"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/764748287",
+        "addr:city": "Averill Park",
+        "addr:country": "US",
+        "addr:postcode": "12018",
+        "addr:state": "NY",
+        "addr:street": "Old Highway 66",
+        "name": "Out of the Ordinary Nursery",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5656834,
+          42.6512572
+        ]
+      },
+      "id": "node/764748287"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/766964752",
+        "addr:city": "Latham",
+        "addr:housenumber": "4072",
+        "addr:state": "NY",
+        "addr:street": "River Road",
+        "name": "Orlap's Greenhouses",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8177115,
+          42.7714144
+        ]
+      },
+      "id": "node/766964752"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1060171071",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6943386,
+          42.9823556
+        ]
+      },
+      "id": "node/1060171071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1378081014",
+        "addr:housenumber": "444",
+        "addr:postcode": "11231",
+        "addr:street": "Van Brunt Street",
+        "name": "Chelsea Garden Center Red Hook",
+        "phone": "+1-718-875-2100",
+        "shop": "garden_centre",
+        "website": "https://www.chelseagardencenter.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0159065,
+          40.675089
+        ]
+      },
+      "id": "node/1378081014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1590520877",
+        "name": "Mayflower's",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2987408,
+          42.9104851
+        ]
+      },
+      "id": "node/1590520877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1613826133",
+        "name": "Hewitt's",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7549111,
+          42.8491408
+        ]
+      },
+      "id": "node/1613826133"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1866472796",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9595028,
+          40.7220442
+        ]
+      },
+      "id": "node/1866472796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2523787368",
+        "addr:housenumber": "195",
+        "addr:postcode": "11201",
+        "addr:street": "Pacific Street",
+        "name": "The Sill",
+        "opening_hours": "Mo-Th 12:00-19:00; Fr-Su 11:00-19:00",
+        "shop": "garden_centre",
+        "website": "https://thesill.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9930269,
+          40.6892191
+        ]
+      },
+      "id": "node/2523787368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2547041086",
+        "addr:city": "New York",
+        "addr:housenumber": "1",
+        "addr:postcode": "10012",
+        "addr:state": "NY",
+        "addr:street": "Prince Street",
+        "alt_name": "PlantShed Cafe",
+        "amenity": "cafe",
+        "branch": "Prince Street",
+        "drink:coffee": "yes",
+        "drink:espresso": "yes",
+        "name": "PlantShed",
+        "opening_hours": "Mo-Su 08:00-19:00 \"cafe\"||Mo-Su 09:00-19:00 \"shop\"",
+        "phone": "+1-212-662-4400",
+        "shop": "garden_centre",
+        "website": "https://www.plantshed.com/retail-prince-st"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9934347,
+          40.7225241
+        ]
+      },
+      "id": "node/2547041086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2549989356",
+        "addr:housenumber": "123",
+        "addr:postcode": "11231",
+        "addr:street": "3rd Street",
+        "name": "Nature Based Nursery",
+        "opening_hours": "\"by appointment\"",
+        "phone": "+1-631-921-7528",
+        "shop": "garden_centre",
+        "website": "https://naturebasedny.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9916013,
+          40.6769699
+        ]
+      },
+      "id": "node/2549989356"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2555098023",
+        "addr:city": "New York",
+        "addr:housenumber": "222",
+        "addr:postcode": "10013",
+        "addr:state": "NY",
+        "addr:street": "Centre Street",
+        "name": "Garden City Floral Arts",
+        "phone": "+1-212-219-0235",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9986335,
+          40.719432
+        ]
+      },
+      "id": "node/2555098023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2885345959",
+        "addr:city": "Brentwood",
+        "addr:housenumber": "140",
+        "addr:postcode": "11717",
+        "addr:state": "NY",
+        "addr:street": "Express Drive South",
+        "name": "Sam's B.C. Nurseries",
+        "nysgissam:nysaddresspointid": "SUFF398104",
+        "shop": "garden_centre",
+        "website": "samsbcnurseries.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2897065,
+          40.804123
+        ]
+      },
+      "id": "node/2885345959"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3507321716",
+        "addr:city": "Manlius",
+        "addr:country": "US",
+        "addr:housenumber": "8390",
+        "addr:postcode": "13104",
+        "addr:state": "NY",
+        "addr:street": "Cazenovia Road",
+        "contact:fax": "315 682 1035",
+        "contact:phone": "315 682 1118",
+        "contact:website": "http://www.crosscreeknursery.net",
+        "craft": "gardener",
+        "name": "Cross Creek Nursery",
+        "opening_hours": "Mo-Sa 08:00-18:00; Su 09:00-17:00",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.9468142,
+          42.9844437
+        ]
+      },
+      "id": "node/3507321716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3681294551",
+        "name": "Brooklyn Horticulture",
+        "opening_hours": "We-Su 12:00-18:00",
+        "shop": "garden_centre",
+        "website": "https://brooklynhorticulture.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9932458,
+          40.668573
+        ]
+      },
+      "id": "node/3681294551"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3730431972",
+        "addr:housenumber": "6837",
+        "addr:street": "Albany Post Road",
+        "name": "The Phantom Gardener",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8966553,
+          41.9543817
+        ]
+      },
+      "id": "node/3730431972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3834367793",
+        "name": "Glass Greenhouse and Farm Market",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.592546,
+          40.9495529
+        ]
+      },
+      "id": "node/3834367793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4412480509",
+        "description": "Buy flowers and trees at reasonable prices",
+        "name": "Schuyler Farms",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5997792,
+          43.1085721
+        ]
+      },
+      "id": "node/4412480509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4514844789",
+        "addr:street": "Slaterville Road",
+        "check_date": "2024-04-07",
+        "fixme": "resurvey",
+        "name": "A New Leaf",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.4446495,
+          42.4121833
+        ]
+      },
+      "id": "node/4514844789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5290663048",
+        "name": "Planted Earth Hydroponics",
+        "opening_hours": "Mo-Sa 10:00-18:00",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.4807888,
+          42.4800904
+        ]
+      },
+      "id": "node/5290663048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5326213918",
+        "name": "A & T Garden Center",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6515443,
+          40.6027544
+        ]
+      },
+      "id": "node/5326213918"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5403592972",
+        "addr:housenumber": "32-57",
+        "addr:street": "Steinway Street",
+        "contact:email": "nycitysucculents@gmail.com",
+        "contact:facebook": "nycitysucculents",
+        "contact:instagram": "nycitysucculents",
+        "name": "NY City Succulents",
+        "opening_hours": "Mo-Su 10:00-18:00",
+        "phone": "+1 718-406-9065",
+        "shop": "garden_centre",
+        "website": "https://www.nycitysucculents.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9199853,
+          40.7574407
+        ]
+      },
+      "id": "node/5403592972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5470105386",
+        "addr:housenumber": "175",
+        "addr:street": "North Sea Road",
+        "name": "Fowlers",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.396295,
+          40.8919881
+        ]
+      },
+      "id": "node/5470105386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5496949441",
+        "name": "White Post Farms of Melville",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.4071644,
+          40.7936459
+        ]
+      },
+      "id": "node/5496949441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5726067782",
+        "addr:city": "Jamesville",
+        "addr:flats": "1-2",
+        "addr:housenumber": "3990",
+        "addr:postcode": "13078",
+        "addr:state": "NY",
+        "addr:street": "Coye Road",
+        "name": "Plumpton Farms",
+        "nysgissam:nysaddresspointid": "ONON015291;ONON205657;ONON205719",
+        "opening_hours": "09:00-17:30",
+        "phone": "+1-315-469-0027",
+        "shop": "garden_centre",
+        "website": "https://www.plumptonfarms.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.0858912,
+          42.9640356
+        ]
+      },
+      "id": "node/5726067782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5782842275",
+        "check_date": "2024-01-10",
+        "name": "Botanica Garden Center",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9793456,
+          40.6849677
+        ]
+      },
+      "id": "node/5782842275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5826990636",
+        "addr:city": "West Hempstead",
+        "addr:housenumber": "357",
+        "addr:postcode": "11552",
+        "addr:state": "NY",
+        "addr:street": "Hempstead Avenue",
+        "name": "Giordano Garden Shoppe",
+        "nysgissam:nysaddresspointid": "NASS055905",
+        "phone": "+1-516-538-0178",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.651148,
+          40.6995557
+        ]
+      },
+      "id": "node/5826990636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5899659852",
+        "addr:housenumber": "5",
+        "addr:postcode": "10002",
+        "addr:street": "Essex Street",
+        "email": "john@hotcactus.nyc",
+        "name": "Cactus Store",
+        "opening_hours": "Tu-Su 11:00-19:00 \"during the Spring/Summer growing season\"",
+        "phone": "+1-347-903-8332",
+        "shop": "garden_centre",
+        "website": "https://cactus.store/pages/new-york-store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9903263,
+          40.7148472
+        ]
+      },
+      "id": "node/5899659852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6119849560",
+        "addr:city": "Albany",
+        "addr:housenumber": "484",
+        "addr:postcode": "12206",
+        "addr:state": "NY",
+        "addr:street": "Central Avenue",
+        "name": "Organica",
+        "phone": "+1 518 7295950",
+        "shop": "garden_centre",
+        "website": "https://www.organicagardensupply.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7784215,
+          42.6690394
+        ]
+      },
+      "id": "node/6119849560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6156721502",
+        "addr:street": "Sunrise Highway",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6653243,
+          40.6558067
+        ]
+      },
+      "id": "node/6156721502"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6311428150",
+        "name": "Garden World",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6831819,
+          40.6959541
+        ]
+      },
+      "id": "node/6311428150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6435133569",
+        "addr:city": "Belmont",
+        "addr:housenumber": "5614",
+        "addr:postcode": "14813",
+        "addr:state": "NY",
+        "addr:street": "NY 19",
+        "name": "East Wind - Landscape Nursery",
+        "opening_hours": "Tu-Sa 09:00-17:00",
+        "phone": "+1-585-268-5128 \"Floral\"; +15852685535 \"Garden Center\"",
+        "shop": "garden_centre",
+        "website": "https://www.eastwindnursery.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.0528728,
+          42.2436516
+        ]
+      },
+      "id": "node/6435133569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6550550128",
+        "addr:city": "Rochester",
+        "addr:housenumber": "136",
+        "addr:postcode": "14626",
+        "addr:state": "NY",
+        "addr:street": "North Avenue",
+        "description": "Garden supply, landscaping store, and landscaping company.    ",
+        "name": "Van Putte Gardens",
+        "operator": "Van Putte Gardens",
+        "phone": "+1 585-225-7770",
+        "shop": "garden_centre",
+        "website": "https://vanputte.com",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.7153883,
+          43.2299001
+        ]
+      },
+      "id": "node/6550550128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6653201816",
+        "name": "King County Nursery",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9473907,
+          40.6592862
+        ]
+      },
+      "id": "node/6653201816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6796291703",
+        "addr:city": "Uniondale",
+        "addr:state": "NY",
+        "addr:street": "Nassau Road",
+        "name": "Evergreen Landscaping",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5927939,
+          40.6852294
+        ]
+      },
+      "id": "node/6796291703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6990576073",
+        "brand": "Walmart",
+        "brand:wikidata": "Q483551",
+        "name": "Walmart Garden Center",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.8435585,
+          44.0408291
+        ]
+      },
+      "id": "node/6990576073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7418074132",
+        "addr:city": "New York",
+        "addr:housenumber": "448",
+        "addr:postcode": "10024",
+        "addr:state": "NY",
+        "addr:street": "Amsterdam Avenue",
+        "name": "The Sill",
+        "opening_hours": "Mo-Fr 11:00-20:00, Sa-Su 11:00-19:00",
+        "phone": "+1 646-899-4015",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9772848,
+          40.7849045
+        ]
+      },
+      "id": "node/7418074132"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8009783646",
+        "addr:city": "Loudonville",
+        "addr:housenumber": "566",
+        "addr:postcode": "12211",
+        "addr:state": "NY",
+        "addr:street": "Albany Shaker Road",
+        "name": "Constantine Garden Center",
+        "phone": "+1 518 4588294",
+        "shop": "garden_centre",
+        "website": "https://constantinefarms.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7865521,
+          42.7170221
+        ]
+      },
+      "id": "node/8009783646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8355103270",
+        "addr:city": "Troy",
+        "addr:housenumber": "381",
+        "addr:postcode": "12180",
+        "addr:state": "NY",
+        "addr:street": "North Greenbush Road",
+        "name": "Yonder Farms",
+        "nysgissam:nysaddresspointid": "RENS043474",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6903585,
+          42.6715824
+        ]
+      },
+      "id": "node/8355103270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8413122398",
+        "addr:city": "Naples",
+        "addr:housenumber": "7921",
+        "addr:postcode": "14512",
+        "addr:state": "NY",
+        "addr:street": "Hickory Bottom Road",
+        "name": "Fruition Seeds",
+        "phone": "585.374.8903",
+        "shop": "garden_centre",
+        "website": "https://www.fruitionseeds.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.437177,
+          42.630945
+        ]
+      },
+      "id": "node/8413122398"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8446134979",
+        "addr:city": "Shokan",
+        "addr:housenumber": "3144",
+        "addr:postcode": "12481",
+        "addr:state": "NY",
+        "addr:street": "Route 28",
+        "name": "Ashokan Turf & Timber",
+        "nysgissam:nysaddresspointid": "ULST041165",
+        "phone": "+1-845-657-6395",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2071063,
+          41.973997
+        ]
+      },
+      "id": "node/8446134979"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8454660942",
+        "addr:city": "Buffalo",
+        "addr:housenumber": "341",
+        "addr:postcode": "14213",
+        "addr:state": "NY",
+        "addr:street": "14th Street",
+        "name": "Luds Landscaping",
+        "nysgissam:nysaddresspointid": "ERIE121017",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.889665,
+          42.9098606
+        ]
+      },
+      "id": "node/8454660942"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8457884766",
+        "addr:city": "Buffalo",
+        "addr:housenumber": "2250",
+        "addr:postcode": "14224",
+        "addr:state": "NY",
+        "addr:street": "Transit Road",
+        "name": "Seneca Greenhouse",
+        "nysgissam:nysaddresspointid": "ERIE045287",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6974974,
+          42.8286165
+        ]
+      },
+      "id": "node/8457884766"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8473927780",
+        "addr:city": "Brooklyn",
+        "addr:housenumber": "44",
+        "addr:postcode": "11249",
+        "addr:state": "NY",
+        "addr:street": "Grand Street",
+        "name": "Geometry Gardens",
+        "payment:american_express": "yes",
+        "payment:cash": "yes",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+1-347-799-1510",
+        "second_hand": "no",
+        "shop": "garden_centre",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9656199,
+          40.7159404
+        ]
+      },
+      "id": "node/8473927780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8487239845",
+        "addr:city": "Rochester",
+        "addr:housenumber": "1069",
+        "addr:postcode": "14606",
+        "addr:state": "NY",
+        "addr:street": "Lyell Avenue",
+        "addr:unit": "B",
+        "name": "Hydro Garden Center",
+        "phone": "+1 585-458-3367",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6531961,
+          43.1642725
+        ]
+      },
+      "id": "node/8487239845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8487244201",
+        "addr:city": "Rochester",
+        "addr:housenumber": "133",
+        "addr:postcode": "14623",
+        "addr:state": "NY",
+        "addr:street": "Balta Drive",
+        "email": "support@sunsethydro.com",
+        "name": "Sunset Hydroponics",
+        "opening_hours": "Mo-Sa 10:00-19:00; Su 11:00-16:00",
+        "phone": "+1 866-395-9204",
+        "shop": "garden_centre",
+        "website": "https://www.sunsethydro.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6128051,
+          43.0939975
+        ]
+      },
+      "id": "node/8487244201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8487803759",
+        "name": "Raimondo's",
+        "shop": "garden_centre",
+        "source": "local knowledge",
+        "website": "https://www.raimondobrothers.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.0089439,
+          43.0594493
+        ]
+      },
+      "id": "node/8487803759"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8573063431",
+        "addr:city": "Ridgewood",
+        "addr:housenumber": "818",
+        "addr:postcode": "11385",
+        "addr:state": "NY",
+        "addr:street": "Wyckoff Avenue",
+        "name": "Stolen Magnolia",
+        "opening_hours": "Mo-Th 12:00-18:00; Fr-Su 10:00-18:00",
+        "payment:card": "yes",
+        "payment:cash": "yes",
+        "phone": "(347) 210-9403",
+        "shop": "garden_centre",
+        "website": "https://www.stolenmagnolias.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9082968,
+          40.6978258
+        ]
+      },
+      "id": "node/8573063431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8783533335",
+        "addr:city": "Great Neck",
+        "addr:housenumber": "82",
+        "addr:postcode": "11020",
+        "addr:state": "NY",
+        "addr:street": "Horace Harding Boulevard",
+        "name": "L S Garden Mart",
+        "nysgissam:nysaddresspointid": "NASS413411",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7215443,
+          40.7689573
+        ]
+      },
+      "id": "node/8783533335"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8787520440",
+        "addr:city": "Syracuse",
+        "addr:housenumber": "2043",
+        "addr:postcode": "13224",
+        "addr:state": "NY",
+        "addr:street": "Erie Boulevard East",
+        "name": "HTG Supply",
+        "nysgissam:nysaddresspointid": "ONON104198",
+        "shop": "garden_centre",
+        "website": "https://www.htgsupply.com/location/htg-supply-syracuse/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1136346,
+          43.0521401
+        ]
+      },
+      "id": "node/8787520440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8795327683",
+        "addr:city": "Westfield",
+        "addr:housenumber": "63",
+        "addr:postcode": "14787",
+        "addr:state": "NY",
+        "addr:street": "East Main Street",
+        "name": "Blue June Blooms",
+        "nysgissam:nysaddresspointid": "CHAU051018",
+        "nysgissam:review": "no matching street nearby",
+        "opening_hours": "Tu-Fr 10:00-17:30; Sa 11:00-16:00",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5764038,
+          42.32337
+        ]
+      },
+      "id": "node/8795327683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8804393817",
+        "addr:city": "Hancock",
+        "addr:housenumber": "21",
+        "addr:postcode": "13783",
+        "addr:state": "NY",
+        "addr:street": "Fifield Avenue",
+        "name": "Jim & Gina's Greenhouse",
+        "nysgissam:nysaddresspointid": "DELA003525",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2841589,
+          41.9530948
+        ]
+      },
+      "id": "node/8804393817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8806006554",
+        "addr:city": "North Salem",
+        "addr:housenumber": "110",
+        "addr:postcode": "10560",
+        "addr:state": "NY",
+        "addr:street": "Hardscrabble Road",
+        "name": "Hardscrabble Supply",
+        "nysgissam:nysaddresspointid": "WEST032425",
+        "opening_hours": "Mo-Sa 07:00-16:30",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6369283,
+          41.3485591
+        ]
+      },
+      "id": "node/8806006554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8857918783",
+        "name": "Grape Vine Nursery",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9809946,
+          40.6523286
+        ]
+      },
+      "id": "node/8857918783"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9178804842",
+        "addr:city": "Rome",
+        "addr:country": "US",
+        "addr:housenumber": "5815",
+        "addr:postcode": "13440",
+        "addr:state": "NY",
+        "addr:street": "Rome Taberg Road",
+        "brand": "Walmart",
+        "brand:wikidata": "Q483551",
+        "name": "Walmart Garden Center",
+        "opening_hours": "24/7",
+        "operator": "Walmart",
+        "phone": "+1-315-338-7900",
+        "ref:walmart": "2234",
+        "shop": "garden_centre",
+        "source": "Bing",
+        "website": "https://www.walmart.com/store/2234-rome-ny"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.501282,
+          43.236804
+        ]
+      },
+      "id": "node/9178804842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9224567153",
+        "name": "Botanica Santa Barbra Y La Caridad",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9416784,
+          40.7037584
+        ]
+      },
+      "id": "node/9224567153"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9249379068",
+        "brand": "Walmart",
+        "brand:wikidata": "Q483551",
+        "name": "Walmart Garden Center",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.2187305,
+          42.5688926
+        ]
+      },
+      "id": "node/9249379068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9249399085",
+        "brand": "Walmart",
+        "brand:wikidata": "Q483551",
+        "name": "Walmart Garden Center",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2394279,
+          42.8757523
+        ]
+      },
+      "id": "node/9249399085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9251399023",
+        "addr:city": "Ridgewood",
+        "addr:housenumber": "788",
+        "addr:postcode": "11385",
+        "addr:state": "NY",
+        "addr:street": "Woodward Avenue",
+        "addr:unit": "B",
+        "air_conditioning": "yes",
+        "lgbtq": "welcome",
+        "name": "Little Shop of Soil",
+        "opening_hours": "Th-Su 11:00-20:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+15189843257",
+        "shop": "garden_centre",
+        "website": "https://www.littleshopofsoil.com/",
+        "women_owned": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9037547,
+          40.7036233
+        ]
+      },
+      "id": "node/9251399023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9330118820",
+        "alt_name": "New York Hydroponics",
+        "contact:instagram": "@newyorkhydroponics",
+        "name": "Always Blooming Hydroponics",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9869265,
+          40.6790945
+        ]
+      },
+      "id": "node/9330118820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9378205085",
+        "brand": "Walmart",
+        "brand:wikidata": "Q483551",
+        "name": "Walmart Garden Center",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.2714901,
+          43.038157
+        ]
+      },
+      "id": "node/9378205085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9488681892",
+        "addr:city": "Lakewood",
+        "addr:housenumber": "350",
+        "addr:postcode": "14750",
+        "addr:state": "NY",
+        "addr:street": "East Fairmount Avenue",
+        "brand": "Walmart",
+        "brand:wikidata": "Q483551",
+        "name": "Walmart Garden Center",
+        "nysgissam:nysaddresspointid": "CHAU048887",
+        "nysgissam:review": "found > 1 existing matching address",
+        "phone": "+1-716-763-0945",
+        "shop": "garden_centre",
+        "website": "https://www.walmart.com/store/1973-lakewood-ny"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.300781,
+          42.0971934
+        ]
+      },
+      "id": "node/9488681892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9695065694",
+        "addr:city": "New York",
+        "addr:housenumber": "150",
+        "addr:postcode": "10001",
+        "addr:state": "NY",
+        "addr:street": "West 28th Street",
+        "name": "Planter Resource Inc",
+        "opening_hours": "Mo 07:00-15:00; Tu-Fr 06:00-15:00; Sa 07:30-14:00",
+        "phone": "+1-212-206-7687",
+        "shop": "garden_centre",
+        "website": "https://planterresource.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9927518,
+          40.7468536
+        ]
+      },
+      "id": "node/9695065694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9703819868",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0439718,
+          40.7478131
+        ]
+      },
+      "id": "node/9703819868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9788926256",
+        "addr:housenumber": "139",
+        "addr:postcode": "11231",
+        "addr:street": "Van Brunt Street",
+        "name": "Gowanus Nursery",
+        "opening_hours": "Sa-Su 12:00-18:00||Fr \"by appointment only\"",
+        "phone": "+1-917-716-8713",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0055609,
+          40.6838698
+        ]
+      },
+      "id": "node/9788926256"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9847967523",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9004918,
+          40.7678335
+        ]
+      },
+      "id": "node/9847967523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9906485999",
+        "addr:city": "East Rochester",
+        "addr:housenumber": "511",
+        "addr:postcode": "14445",
+        "addr:state": "NY",
+        "addr:street": "West Commercial Street",
+        "name": "Crosman Seeds Factory Store",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4977587,
+          43.1170959
+        ]
+      },
+      "id": "node/9906485999"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9955434012",
+        "name": "Sunset Gardens",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.135417,
+          40.5589621
+        ]
+      },
+      "id": "node/9955434012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10114667192",
+        "addr:city": "Buffalo",
+        "addr:housenumber": "4204",
+        "addr:postcode": "14225",
+        "addr:state": "NY",
+        "addr:street": "Union Road",
+        "name": "Harvest Moon Hydroponics",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.7548368,
+          42.9288597
+        ]
+      },
+      "id": "node/10114667192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10559478219",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.4401364,
+          40.8721182
+        ]
+      },
+      "id": "node/10559478219"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10835741746",
+        "addr:city": "Brooklyn",
+        "addr:housenumber": "190",
+        "addr:postcode": "11249",
+        "addr:state": "NY",
+        "addr:street": "Berry Street",
+        "name": "The Sill",
+        "opening_hours": "Mo-Th 12:00-19:00; Fr-Su 11:00-19:00",
+        "phone": "+1-646-899-4016",
+        "shop": "garden_centre",
+        "website": "https://www.thesill.com",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9610679,
+          40.7168611
+        ]
+      },
+      "id": "node/10835741746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10983030179",
+        "addr:housenumber": "358",
+        "addr:street": "Stuyvesant Avenue",
+        "check_date": "2023-06-17",
+        "name": "Seasons",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9322153,
+          40.6824499
+        ]
+      },
+      "id": "node/10983030179"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11008684069",
+        "name": "Indoor Outdoor Gardener",
+        "opening_hours": "Tu-Sa 10:00-18:00; Su 11:00-17:00",
+        "phone": "+1-718-836-2402",
+        "shop": "garden_centre",
+        "website": "https://www.hydroponicsnewyorkcity.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0248459,
+          40.623675
+        ]
+      },
+      "id": "node/11008684069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11329583046",
+        "name": "River Garden Studios",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7498597,
+          42.6520984
+        ]
+      },
+      "id": "node/11329583046"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11819928030",
+        "addr:city": "New York",
+        "addr:housenumber": "555",
+        "addr:postcode": "10024",
+        "addr:state": "NY",
+        "addr:street": "Columbus Avenue",
+        "name": "PlantShed",
+        "opening_hours": "Mo-Su 09:00-19:00",
+        "shop": "garden_centre",
+        "website": "https://www.plantshed.com/retail-87th"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9715721,
+          40.7870015
+        ]
+      },
+      "id": "node/11819928030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12013171303",
+        "name": "Ariemma's Garden Center",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0931348,
+          40.5849404
+        ]
+      },
+      "id": "node/12013171303"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12080227779",
+        "name": "Umberto Garden Center",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1986509,
+          40.5585382
+        ]
+      },
+      "id": "node/12080227779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12097736883",
+        "name": "Gerardi's Farmer's Market & Nursery",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0937061,
+          40.6449433
+        ]
+      },
+      "id": "node/12097736883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12099406183",
+        "name": "Sweetbrook Nursery & Garden Center",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1689773,
+          40.6281645
+        ]
+      },
+      "id": "node/12099406183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12250988155",
+        "name": "Capital Agway",
+        "shop": "garden_centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5910837,
+          42.7700487
+        ]
+      },
+      "id": "node/12250988155"
+    }
+  ]
+}
