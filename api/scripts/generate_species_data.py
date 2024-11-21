@@ -1,17 +1,19 @@
 import csv
-import openai
+from openai import AsyncOpenAI
+
+aclient = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 import json
+import os
 
 # Load API key from environment variable
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Input file paths for the insect and plant labelmaps
-insect_labelmap_file = "aiy_insects_V1_labelmap.csv"
-plant_labelmap_file = "aiy_plants_V1_labelmap.csv"
+insect_labelmap_file = r"C:/SDD/PolliNation/api/classifiers/aiy_insects_V1_labelmap.csv"
+plant_labelmap_file = r"C:/SDD/PolliNation/api/classifiers/aiy_plants_V1_labelmap.csv"
 
 # Output file paths for the generated JSON files
-insects_output_file = "auto_insects.json"
-plants_output_file = "auto_plants.json"
+insects_output_file = r"C:/SDD/PolliNation/api/data/auto_insects.json"
+plants_output_file = r"C:/SDD/PolliNation/api/data/auto_plants.json"
 
 # Function to read a labelmap CSV file and extract species names, returns list of species names from labelmap
 def read_labelmap(labelmap_file):
@@ -34,22 +36,20 @@ def get_species_info(name):
     Return the data in plain English.
     """
     try:
-        # Query the OpenAI API with a descriptive prompt
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=[
-                {"role": "system", "content": "You are a knowledgeable biologist."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.7  # Can be adjusted for more or less randomness in responses
-        )
+        # Updated OpenAI API call
+        response = aclient.chat.completions.create(model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a knowledgeable biologist."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.7)
         # Return the content of the response
-        return response['choices'][0]['message']['content']
+        return response.choices[0].message.content
     except Exception as e:
         # Print any error and return None
         print(f"Error fetching data for {name}: {e}")
         return None
-    
+
 # Function to parse the ChatGPT response into a structured JSON-compatible format
 # Returns parsed species information as a dictionary
 def parse_species_info(name, cgpt_response):
@@ -82,7 +82,7 @@ def process_labelmap(labelmap_file, output_file):
     # Read species names from the labelmap
     species_list = read_labelmap(labelmap_file)
     species_data = {}
-    
+
     # Loop through each species name and query ChatGPT
     for species in species_list:
         print(f"Fetching data for: {species}")  # Log progress
@@ -93,7 +93,7 @@ def process_labelmap(labelmap_file, output_file):
             if parsed_data:
                 # Update the overall dictionary with parsed data
                 species_data.update(parsed_data)
-    
+
     # Save the final data to a JSON file
     with open(output_file, "w") as json_file:
         json.dump(species_data, json_file, indent=4)
