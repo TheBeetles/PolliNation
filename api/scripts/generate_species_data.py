@@ -1,9 +1,10 @@
+import os
+import asyncio
 import csv
 from openai import AsyncOpenAI
 
 aclient = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 import json
-import os
 
 # Load API key from environment variable
 
@@ -24,7 +25,7 @@ def read_labelmap(labelmap_file):
     return species
 
 # Function to query ChatGPT API for the species information, returns string response
-def get_species_info(name):
+async def get_species_info(name):
     prompt = f"""
     Provide detailed information for the following species: "{name}".
     Include:
@@ -36,8 +37,8 @@ def get_species_info(name):
     Return the data in plain English.
     """
     try:
-        # Updated OpenAI API call
-        response = aclient.chat.completions.create(model="gpt-4",
+        # Await the async OpenAI API call
+        response = await aclient.chat.completions.create(model="gpt-4",
         messages=[
             {"role": "system", "content": "You are a knowledgeable biologist."},
             {"role": "user", "content": prompt}
@@ -78,7 +79,7 @@ def parse_species_info(name, cgpt_response):
 
 # Main function to process a labelmap and generate JSON file with species information
 # labelmap_file (str): Path to the labelmap CSV file; output_file (str): Path to save the generated JSON file
-def process_labelmap(labelmap_file, output_file):
+async def process_labelmap(labelmap_file, output_file):
     # Read species names from the labelmap
     species_list = read_labelmap(labelmap_file)
     species_data = {}
@@ -86,7 +87,7 @@ def process_labelmap(labelmap_file, output_file):
     # Loop through each species name and query ChatGPT
     for species in species_list:
         print(f"Fetching data for: {species}")  # Log progress
-        cgpt_response = get_species_info(species)  # Get raw data from ChatGPT
+        cgpt_response = await get_species_info(species)  # Get raw data from ChatGPT
         if cgpt_response:
             # Parse the data into JSON format
             parsed_data = parse_species_info(species, cgpt_response)
@@ -99,6 +100,13 @@ def process_labelmap(labelmap_file, output_file):
         json.dump(species_data, json_file, indent=4)
     print(f"Data saved to {output_file}")  # Log completion
 
-# Run the script for insects and plants
-process_labelmap(insect_labelmap_file, insects_output_file)
-process_labelmap(plant_labelmap_file, plants_output_file)    
+# Run the async tasks for insects and plants
+async def main():
+    await asyncio.gather(
+        process_labelmap(insect_labelmap_file, insects_output_file),
+        process_labelmap(plant_labelmap_file, plants_output_file),
+    )
+
+# Start the asyncio event loop
+if __name__ == "__main__":
+    asyncio.run(main())
