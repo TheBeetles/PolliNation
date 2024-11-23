@@ -5,7 +5,7 @@
    padding: 0;
    margin: 0;
    font-family: 'Inter', sans-serif;
-   overflow-x: hidden;
+   overflow: hidden;
 }
 
 .content {
@@ -21,48 +21,82 @@
 
 #imageGrid {
    display: grid;
-   width: 100vw;
-   height: 100vh;
-   grid-template-columns: repeat(15, 1fr);
-   grid-template-rows: repeat(15, 1fr);
+   width: 100%;
+   height: 100vw;
+   grid-template-columns: repeat(32, 1fr);
+   grid-template-rows: repeat(32, 1fr);
+   /* grid-auto-rows: 0; */
+   position: absolute;
+   margin-top: 8em;
+   overflow: hidden;
+}
+
+.speciesImg {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 .temp {
-   /* width: 100px;
-   height: 100px; */
-   background-color: blue;
+   /* background-color: blue; */
    border-radius: 10px;
    box-shadow: 14px 14px 4px gray;
+
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 #temp1 {
-   grid-area: 4 / 3 / 13 / 8;
+   grid-area: 1 / 31 / 3 / 33;
+   transform: translateX(20%);
 }
 
 #temp2 {
-   grid-area: 2 / 9 / 7 / 12;
+   grid-area: 4 / 30 / 6 / 32;
+   transform: translateX(-30%);
 }
 
 #temp3 {
-   grid-area: 4 / 13 / 6 / 14;
+   grid-area: 3 / 23 / 8 / 28;
+   transform: translateX(-5%);
 }
 
 #temp4 {
-   grid-area: 1 / 14 / 3 / 15;
+   grid-area: 7 / 30 / 10 / 33;
+   transform: translateX(20%);
 }
 
 #temp5 {
-   grid-area: 9 / 10 / 13 / 12;
+   grid-area: 5 / 12 / 14 / 21;
 }
 
 #temp6 {
-   grid-area: 8 / 14 / 11 / 16;
+   grid-area: 8 / 8 / 10 / 10;
 }
 
 #temp7 {
-   grid-area: 14 / 1 / 16 / 3;
+   grid-area: 9 / 2 / 13 / 6;
 }
 
 #temp8 {
-   grid-area: 14 / 4 / 15 / 5;
+   /* grid-area: 13 / 8 / 15 / 10; */
+   /* transform: translate(-25%, 25%); */
+}
+
+#temp9 {
+   grid-area: 9 / 23 / 11 / 25;
+   transform: translate(-25%, 25%);
+}
+
+#signUp {
+   background-color: #C5F681;
+   border-radius: 10px;
+   padding: 10px;
+   margin-top: 20em;
+   z-index: 5;
+}
+
+.camera {
+   z-index: 10;
 }
