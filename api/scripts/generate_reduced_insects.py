@@ -25,6 +25,7 @@ input_labelmap["name_lower"] = input_labelmap["name"].str.lower()
 
 # Filter rows where the "name" matches a scientific name from the Excel file
 reduced_labelmap = input_labelmap[input_labelmap["name_lower"].isin(scientific_names)]
+reduced_labelmap = reduced_labelmap.drop(columns=["name_lower"]) # Remove the name_lower column
 
 # Save the reduced labelmap to new/output CSV file
 reduced_labelmap.to_csv(output_file_path, index=False)

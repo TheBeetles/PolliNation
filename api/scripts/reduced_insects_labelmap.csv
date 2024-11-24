@@ -1,169 +1,169 @@
-id,name,name_lower
-1,Halyomorpha halys,halyomorpha halys
-3,Acalymma vittatum,acalymma vittatum
-20,Hyles lineata,hyles lineata
-22,Hemileuca eglanterina,hemileuca eglanterina
-28,Hermetia illucens,hermetia illucens
-35,Dolichovespula maculata,dolichovespula maculata
-40,Automeris io,automeris io
-59,Chrysodeixis includens,chrysodeixis includens
-77,Anisota virginiensis,anisota virginiensis
-87,Battus philenor,battus philenor
-94,Euborellia annulipes,euborellia annulipes
-101,Plectrodera scalator,plectrodera scalator
-104,Adalia bipunctata,adalia bipunctata
-114,Aedes albopictus,aedes albopictus
-122,Deloyala guttata,deloyala guttata
-131,Camponotus pennsylvanicus,camponotus pennsylvanicus
-137,Hylephila phyleus,hylephila phyleus
-142,Platynota idaeusalis,platynota idaeusalis
-150,Limenitis archippus,limenitis archippus
-159,Plodia interpunctella,plodia interpunctella
-178,Cydia latiferreana,cydia latiferreana
-204,Chinavia hilaris,chinavia hilaris
-211,Hyalophora euryalus,hyalophora euryalus
-212,Pontia protodice,pontia protodice
-235,Lerodea eufala,lerodea eufala
-236,Periplaneta americana,periplaneta americana
-237,Megacyllene robiniae,megacyllene robiniae
-238,Dynastes tityus,dynastes tityus
-239,Urbanus proteus,urbanus proteus
-240,Utetheisa ornatrix,utetheisa ornatrix
-246,Anagrapha falcifera,anagrapha falcifera
-247,Xylocopa virginica,xylocopa virginica
-250,Siphanta acuta,siphanta acuta
-269,Anax junius,anax junius
-282,Megalopyge opercularis,megalopyge opercularis
-284,Melittia cucurbitae,melittia cucurbitae
-290,Pyrrharctia isabella,pyrrharctia isabella
-292,Trimerotropis pallidipennis,trimerotropis pallidipennis
-297,Diapheromera femorata,diapheromera femorata
-309,Nezara viridula,nezara viridula
-324,Lygus lineolaris,lygus lineolaris
-333,Linepithema humile,linepithema humile
-337,Pantographa limata,pantographa limata
-343,Polyphylla decemlineata,polyphylla decemlineata
-369,Dactylotum bicolor,dactylotum bicolor
-373,Sphecius speciosus,sphecius speciosus
-376,Tremex columba,tremex columba
-377,Orgyia antiqua,orgyia antiqua
-379,Daphnis nerii,daphnis nerii
-381,Leptinotarsa decemlineata,leptinotarsa decemlineata
-383,Spoladea recurvalis,spoladea recurvalis
-392,Alypia octomaculata,alypia octomaculata
-394,Manduca sexta,manduca sexta
-416,Vespula germanica,vespula germanica
-425,Schizura unicornis,schizura unicornis
-427,Poecilocapsus lineatus,poecilocapsus lineatus
-439,Agrotis ipsilon,agrotis ipsilon
-443,Prosapia bicincta,prosapia bicincta
-444,Prionoxystus robiniae,prionoxystus robiniae
-451,Spilosoma virginica,spilosoma virginica
-455,Megaphasma denticrus,megaphasma denticrus
-460,Bombus fervidus,bombus fervidus
-461,Bombus bimaculatus,bombus bimaculatus
-472,Hymenia perspectalis,hymenia perspectalis
-488,Helicoverpa zea,helicoverpa zea
-491,Darapsa myron,darapsa myron
-492,Hypena scabra,hypena scabra
-494,Corydalus cornutus,corydalus cornutus
-500,Parapediasia teterrella,parapediasia teterrella
-502,Manduca quinquemaculata,manduca quinquemaculata
-503,Tetraopes tetrophthalmus,tetraopes tetrophthalmus
-518,Boisea rubrolineata,boisea rubrolineata
-519,Boisea trivittata,boisea trivittata
-521,Desmia funeralis,desmia funeralis
-526,Ascalapha odorata,ascalapha odorata
-529,Ceratomia catalpae,ceratomia catalpae
-531,Vespula squamosa,vespula squamosa
-536,Schistocerca americana,schistocerca americana
-542,Spodoptera ornithogalli,spodoptera ornithogalli
-544,Hyphantria cunea,hyphantria cunea
-551,Bombus impatiens,bombus impatiens
-554,Diaphania hyalinata,diaphania hyalinata
-559,Atta texana,atta texana
-561,Udea rubigalis,udea rubigalis
-574,Vanessa atalanta,vanessa atalanta
-582,Choristoneura rosaceana,choristoneura rosaceana
-598,Leptoglossus phyllopus,leptoglossus phyllopus
-601,Nymphalis californica,nymphalis californica
-606,Phyllodesma americana,phyllodesma americana
-608,Brephidium exilis,brephidium exilis
-623,Feltia jaculifera,feltia jaculifera
-639,Apamea amputatrix,apamea amputatrix
-643,Bombus ternarius,bombus ternarius
-669,Stagmomantis carolina,stagmomantis carolina
-679,Pseudomyrmex gracilis,pseudomyrmex gracilis
-685,Dissosteira carolina,dissosteira carolina
-695,Halysidota tessellaris,halysidota tessellaris
-696,Otiorhynchus sulcatus,otiorhynchus sulcatus
-697,Datana ministra,datana ministra
-704,Harrisina americana,harrisina americana
-706,Microcentrum rhombifolium,microcentrum rhombifolium
-711,Bombus griseocollis,bombus griseocollis
-717,Melanoplus bivittatus,melanoplus bivittatus
-720,Bombus vagans,bombus vagans
-731,Pogonomyrmex barbatus,pogonomyrmex barbatus
-735,Chortophaga viridifasciata,chortophaga viridifasciata
-747,Caenurgina crassiuscula,caenurgina crassiuscula
-757,Melanoplus differentialis,melanoplus differentialis
-758,Caenurgina erechtea,caenurgina erechtea
-760,Mythimna unipuncta,mythimna unipuncta
-761,Nepytia canosaria,nepytia canosaria
-775,Calpodes ethlius,calpodes ethlius
-777,Sabulodes aegrotata,sabulodes aegrotata
-787,Acronicta americana,acronicta americana
-789,Oncopeltus fasciatus,oncopeltus fasciatus
-801,Pieris rapae,pieris rapae
-814,Eristalis tenax,eristalis tenax
-826,Agrius cingulata,agrius cingulata
-827,Estigmene acrea,estigmene acrea
-832,Grylloprociphilus imbricator,grylloprociphilus imbricator
-835,Tyria jacobaeae,tyria jacobaeae
-838,Magicicada septendecim,magicicada septendecim
-842,Lymantria dispar,lymantria dispar
-851,Plutella xylostella,plutella xylostella
-854,Actias luna,actias luna
-855,Antheraea polyphemus,antheraea polyphemus
-857,Anisomorpha buprestoides,anisomorpha buprestoides
-868,Uresiphita reversalis,uresiphita reversalis
-881,Sceliphron caementarium,sceliphron caementarium
-882,Dryocampa rubicunda,dryocampa rubicunda
-898,Romalea microptera,romalea microptera
-901,Lampides boeticus,lampides boeticus
-903,Panchlora nivea,panchlora nivea
-907,Halmus chalybeus,halmus chalybeus
-918,Achyra rantalis,achyra rantalis
-923,Homalodisca vitripennis,homalodisca vitripennis
-925,Harmonia axyridis,harmonia axyridis
-926,Odontotaenius disjunctus,odontotaenius disjunctus
-930,Cotinis nitida,cotinis nitida
-934,Brachystola magna,brachystola magna
-938,Vanessa cardui,vanessa cardui
-939,Vanessa virginiensis,vanessa virginiensis
-943,Murgantia histrionica,murgantia histrionica
-947,Eumorpha achemon,eumorpha achemon
-950,Agriphila vulgivagella,agriphila vulgivagella
-951,Nymphalis antiopa,nymphalis antiopa
-952,Vespula pensylvanica,vespula pensylvanica
-954,Danaus plexippus,danaus plexippus
-958,Bombus pensylvanicus,bombus pensylvanicus
-967,Callosamia promethea,callosamia promethea
-968,Hyalophora cecropia,hyalophora cecropia
-969,Anisota senatoria,anisota senatoria
-970,Citheronia regalis,citheronia regalis
-971,Eacles imperialis,eacles imperialis
-972,Nematocampa resistaria,nematocampa resistaria
-973,Lacinipolia renigera,lacinipolia renigera
-976,Orgyia leucostigma,orgyia leucostigma
-982,Evergestis pallidata,evergestis pallidata
-983,Noctua pronuba,noctua pronuba
-987,Anthrenus verbasci,anthrenus verbasci
-988,Alaus oculatus,alaus oculatus
-990,Arilus cristatus,arilus cristatus
-992,Neophasia menapia,neophasia menapia
-997,Malacosoma americanum,malacosoma americanum
-1007,Autographa californica,autographa californica
-1009,Malacosoma californicum,malacosoma californicum
-1011,Epargyreus clarus,epargyreus clarus
-1013,Polistes dominula,polistes dominula
+id,name
+1,Halyomorpha halys
+3,Acalymma vittatum
+20,Hyles lineata
+22,Hemileuca eglanterina
+28,Hermetia illucens
+35,Dolichovespula maculata
+40,Automeris io
+59,Chrysodeixis includens
+77,Anisota virginiensis
+87,Battus philenor
+94,Euborellia annulipes
+101,Plectrodera scalator
+104,Adalia bipunctata
+114,Aedes albopictus
+122,Deloyala guttata
+131,Camponotus pennsylvanicus
+137,Hylephila phyleus
+142,Platynota idaeusalis
+150,Limenitis archippus
+159,Plodia interpunctella
+178,Cydia latiferreana
+204,Chinavia hilaris
+211,Hyalophora euryalus
+212,Pontia protodice
+235,Lerodea eufala
+236,Periplaneta americana
+237,Megacyllene robiniae
+238,Dynastes tityus
+239,Urbanus proteus
+240,Utetheisa ornatrix
+246,Anagrapha falcifera
+247,Xylocopa virginica
+250,Siphanta acuta
+269,Anax junius
+282,Megalopyge opercularis
+284,Melittia cucurbitae
+290,Pyrrharctia isabella
+292,Trimerotropis pallidipennis
+297,Diapheromera femorata
+309,Nezara viridula
+324,Lygus lineolaris
+333,Linepithema humile
+337,Pantographa limata
+343,Polyphylla decemlineata
+369,Dactylotum bicolor
+373,Sphecius speciosus
+376,Tremex columba
+377,Orgyia antiqua
+379,Daphnis nerii
+381,Leptinotarsa decemlineata
+383,Spoladea recurvalis
+392,Alypia octomaculata
+394,Manduca sexta
+416,Vespula germanica
+425,Schizura unicornis
+427,Poecilocapsus lineatus
+439,Agrotis ipsilon
+443,Prosapia bicincta
+444,Prionoxystus robiniae
+451,Spilosoma virginica
+455,Megaphasma denticrus
+460,Bombus fervidus
+461,Bombus bimaculatus
+472,Hymenia perspectalis
+488,Helicoverpa zea
+491,Darapsa myron
+492,Hypena scabra
+494,Corydalus cornutus
+500,Parapediasia teterrella
+502,Manduca quinquemaculata
+503,Tetraopes tetrophthalmus
+518,Boisea rubrolineata
+519,Boisea trivittata
+521,Desmia funeralis
+526,Ascalapha odorata
+529,Ceratomia catalpae
+531,Vespula squamosa
+536,Schistocerca americana
+542,Spodoptera ornithogalli
+544,Hyphantria cunea
+551,Bombus impatiens
+554,Diaphania hyalinata
+559,Atta texana
+561,Udea rubigalis
+574,Vanessa atalanta
+582,Choristoneura rosaceana
+598,Leptoglossus phyllopus
+601,Nymphalis californica
+606,Phyllodesma americana
+608,Brephidium exilis
+623,Feltia jaculifera
+639,Apamea amputatrix
+643,Bombus ternarius
+669,Stagmomantis carolina
+679,Pseudomyrmex gracilis
+685,Dissosteira carolina
+695,Halysidota tessellaris
+696,Otiorhynchus sulcatus
+697,Datana ministra
+704,Harrisina americana
+706,Microcentrum rhombifolium
+711,Bombus griseocollis
+717,Melanoplus bivittatus
+720,Bombus vagans
+731,Pogonomyrmex barbatus
+735,Chortophaga viridifasciata
+747,Caenurgina crassiuscula
+757,Melanoplus differentialis
+758,Caenurgina erechtea
+760,Mythimna unipuncta
+761,Nepytia canosaria
+775,Calpodes ethlius
+777,Sabulodes aegrotata
+787,Acronicta americana
+789,Oncopeltus fasciatus
+801,Pieris rapae
+814,Eristalis tenax
+826,Agrius cingulata
+827,Estigmene acrea
+832,Grylloprociphilus imbricator
+835,Tyria jacobaeae
+838,Magicicada septendecim
+842,Lymantria dispar
+851,Plutella xylostella
+854,Actias luna
+855,Antheraea polyphemus
+857,Anisomorpha buprestoides
+868,Uresiphita reversalis
+881,Sceliphron caementarium
+882,Dryocampa rubicunda
+898,Romalea microptera
+901,Lampides boeticus
+903,Panchlora nivea
+907,Halmus chalybeus
+918,Achyra rantalis
+923,Homalodisca vitripennis
+925,Harmonia axyridis
+926,Odontotaenius disjunctus
+930,Cotinis nitida
+934,Brachystola magna
+938,Vanessa cardui
+939,Vanessa virginiensis
+943,Murgantia histrionica
+947,Eumorpha achemon
+950,Agriphila vulgivagella
+951,Nymphalis antiopa
+952,Vespula pensylvanica
+954,Danaus plexippus
+958,Bombus pensylvanicus
+967,Callosamia promethea
+968,Hyalophora cecropia
+969,Anisota senatoria
+970,Citheronia regalis
+971,Eacles imperialis
+972,Nematocampa resistaria
+973,Lacinipolia renigera
+976,Orgyia leucostigma
+982,Evergestis pallidata
+983,Noctua pronuba
+987,Anthrenus verbasci
+988,Alaus oculatus
+990,Arilus cristatus
+992,Neophasia menapia
+997,Malacosoma americanum
+1007,Autographa californica
+1009,Malacosoma californicum
+1011,Epargyreus clarus
+1013,Polistes dominula
