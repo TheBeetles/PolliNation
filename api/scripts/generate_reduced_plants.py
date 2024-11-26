@@ -1,3 +1,8 @@
+"""
+This script checks which plants from a U.S database of plants is present in the nature-id plant labelmap file,
+and retains only those matching plants; i.e, limits plant labelmap file to only plants that can be found in the United States
+"""
+
 import pandas as pd
 
 # File paths
