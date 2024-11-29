@@ -24,6 +24,45 @@ class Species(db.Model):
 
     def __repr__(self):
         return f"Species('{self.name}', '{self.is_bug}', '{self.native}')"
+    
+    @app.route('/get_nearest_stores', methods=['POST'])
+    def get_nearest_stores():
+        try:
+            user_data = request.json
+            latitude = user_data.get('latitude')
+            longitude = user_data.get('longitude')
+
+            # Validate the input
+            if latitude is None or longitude is None:
+                return jsonify({"error": "Latitude and Longitude are required"}), 400
+
+            user_location = (latitude, longitude)
+
+        
+            # Function to calculate distance in miles
+            def get_distance(user_location, store_location):
+                # Calculate distance in kilometers
+                distance_km = geodesic(user_location, store_location).kilometers
+                # Convert distance to miles
+                distance_miles = distance_km * 0.621371
+                return distance_miles
+
+
+            # Calculate distance for each store
+            for store in stores:
+                store_location = (store["lat"], store["lon"])
+                store["distance"] = get_distance(user_location, store_location)
+
+            # Sort stores by distance and get top 5 nearest stores
+            nearest_stores = sorted(stores, key=lambda x: x["distance"])[:5]
+
+            # Return nearest stores as JSON
+            return jsonify(nearest_stores)
+
+        except Exception as e:
+            # Log the error for better visibility
+            print(f"Error occurred: {str(e)}")
+            return jsonify({"error": str(e)}), 500
 
     @app.route('/api/get/image/info/<data>', methods=['GET'])
     @login_required
@@ -54,3 +93,5 @@ class Species(db.Model):
                         "native": species.native,
                         "living": species.living,
                         "description": species.description})
+        
+        
