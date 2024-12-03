@@ -3,7 +3,8 @@ Contains the table representations of the database
 '''
 from flask import request, jsonify
 from flask_login import current_user, login_required
-from pollination import app, db, File, User, store_locator
+from pollination import app, db, File, User
+# from pollination import app, db, File, User, store_locator
 
 
 class Species(db.Model):
