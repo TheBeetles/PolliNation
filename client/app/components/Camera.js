@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './Camera.module.css';
 
-const Camera = ({ setLoaded }) => {
+const Camera = ({ setLoaded, type }) => {
   const router = useRouter();
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
@@ -71,13 +71,7 @@ const Camera = ({ setLoaded }) => {
 
     // sends an request to send the image
     setLoaded(false);
-    var query = ''
-    if (window.location.pathname === "/scan-plant") {
-      query = 'plant';
-    } else {
-      query = 'insect';
-    }
-    const response = await fetch('/api/image/' + query + '/upload', {
+    const response = await fetch('/api/image/' + {type} + '/upload', {
       method: 'POST',
       headers: {
         'Content-Type': 'image/png'

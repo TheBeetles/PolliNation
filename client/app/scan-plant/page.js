@@ -10,7 +10,7 @@ export default function ScanSpeciesPage() {
   const [error, setError] = useState('');
 
   const handleTakePhoto = () => {
-    router.push('/take-plant');
+    router.push('/take-photo/plant');
   };
 
   const handleUploadImage = () => {
