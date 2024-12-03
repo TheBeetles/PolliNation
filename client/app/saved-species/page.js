@@ -2,9 +2,9 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import placeholder from '../images/pollination.png';  // Assuming you have a placeholder image
+import placeholder from '../images/pollination.png';
 import verifyUser from '../components/verify';
-import styles from '../components/Camera.module.css';
+import styles from '../components/Camera.module.css'
 
 export default function SavedSpeciesPage() { 
     const router = useRouter();
@@ -13,7 +13,6 @@ export default function SavedSpeciesPage() {
     const [insectImage, setInsectImage] = useState([]);
     const [toggle, setToggle] = useState(false);
     verifyUser();
-
     const handleGoBackButton = () => { 
         router.push('/scan-species');
     };
@@ -26,34 +25,35 @@ export default function SavedSpeciesPage() {
                 (r) => { return r.json(); }
             );
             setData(val);
-        };
+        }
         res();
-    }, []);
+    },[]);
 
     useEffect(() => {
         const response = async () => {
             if (data['insect'] !== undefined) {
                 for (let i = 0; i < data['insect'].length; i++) {
-                    const res = await fetch('/api/image/get/' + data['insect'][i], {
-                        method: 'GET'
-                    }).then((r) => { return r.blob(); }).then(
-                        (thing) => {
-                            const objectURL = URL.createObjectURL(thing);
-                            insectImage.push({ id: data['insect'][i], image: objectURL });
-                        }
-                    );
+                const res = await fetch('/api/image/get/' + data['insect'][i], {
+                    method: 'GET'
+                }).then((r) => {return r.blob();}).then(
+                    (thing) => {
+                    const objectURL = URL.createObjectURL(thing);
+                        insectImage.push({ id: data['insect'][i], image: objectURL});
+                    }
+                );
                 }
             }
             if (data['plant'] !== undefined) {
                 for (let i = 0; i < data['plant'].length; i++) {
-                    const res = await fetch('/api/image/get/' + data['plant'][i], {
-                        method: 'GET'
-                    }).then((r) => { return r.blob(); }).then(
-                        (thing) => {
-                            const objectURL = URL.createObjectURL(thing);
-                            plantImage.push({ id: data['plant'][i], image: objectURL });
-                        }
-                    );
+                const res = await fetch('/api/image/get/' + data['plant'][i], {
+                    method: 'GET'
+                }).then((r) => {return r.blob();}).then(
+                    (thing) => {
+                    const objectURL = URL.createObjectURL(thing);
+                        plantImage.push({ id: data['plant'][i], image: objectURL});
+                        // setPlantImage([...plantImage, { id: data['plant'][i], image: objectURL}]);
+                    }
+                );
                 }
             }
 
@@ -64,12 +64,11 @@ export default function SavedSpeciesPage() {
 
     const toggleFalse = () => {
         setToggle(false);
-    };
+    }
         
     const toggleTrue = () => {
         setToggle(true);
-    };
-
+    }
     return (
         <div style={{
             position: 'relative',
@@ -78,7 +77,6 @@ export default function SavedSpeciesPage() {
             flexDirection: 'column',
             alignItems: 'center',
             padding: '20px',
-            backgroundColor: '#F5F5DC' // Beige background
         }}>
             <button onClick={handleGoBackButton} style={{
                 position: 'absolute',
@@ -94,33 +92,27 @@ export default function SavedSpeciesPage() {
             }}>
                 Back
             </button>
-            { toggle && 
-              <h1 style={{
-                  marginBottom: '10px',
-                  color: '#006400', // Dark green color
-                  fontSize: '28px',  // Larger font size
-                  fontWeight: '900', // More bold
-                  fontFamily: 'Georgia, serif', // Prettier font
-              }}>
-                  Plant List
-              </h1> 
-            }
-            { !toggle && 
-              <h1 style={{
-                  marginBottom: '10px',
-                  color: '#006400', // Dark green color
-                  fontSize: '28px',  // Larger font size
-                  fontWeight: '900', // More bold
-                  fontFamily: 'Georgia, serif', // Prettier font
-              }}>
-                  Insect List
-              </h1> 
-            }
+            { toggle && <h1 style={{
+                marginBottom: '10px',
+                color: '#B3E576',
+                fontSize: '24px',
+            }}>
+                Plant List
+            </h1>}
+            { !toggle && <h1 style={{
+                marginBottom: '10px',
+                color: '#B3E576',
+                fontSize: '24px',
+            }}>
+                Insect List
+            </h1>}
             <div style={{ display: 'flex' }}>
-                <button className={styles.button} onClick={toggleTrue}>
+                <button className={styles.button} onClick={toggleTrue} style={{
+                }}>
                     Plants
                 </button>
-                <button className={styles.button} onClick={toggleFalse}>
+                <button className={styles.button} onClick={toggleFalse} style={{
+                }}>
                     Insects
                 </button>
             </div>
@@ -133,26 +125,26 @@ export default function SavedSpeciesPage() {
                 { toggle &&
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(4, 1fr)', // Set to 4 columns
+                    gridTemplateColumns: 'repeat(3, 1fr)',
                     gap: '10px',
                 }}>
                     {plantImage.map(plant => (
-                        <a href={("species-information/" + plant.id)} key={plant.id}>
-                        <div style={{
+                        <a href={("species-information/" + plant.id)}>
+                        <div key={plant.id} style={{
                             width: '100px',
                             height: '100px',
-                            borderRadius: '50%', // Circular shape
-                            border: '2px solid #B3E576', // Green border
+                            border: '2px solid #000000',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            backgroundColor: '#F0F0F0',
+                            backgroundImage: placeholder,
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
                         }}>
-                            <img src={plant.image || placeholder} alt="Plant" style={{
+                            <img src={plant.image} alt="Insect" style={{
                                 width: '100%',
                                 height: '100%',
                                 objectFit: 'cover',
-                                borderRadius: '50%', // Circular image
                             }}/>
                         </div>
                         </a>
@@ -161,26 +153,25 @@ export default function SavedSpeciesPage() {
                 { !toggle &&
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(4, 1fr)', // Set to 4 columns
+                    gridTemplateColumns: 'repeat(3, 1fr)',
                     gap: '10px',
                 }}>
                     {insectImage.map(insect => (
-                        <a href={("species-information/" + insect.id)} key={insect.id}>
-                        <div style={{
+                        <a href={("species-information/" + insect.id)}>
+                        <div key={insect.id} style={{
                             width: '100px',
                             height: '100px',
-                            borderRadius: '50%', // Circular shape
-                            border: '2px solid #B3E576', // Green border
+                            border: '2px solid #000000',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            backgroundColor: '#F0F0F0',
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
                         }}>
-                            <img src={insect.image || placeholder} alt="Insect" style={{
+                            <img src={insect.image} alt="Insect" style={{
                                 width: '100%',
                                 height: '100%',
                                 objectFit: 'cover',
-                                borderRadius: '50%', // Circular image
                             }}/>
                         </div>
                         </a>
