@@ -23,16 +23,12 @@ export default function ScanSpeciesPage() {
     router.push('/saved-species');
   };
 
-  const handleBack = () => {
-    router.push('/previous-page');
-  };
-
   const handleLogout = async () => {
     const res = await fetch('/api/logout', {
       method: 'GET',
     });
     if (res.ok) {
-      router.push('/login');
+      router.push('/landing-page');
     } else {
       setError('Something went wrong');
     }
@@ -52,7 +48,6 @@ export default function ScanSpeciesPage() {
         </div>
       </div>
       <button onClick={handleSavedSpecies} style={styles.savedSpeciesButton}>Saved Species</button>
-      <button onClick={handleBack} style={styles.backButton}>Back</button>
       <button onClick={handleLogout} style={styles.logoutButton}>Logout</button>
       <h1 style={styles.errorText}>{error}</h1>
     </div>

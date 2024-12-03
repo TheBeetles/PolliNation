@@ -3,22 +3,69 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
 import takePhotoIcon from '../images/camera_scan.jpg'; 
-import uploadImageIcon from '../images/upload_scan.jpg'; 
+import uploadImageIcon from '../images/upload_scan.jpg';
+import cameraStyles from '../components/Camera.module.css';
+import React from 'react';
 
 export default function ScanSpeciesPage() {
   const router = useRouter();
   const [error, setError] = useState('');
+  const [loaded, setLoaded] = useState(true);
+  const fileInputRef = React.createRef();
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const handleTakePhoto = () => {
     router.push('/take-photo/plant');
   };
 
   const handleUploadImage = () => {
-    // router.push('/upload-plant');
+    fileInputRef.current.click();
   };
 
   const handleBack = () => {
     router.push('/scan-species');
+  };
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setSelectedImage(reader.result);
+        uploadPhoto(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const uploadPhoto  = async (imageData) => {
+
+    setLoaded(false);
+    const response = await fetch('/api/image/plant/upload', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'image/jpg'
+      },
+        body: imageData
+    });
+    const data = await response.json();
+    if (response.ok) {
+      router.push("/species-information/" + data['image']);
+    } else {
+      // sends a request to delete image on unknown species error
+      const res = await fetch('/api/image/delete', {
+          method: 'POST',
+          body: JSON.stringify({
+              "id": data['image']
+          }),
+          headers: {
+            'Content-type': 'application/json; charset=UTF-8'
+          }
+      });
+      
+      alert(data['Failed']);
+      setLoaded(true);
+    }
   };
 
   return (
@@ -35,6 +82,15 @@ export default function ScanSpeciesPage() {
         <div onClick={handleUploadImage} style={styles.actionButton}>
           <div style={styles.imageWrapper}>
             <Image src={uploadImageIcon} alt="Upload Image" layout="fill" objectFit="contain" />
+            <input
+                type="file"
+                accept="image/*"
+                capture="camera"
+                className={cameraStyles.fileInput}
+                onChange={handleFileChange}
+                ref={fileInputRef}
+                style={{ display: 'none' }}
+              />
           </div>
           <p style={styles.actionText}>Upload Image</p>
         </div>
