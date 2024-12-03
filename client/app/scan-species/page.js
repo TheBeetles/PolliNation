@@ -12,17 +12,19 @@ export default function ScanSpeciesPage() {
   verifyUser();
 
   const handleScanPlant = () => {
-    console.log('Scan an Insect clicked');
-    router.push('/scan-plant')
+    router.push('/scan-plant');
   };
 
   const handleScanInsect = () => {
-    console.log('Scan an Insect clicked');
-    router.push('/scan-insect')
+    router.push('/scan-insect');
   };
 
   const handleSavedSpecies = () => {
     router.push('/saved-species');
+  };
+
+  const handleBack = () => {
+    router.push('/previous-page');
   };
 
   const handleLogout = async () => {
@@ -30,7 +32,7 @@ export default function ScanSpeciesPage() {
       method: 'GET',
     });
     if (res.ok) {
-      router.push('/login')
+      router.push('/login');
     } else {
       setError('Something went wrong');
     }
@@ -38,20 +40,21 @@ export default function ScanSpeciesPage() {
 
   return (
     <div style={styles.container}>
-      <button onClick={handleLogout} style={styles.logoutButton}>Logout</button>
+      <h1 style={styles.headerText}>Hello User!</h1>
       <div style={styles.scanContainer}>
         <div onClick={handleScanPlant} style={styles.scanBox}>
-          <Image src={scanIcon} alt="Scan a Plant" width={100} height={100} />
-          <p style={styles.scanText}>Scan a Plant</p>
+          <Image src={scanIcon} alt="Scan a Plant" width={220} height={220} />
+          <p style={styles.scanText}>Scan Plant</p>
         </div>
-        <p style={styles.orText}>OR</p>
         <div onClick={handleScanInsect} style={styles.scanBox}>
-          <Image src={scanIcon} alt="Scan an Insect" width={100} height={100} />
-          <p style={styles.scanText}>Scan an Insect</p>
+          <Image src={scanIcon} alt="Scan an Insect" width={220} height={220} />
+          <p style={styles.scanText}>Scan Insect</p>
         </div>
       </div>
       <button onClick={handleSavedSpecies} style={styles.savedSpeciesButton}>Saved Species</button>
-      <h1 style={{ color: 'red' }}> { error } </h1>
+      <button onClick={handleBack} style={styles.backButton}>Back</button>
+      <button onClick={handleLogout} style={styles.logoutButton}>Logout</button>
+      <h1 style={styles.errorText}>{error}</h1>
     </div>
   );
 }
@@ -62,58 +65,81 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '80vh',
-    backgroundColor: '#fff',
+    height: '100vh',
+    backgroundColor: '#FFFDD0',
     padding: '20px',
-    fontfamily: 'Inter',
+    fontFamily: 'Verdana, sans-serif',
   },
-  logoutButton: {
-    alignSelf: 'flex-end',
-    marginBottom: '20px',
-    padding: '10px 20px',
-    fontSize: '16px',
-    borderRadius: '20px',
-    backgroundColor: '#B3E576',
-    color: '#fff',
-    border: 'none',
-    cursor: 'pointer',
+  headerText: {
+    fontSize: '36px',
+    color: '#000',
+    position: 'absolute', 
+    top: '20px', 
+    left: '20px', 
+    marginBottom: '10px',
   },
   scanContainer: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
-    height: '40vh',
-    margin: '1em 0',
+    justifyContent: 'space-around',
+    width: '80%',
+    marginBottom: '20px',
   },
   scanBox: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '150px',
-    height: '150px',
-    border: '2px solid #000',
-    borderRadius: '10px',
-    margin: '0 20px',
+    width: '375px',
+    height: '375px',
+    backgroundColor: '#C5F681',
+    borderRadius: '50%',
     cursor: 'pointer',
   },
   scanText: {
     marginTop: '10px',
-    fontSize: '18px',
-    color: '#2E8B57',
-  },
-  orText: {
-    fontSize: '24px',
+    fontSize: '40px',
     color: '#000',
   },
   savedSpeciesButton: {
+    position: 'absolute',
+    top: '20px',
+    right: '20px',
     padding: '10px 20px',
     fontSize: '16px',
     borderRadius: '20px',
-    backgroundColor: '#B3E576',
-    color: '#fff',
+    backgroundColor: '#1B5E20',
+    color: '#FFF',
     border: 'none',
     cursor: 'pointer',
-    margin: '1em 0 0 0',
+  },
+  backButton: {
+    position: 'absolute',
+    bottom: '20px',
+    left: '20px',
+    padding: '10px 20px',
+    fontSize: '16px',
+    borderRadius: '20px',
+    backgroundColor: '#1B5E20',
+    color: '#FFF',
+    border: 'none',
+    cursor: 'pointer',
+  },
+  logoutButton: {
+    position: 'absolute',
+    bottom: '20px',
+    right: '20px',
+    padding: '10px 20px',
+    fontSize: '16px',
+    borderRadius: '20px',
+    backgroundColor: '#1B5E20',
+    color: '#FFF',
+    border: 'none',
+    cursor: 'pointer',
+  },
+  errorText: {
+    color: 'red',
+    marginTop: '20px',
   },
 };
+

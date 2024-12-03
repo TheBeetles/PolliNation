@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolliNation</title>
+    <style>
+        body {
+            background-color: #FFFDD0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .header {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            background-color: #C5F681;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #000000;
+            font-size: 1.2em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .button img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .button:hover {
+            transform: scale(1.05);
+        }
+        .back-button, .saved-button {
+            background-color: #1B5E20;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1em;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover, .saved-button:hover {
+            background-color: #134d1b;
+        }
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .saved-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Hello User!</div>
+        <div class="buttons">
+            <a href="#" class="button">
+                <img src="/mnt/data/image.png" alt="Scan Plant">
+                <span>Scan Plant</span>
+            </a>
+            <a href="#" class="button">
+                <img src="/mnt/data/image.png" alt="Scan Insect">
+                <span>Scan Insect</span>
+            </a>
+        </div>
+        <a href="#" class="back-button">Back</a>
+        <a href="#" class="saved-button">Saved Species</a>
+    </div>
+</body>
+</html>
