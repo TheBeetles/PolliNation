@@ -1,191 +1,131 @@
-// app/saved-species/saved-species.js
 'use client';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import placeholder from '../images/pollination.png';  // Assuming you have a placeholder image
+import plantIcon from '../images/plant.png';
+import insectIcon from '../images/dragonfly.png';
 import verifyUser from '../components/verify';
 import styles from '../components/Camera.module.css';
 
-export default function SavedSpeciesPage() { 
+export default function SavedSpeciesPage() {
     const router = useRouter();
-    const [data, setData] = useState([]);
-    const [plantImage, setPlantImage] = useState([]);
-    const [insectImage, setInsectImage] = useState([]);
-    const [toggle, setToggle] = useState(false);
     verifyUser();
 
-    const handleGoBackButton = () => { 
+    // Back button handler
+    const handleGoBackButton = () => {
         router.push('/scan-species');
     };
 
-    useEffect(() => {
-        const res = async () => {
-            const val = await fetch('/api/image/all', {
-                method: 'GET'
-            }).then(
-                (r) => { return r.json(); }
-            );
-            setData(val);
-        };
-        res();
-    }, []);
-
-    useEffect(() => {
-        const response = async () => {
-            if (data['insect'] !== undefined) {
-                for (let i = 0; i < data['insect'].length; i++) {
-                    const res = await fetch('/api/image/get/' + data['insect'][i], {
-                        method: 'GET'
-                    }).then((r) => { return r.blob(); }).then(
-                        (thing) => {
-                            const objectURL = URL.createObjectURL(thing);
-                            insectImage.push({ id: data['insect'][i], image: objectURL });
-                        }
-                    );
-                }
-            }
-            if (data['plant'] !== undefined) {
-                for (let i = 0; i < data['plant'].length; i++) {
-                    const res = await fetch('/api/image/get/' + data['plant'][i], {
-                        method: 'GET'
-                    }).then((r) => { return r.blob(); }).then(
-                        (thing) => {
-                            const objectURL = URL.createObjectURL(thing);
-                            plantImage.push({ id: data['plant'][i], image: objectURL });
-                        }
-                    );
-                }
-            }
-
-            setInsectImage([...insectImage]);
-        };
-        response();
-    }, [data]);
-
-    const toggleFalse = () => {
-        setToggle(false);
+    // Click handlers for plant and insect buttons
+    const handlePlantClick = () => {
+        router.push('/saved-plant-info');
     };
-        
-    const toggleTrue = () => {
-        setToggle(true);
+
+    const handleInsectClick = () => {
+        router.push('/saved-insect-info');
     };
 
     return (
-        <div style={{
-            position: 'relative',
-            height: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            padding: '20px',
-            backgroundColor: '#F5F5DC' // Beige background
-        }}>
+        <div 
+            style={{
+                position: 'relative',
+                height: '100vh',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                padding: '20px',
+                backgroundColor: '#FFFDD0',
+                fontFamily: 'Verdana, sans-serif', 
+            }}
+        >
+            {/* Back Button */}
             <button onClick={handleGoBackButton} style={{
                 position: 'absolute',
                 top: '20px',
-                right: '20px',
+                left: '20px',
                 padding: '10px',
                 fontSize: '16px',
                 cursor: 'pointer',
-                backgroundColor: '#B3E576',
+                backgroundColor: '#1B5E20',
                 color: 'white',
                 borderRadius: '20px',
                 border: 'none',
             }}>
                 Back
             </button>
-            { toggle && 
-              <h1 style={{
-                  marginBottom: '10px',
-                  color: '#006400', // Dark green color
-                  fontSize: '28px',  // Larger font size
-                  fontWeight: '900', // More bold
-                  fontFamily: 'Georgia, serif', // Prettier font
-              }}>
-                  Plant List
-              </h1> 
-            }
-            { !toggle && 
-              <h1 style={{
-                  marginBottom: '10px',
-                  color: '#006400', // Dark green color
-                  fontSize: '28px',  // Larger font size
-                  fontWeight: '900', // More bold
-                  fontFamily: 'Georgia, serif', // Prettier font
-              }}>
-                  Insect List
-              </h1> 
-            }
-            <div style={{ display: 'flex' }}>
-                <button className={styles.button} onClick={toggleTrue}>
-                    Plants
-                </button>
-                <button className={styles.button} onClick={toggleFalse}>
-                    Insects
-                </button>
-            </div>
+
+            {/* Page Title */}
+            <h1 style={{
+                marginBottom: '50px',
+                color: '#000',
+                fontSize: '45px',
+            }}>
+                Saved Species
+            </h1>
+
+            {/* Plant and Insect Categories */}
             <div style={{
                 display: 'flex',
-                justifyContent: 'center',
-                width: '100%',
-                paddingBottom: '2em',
+                gap: '60px',
             }}>
-                { toggle &&
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(4, 1fr)', // Set to 4 columns
-                    gap: '10px',
+                {/* Plant Button */}
+                <div onClick={handlePlantClick} style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    cursor: 'pointer',
+                    width: '375px',
+                    height: '375px',
+                    backgroundColor: '#B3E576',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    position: 'relative',
                 }}>
-                    {plantImage.map(plant => (
-                        <a href={("species-information/" + plant.id)} key={plant.id}>
-                        <div style={{
-                            width: '100px',
-                            height: '100px',
-                            borderRadius: '50%', // Circular shape
-                            border: '2px solid #B3E576', // Green border
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            backgroundColor: '#F0F0F0',
-                        }}>
-                            <img src={plant.image || placeholder} alt="Plant" style={{
-                                width: '100%',
-                                height: '100%',
-                                objectFit: 'cover',
-                                borderRadius: '50%', // Circular image
-                            }}/>
-                        </div>
-                        </a>
-                    ))}
-                </div> }
-                { !toggle &&
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(4, 1fr)', // Set to 4 columns
-                    gap: '10px',
+                    <img src={plantIcon.src} alt="Plant Icon" style={{
+                        width: '230px',
+                        height: '230px',
+                        marginBottom: '10px',
+                    }}/>
+                    <span style={{
+                        color: '#000',
+                        fontSize: '32px',
+                        position: 'absolute',
+                        bottom: '20px',
+                    }}>
+                        Plant
+                    </span>
+                </div>
+
+                {/* Insect Button */}
+                <div onClick={handleInsectClick} style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    cursor: 'pointer',
+                    width: '375px',
+                    height: '375px',
+                    backgroundColor: '#B3E576',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    position: 'relative',
                 }}>
-                    {insectImage.map(insect => (
-                        <a href={("species-information/" + insect.id)} key={insect.id}>
-                        <div style={{
-                            width: '100px',
-                            height: '100px',
-                            borderRadius: '50%', // Circular shape
-                            border: '2px solid #B3E576', // Green border
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            backgroundColor: '#F0F0F0',
-                        }}>
-                            <img src={insect.image || placeholder} alt="Insect" style={{
-                                width: '100%',
-                                height: '100%',
-                                objectFit: 'cover',
-                                borderRadius: '50%', // Circular image
-                            }}/>
-                        </div>
-                        </a>
-                    ))}
-                </div>}
+                    <img src={insectIcon.src} alt="Insect Icon" style={{
+                        width: '250px',
+                        height: '250px',
+                        marginBottom: '10px',
+                    }}/>
+                    <span style={{
+                        color: '#000',
+                        fontSize: '32px',
+                        position: 'absolute',
+                        bottom: '20px',
+                    }}>
+                        Insect
+                    </span>
+                </div>
             </div>
         </div>
     );
