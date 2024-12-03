@@ -32,6 +32,4 @@ db.init_app(app)
 from pollination.user import User
 from pollination.files import File
 from pollination.species import Species
-# from pollination import routes
-# from pollination.routes import files
-# from pollination.routes import species
+

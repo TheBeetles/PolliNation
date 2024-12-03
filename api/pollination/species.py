@@ -1,7 +1,9 @@
 '''
 Contains the table representations of the database
 '''
-from pollination import app, db, File
+from flask import request, jsonify
+from flask_login import current_user, login_required
+from pollination import app, db, File, User
 
 
 class Species(db.Model):
@@ -22,6 +24,7 @@ class Species(db.Model):
 
     def __repr__(self):
         return f"Species('{self.name}', '{self.is_bug}', '{self.native}')"
+    
     @app.route('/get_nearest_stores', methods=['POST'])
     def get_nearest_stores():
         try:
@@ -90,4 +93,5 @@ class Species(db.Model):
                         "native": species.native,
                         "living": species.living,
                         "description": species.description})
+        
         
