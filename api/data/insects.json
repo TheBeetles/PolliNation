@@ -1,0 +1,311 @@
+{
+    "Brown marmorated stink bug": {
+      "scientific": "Halyomorpha halys",
+      "description": "An invasive species known for its shield-like shape and marbled brown color. It is a major agricultural pest!",
+      "native": false,
+      "living": "Thrives particularly near agricultural crops and orchards. Feeds on a wide variety of fruits, vegetables, and ornamental plants, particularly apples, apricots, pears, cherries, corn, grapes, lima beans, nectarines and peaches, peppers, tomatoes, and soybeans. They lay their eggs on the underside of leaves",
+      "future": "To manage its population, remove and destroy eggs found on plants. Use traps, and encourage natural predators like other insects, spiders, and birds, which use the brown marmorated stink bug as a food source. Spray insects with a mixture of water and dish soap or insecticidal soap, or use rubbing alcohol."
+    },
+    "Striped cucumber beetle": {
+      "scientific": "Acalymma vittatum",
+      "description": "A small beetle with distinctive yellow and black vertical stripes along its back. While native, it is a major agricultural pest!",
+      "native": true,
+      "living": "Prefers gardens and agricultural fields, feeding on cucurbit plants like cucumbers, squash, and melons. In the spring, they lay their eggs in wet, coarse soil at the base of host plants, and larvae feed on roots and stems at or below ground level and emerge in the summer. Throughout the winter, adults survive in plant debris, nearby wooded areas, and in the soil.",
+      "future": "To prevent infestation, plant trap crops such as cucurbit varieties at the perimeter of valued crops. Remove and dispose of egg clusters and adults and use baited traps. Use row covers and introduce beneficial insects like ladybugs, lacewings, and assassin bugs, or spray beneficial nematodes such as NemaSeek into your soil to feed on its larva and increase nutrients. Drench soil with spinosad spray to kill larvae before pupating, or use B. bassiana sprays to target them after they've hatched. To manage adult damage, apply kaolin clay to plant foliage to prevent feeding. Finally, use insecticides with care."
+    },
+    "Thick-legged hoverfly": {
+      "scientific": "Syritta pipiens",
+      "description": "Non-native, but necessary! They have thick hind legs and are known for their mimicry of bees. While originating in Europe and thus not native to North America, they are a healthy asset to crops! They consume thousands of pesky aphids and other small insects in their larvae stage, significantly reducing crop infestations and making them extremely benefitial to farmers and gardeners. Adults are also pollinators!",
+      "native": false,
+      "living": "They are often found in gardens and near flowers, particularly flat-topped flowers rich in nectar and pollen. Decaying plant and animal matter as well as stagnant water are breeding grounds for these species.",
+      "future": "To support these pollinators, plant native flowers, such as asters, yarrow, zinnias, and small-flowered herbs such as coriander and dill."
+    },
+    "Four-spotted chaser": {
+      "scientific": "Libellula quadrimaculata",
+      "description": "A dragonfly with distinctive spots on its wings, commonly found near water bodies.",
+      "native": true,
+      "living": "Prefers ponds, lakes, and slow-moving streams. Feeds on small insects.",
+      "future": "Support by maintaining clean water bodies and preserving natural habitats like ponds and wetlands."
+    },
+    "Delta-spotted spiketail": {
+      "scientific": "Cordulegaster diastatops",
+      "description": "A large amber-colored dragonfly with four black spots along its wings. Known for its strong flying abilities.",
+      "native": true,
+      "living": "Inhabits clear, fast-flowing streams and rivers. Seeing them is a great sign, as their dependency on clear water makes them bioindicators of the health of an ecosystem. Predatory, feeding on other insects.",
+      "future": "Support by preserving clean and healthy waterways. Avoid using pesticides near water bodies."
+    },
+    "Chalk-fronted corporal": {
+      "scientific": "Ladona julia",
+      "description": "A dragonfly with a black body and a distinctive chalky-white coating on face and thorax. Often seen perching on sunny spots.",
+      "native": true,
+      "living": "Found near ponds, marshes, and slow streams. Feeds on small flying insects.",
+      "future": "Support by preserving wetland habitats and minimizing water pollution."
+    },
+    "Canadian tiger swallowtail": {
+      "scientific": "Papilio canadensis",
+      "description": "A large, yellow butterfly with black tiger stripes along its wings. They are great pollinators!",
+      "native": true,
+      "living": "Prefers woodlands, gardens, and meadows. Larvae feed on various trees and shrubs, adults feed on nectar.",
+      "future": "Support by planting and conserving native nectar-producing flowers and host plants. Most common host plants for caterpillars include willow, birch, aspen, black cherry, tulip, and magnolia trees. Favorite nectar-producing flowers for adults include butterfly bush, joe-pye weed, milkweed, phlox, ironweed, and lilac."
+    },
+    "White-spotted sawyer": {
+      "scientific": "Monochamus scutellatus",
+      "description": "A longhorn beetle with distinctive white spots and long antennae. Smaller than its devestating relative, the Asian Longhorned Beetle. Known for its role in decomposing dead trees.",
+      "native": true,
+      "living": "Found in coniferous forests. Larvae feed on dead or dying trees, playing an important role in nutrient cycling.",
+      "future": "Support by preserving natural forests and avoiding unnecessary logging. Leave dead wood in forests for habitat."
+    },
+    "American emerald": {
+      "scientific": "Cordulia shurtleffii",
+      "description": "A dragonfly with a thin, black body and clear wings. Known for its bright green coloration.",
+      "native": true,
+      "living": "Inhabits bogs, lakes, and marshes. Feeds on small aquatic and flying insects.",
+      "future": "Support by maintaining clean freshwater habitats and protecting wetland ecosystems."
+    },
+    "Sedge sprite": {
+      "scientific": "Nehalennia irene",
+      "description": "A tiny damselfly with a slender body and bright, metallic green coloration. Often found among sedges and grasses.",
+      "native": true,
+      "living": "Prefers marshes, ponds, and wet meadows. Feeds on small insects.",
+      "future": "Support by preserving wetland habitats and avoiding the use of pesticides in these areas."
+    },
+    "Buff-tailed bumblebee": {
+      "scientific": "Bombus terrestris",
+      "description": "A large bumblebee with a distinctive light yellow, buff-colored tail. A crucial pollinator!",
+      "native": false,
+      "living": "Found in gardens, meadows, and agricultural fields. While they love any nectar-producing plant, their short tongues make short, open flowers preferable. However, if they come across a flower that is too deep for their tongue, they bite a hole at its base to suck out the nectar from there instead.",
+      "future": "Support by planting both early and late blooming native flowers to prolong the nectar season. Plant many of the same flower in clusters so they can be more easily recognized and visited. Reduce the use of pesticides!"
+    },
+    "White-lined sphinx": {
+      "scientific": "Hyles lineata",
+      "description": "A thick-bodied, brown moth with white and peach colorations on its wings. It is also known as a hummingbird moth due to its rapid, hummingbird-like flight! They are crucial night-time pollinators.",
+      "native": true,
+      "living": "Found in gardens, meadows, and open areas. They are primarily nocturnal, so they can pollinate flowers that are not visited by day-time pollinators such as bees and butterflies.",
+      "future": "Support by planting a diverse range of native nectar-producing flowers and night-blooming flowers, such as moonflowers, gardenias, and evening primrose."
+    },
+    "Phantom crane fly": {
+      "scientific": "Bittacomorpha clavipes",
+      "description": "A type of crane fly with a long, thin body and six long, slender legs displaying a black and white block pattern. Often seen near water.",
+      "native": true,
+      "living": "Prefers wetlands, marshes, and streams. Larvae feed on decaying organic matter, assisting in the process of decomposition. Adults feed on small aphids and other insects",
+      "future": "Support by preserving wetland habitats and avoiding pollution in these areas."
+    },
+    "Eastern pine elfin": {
+      "scientific": "Callophrys niphon",
+      "description": "A small brown butterfly with gray and black coloring, often found near pine and oak trees.",
+      "native": true,
+      "living": "Found in pine forests and woodlands. Larvae feed on pine needles, adults feed on nectar from early spring flowers.",
+      "future": "Support by preserving pine forests and planting native flowers that bloom in early spring."
+    },
+    "Bald-faced hornet": {
+      "scientific": "Dolichovespula maculata",
+      "description": "A large black wasp with ivory markings. They act as natural pest controllers",
+      "native": true,
+      "living": "Prefers forests, gardens, and suburban areas. Feeds on nectar, tree sap, and other insects, particularly flies, caterpillars, beetles, and other types of wasps. Thus, they are polinators integral to balanced, healthy ecosystems. They commonly nest in trees, bushes, rock overhangs and under the eaves of residential buildings.",
+      "future": "While tempting to exterminate, avoid destroying nests unless they pose a direct threat."
+    },
+    "Io moth": {
+      "scientific": "Automeris io",
+      "description": "A colorful yellow and pink moth with distinctive eye spots on its hindwings, used to deter predators. They are pollinators of night-blooming plants. While adult io moths are harmless, watch out for their caterpillars- they're green with a read and white stripe and spines all along their backs, and are poisonous to humans!",
+      "native": true,
+      "living": "Found in forests, gardens, and meadows. Larvae feed on a variety of trees and shrubs, while adults little to no food save for occasional nector from flowers. Despite this, they are still pollinators!",
+      "future": "Support by planting a variety of host plants for larvae, such as cherry, redbud, willow, wisteria, sassafras, currant, and hibiscus. Plant night-blooming flowers, such as tuberose, moonflower, gardenia, and four o'clocks."
+    },
+    "Sigmoid prominent": {
+      "scientific": "Clostera albosigma",
+      "description": "A moth with a distinctive white sigma mark on its wings. Known for its caterpillars that feed on poplar leaves.",
+      "native": true,
+      "living": "Found in forests and woodlands. Larvae feed on poplar and willow trees.",
+      "future": "Support by preserving forests and planting poplar and willow trees."
+    },
+    "Small phoenix": {
+      "scientific": "Ecliptopera silaceata",
+      "description": "A moth with a distinctive wavy pattern on its wings. Often found in damp, wooded areas.",
+      "native": true,
+      "living": "Prefers moist woodlands and gardens. Larvae feed on bedstraw plants.",
+      "future": "Support by preserving natural woodlands and planting native bedstraw species."
+    },
+    "False underwing moth": {
+      "scientific": "Dyspteris abortivaria",
+      "description": "A moth with a distinctive false underwing pattern. Known for its camouflage against tree bark.",
+      "native": true,
+      "living": "Found in forests and woodlands. Larvae feed on a variety of deciduous trees.",
+      "future": "Support by preserving natural forests and avoiding unnecessary deforestation."
+    },
+    "Brown pine looper": {
+      "scientific": "Caripeta divisata",
+      "description": "A moth with brown coloring and distinctive looping caterpillars. Often found near pine trees.",
+      "native": true,
+      "living": "Found in pine forests. Larvae feed on pine needles.",
+      "future": "Support by preserving pine forests and avoiding excessive logging of pine trees."
+    },
+    "Six-spotted tiger beetle": {
+      "scientific": "Cicindela sexguttata",
+      "description": "A bright green beetle with six white spots. Known for its fast running speed and predatory habits.",
+      "native": true,
+      "living": "Prefers sandy, open habitats. Feeds on other small insects.",
+      "future": "Support by preserving open, sandy habitats and avoiding pesticide use in these areas."
+    },
+    "Single-dotted wave moth": {
+      "scientific": "Idaea dimidiata",
+      "description": "A small moth with a single dot on its wings. Often found in gardens and woodlands.",
+      "native": true,
+      "living": "Prefers gardens and woodlands. Larvae feed on a variety of low-growing plants.",
+      "future": "Support by planting a variety of native plants and preserving natural habitats."
+    },
+    "Bent-line gray moth": {
+      "scientific": "Iridopsis larvaria",
+      "description": "A moth with a distinctive bent line pattern on its wings. Often found in woodlands and gardens.",
+      "native": true,
+      "living": "Prefers woodlands and gardens. Larvae feed on a variety of deciduous trees.",
+      "future": "Support by preserving natural forests and planting a variety of native trees."
+    },
+    "Hummingbird clearwing": {
+      "scientific": "Hemaris thysbe",
+      "description": "A moth known for its clear wings and hummingbird-like flight. Often seen hovering near flowers.",
+      "native": true,
+      "living": "Found in gardens, meadows, and open woodlands. Feeds on nectar from a variety of flowers.",
+      "future": "Support by planting a diverse range of nectar-producing flowers and maintaining natural habitats."
+    },
+    "Giant leopard moth": {
+      "scientific": "Hypercompe scribonia",
+      "description": "A large, striking moth with black and white spots. Known for its large size and distinctive pattern.",
+      "native": true,
+      "living": "Prefers forests, gardens, and meadows. Larvae feed on a variety of plants, adults do not feed.",
+      "future": "Support by preserving natural habitats and providing host plants for larvae."
+    },
+    "Fourteen-spotted lady beetle": {
+      "scientific": "Propylea quatuordecimpunctata",
+      "description": "A small lady beetle with fourteen black spots. Known for its role in controlling aphid populations.",
+      "native": false,
+      "living": "Found in gardens and agricultural fields. Feeds on aphids and other small insects.",
+      "future": "To manage its population, encourage native lady beetle species and reduce pesticide use."
+    },
+    "Blinded sphinx moth": {
+      "scientific": "Paonias excaecata",
+      "description": "A large moth with distinctive eye spots on its hindwings. Known for its nocturnal habits.",
+      "native": true,
+      "living": "Found in forests and woodlands. Larvae feed on a variety of trees and shrubs.",
+      "future": "Support by preserving natural forests and planting a variety of native trees and shrubs."
+    },
+    "Canada darner": {
+      "scientific": "Aeshna canadensis",
+      "description": "A large dragonfly with blue and green markings. Known for its strong flight and hunting skills.",
+      "native": true,
+      "living": "Found near ponds, lakes, and streams. Feeds on small flying insects.",
+      "future": "Support by maintaining clean water bodies and preserving wetland habitats."
+    },
+    "Eastern tailed-blue": {
+      "scientific": "Cupido comyntas",
+      "description": "A small butterfly with blue upper wings and distinctive tails. Often seen fluttering near flowers.",
+      "native": true,
+      "living": "Prefers gardens, meadows, and open areas. Larvae feed on legumes, adults feed on nectar.",
+      "future": "Support by planting native nectar-producing flowers and host plants like clover and alfalfa."
+    },
+    "Swamp milkweed leaf beetle": {
+      "scientific": "Labidomera clivicollis",
+      "description": "A beetle with bright orange and black markings. Known for feeding on milkweed plants.",
+      "native": true,
+      "living": "Found in wetlands and near milkweed plants. Feeds on leaves and flowers of milkweed.",
+      "future": "Support by planting native milkweed species and preserving wetland habitats."
+    },
+    "Saffron-winged meadowhawk": {
+      "scientific": "Sympetrum costiferum",
+      "description": "A dragonfly with bright red coloring and saffron-colored wings. Often seen in open, sunny areas.",
+      "native": true,
+      "living": "Prefers ponds, marshes, and meadows. Feeds on small flying insects.",
+      "future": "Support by preserving wetland habitats and maintaining clean water bodies."
+    },
+    "Tufted thyatirid moth": {
+      "scientific": "Pseudothyatira cymatophoroides",
+      "description": "A moth with distinctive tufts on its wings. Known for its camouflage against tree bark.",
+      "native": true,
+      "living": "Found in forests and woodlands. Larvae feed on a variety of deciduous trees.",
+      "future": "Support by preserving natural forests and planting a variety of native trees."
+    },
+    "Intermediate carpet moth": {
+      "scientific": "Euphyia intermediata",
+      "description": "A small moth with a distinctive wavy pattern on its wings. Often found in gardens and woodlands.",
+      "native": true,
+      "living": "Prefers gardens and woodlands. Larvae feed on a variety of low-growing plants.",
+      "future": "Support by planting a variety of native plants and preserving natural habitats."
+    },
+    "Rusty wave moth": {
+      "scientific": "Xanthorhoe ferrugata",
+      "description": "A moth with a distinctive rusty wave pattern on its wings. Often found in damp, wooded areas.",
+      "native": true,
+      "living": "Prefers moist woodlands and gardens. Larvae feed on bedstraw plants.",
+      "future": "Support by preserving natural woodlands and planting native bedstraw species."
+    },
+    "Reakirt's blue": {
+      "scientific": "Echinargus isola",
+      "description": "A small butterfly with blue upper wings and subtle patterns. Often seen near flowers and low vegetation.",
+      "native": true,
+      "living": "Found in gardens, meadows, and open areas. Larvae feed on legumes, adults feed on nectar.",
+      "future": "Support by planting native nectar-producing flowers and host plants like clover and alfalfa."
+    },
+    "Large white": {
+      "scientific": "Pieris brassicae",
+      "description": "A large butterfly with white wings and black tips. Known for its larvae that feed on cabbage and other brassicas.",
+      "native": false,
+      "living": "Found in gardens and agricultural fields. Larvae feed on brassicas, adults feed on nectar.",
+      "future": "To manage its population, use physical barriers like row covers and encourage natural predators like birds and parasitic wasps."
+    },
+    "Velvetbean caterpillar": {
+      "scientific": "Anticarsia gemmatalis",
+      "description": "A moth whose larvae are known for feeding on velvetbean and other legumes.",
+      "native": true,
+      "living": "Prefers agricultural fields and gardens. Larvae feed on legumes, adults feed on nectar.",
+      "future": "Support by planting a diverse range of crops and using integrated pest management techniques."
+    },
+    "Pipevine swallowtail": {
+      "scientific": "Battus philenor",
+      "description": "A butterfly with iridescent blue wings and a distinctive pattern. Known for its larvae that feed on pipevine plants.",
+      "native": true,
+      "living": "Found in gardens, woodlands, and meadows. Larvae feed on pipevine, adults feed on nectar.",
+      "future": "Support by planting native pipevine species and nectar-producing flowers."
+    },
+    "Summer azure": {
+      "scientific": "Celastrina neglecta",
+      "description": "A small butterfly with pale blue wings and delicate markings. Often seen fluttering near flowers.",
+      "native": true,
+      "living": "Prefers gardens, meadows, and open areas. Larvae feed on a variety of shrubs, adults feed on nectar.",
+      "future": "Support by planting native nectar-producing flowers and host plants like dogwood and viburnum."
+    },
+    "Twice-stabbed stink bug": {
+      "scientific": "Cosmopepla lintneriana",
+      "description": "A small stink bug with distinctive black and red coloring. Known for its role in gardens and fields.",
+      "native": true,
+      "living": "Found in gardens and agricultural fields. Feeds on a variety of plants, including crops and ornamental plants.",
+      "future": "Support by planting a diverse range of crops and using integrated pest management techniques."
+    },
+    "Ring-legged earwig": {
+      "scientific": "Euborellia annulipes",
+      "description": "An earwig with distinctive ringed legs. Known for its nocturnal habits and role in decomposing organic matter.",
+      "native": true,
+      "living": "Prefers moist, dark environments. Feeds on decaying organic matter, small insects, and plants.",
+      "future": "Support by maintaining garden hygiene and providing"
+    },
+    "Horace's duskywing": {
+        "scientific": "Erynnis horatius",
+        "description": "A small, brown butterfly with dusky wings and distinctive markings. Known for its preference for open woodlands and clearings.",
+        "native": true,
+        "living": "Found in open woodlands and clearings. Larvae feed on various species of willow and oak. Adults feed on nectar from native wildflowers such as milkweed, asters, and thistles.",
+        "future": "Support by planting native willows and oaks, as well as nectar-rich wildflowers like milkweed, asters, and thistles."
+    },
+    "Peppered moth": {
+        "scientific": "Biston betularia",
+        "description": "A moth with variable coloring that helps it camouflage against tree bark. Known for its role in studies of industrial melanism.",
+        "native": true,
+        "living": "Prefers habitats with abundant tree cover. Larvae feed on various deciduous trees such as birch, oak, and willow. Adults are attracted to flowering trees and shrubs like cherry, hawthorn, and holly.",
+        "future": "Support by maintaining healthy woodlands with a mix of birch, oak, and willow trees. Plant flowering trees and shrubs such as cherry, hawthorn, and holly for adult moths."
+    },
+    "Carolina saddlebags": {
+        "scientific": "Tramea carolina",
+        "description": "A large dragonfly with distinctive dark spots on its wings, resembling saddlebags. Known for its presence near water bodies.",
+        "native": true,
+        "living": "Found near ponds, lakes, and slow-moving streams. Feeds on small insects. Favorite native plant species include cattails and bulrushes, which provide habitat and hunting grounds for the larvae.",
+        "future": "Support by preserving and creating clean, well-vegetated freshwater habitats with native plants like cattails and bulrushes."
+    }
+}
+  

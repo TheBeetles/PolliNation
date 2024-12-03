@@ -1,0 +1,2661 @@
+parent_taxon_id,taxon_id,rank_level,leaf_class_id,name
+,-1,70,1021,background
+,1,70,,Animalia
+1,47120,60,,Arthropoda
+47120,372739,57,,Hexapoda
+372739,47158,50,,Insecta
+47158,184884,47,,Pterygota
+184884,47208,40,,Coleoptera
+47208,71130,37,,Polyphaga
+71130,372870,35,,Staphyliniformia
+372870,48311,33,,Staphylinoidea
+48311,53849,30,,Silphidae
+53849,204079,27,,Nicrophorinae
+204079,53850,20,,Nicrophorus
+53850,147457,10,0,Nicrophorus tomentosus
+53850,84437,10,315,Nicrophorus orbicollis
+53849,503862,27,,Silphinae
+503862,81747,20,,Necrophila
+81747,81746,10,678,Necrophila americana
+48311,47951,30,,Staphylinidae
+47951,359911,27,,Staphylininae
+359911,359910,25,,Staphylinini
+359910,373906,24,,Staphylinina
+373906,53870,20,,Ocypus
+53870,1270925,15,,Ocypus
+1270925,53869,10,612,Ocypus olens
+71130,372852,35,,Cucujiformia
+372852,176269,33,,Chrysomeloidea
+176269,51146,30,,Chrysomelidae
+51146,245843,27,,Galerucinae
+245843,373841,25,,Luperini
+373841,461899,24,,Diabroticina
+461899,154288,20,,Acalymma
+154288,154287,10,3,Acalymma vittatum
+461899,55488,20,,Diabrotica
+55488,55487,10,778,Diabrotica undecimpunctata
+55487,201568,5,635,Diabrotica undecimpunctata undecimpunctata
+51146,154472,27,,Chrysomelinae
+154472,1162208,25,,Doryphorini
+1162208,335544,24,,Doryphorina
+335544,82583,20,,Labidomera
+82583,82582,10,75,Labidomera clivicollis
+335544,84189,20,,Leptinotarsa
+84189,84778,10,381,Leptinotarsa decemlineata
+1162208,373854,24,,Chrysolinina
+373854,61902,20,,Chrysolina
+61902,962548,15,,Chrysolina
+962548,318965,10,948,Chrysolina bankii
+154472,791508,25,,Gonioctenini
+791508,373895,24,,Paropsina
+373895,208609,20,,Trachymela
+208609,208608,10,797,Trachymela sloanei
+51146,52064,27,,Cassidinae
+52064,373656,25,,Cassidini
+373656,132212,20,,Deloyala
+132212,132210,10,122,Deloyala guttata
+373656,253113,20,,Helocassis
+253113,310171,10,454,Helocassis clavata
+51146,357454,27,,Eumolpinae
+357454,468345,25,,Eumolpini
+468345,84163,20,,Chrysochus
+84163,84162,10,279,Chrysochus auratus
+84163,119881,10,815,Chrysochus cobaltinus
+372852,963992,33,,Cerambycoidea
+963992,47961,30,,Cerambycidae
+47961,50265,27,,Lamiinae
+50265,503968,25,,Lamiini
+503968,82044,20,,Monochamus
+82044,740173,15,,Monochamus
+740173,82043,10,14,Monochamus scutellatus
+503968,205778,20,,Plectrodera
+205778,205777,10,101,Plectrodera scalator
+50265,528867,25,,Tetraopini
+528867,81549,20,,Tetraopes
+81549,118559,10,503,Tetraopes tetrophthalmus
+47961,321450,27,,Lepturinae
+321450,373727,25,,Lepturini
+373727,131863,20,,Typocerus
+131863,131862,10,84,Typocerus velutinus
+373727,62320,20,,Rutpela
+62320,62321,10,637,Rutpela maculata
+373727,332244,20,,Lepturobosca
+332244,332243,10,994,Lepturobosca chrysocoma
+47961,319102,27,,Prioninae
+319102,528665,25,,Prionini
+528665,143663,20,,Orthosoma
+143663,143662,10,225,Orthosoma brunneum
+528665,59893,20,,Prionus
+59893,739037,15,,Prionus
+739037,59892,10,817,Prionus californicus
+319102,528667,25,,Meroscelisini
+528667,377802,20,,Prionoplus
+377802,395569,10,295,Prionoplus reticularis
+319102,1168176,25,,Mallodonini
+1168176,252109,20,,Mallodon
+252109,269875,10,686,Mallodon dasystomus
+47961,321500,27,,Cerambycinae
+321500,339436,25,,Clytini
+339436,83803,20,,Megacyllene
+83803,83802,10,237,Megacyllene robiniae
+372852,471714,33,,Coccinelloidea
+471714,48486,30,,Coccinellidae
+48486,333790,27,,Coccinellinae
+333790,373697,25,,Epilachnini
+373697,154560,20,,Epilachna
+154560,319695,10,21,Epilachna mexicana
+333790,333796,25,,Coccinellini
+333796,61533,20,,Propylea
+61533,61532,10,62,Propylea quatuordecimpunctata
+333796,52507,20,,Adalia
+52507,52506,10,104,Adalia bipunctata
+333796,51703,20,,Coccinella
+51703,205977,10,133,Coccinella undecimpunctata
+51703,51702,10,320,Coccinella septempunctata
+51703,128712,10,725,Coccinella californica
+333796,55490,20,,Cycloneda
+55490,124431,10,186,Cycloneda sanguinea
+55490,55489,10,779,Cycloneda munda
+55490,55492,10,780,Cycloneda polita
+333796,126268,20,,Coleomegilla
+126268,126267,10,436,Coleomegilla maculata
+333796,176546,20,,Olla
+176546,313246,10,452,Olla v-nigrum
+333796,48988,20,,Hippodamia
+48988,143034,10,483,Hippodamia variegata
+48988,48987,10,999,Hippodamia convergens
+333796,54467,20,,Psyllobora
+54467,118967,10,549,Psyllobora vigintimaculata
+333796,48487,20,,Harmonia
+48487,48484,10,925,Harmonia axyridis
+48486,354547,27,,Chilocorinae
+354547,373659,25,,Chilocorini
+373659,244626,20,,Halmus
+244626,244625,10,907,Halmus chalybeus
+372852,47593,33,,Tenebrionoidea
+47593,47592,30,,Zopheridae
+47592,245900,27,,Zopherinae
+245900,520329,25,,Zopherini
+520329,126466,20,,Zopherus
+126466,126476,10,,Zopherus nodulosus
+126476,205055,5,27,Zopherus nodulosus haldemani
+520329,47591,20,,Phloeodes
+47591,47590,10,820,Phloeodes diabolicus
+372852,60473,33,,Curculionoidea
+60473,48736,30,,Curculionidae
+48736,203294,27,,Entiminae
+203294,373747,25,,Naupactini
+373747,251805,20,,Pantomorus
+251805,318474,10,189,Pantomorus cervinus
+203294,518281,25,,Polydrusini
+518281,212047,20,,Polydrusus
+212047,823503,15,,Eudipnus
+823503,494559,10,393,Polydrusus formosus
+203294,373838,25,,Otiorhynchini
+373838,176197,20,,Otiorhynchus
+176197,226718,10,696,Otiorhynchus sulcatus
+48736,367389,27,,Dryophthorinae
+367389,508027,25,,Rhynchophorini
+508027,1100886,24,,Sphenophorina
+1100886,251862,20,,Cactophagus
+251862,269359,10,892,Cactophagus spinolae
+372852,55050,33,,Cleroidea
+55050,55051,30,,Cleridae
+55051,373395,27,,Clerinae
+373395,55049,20,,Trichodes
+55049,61157,10,197,Trichodes ornatus
+372852,48485,33,,Cucujoidea
+48485,82103,30,,Erotylidae
+82103,373425,27,,Erotylinae
+373425,736774,25,,Erotylini
+736774,1095699,20,,Cypherotylus
+1095699,1095700,10,795,Cypherotylus californicus
+71130,702480,35,,Scarabaeiformia
+702480,48202,33,,Scarabaeoidea
+48202,48201,30,,Scarabaeidae
+48201,127588,27,,Cetoniinae
+127588,244822,25,,Gymnetini
+244822,57666,20,,Cotinis
+57666,57665,10,34,Cotinis mutabilis
+57666,118538,10,930,Cotinis nitida
+127588,245840,25,,Cetoniini
+245840,909579,24,,Cetoniina
+909579,53341,20,,Euphoria
+53341,319724,10,175,Euphoria kernii
+53341,301557,10,822,Euphoria basalis
+909579,52404,20,,Cetonia
+52404,948593,15,,Cetonia
+948593,52402,10,411,Cetonia aurata
+245840,1008821,24,,Leucocelina
+1008821,68329,20,,Oxythyrea
+68329,1130193,15,,Oxythyrea
+1130193,68328,10,368,Oxythyrea funesta
+127588,499918,25,,Trichiini
+499918,797203,24,,Trichiina
+797203,84028,20,,Trigonopeltastes
+84028,84027,10,1002,Trigonopeltastes delta
+48201,136361,27,,Dynastinae
+136361,424298,25,,Oryctini
+424298,82775,20,,Oryctes
+82775,1393195,15,,Oryctes
+1393195,82774,10,90,Oryctes nasicornis
+424298,196310,20,,Strategus
+196310,199942,10,428,Strategus aloeus
+136361,424299,25,,Dynastini
+424299,83805,20,,Dynastes
+83805,1502723,15,,Dynastes
+1502723,83804,10,238,Dynastes tityus
+48201,48857,27,,Rutelinae
+48857,425997,25,,Anomalini
+425997,1260627,24,,Popilliina
+1260627,67761,20,,Popillia
+67761,67760,10,277,Popillia japonica
+425997,359402,20,,Exomala
+359402,359401,10,884,Exomala orientalis
+48857,520047,25,,Rutelini
+520047,944022,24,,Pelidnotina
+944022,48850,20,,Pelidnota
+48850,48259,10,922,Pelidnota punctata
+48201,48200,27,,Melolonthinae
+48200,347605,25,,Melolonthini
+347605,84572,20,,Polyphylla
+84572,84612,10,343,Polyphylla decemlineata
+48201,125819,27,,Scarabaeinae
+125819,520046,25,,Phanaeini
+520046,83930,20,,Phanaeus
+83930,83929,10,1020,Phanaeus vindex
+48202,49083,30,,Lucanidae
+49083,373469,27,,Lucaninae
+373469,794938,25,,Lucanini
+794938,88026,20,,Dorcus
+88026,794883,15,,Dorcus
+794883,123920,10,109,Dorcus parallelipipedus
+794938,60813,20,,Lucanus
+60813,1107301,15,,Lucanus
+1107301,61749,10,570,Lucanus cervus
+60813,61746,15,,Pseudolucanus
+61746,60812,10,572,Lucanus capreolus
+48202,84443,30,,Passalidae
+84443,564948,27,,Passalinae
+564948,773548,25,,Proculini
+773548,122924,20,,Odontotaenius
+122924,122214,10,926,Odontotaenius disjunctus
+71130,372854,35,,Elateriformia
+372854,47207,33,,Elateroidea
+47207,49360,30,,Lycidae
+49360,529311,27,,Lycinae
+529311,529312,25,,Calopterini
+529312,84614,20,,Calopteron
+84614,132719,10,201,Calopteron reticulatum
+47207,52932,30,,Cantharidae
+52932,529316,27,,Chauliognathinae
+529316,529318,25,,Chauliognathini
+529318,52933,20,,Chauliognathus
+52933,84040,10,264,Chauliognathus marginatus
+52933,216649,10,464,Chauliognathus pensylvanicus
+52932,460758,27,,Cantharinae
+460758,529314,25,,Cantharini
+529314,62463,20,,Rhagonycha
+62463,62456,10,652,Rhagonycha fulva
+47207,47731,30,,Lampyridae
+47731,460312,27,,Lampyrinae
+460312,567583,25,,Photinini
+567583,125629,20,,Ellychnia
+125629,125627,10,571,Ellychnia corrusca
+567583,47730,20,,Photinus
+47730,129350,10,799,Photinus pyralis
+47207,53248,30,,Elateridae
+53248,425228,27,,Agrypninae
+425228,373595,25,,Hemirhipini
+373595,81707,20,,Alaus
+81707,81706,10,988,Alaus oculatus
+372854,54965,33,,Buprestoidea
+54965,54964,30,,Buprestidae
+54964,471331,27,,Buprestinae
+471331,510087,25,,Buprestini
+510087,87131,20,,Buprestis
+87131,541021,15,,Cypriacis
+541021,215596,10,328,Buprestis aurulenta
+54964,510063,27,,Agrilinae
+510063,510065,25,,Agrilini
+510065,70058,20,,Agrilus
+70058,70057,10,588,Agrilus planipennis
+71130,372844,35,,Bostrichiformia
+372844,47496,33,,Bostrichoidea
+47496,81951,30,,Dermestidae
+81951,373476,27,,Megatominae
+373476,373638,25,,Anthrenini
+373638,120114,20,,Anthrenus
+120114,415210,15,,Nathrenus
+415210,120113,10,987,Anthrenus verbasci
+47208,340471,37,,Adephaga
+340471,372884,33,,Caraboidea
+372884,49567,30,,Carabidae
+49567,119895,27,,Cicindelinae
+119895,373661,25,,Cicindelini
+373661,373919,24,,Cicindelina
+373919,49568,20,,Cicindela
+49568,736941,15,,Cicindela
+736941,49566,10,45,Cicindela sexguttata
+736941,82425,10,57,Cicindela repanda
+736941,52620,10,449,Cicindela oregona
+49568,736865,15,,Cicindelidia
+736865,82418,10,56,Cicindela punctulata
+119895,421797,25,,Megacephalini
+421797,421798,24,,Megacephalina
+421798,127968,20,,Tetracha
+127968,1029627,15,,Tetracha
+1029627,232391,10,391,Tetracha carolina
+49567,333554,27,,Carabinae
+333554,319773,25,,Carabini
+319773,421709,24,,Carabina
+421709,82765,20,,Calosoma
+82765,827208,15,,Calodrepa
+827208,118855,10,527,Calosoma scrutator
+421709,56553,20,,Carabus
+56553,1005913,15,,Archicarabus
+1005913,56552,10,945,Carabus nemoralis
+184884,47744,40,,Hemiptera
+47744,61267,37,,Heteroptera
+61267,372868,35,,Pentatomomorpha
+372868,47743,33,,Pentatomoidea
+47743,47742,30,,Pentatomidae
+47742,51276,27,,Pentatominae
+51276,528234,25,,Cappaeini
+528234,81924,20,,Halyomorpha
+81924,81923,10,1,Halyomorpha halys
+51276,194651,25,,Carpocorini
+194651,82833,20,,Cosmopepla
+82833,82832,10,93,Cosmopepla lintneriana
+51276,712842,25,,Nezarini
+712842,119607,20,,Chinavia
+119607,485010,10,204,Chinavia hilaris
+712842,141726,20,,Nezara
+141726,141725,10,309,Nezara viridula
+712842,62061,20,,Palomena
+62061,62060,10,611,Palomena prasina
+51276,209686,25,,Pentatomini
+209686,51277,20,,Pentatoma
+51277,51275,10,265,Pentatoma rufipes
+51276,538521,25,,Strachiini
+538521,153331,20,,Bagrada
+153331,152131,10,607,Bagrada hilaris
+538521,56755,20,,Murgantia
+56755,56756,10,943,Murgantia histrionica
+47742,320840,27,,Podopinae
+320840,528235,25,,Graphosomatini
+528235,61969,20,,Graphosoma
+61969,61968,10,403,Graphosoma lineatum
+372868,466233,33,,Lygaeoidea
+466233,55558,30,,Lygaeidae
+55558,130314,27,,Lygaeinae
+130314,55559,20,,Oncopeltus
+55559,888839,15,,Oncopeltus
+888839,296326,10,174,Oncopeltus sexmaculatus
+55559,888838,15,,Erythrischius
+888838,55556,10,789,Oncopeltus fasciatus
+130314,62046,20,,Lygaeus
+62046,141626,10,296,Lygaeus turcicus
+62046,1019598,11,,Lygaeus kalmii
+1019598,62045,10,609,Lygaeus kalmii
+466233,141732,30,,Rhyparochromidae
+141732,318457,27,,Rhyparochrominae
+318457,362729,25,,Myodochini
+362729,142784,20,,Myodocha
+142784,142783,10,613,Myodocha serripes
+372868,51776,33,,Coreoidea
+51776,51777,30,,Coreidae
+51777,319231,27,,Coreinae
+319231,464228,25,,Anisoscelini
+464228,61257,20,,Leptoglossus
+61257,1553762,11,,Leptoglossus stigma
+1553762,154551,10,196,Leptoglossus zonatus
+1553762,133756,10,342,Leptoglossus oppositus
+61257,1305786,11,,Leptoglossus clypealis
+1305786,67771,10,278,Leptoglossus occidentalis
+1305786,154553,10,927,Leptoglossus clypealis
+61257,1553759,11,,Leptoglossus phyllopus
+1553759,61256,10,598,Leptoglossus phyllopus
+319231,510322,25,,Coreini
+510322,318567,20,,Coreus
+318567,318545,10,338,Coreus marginatus
+319231,428812,25,,Nematopodini
+428812,428814,20,,Pachylis
+428814,1444994,10,371,Pachylis neocalifornicus
+428814,428815,10,389,Pachylis gigas
+319231,605201,25,,Acanthocephalini
+605201,61446,20,,Acanthocephala
+61446,84994,10,395,Acanthocephala declivis
+61446,61445,10,522,Acanthocephala terminalis
+319231,699169,25,,Chelinideini
+699169,154268,20,,Chelinidea
+154268,216651,10,465,Chelinidea vittiger
+319231,874133,25,,Hypselonotini
+874133,245886,20,,Hypselonotus
+245886,334753,10,873,Hypselonotus punctiventris
+51776,53225,30,,Rhopalidae
+53225,450173,27,,Serinethinae
+450173,53224,20,,Boisea
+53224,53226,10,518,Boisea rubrolineata
+53224,53227,10,519,Boisea trivittata
+450173,127670,20,,Jadera
+127670,127669,10,620,Jadera haematoloma
+51776,62059,30,,Alydidae
+62059,334297,27,,Alydinae
+334297,340814,20,,Hyalymenus
+340814,1503338,15,,Tivarbus
+1503338,340813,10,632,Hyalymenus tarsatus
+372868,52983,33,,Pyrrhocoroidea
+52983,55612,30,,Pyrrhocoridae
+55612,210138,20,,Scantius
+210138,209594,10,621,Scantius aegyptius
+55612,55613,20,,Pyrrhocoris
+55613,55610,10,796,Pyrrhocoris apterus
+52983,52984,30,,Largidae
+52984,963114,27,,Larginae
+963114,963115,25,,Largini
+963115,52985,20,,Largus
+52985,52986,10,818,Largus californicus
+61267,372850,35,,Cimicomorpha
+372850,53504,33,,Miroidea
+53504,53505,30,,Miridae
+53505,334230,27,,Mirinae
+334230,366575,25,,Mirini
+366575,61886,20,,Lygus
+61886,84507,10,324,Lygus lineolaris
+366575,126212,20,,Poecilocapsus
+126212,126211,10,427,Poecilocapsus lineatus
+372850,133754,33,,Reduvioidea
+133754,48959,30,,Reduviidae
+48959,320199,27,,Harpactorinae
+320199,482431,25,,Harpactorini
+482431,129424,20,,Zelus
+129424,1318475,11,,Longipes
+1318475,133826,10,364,Zelus longipes
+129424,1318467,11,,Luridus
+1318467,129423,10,473,Zelus luridus
+129424,1318470,11,,Zelus renardii
+1318470,244407,10,841,Zelus renardii
+482431,48960,20,,Arilus
+48960,48957,10,990,Arilus cristatus
+320199,543181,25,,Apiomerini
+543181,61491,20,,Apiomerus
+61491,202003,10,680,Apiomerus spissipes
+61491,244845,10,746,Apiomerus californicus
+61267,372861,35,,Gerromorpha
+372861,59654,33,,Gerroidea
+59654,59653,30,,Gerridae
+59653,366568,27,,Gerrinae
+366568,936827,25,,Gerrini
+936827,59652,20,,Aquarius
+59652,1144391,11,,Aquarius remigis
+1144391,59651,10,702,Aquarius remigis
+47744,125816,37,,Auchenorrhyncha
+125816,372860,35,,Fulgoromorpha
+372860,52073,33,,Fulgoroidea
+52073,52074,30,,Flatidae
+52074,474067,27,,Flatinae
+474067,1178740,25,,Siphantini
+1178740,52072,20,,Siphanta
+52072,1449446,11,,Siphanta acuta
+1449446,116658,10,250,Siphanta acuta
+474067,474068,25,,Nephesini
+474068,126210,20,,Metcalfa
+126210,126209,10,426,Metcalfa pruinosa
+52073,84807,30,,Acanaloniidae
+84807,84808,20,,Acanalonia
+84808,84806,10,382,Acanalonia conica
+52073,153098,30,,Ricaniidae
+153098,1163853,27,,Ricaniinae
+1163853,340924,20,,Scolypopa
+340924,340923,10,645,Scolypopa australis
+125816,372849,35,,Cicadomorpha
+372849,50190,33,,Cicadoidea
+50190,50186,30,,Cicadidae
+50186,209685,27,,Cicadinae
+209685,605062,25,,Cryptotympanini
+605062,605063,24,,Cryptotympanina
+605063,751082,20,,Neotibicen
+751082,469277,10,291,Neotibicen superbus
+50186,361915,27,,Cicadettinae
+361915,605045,25,,Lamotialnini
+605045,83854,20,,Magicicada
+83854,1248681,11,,Magicicada septendecim
+1248681,105098,10,838,Magicicada septendecim
+361915,556890,25,,Cicadettini
+556890,605036,24,,Cicadettina
+605036,81882,20,,Amphipsalta
+81882,81881,10,1016,Amphipsalta zelandica
+372849,56194,33,,Cercopoidea
+56194,61863,30,,Cercopidae
+61863,787216,27,,Ischnorhininae
+787216,787217,25,,Tomaspidini
+787217,126292,20,,Prosapia
+126292,126291,10,443,Prosapia bicincta
+372849,49025,33,,Membracoidea
+49025,53237,30,,Cicadellidae
+53237,244341,27,,Cicadellinae
+244341,153379,25,,Cicadellini
+153379,56924,20,,Graphocephala
+56924,244339,15,,Hordnia
+244339,1064647,10,836,Graphocephala atropunctata
+56924,920187,15,,Graphocephala
+920187,56925,10,963,Graphocephala coccinea
+244341,492220,25,,Proconiini
+492220,143192,20,,Homalodisca
+143192,199381,10,923,Homalodisca vitripennis
+492220,67377,20,,Oncometopia
+67377,632967,15,,Oncometopia
+632967,133102,10,956,Oncometopia orbona
+47744,334037,37,,Sternorrhyncha
+334037,901813,35,,Aphidomorpha
+901813,61514,33,,Phylloxeroidea
+61514,61515,30,,Adelgidae
+61515,61516,20,,Adelges
+61516,61513,10,528,Adelges tsugae
+901813,52380,33,,Aphidoidea
+52380,52381,30,,Aphididae
+52381,125165,27,,Eriosomatinae
+125165,517621,25,,Pemphigini
+517621,146710,20,,Grylloprociphilus
+146710,146709,10,832,Grylloprociphilus imbricator
+52381,194066,27,,Aphidinae
+194066,373639,25,,Aphidini
+373639,517607,24,,Aphidina
+517607,55215,20,,Aphis
+55215,71154,10,852,Aphis nerii
+184884,47792,40,,Odonata
+47792,47927,37,,Anisoptera
+47927,1317176,33,,Libelluloidea
+1317176,47819,30,,Libellulidae
+47819,90130,20,,Nannothemis
+90130,106516,10,2,Nannothemis bella
+47819,47818,20,,Libellula
+47818,57443,10,9,Libellula quadrimaculata
+47818,68911,10,434,Libellula needhami
+47818,104585,10,630,Libellula semifasciata
+47818,104586,10,631,Libellula vibrans
+47818,47934,10,650,Libellula luctuosa
+47818,81495,10,663,Libellula pulchella
+47818,104572,10,771,Libellula comanche
+47818,104574,10,772,Libellula croceipennis
+47818,104575,10,773,Libellula cyanea
+47818,104580,10,774,Libellula incesta
+47818,84369,10,811,Libellula forensis
+47818,563098,10,813,Libellula depressa
+47818,47817,10,844,Libellula saturata
+47819,55712,20,,Ladona
+55712,57458,10,12,Ladona julia
+55712,103927,10,100,Ladona deplanata
+47819,51556,20,,Sympetrum
+51556,113502,10,79,Sympetrum costiferum
+51556,113516,10,126,Sympetrum madidum
+51556,113521,10,162,Sympetrum pallipes
+51556,51555,10,303,Sympetrum illotum
+51556,113514,10,719,Sympetrum internum
+51556,68138,10,798,Sympetrum corruptum
+51556,55625,10,800,Sympetrum striolatum
+51556,68139,10,808,Sympetrum vicinum
+51556,113498,10,860,Sympetrum ambiguum
+51556,113503,10,861,Sympetrum danae
+51556,113507,10,862,Sympetrum fonscolombii
+51556,113519,10,867,Sympetrum obtrusum
+51556,113525,10,869,Sympetrum sanguineum
+51556,113526,10,870,Sympetrum semicinctum
+47819,52864,20,,Tramea
+52864,68229,10,99,Tramea carolina
+52864,52865,10,468,Tramea lacerata
+52864,114314,10,742,Tramea onusta
+47819,50148,20,,Celithemis
+50148,50147,10,103,Celithemis eponina
+50148,63160,10,723,Celithemis elisa
+50148,96907,10,839,Celithemis fasciata
+47819,87959,20,,Diplacodes
+87959,99331,10,107,Diplacodes trivialis
+47819,50343,20,,Erythrodiplax
+50343,50342,10,138,Erythrodiplax umbrata
+50343,100391,10,258,Erythrodiplax berenice
+50343,100403,10,259,Erythrodiplax minuscula
+47819,88069,20,,Dythemis
+88069,99641,10,164,Dythemis fugax
+88069,99644,10,165,Dythemis nigrescens
+88069,99647,10,166,Dythemis velox
+47819,68234,20,,Orthemis
+68234,107937,10,177,Orthemis discolor
+68234,68233,10,347,Orthemis ferruginea
+47819,62071,20,,Orthetrum
+62071,107974,10,181,Orthetrum sabina
+62071,62067,10,482,Orthetrum cancellatum
+47819,90633,20,,Paltothemis
+90633,108303,10,222,Paltothemis lineatipes
+47819,55407,20,,Leucorrhinia
+55407,104553,10,289,Leucorrhinia proxima
+55407,104548,10,764,Leucorrhinia frigida
+55407,104550,10,765,Leucorrhinia hudsonica
+55407,104551,10,766,Leucorrhinia intacta
+47819,59775,20,,Pachydiplax
+59775,59774,10,306,Pachydiplax longipennis
+47819,59777,20,,Perithemis
+59777,59776,10,307,Perithemis tenera
+59777,109161,10,339,Perithemis intensa
+47819,68231,20,,Brachymesia
+68231,68230,10,345,Brachymesia gravida
+68231,95982,10,729,Brachymesia furcata
+47819,52056,20,,Crocothemis
+52056,52055,10,385,Crocothemis servilia
+52056,85030,10,399,Crocothemis erythraea
+47819,52585,20,,Pantala
+52585,52584,10,445,Pantala hymenaea
+52585,108344,10,929,Pantala flavescens
+47819,53868,20,,Erythemis
+53868,85408,10,450,Erythemis collocata
+53868,61495,10,525,Erythemis simplicicollis
+53868,53867,10,610,Erythemis plebeja
+53868,55260,10,748,Erythemis vesiculosa
+47819,91473,20,,Pseudoleon
+91473,111055,10,592,Pseudoleon superbus
+47819,87080,20,,Brechmorhoga
+87080,96036,10,734,Brechmorhoga mendax
+47819,89677,20,,Macrodiplax
+89677,104993,10,825,Macrodiplax balteata
+47819,89908,20,,Micrathyria
+89908,105730,10,912,Micrathyria hagenii
+47819,84550,20,,Plathemis
+84550,84549,10,936,Plathemis lydia
+47819,92658,20,,Trithemis
+92658,114463,10,984,Trithemis annulata
+1317176,61430,30,,Corduliidae
+61430,61431,20,,Cordulia
+61431,98430,10,15,Cordulia shurtleffii
+61430,88028,20,,Dorocordulia
+88028,99539,10,147,Dorocordulia libera
+61430,88207,20,,Epitheca
+88207,100210,10,241,Epitheca canis
+88207,100215,10,242,Epitheca princeps
+1317176,67722,30,,Macromiidae
+67722,87941,20,,Didymops
+87941,99283,10,102,Didymops transversa
+67722,67729,20,,Macromia
+67729,105034,10,828,Macromia illinoiensis
+67729,105049,10,829,Macromia taeniolata
+47927,1317177,33,,Cordulegastroidea
+1317177,57448,30,,Cordulegastridae
+57448,57449,20,,Cordulegaster
+57449,98417,10,11,Cordulegaster diastatops
+57449,62762,10,974,Cordulegaster dorsalis
+47927,1317180,33,,Aeshnoidea
+1317180,51469,30,,Aeshnidae
+51469,52520,20,,Aeshna
+52520,56082,10,71,Aeshna canadensis
+52520,67726,10,268,Aeshna palmata
+52520,67725,10,280,Aeshna interrupta
+52520,93429,10,422,Aeshna constricta
+52520,93437,10,424,Aeshna mixta
+52520,67727,10,633,Aeshna umbrosa
+52520,52519,10,688,Aeshna cyanea
+51469,88192,20,,Epiaeschna
+88192,100034,10,207,Epiaeschna heros
+51469,51468,20,,Anax
+51468,67731,10,269,Anax junius
+51468,94045,10,830,Anax longipes
+51468,94043,10,890,Anax imperator
+51469,67735,20,,Rhionaeschna
+67735,67737,10,272,Rhionaeschna multicolor
+67735,67736,10,640,Rhionaeschna californica
+51469,88572,20,,Gomphaeschna
+88572,101640,10,430,Gomphaeschna furcillata
+51469,86861,20,,Basiaeschna
+86861,95422,10,671,Basiaeschna janata
+51469,87045,20,,Boyeria
+87045,95958,10,728,Boyeria vinosa
+47927,1317178,33,,Gomphoidea
+1317178,51128,30,,Gomphidae
+51128,88045,20,,Dromogomphus
+88045,99609,10,160,Dromogomphus spinosus
+88045,99610,10,161,Dromogomphus spoliatus
+51128,133815,20,,Gomphurus
+133815,133814,10,437,Gomphurus vastus
+51128,520941,20,,Phanogomphus
+520941,520958,10,486,Phanogomphus exilis
+520941,520959,10,504,Phanogomphus militaris
+51128,91327,20,,Progomphus
+91327,110625,10,579,Progomphus obscurus
+51128,86631,20,,Arigomphus
+86631,94624,10,586,Arigomphus submedianus
+86631,94625,10,587,Arigomphus villosipes
+51128,92298,20,,Stylurus
+92298,113407,10,850,Stylurus plagiatus
+51128,69806,20,,Octogomphus
+69806,69805,10,905,Octogomphus specularis
+51128,88242,20,,Erpetogomphus
+88242,100369,10,959,Erpetogomphus designatus
+51128,88693,20,,Hagenius
+88693,102006,10,960,Hagenius brevistylus
+47792,47928,37,,Zygoptera
+47928,426081,33,,Coenagrionoidea
+426081,47925,30,,Coenagrionidae
+47925,90167,20,,Nehalennia
+90167,106653,10,17,Nehalennia irene
+47925,50175,20,,Enallagma
+50175,50176,10,106,Enallagma vesperum
+50175,99891,10,163,Enallagma aspersum
+50175,99897,10,169,Enallagma civile
+50175,99912,10,179,Enallagma geminatum
+50175,99892,10,191,Enallagma basidens
+50175,99895,10,192,Enallagma carunculatum
+50175,99901,10,194,Enallagma cyathigerum
+50175,99911,10,195,Enallagma exsulans
+50175,99924,10,198,Enallagma signatum
+47925,52054,20,,Ischnura
+52054,61508,10,141,Ischnura elegans
+52054,70191,10,605,Ischnura ramburii
+52054,103485,10,657,Ischnura denticollis
+52054,103494,10,658,Ischnura hastata
+52054,103497,10,659,Ischnura perparva
+52054,103498,10,660,Ischnura posita
+52054,62229,10,667,Ischnura cervula
+52054,84722,10,946,Ischnura verticalis
+47925,47977,20,,Argia
+47977,94551,10,257,Argia immunda
+47977,94545,10,957,Argia fumipennis
+94545,119014,5,308,Argia fumipennis violacea
+47977,94556,10,575,Argia lugens
+47977,94557,10,576,Argia moesta
+47977,197740,10,580,Argia funebris
+47977,94571,10,581,Argia sedula
+47977,94577,10,583,Argia translata
+47977,94559,10,668,Argia nahuana
+47977,94575,10,715,Argia tibialis
+47977,47975,10,864,Argia apicalis
+47977,56240,10,874,Argia vivida
+47925,92832,20,,Xanthocnemis
+92832,338504,10,335,Xanthocnemis zealandica
+47925,87465,20,,Chromagrion
+87465,97738,10,417,Chromagrion conditum
+47925,51679,20,,Coenagrion
+51679,51678,10,858,Coenagrion puella
+47925,92419,20,,Telebasis
+92419,113846,10,904,Telebasis salva
+47925,61153,20,,Pyrrhosoma
+61153,61152,10,910,Pyrrhosoma nymphula
+426081,85991,30,,Platycnemididae
+85991,91123,20,,Platycnemis
+91123,109650,10,319,Platycnemis pennipes
+47928,1317181,33,,Calopterygoidea
+1317181,47929,30,,Calopterygidae
+47929,51825,20,,Calopteryx
+51825,84481,10,322,Calopteryx maculata
+51825,51824,10,340,Calopteryx splendens
+51825,61536,10,533,Calopteryx virgo
+51825,96480,10,784,Calopteryx aequabilis
+47929,51762,20,,Hetaerina
+51762,102672,10,563,Hetaerina titia
+51762,51761,10,917,Hetaerina americana
+47928,1317183,33,,Lestoidea
+1317183,47930,30,,Lestidae
+47930,86783,20,,Austrolestes
+86783,126269,10,508,Austrolestes colensonis
+47930,89475,20,,Lestes
+89475,104426,10,511,Lestes disjunctus
+89475,104416,10,749,Lestes alacer
+89475,104422,10,750,Lestes congener
+89475,104429,10,752,Lestes dryas
+89475,104419,10,896,Lestes australis
+89475,104449,10,909,Lestes rectangularis
+47930,86599,20,,Archilestes
+86599,94513,10,567,Archilestes grandis
+184884,47157,40,,Lepidoptera
+47157,53784,33,,Hepialoidea
+53784,53783,30,,Hepialidae
+53783,374004,20,,Aenetus
+374004,409639,10,4,Aenetus virescens
+47157,47607,33,,Noctuoidea
+47607,48670,30,,Noctuidae
+48670,122465,27,,Acronictinae
+122465,212045,20,,Polygrammate
+212045,228593,10,5,Polygrammate hebraeicum
+122465,174395,20,,Cerma
+174395,205216,10,46,Cerma cerintha
+122465,55624,20,,Acronicta
+55624,155511,15,,Simyra
+155511,1293516,13,,Acronicta insularis
+1293516,624408,10,469,Acronicta insularis
+55624,1096168,15,,Agriopodes
+1096168,1293505,13,,Acronicta tritona
+1293505,479512,10,564,Acronicta fallax
+55624,1096177,15,,Acronicta
+1096177,1293501,13,,Acronicta americana
+1293501,145659,10,787,Acronicta americana
+122465,177976,20,,Harrisimemna
+177976,220974,10,989,Harrisimemna trisignata
+48670,122224,27,,Noctuinae
+122224,122726,25,,Phlogophorini
+122726,124182,20,,Phlogophora
+124182,205151,10,39,Phlogophora meticulosa
+124182,124183,10,158,Phlogophora periculosa
+122224,119124,25,,Prodeniini
+119124,118931,20,,Spodoptera
+118931,124875,10,254,Spodoptera litura
+118931,118930,10,542,Spodoptera ornithogalli
+119124,143120,20,,Galgula
+143120,143119,10,831,Galgula partita
+122224,117747,25,,Noctuini
+117747,210553,24,,Agrotina
+210553,61739,20,,Agrotis
+61739,126276,10,439,Agrotis ipsilon
+210553,173138,20,,Anicla
+173138,1079151,15,,Anicla
+1079151,213631,10,495,Anicla infecta
+210553,119551,20,,Feltia
+119551,1079139,15,,Feltia
+1079139,119550,10,623,Feltia jaculifera
+1079139,147309,10,902,Feltia herilis
+117747,320201,24,,Noctuina
+320201,143122,20,,Ochropleura
+143122,143121,10,694,Ochropleura implecta
+320201,81688,20,,Noctua
+81688,81687,10,983,Noctua pronuba
+122224,122730,25,,Elaphriini
+122730,146714,20,,Elaphria
+146714,146713,10,474,Elaphria grata
+122730,52907,20,,Chytonix
+52907,52906,10,480,Chytonix palliatricula
+122224,122728,25,,Pseudeustrotiini
+122728,202543,20,,Pseudeustrotia
+202543,143118,10,499,Pseudeustrotia carneola
+122224,1524091,25,,Eriopini
+1524091,48669,20,,Callopistria
+48669,199999,10,510,Callopistria mollissima
+122224,122740,25,,Hadenini
+122740,63035,20,,Melanchra
+63035,204701,10,625,Melanchra adjuncta
+122224,122727,25,,Apameini
+122727,81987,20,,Apamea
+81987,1330177,13,,Apamea amputatrix
+1330177,213826,10,639,Apamea amputatrix
+122224,122737,25,,Tholerini
+122737,153077,20,,Nephelodes
+153077,153076,10,698,Nephelodes minians
+122224,122731,25,,Leucaniini
+122731,121184,20,,Mythimna
+121184,1257539,15,,Pseudaletia
+1257539,121183,10,760,Mythimna unipuncta
+122224,82030,25,,Xylenini
+82030,320219,24,,Xylenina
+320219,176071,20,,Sunira
+176071,154353,10,849,Sunira bicolorago
+122224,122735,25,,Eriopygini
+122735,81662,20,,Lacinipolia
+81662,81657,10,973,Lacinipolia renigera
+48670,122463,27,,Condicinae
+122463,122738,25,,Leuconyctini
+122738,177464,20,,Leuconycta
+177464,205235,10,49,Leuconycta diphteroides
+122463,122734,25,,Condicini
+122734,144002,20,,Homophoberia
+144002,143613,10,184,Homophoberia apicosa
+48670,1095935,27,,Raphiinae
+1095935,319789,20,,Raphia
+319789,229817,10,51,Raphia frater
+48670,122455,27,,Plusiinae
+122455,122007,25,,Argyrogrammatini
+122007,52035,20,,Chrysodeixis
+52035,148908,10,59,Chrysodeixis includens
+122455,62792,25,,Plusiini
+62792,124044,24,,Plusiina
+124044,59313,20,,Anagrapha
+59313,59300,10,246,Anagrapha falcifera
+124044,55652,20,,Autographa
+55652,142990,10,471,Autographa precationis
+55652,55651,10,809,Autographa gamma
+55652,121823,10,1007,Autographa californica
+124044,127493,20,,Megalographa
+127493,127492,10,602,Megalographa biloba
+48670,122464,27,,Agaristinae
+122464,84334,20,,Eudryas
+84334,84333,10,305,Eudryas grata
+84334,219719,10,409,Eudryas unio
+122464,63817,20,,Alypia
+63817,84950,10,392,Alypia octomaculata
+122464,60779,20,,Psychomorpha
+60779,60774,10,534,Psychomorpha epimenis
+48670,122440,27,,Eustrotiinae
+122440,177323,20,,Lithacodia
+177323,223965,10,367,Lithacodia musta
+122440,52007,20,,Maliattha
+52007,211012,10,762,Maliattha synochitis
+122440,143182,20,,Marimatha
+143182,143181,10,877,Marimatha nigrofimbria
+122440,124474,20,,Protodeltote
+124474,228855,10,949,Protodeltote muscosula
+48670,122535,27,,Heliothinae
+122535,82496,20,,Schinia
+82496,143316,10,402,Schinia florida
+82496,143196,10,507,Schinia arcigera
+122535,83810,20,,Helicoverpa
+83810,118492,10,488,Helicoverpa zea
+48670,122435,27,,Acontiinae
+122435,499842,25,,Acontiini
+499842,143593,20,,Spragueia
+143593,143592,10,557,Spragueia leo
+499842,212042,20,,Ponometia
+212042,228634,10,916,Ponometia erastrioides
+48670,122478,27,,Amphipyrinae
+122478,122194,25,,Amphipyrini
+122194,119341,20,,Amphipyra
+119341,119340,10,604,Amphipyra pyramidoides
+48670,122459,27,,Pantheinae
+122459,176101,20,,Panthea
+176101,226910,10,709,Panthea furcilla
+122459,148462,20,,Charadra
+148462,148460,10,741,Charadra deridens
+48670,122484,27,,Cuculliinae
+122484,61971,20,,Cucullia
+61971,122261,10,933,Cucullia convexipennis
+47607,121850,30,,Erebidae
+121850,47606,27,,Arctiinae
+47606,122121,25,,Syntomini
+122121,127110,20,,Syntomoides
+127110,122956,10,7,Syntomoides imaon
+47606,82089,25,,Arctiini
+82089,82113,24,,Phaegopterina
+82113,67692,20,,Lophocampa
+67692,82225,10,31,Lophocampa caryae
+67692,67691,10,266,Lophocampa maculata
+82113,119042,20,,Cycnia
+119042,143043,10,401,Cycnia tenera
+82113,120218,20,,Halysidota
+120218,126397,10,453,Halysidota harrisii
+120218,120217,10,695,Halysidota tessellaris
+82113,81678,20,,Euchaetes
+81678,81677,10,979,Euchaetes egle
+82089,123834,24,,Spilosomina
+123834,63030,20,,Hypercompe
+63030,63028,10,53,Hypercompe scribonia
+123834,59676,20,,Pyrrharctia
+59676,59675,10,290,Pyrrharctia isabella
+123834,60840,20,,Spilosoma
+60840,60839,10,451,Spilosoma virginica
+123834,143116,20,,Phragmatobia
+143116,143114,10,498,Phragmatobia fuliginosa
+123834,127135,20,,Hyphantria
+127135,127133,10,544,Hyphantria cunea
+123834,121613,20,,Estigmene
+121613,121612,10,827,Estigmene acrea
+82089,82091,24,,Arctiina
+82091,119861,20,,Apantesis
+119861,135318,10,61,Apantesis phalerata
+119861,606580,10,589,Apantesis virgo
+119861,321458,10,661,Apantesis ornata
+119861,321459,10,834,Apantesis proxima
+82091,68331,20,,Arctia
+68331,336697,10,89,Arctia villica
+68331,626880,10,316,Arctia virginalis
+68331,68330,10,370,Arctia caja
+82091,179345,20,,Euplagia
+179345,118936,10,543,Euplagia quadripunctaria
+82089,82099,24,,Callimorphina
+82099,67441,20,,Utetheisa
+67441,1522883,15,,Utetheisa
+1522883,67440,10,240,Utetheisa ornatrix
+82099,84039,20,,Haploa
+84039,84038,10,263,Haploa lecontei
+84039,126106,10,408,Haploa clymene
+84039,130821,10,977,Haploa confusa
+82099,55695,20,,Tyria
+55695,51781,10,835,Tyria jacobaeae
+82089,82101,24,,Ctenuchina
+82101,63795,20,,Ctenucha
+63795,119013,10,556,Ctenucha virginica
+82101,119554,20,,Cisseps
+119554,119789,10,651,Cisseps fulvicollis
+82089,82098,24,,Pericopina
+82098,123435,20,,Nyctemera
+123435,348515,10,578,Nyctemera annulata
+47606,82092,25,,Lithosiini
+82092,124000,24,,Cisthenina
+124000,128952,20,,Lycomorpha
+128952,128950,10,743,Lycomorpha pholus
+124000,119954,20,,Hypoprepia
+119954,119953,10,856,Hypoprepia fucosa
+124000,81673,20,,Clemensia
+81673,81672,10,978,Clemensia albata
+121850,122479,27,,Herminiinae
+122479,178404,20,,Phalaenophana
+178404,178403,10,10,Phalaenophana pyramusalis
+122479,129227,20,,Chytolita
+129227,129226,10,60,Chytolita morbidalis
+122479,173334,20,,Bleptina
+173334,215271,10,171,Bleptina caradrinalis
+122479,133639,20,,Zanclognatha
+133639,133625,10,321,Zanclognatha jacchusalis
+133639,143012,10,478,Zanclognatha pedipilalis
+122479,52903,20,,Palthis
+52903,52902,10,479,Palthis asopialis
+52903,128242,10,677,Palthis angulalis
+122479,127462,20,,Idia
+127462,119066,10,565,Idia lubricalis
+127462,127457,10,596,Idia americalis
+127462,127460,10,597,Idia aemula
+122479,146751,20,,Lascoria
+146751,146750,10,921,Lascoria ambigualis
+121850,122500,27,,Eulepidotinae
+122500,332470,25,,Panopodini
+332470,173107,20,,Anticarsia
+173107,213809,10,86,Anticarsia gemmatalis
+332470,143524,20,,Panopoda
+143524,226901,10,707,Panopoda rufimargo
+121850,122474,27,,Pangraptinae
+122474,124242,20,,Pangrapta
+124242,226889,10,180,Pangrapta decoralis
+121850,122441,27,,Scoliopteryginae
+122441,134079,25,,Scoliopterygini
+134079,134075,20,,Scoliopteryx
+134075,134078,10,202,Scoliopteryx libatrix
+121850,122426,27,,Erebinae
+122426,121541,25,,Catocalini
+121541,83842,20,,Catocala
+83842,132881,10,224,Catocala ultronia
+83842,1074764,11,,Catocala ilia-complex
+1074764,128517,10,700,Catocala ilia
+83842,199169,10,985,Catocala maestosa
+122426,121568,25,,Omopterini
+121568,84603,20,,Zale
+84603,84602,10,341,Zale lunata
+84603,233933,10,591,Zale horrida
+122426,121547,25,,Melipotini
+121547,177071,20,,Melipotis
+177071,224855,10,466,Melipotis indomita
+122426,121521,25,,Poaphilini
+121521,118532,20,,Parallelia
+118532,118531,10,497,Parallelia bistriaris
+122426,121562,25,,Thermesiini
+121562,61504,20,,Ascalapha
+61504,61503,10,526,Ascalapha odorata
+122426,121535,25,,Euclidiini
+121535,52901,20,,Caenurgina
+52901,52900,10,747,Caenurgina crassiuscula
+52901,126640,10,758,Caenurgina erechtea
+121850,122490,27,,Calpinae
+122490,85262,25,,Calpini
+85262,125479,20,,Plusiodonta
+125479,125475,10,326,Plusiodonta compressipalpis
+121850,48847,27,,Lymantriinae
+48847,82042,25,,Orgyiini
+82042,49031,20,,Orgyia
+49031,61910,10,377,Orgyia antiqua
+49031,199438,10,378,Orgyia postica
+49031,61908,10,593,Orgyia vetusta
+49031,81665,10,976,Orgyia leucostigma
+48847,82039,25,,Lymantriini
+82039,48848,20,,Lymantria
+48848,1552378,15,,Porthetria
+1552378,47802,10,842,Lymantria dispar
+121850,122431,27,,Rivulinae
+122431,81675,20,,Rivula
+81675,81674,10,433,Rivula propinqualis
+121850,122457,27,,Hypeninae
+122457,82202,20,,Hypena
+82202,118513,10,492,Hypena scabra
+82202,143125,10,501,Hypena madefactalis
+82202,82201,10,737,Hypena baltimoralis
+47607,47718,30,,Notodontidae
+47718,122429,27,,Phalerinae
+122429,82205,20,,Nadata
+82205,82204,10,29,Nadata gibbosa
+122429,152128,20,,Peridea
+152128,1336078,13,,Peridea angulosa
+1336078,151770,10,555,Peridea angulosa
+152128,1336079,13,,Peridea ferruginea
+1336079,227466,10,885,Peridea ferruginea
+122429,47717,20,,Datana
+47717,47719,10,697,Datana ministra
+47718,122433,27,,Heterocampinae
+122433,1391425,25,,Heterocampini
+1391425,935354,20,,Cecrita
+935354,1372880,10,30,Cecrita biundata
+1391425,1374230,20,,Coelodasys
+1374230,1373714,10,425,Coelodasys unicornis
+47718,122439,27,,Pygaerinae
+122439,59200,20,,Clostera
+59200,120214,10,41,Clostera albosigma
+47718,122423,27,,Thaumetopoeinae
+122423,61294,20,,Thaumetopoea
+61294,61293,10,458,Thaumetopoea pityocampa
+47718,122424,27,,Notodontinae
+122424,143273,20,,Gluphisia
+143273,1337036,13,,Gluphisia
+1337036,143274,10,515,Gluphisia septentrionis
+47718,122443,27,,Dioptinae
+122443,886935,25,,Dioptini
+886935,83959,20,,Phryganidia
+83959,83958,10,517,Phryganidia californica
+47607,52873,30,,Nolidae
+52873,122499,27,,Diphtherinae
+122499,173794,20,,Diphthera
+173794,173793,10,97,Diphthera festiva
+47157,47224,33,,Papilionoidea
+47224,47223,30,,Papilionidae
+47223,49973,27,,Papilioninae
+49973,207785,25,,Papilionini
+207785,47225,20,,Papilio
+47225,545186,15,,Pterourus
+545186,57463,10,13,Papilio canadensis
+545186,58525,10,135,Papilio troilus
+545186,68263,10,255,Papilio multicaudata
+545186,68232,10,346,Papilio palamedes
+545186,60551,10,406,Papilio glaucus
+545186,47226,10,770,Papilio rutulus
+545186,55521,10,785,Papilio eurymedon
+47225,545183,15,,Papilio
+545183,58523,10,134,Papilio polyxenes
+58523,54900,5,712,Papilio polyxenes asterius
+545183,51097,10,245,Papilio zelicaon
+545183,56529,10,418,Papilio machaon
+47225,884946,15,,Princeps
+884946,68469,10,388,Papilio demodocus
+47225,775729,15,,Menelaides
+775729,51588,10,791,Papilio polytes
+207785,883401,20,,Heraclides
+883401,428606,10,248,Heraclides rumiko
+883401,85024,10,397,Heraclides cresphontes
+49973,49974,25,,Troidini
+49974,522893,24,,Battina
+522893,49975,20,,Battus
+49975,49972,10,87,Battus philenor
+49972,334616,5,74,Battus philenor hirsuta
+49975,68275,10,362,Battus polydamas
+49973,207790,25,,Leptocircini
+207790,83087,20,,Eurytides
+83087,83086,10,128,Eurytides marcellus
+207790,62750,20,,Iphiclides
+62750,62749,10,681,Iphiclides podalirius
+47223,207786,27,,Parnassiinae
+207786,207791,25,,Parnassiini
+207791,57486,20,,Parnassius
+57486,68239,10,348,Parnassius clodius
+47224,47922,30,,Nymphalidae
+47922,202067,27,,Nymphalinae
+202067,130316,25,,Melitaeini
+130316,52924,20,,Phyciodes
+52924,82069,10,16,Phyciodes pulchella
+52924,59176,10,227,Phyciodes mylitta
+52924,68274,10,361,Phyciodes phaon
+52924,52925,10,484,Phyciodes tharos
+52924,194542,10,753,Phyciodes graphica
+52924,58576,10,908,Phyciodes cocyta
+130316,53894,20,,Chlosyne
+53894,132330,10,153,Chlosyne janais
+53894,53893,10,251,Chlosyne palla
+53894,68240,10,349,Chlosyne lacinia
+53894,144223,10,634,Chlosyne theona
+53894,62978,10,699,Chlosyne nycteis
+53894,204685,10,1006,Chlosyne ehrenbergii
+130316,132340,20,,Anthanassa
+132340,132339,10,156,Anthanassa texana
+132340,194134,10,708,Anthanassa tulcis
+130316,50896,20,,Euphydryas
+50896,50892,10,208,Euphydryas chalcedona
+50896,59182,10,228,Euphydryas editha
+50896,58578,10,733,Euphydryas phaeton
+130316,132870,20,,Microtia
+132870,132867,10,221,Microtia elva
+130316,57496,20,,Melitaea
+57496,133295,10,276,Melitaea didyma
+130316,68255,20,,Dymasia
+68255,68249,10,351,Dymasia dymas
+130316,146826,20,,Texola
+146826,146822,10,932,Texola elada
+202067,202068,25,,Victorinini
+202068,50337,20,,Siproeta
+50337,50336,10,876,Siproeta stelenes
+50336,245925,5,18,Siproeta stelenes biplagiata
+202068,49764,20,,Anartia
+49764,49761,10,67,Anartia jatrophae
+49761,312543,5,152,Anartia jatrophae luteipicta
+49764,54951,10,721,Anartia fatima
+54951,312873,5,188,Anartia fatima fatima
+202067,202066,25,,Nymphalini
+202066,48507,20,,Vanessa
+48507,197077,10,54,Vanessa kershawi
+48507,82538,10,70,Vanessa gonerilla
+82538,411858,5,281,Vanessa gonerilla gonerilla
+48507,50786,10,199,Vanessa annabella
+48507,49133,10,574,Vanessa atalanta
+48507,48548,10,938,Vanessa cardui
+48507,48549,10,939,Vanessa virginiensis
+48507,194762,10,1003,Vanessa itea
+202066,50392,20,,Polygonia
+50392,58580,10,148,Polygonia progne
+50392,56225,10,182,Polygonia c-album
+50392,68262,10,354,Polygonia faunus
+50392,54064,10,627,Polygonia comma
+50392,56644,10,845,Polygonia satyrus
+50392,58579,10,911,Polygonia interrogationis
+50392,50391,10,913,Polygonia gracilis
+202066,49921,20,,Nymphalis
+49921,198813,10,149,Nymphalis l-album
+49921,49920,10,601,Nymphalis californica
+49921,56832,10,951,Nymphalis antiopa
+202066,54469,20,,Aglais
+54469,68269,10,359,Aglais milberti
+54469,207977,10,404,Aglais io
+54469,54468,10,953,Aglais urticae
+202066,55644,20,,Araschnia
+55644,55643,10,807,Araschnia levana
+202067,202224,25,,Junoniini
+202224,48506,20,,Junonia
+48506,51654,10,313,Junonia almana
+48506,1040836,10,505,Junonia evarete
+48506,48505,10,553,Junonia coenia
+48506,1040809,10,793,Junonia genoveva
+202224,51579,20,,Hypolimnas
+51579,70174,10,603,Hypolimnas bolina
+47922,60854,27,,Heliconiinae
+60854,134168,25,,Argynnini
+134168,1117856,20,,Argynnis
+1117856,1456550,15,,Argynnis
+1456550,123628,10,65,Argynnis paphia
+1117856,1456549,15,,Speyeria
+1456549,1456585,10,145,Argynnis aphrodite
+1456549,1456640,10,718,Argynnis atlantis
+1456549,1456562,10,865,Argynnis cybele
+134168,68246,20,,Euptoieta
+68246,68268,10,358,Euptoieta hegesia
+68268,312764,5,69,Euptoieta hegesia meridiania
+68246,68244,10,350,Euptoieta claudia
+134168,58573,20,,Boloria
+58573,334979,15,,Clossiana
+334979,58564,10,146,Boloria bellona
+334979,54068,10,629,Boloria selene
+134168,62767,20,,Issoria
+62767,62766,10,683,Issoria lathonia
+60854,134173,25,,Heliconiini
+134173,49767,20,,Heliconius
+49767,49766,10,68,Heliconius charithonia
+49767,81744,10,995,Heliconius erato
+134173,50074,20,,Dryas
+50074,50073,10,96,Dryas iulia
+50073,425004,5,891,Dryas iulia moderata
+134173,130349,20,,Dione
+130349,130348,10,209,Dione moneta
+130349,130451,10,584,Dione juno
+130349,49151,15,,Agraulis
+49151,49150,10,1019,Dione vanillae
+47922,128814,27,,Charaxinae
+128814,208714,25,,Charaxini
+208714,123913,20,,Charaxes
+123913,973189,15,,Charaxes
+973189,123912,10,108,Charaxes jasius
+128814,202102,25,,Anaeini
+202102,81562,20,,Anaea
+81562,1456706,15,,Anaea
+1456706,148810,10,168,Anaea aidea
+1456706,81561,10,1015,Anaea andria
+47922,134159,27,,Biblidinae
+134159,522908,25,,Catonephelini
+522908,68238,20,,Myscelia
+68238,148563,10,116,Myscelia ethusa
+134159,134160,25,,Ageroniini
+134160,83228,20,,Hamadryas
+83228,148742,10,157,Hamadryas februa
+134159,134161,25,,Biblidini
+134161,141753,20,,Biblis
+141753,141752,10,312,Biblis hyperia
+134161,148587,20,,Mestra
+148587,148560,10,819,Mestra amymone
+134159,207894,25,,Callicorini
+207894,69885,20,,Diaethria
+69885,200938,10,558,Diaethria anna
+47922,58597,27,,Satyrinae
+58597,58598,25,,Satyrini
+58598,58599,24,,Lethina
+58599,125501,20,,Lethe
+125501,1265201,15,,Satyrodes
+1265201,132227,10,125,Lethe appalachia
+1265201,141531,10,283,Lethe eurydice
+125501,626194,15,,Enodia
+626194,198812,10,273,Lethe anthedon
+58599,52593,20,,Pararge
+52593,52592,10,546,Pararge aegeria
+58599,89353,20,,Lasiommata
+89353,147298,10,1000,Lasiommata megera
+58598,58605,24,,Euptychiina
+58605,58607,20,,Megisto
+58607,58603,10,154,Megisto cymela
+58605,132062,20,,Cissia
+132062,1241373,10,366,Cissia rubricata
+58605,60753,20,,Hermeuptychia
+60753,60752,10,441,Hermeuptychia sosybius
+58605,129394,20,,Cyllopsis
+129394,143140,10,846,Cyllopsis gemma
+58598,1456713,24,,Cercyonina
+1456713,58608,20,,Cercyonis
+58608,58606,10,155,Cercyonis pegala
+58598,202100,24,,Coenonymphina
+202100,52590,20,,Coenonympha
+52590,59185,10,229,Coenonympha tullia
+52590,52589,10,446,Coenonympha pamphilus
+52590,69145,10,745,Coenonympha california
+52590,125815,10,1008,Coenonympha arcania
+58598,208488,24,,Maniolina
+208488,62428,20,,Pyronia
+62428,62429,10,649,Pyronia tithonus
+208488,62427,20,,Aphantopus
+62427,62426,10,732,Aphantopus hyperantus
+208488,55654,20,,Maniola
+55654,55653,10,810,Maniola jurtina
+58598,208491,24,,Melanargiina
+208491,89828,20,,Melanargia
+89828,130398,10,924,Melanargia galathea
+58597,205390,25,,Melanitini
+205390,51585,20,,Melanitis
+51585,51584,10,788,Melanitis leda
+47922,85868,27,,Libytheinae
+85868,58562,20,,Libytheana
+58562,58561,10,144,Libytheana carinenta
+47922,134171,27,,Limenitidinae
+134171,134175,25,,Limenitidini
+134175,50881,20,,Limenitis
+50881,58586,10,150,Limenitis archippus
+50881,50880,10,206,Limenitis lorquini
+50881,68251,10,352,Limenitis weidemeyerii
+50881,60607,10,413,Limenitis arthemis
+60607,58585,5,405,Limenitis arthemis astyanax
+60607,58583,5,763,Limenitis arthemis arthemis
+50881,155030,10,687,Limenitis reducta
+134175,48661,20,,Adelpha
+48661,67560,10,256,Adelpha californica
+48661,67559,10,726,Adelpha eulalia
+47922,134166,27,,Apaturinae
+134166,58588,20,,Asterocampa
+58588,58587,10,151,Asterocampa clyton
+58588,68264,10,356,Asterocampa celtis
+58588,148793,10,489,Asterocampa leilia
+134166,149033,20,,Apatura
+149033,322024,10,541,Apatura ilia
+47922,61244,27,,Danainae
+61244,134169,25,,Danaini
+134169,522900,24,,Danaina
+522900,48663,20,,Danaus
+48663,67835,10,287,Danaus chrysippus
+48663,1248776,15,,Anosia
+1248776,51743,10,325,Danaus gilippus
+51743,51748,5,327,Danaus gilippus thersippus
+48663,1451825,15,,Danaus
+1451825,50065,10,692,Danaus eresimus
+48663,48662,10,954,Danaus plexippus
+47922,202095,27,,Cyrestinae
+202095,208490,25,,Cyrestini
+208490,50284,20,,Marpesia
+50284,126308,10,532,Marpesia chiron
+50284,50283,10,961,Marpesia petreus
+47224,47923,30,,Lycaenidae
+47923,125830,27,,Theclinae
+125830,125836,25,,Eumaeini
+125836,1456481,24,,Callophryidina
+1456481,58554,20,,Callophrys
+58554,60553,15,,Incisalia
+60553,58550,10,26,Callophrys niphon
+60553,58543,10,140,Callophrys augustinus
+60553,127303,10,249,Callophrys henrici
+58554,82484,15,,Mitoura
+82484,84239,10,288,Callophrys gryneus
+58554,1456500,15,,Greenie
+1456500,346970,10,386,Callophrys dumetorum
+1456481,54135,20,,Satyrium
+54135,1456503,15,,Satyrium
+1456503,58541,10,139,Satyrium liparops
+1456503,59134,10,218,Satyrium sylvinus
+1456503,54024,10,624,Satyrium californica
+1456503,58539,10,888,Satyrium calanus
+54135,1456501,15,,Callipsyche
+1456501,59138,10,220,Satyrium saepium
+54135,126594,15,,Fixsenia
+126594,198804,10,270,Satyrium titus
+125836,1456505,24,,Strymonina
+1456505,50940,20,,Strymon
+50940,132553,10,183,Strymon istapa
+50940,50931,10,213,Strymon melinus
+125836,1456508,24,,Atlidina
+1456508,59129,20,,Atlides
+59129,59128,10,216,Atlides halesus
+125836,522888,24,,Calycopidina
+522888,122282,20,,Calycopis
+122282,126589,10,730,Calycopis isobeon
+122282,122281,10,941,Calycopis cecrops
+125836,1456507,24,,Parrhasiina
+1456507,127491,20,,Parrhasius
+127491,127490,10,871,Parrhasius m-album
+47923,58558,27,,Polyommatinae
+58558,125833,25,,Polyommatini
+125833,522677,24,,Everina
+522677,122380,20,,Cupido
+122380,122381,10,72,Cupido comyntas
+125833,522678,24,,Polyommatina
+522678,118915,20,,Echinargus
+118915,118914,10,83,Echinargus isola
+522678,520397,20,,Icaricia
+520397,520457,10,226,Icaricia icarioides
+520397,117360,10,520,Icaricia lupini
+520397,520456,10,875,Icaricia acmon
+522678,69941,20,,Hemiargus
+69941,69940,10,569,Hemiargus ceraunus
+522678,56603,20,,Plebejus
+56603,58559,15,,Lycaeides
+58559,122383,10,662,Plebejus melissa
+522678,55642,20,,Polyommatus
+55642,1468172,11,,Polyommatus icarus
+1468172,55641,10,806,Polyommatus icarus
+125833,1265004,24,,Lycaenopsina
+1265004,52485,20,,Celastrina
+52485,82792,10,91,Celastrina neglecta
+52485,58556,10,143,Celastrina ladon
+52485,84662,10,363,Celastrina lucia
+52485,52484,10,457,Celastrina echo
+52485,55640,10,805,Celastrina argiolus
+125833,522676,24,,Leptotina
+522676,51538,20,,Leptotes
+51538,59152,10,223,Leptotes marina
+51538,51534,10,300,Leptotes cassius
+125833,522675,24,,Brephidiina
+522675,53842,20,,Brephidium
+53842,53843,10,608,Brephidium exilis
+125833,522674,24,,Scolitantidina
+522674,56777,20,,Glaucopsyche
+56777,1456510,15,,Glaucopsyche
+1456510,56776,10,619,Glaucopsyche lygdamus
+125833,1265011,24,,Cacyreina
+1265011,119665,20,,Cacyreus
+119665,119664,10,636,Cacyreus marshalli
+125833,522673,24,,Lampidina
+522673,121994,20,,Lampides
+121994,121993,10,901,Lampides boeticus
+47923,125835,27,,Lycaeninae
+125835,125818,25,,Lycaenini
+125818,1360273,20,,Tharsalea
+1360273,1360289,15,,Epidemia
+1360289,1360298,10,215,Tharsalea helloides
+1360289,1360291,10,883,Tharsalea hyllus
+125818,54010,20,,Lycaena
+54010,1360268,15,,Lycaena
+1360268,1456448,10,,Lycaena hypophlaeas
+1456448,1456449,5,716,Lycaena hypophlaeas hypophlaeas
+1360268,55655,10,767,Lycaena phlaeas
+47923,125840,27,,Miletinae
+125840,333887,25,,Miletini
+333887,522623,24,,Spalgina
+522623,81730,20,,Feniseca
+81730,81729,10,642,Feniseca tarquinius
+47224,47653,30,,Hesperiidae
+47653,122493,27,,Hesperiinae
+122493,320552,25,,Hesperiini
+320552,1363196,24,,Calpodina
+1363196,90646,20,,Panoquina
+90646,147931,10,55,Panoquina ocola
+1363196,53865,20,,Calpodes
+53865,53866,10,775,Calpodes ethlius
+320552,1363195,24,,Apaustina
+1363195,58483,20,,Ancyloxypha
+58483,58481,10,121,Ancyloxypha numitor
+320552,1363197,24,,Thymelicina
+1363197,58493,20,,Thymelicus
+58493,58484,10,123,Thymelicus lineola
+1363197,129416,20,,Copaeodes
+129416,202451,10,727,Copaeodes minima
+129416,129415,10,812,Copaeodes aurantiaca
+320552,1363159,24,,Hesperiina
+1363159,62973,20,,Anatrytone
+62973,58509,10,127,Anatrytone logan
+1363159,51778,20,,Poanes
+51778,58511,10,129,Poanes viator
+1363159,1363160,20,,Vernia
+1363160,1363161,10,132,Vernia verna
+1363159,50341,20,,Hylephila
+50341,50340,10,137,Hylephila phyleus
+1363159,55786,20,,Ochlodes
+55786,59194,10,234,Ochlodes sylvanoides
+55786,55785,10,523,Ochlodes agricola
+55786,61781,10,573,Ochlodes sylvanus
+1363159,1081313,20,,Lon
+1081313,1081332,10,331,Lon melane
+1081313,1081329,10,674,Lon zabulon
+1081313,1081323,10,859,Lon hobomok
+1363159,52077,20,,Atalopedes
+52077,52075,10,387,Atalopedes campestris
+1363159,58504,20,,Polites
+58504,1363170,15,,Polites
+1363170,58506,10,506,Polites themistocles
+1363170,133631,10,887,Polites peckius
+1363170,59192,10,1014,Polites sabuleti
+58504,1363186,15,,Wallengrenia
+1363186,1363180,10,538,Polites otho
+58504,1363168,15,,Hedone
+1363168,179855,10,739,Polites vibex
+1363159,58515,20,,Euphyes
+58515,58514,10,866,Euphyes vestris
+320552,1354723,24,,Moncina
+1354723,59196,20,,Lerodea
+59196,59195,10,235,Lerodea eufala
+1354723,142989,20,,Lerema
+142989,142988,10,470,Lerema accius
+47653,51312,27,,Pyrginae
+51312,320554,25,,Pyrgini
+320554,1038402,20,,Burnsius
+1038402,1038409,10,66,Burnsius oileus
+1038402,986458,11,,Burnsius communis
+986458,1038408,10,271,Burnsius communis
+986458,1457202,10,940,Burnsius albezens
+320554,59191,20,,Heliopetes
+59191,1038440,15,,Leucoscirtes
+1038440,148517,10,113,Heliopetes laviana
+1038440,59190,10,233,Heliopetes ericetorum
+51312,320551,25,,Erynnini
+320551,47652,20,,Erynnis
+47652,50071,10,95,Erynnis horatius
+47652,58473,10,118,Erynnis icelus
+47652,58475,10,119,Erynnis juvenalis
+47652,58478,10,120,Erynnis baptisiae
+47652,59187,10,230,Erynnis propertius
+47652,59188,10,231,Erynnis funeralis
+47652,59189,10,232,Erynnis tristis
+51312,320517,25,,Achlyodini
+320517,1456844,24,,Achlyodina
+1456844,148881,20,,Eantis
+148881,148883,10,176,Eantis tamenund
+148881,1465766,10,942,Eantis pallida
+51312,320579,25,,Carcharodini
+320579,58480,20,,Pholisora
+58480,58479,10,914,Pholisora catullus
+47653,320509,27,,Eudaminae
+320509,1070950,25,,Eudamini
+1070950,1456838,24,,Eudamina
+1456838,1154096,20,,Spicauda
+1154096,1154098,10,110,Spicauda procne
+1456838,58471,20,,Thorybes
+58471,58469,10,117,Thorybes pylades
+58471,1245921,10,267,Thorybes dorantes
+58471,1268230,10,915,Thorybes lyciades
+1456838,146735,20,,Chioides
+146735,148800,10,167,Chioides albofasciatus
+1456838,1248720,20,,Urbanus
+1248720,1456835,15,,Urbanus
+1456835,67435,10,239,Urbanus proteus
+1456838,1154108,20,,Telegonus
+1154108,1154103,10,644,Telegonus cellus
+1456838,148579,20,,Astraptes
+148579,148537,10,804,Astraptes fulgerator
+1456838,81560,20,,Epargyreus
+81560,81559,10,1011,Epargyreus clarus
+320509,1150339,25,,Phocidini
+1150339,69943,20,,Phocides
+69943,257761,10,490,Phocides polybius
+47653,320508,27,,Heteropterinae
+320508,1456850,25,,Heteropterini
+1456850,122378,20,,Carterocephalus
+122378,122375,10,646,Carterocephalus palaemon
+47224,48508,30,,Pieridae
+48508,209720,27,,Pierinae
+209720,321384,25,,Pierini
+321384,475032,24,,Pierina
+475032,55690,20,,Pieris
+55690,55401,10,85,Pieris brassicae
+55690,198821,10,275,Pieris oleracea
+55690,54087,10,286,Pieris napi
+55690,82481,10,432,Pieris marginalis
+55690,55626,10,801,Pieris rapae
+475032,62501,20,,Leptophobia
+62501,62500,10,783,Leptophobia aripa
+62500,312353,5,112,Leptophobia aripa elodia
+475032,59122,20,,Pontia
+59122,59119,10,212,Pontia protodice
+475032,51537,20,,Ascia
+51537,51536,10,302,Ascia monuste
+321384,475031,24,,Aporiina
+475031,148610,20,,Archonias
+148610,1480161,10,710,Archonias nimbice
+475031,81735,20,,Neophasia
+81735,81734,10,992,Neophasia menapia
+321384,61296,20,,Aporia
+61296,61295,10,713,Aporia crataegi
+209720,321383,25,,Anthocharidini
+321383,51498,20,,Anthocharis
+51498,1267519,15,,Anthocharis
+1267519,59124,10,214,Anthocharis sara
+1267519,51495,10,293,Anthocharis cardamines
+51498,1267517,15,,Tetracharis
+1267517,69844,10,552,Anthocharis midea
+48508,119556,27,,Coliadinae
+119556,58533,20,,Colias
+58533,58531,10,136,Colias philodice
+58533,143294,10,516,Colias croceus
+58533,58532,10,880,Colias eurytheme
+119556,48579,20,,Anteos
+48579,148856,10,172,Anteos clorinde
+48579,48578,10,944,Anteos maerula
+119556,51615,20,,Eurema
+51615,67324,10,217,Eurema daira
+51615,51614,10,310,Eurema hecabe
+119556,48551,20,,Phoebis
+48551,67653,10,262,Phoebis agarithe
+48551,133416,10,294,Phoebis philea
+48551,48550,10,1001,Phoebis sennae
+119556,51774,20,,Nathalis
+51774,51773,10,332,Nathalis iole
+119556,81728,20,,Abaeis
+81728,1241365,10,654,Abaeis mexicana
+81728,81727,10,991,Abaeis nicippe
+119556,52772,20,,Gonepteryx
+52772,52771,10,673,Gonepteryx rhamni
+119556,117318,20,,Zerene
+117318,129362,10,802,Zerene cesonia
+119556,122173,20,,Pyrisitia
+122173,122172,10,886,Pyrisitia lisa
+122173,144187,10,920,Pyrisitia proterpia
+119556,177600,20,,Kricogonia
+177600,204775,10,1018,Kricogonia lyside
+47224,59166,30,,Riodinidae
+59166,522808,27,,Riodininae
+522808,522809,25,,Riodinini
+522809,148874,20,,Melanis
+148874,148506,10,111,Melanis pixe
+522809,129364,20,,Calephelis
+129364,129363,10,755,Calephelis nemesis
+522808,784971,25,,Emesidini
+784971,59167,20,,Apodemia
+59167,1144329,15,,Apodemia
+1144329,59165,10,360,Apodemia mormo
+1144329,119068,10,566,Apodemia virgulti
+47157,47214,33,,Bombycoidea
+47214,47213,30,,Sphingidae
+47213,124071,27,,Macroglossinae
+124071,124065,25,,Macroglossini
+124065,124055,24,,Choerocampina
+124055,49349,20,,Hyles
+49349,49348,10,20,Hyles lineata
+49349,118901,10,539,Hyles gallii
+124055,69738,20,,Xylophanes
+69738,69737,10,537,Xylophanes tersa
+124065,124050,24,,Macroglossina
+124050,51997,20,,Daphnis
+51997,51996,10,379,Daphnis nerii
+124050,126154,20,,Amphion
+126154,126153,10,415,Amphion floridensis
+124050,118504,20,,Darapsa
+118504,118503,10,491,Darapsa myron
+118504,128241,10,676,Darapsa choerilus
+124050,56294,20,,Macroglossum
+56294,56293,10,847,Macroglossum stellatarum
+124050,143454,20,,Deidamia
+143454,143452,10,897,Deidamia inscriptum
+124071,124080,25,,Dilophonotini
+124080,124060,24,,Hemarina
+124060,51669,20,,Hemaris
+51669,82379,10,52,Hemaris thysbe
+51669,358549,10,776,Hemaris diffinis
+124080,124070,24,,Dilophonotina
+124070,124468,20,,Pseudosphinx
+124468,124467,10,190,Pseudosphinx tetrio
+124071,124045,25,,Philampelini
+124045,47915,20,,Eumorpha
+47915,143830,10,594,Eumorpha vitis
+47915,128012,10,653,Eumorpha fasciatus
+47915,47914,10,853,Eumorpha pandorus
+47915,122356,10,947,Eumorpha achemon
+47213,124081,27,,Sphinginae
+124081,124110,25,,Sphingini
+124110,1228736,24,,Sphingina
+1228736,82154,20,,Ceratomia
+82154,82153,10,23,Ceratomia undulosa
+82154,143440,10,529,Ceratomia catalpae
+1228736,70131,20,,Sphinx
+70131,117452,10,365,Sphinx kalmiae
+1228736,61506,20,,Manduca
+61506,61505,10,394,Manduca sexta
+61506,126568,10,467,Manduca rustica
+61506,224420,10,502,Manduca quinquemaculatus
+1228736,120035,20,,Lapara
+120035,120033,10,675,Lapara bombycoides
+124110,1228738,24,,Acherontiina
+1228738,119087,20,,Agrius
+119087,124031,10,124,Agrius convolvuli
+119087,119086,10,826,Agrius cingulata
+47213,124130,27,,Smerinthinae
+124130,124128,25,,Smerinthini
+124128,47212,20,,Paonias
+47212,143446,10,58,Paonias myops
+47212,49716,10,63,Paonias excaecata
+124128,127166,20,,Pachysphinx
+127166,143445,10,530,Pachysphinx modesta
+124128,119493,20,,Smerinthus
+119493,119492,10,622,Smerinthus cerisyi
+124130,1228762,25,,Mimatini
+1228762,84037,20,,Amorpha
+84037,84023,10,260,Amorpha juglandis
+47214,47918,30,,Saturniidae
+47918,125084,27,,Hemileucinae
+125084,475374,25,,Hemileucini
+475374,82145,20,,Hemileuca
+82145,82144,10,22,Hemileuca eglanterina
+475374,82286,20,,Automeris
+82286,82279,10,40,Automeris io
+47918,125085,27,,Ceratocampinae
+125085,59919,20,,Anisota
+59919,1354097,11,,Anisota virginiensis
+1354097,81584,10,77,Anisota virginiensis
+59919,1354096,11,,Anisota senatoria
+1354096,81583,10,969,Anisota senatoria
+125085,48096,20,,Dryocampa
+48096,48094,10,882,Dryocampa rubicunda
+125085,81587,20,,Citheronia
+81587,81586,10,970,Citheronia regalis
+125085,81591,20,,Eacles
+81591,81590,10,971,Eacles imperialis
+47918,124126,27,,Saturniinae
+124126,125063,25,,Attacini
+125063,50914,20,,Hyalophora
+50914,50913,10,211,Hyalophora euryalus
+50914,81582,10,968,Hyalophora cecropia
+125063,53579,20,,Callosamia
+53579,81580,10,967,Callosamia promethea
+124126,125080,25,,Saturniini
+125080,47917,20,,Actias
+47917,47916,10,854,Actias luna
+125080,47920,20,,Antheraea
+47920,47919,10,855,Antheraea polyphemus
+47214,783235,30,,Apatelodidae
+783235,639669,27,,Apatelodinae
+639669,48263,20,,Apatelodes
+48263,48262,10,900,Apatelodes torrefacta
+47157,49531,33,,Geometroidea
+49531,49530,30,,Geometridae
+49530,123032,27,,Larentiinae
+123032,123052,25,,Xanthorhoini
+123052,81693,20,,Xanthorhoe
+81693,205036,10,25,Xanthorhoe lacustrata
+81693,143485,10,81,Xanthorhoe ferrugata
+123052,143004,20,,Orthonama
+143004,143002,10,475,Orthonama obstipata
+123052,143986,20,,Costaconvexa
+143986,143005,10,476,Costaconvexa centrostrigaria
+123032,123056,25,,Cidariini
+123056,173699,20,,Ecliptopera
+173699,205202,10,42,Ecliptopera silaceata
+123056,52944,20,,Trichodezia
+52944,52943,10,485,Trichodezia albovittata
+123032,1378160,25,,Dyspteridini
+1378160,173707,20,,Dyspteris
+173707,205203,10,43,Dyspteris abortivaria
+1378160,129224,20,,Heterophleps
+129224,129222,10,781,Heterophleps triguttaria
+123032,123055,25,,Euphyiini
+123055,120274,20,,Euphyia
+120274,120275,10,82,Euphyia intermediata
+123032,123039,25,,Eupitheciini
+123039,123096,20,,Eupithecia
+123096,143734,10,585,Eupithecia miserulata
+123039,129225,20,,Pasiphila
+129225,129223,10,782,Pasiphila rectangulata
+123032,1378168,25,,Epirrhoini
+1378168,127621,20,,Epirrhoe
+127621,127618,10,615,Epirrhoe alternata
+123032,123065,25,,Rheumapterini
+123065,127018,20,,Rheumaptera
+127018,1378524,10,895,Rheumaptera meadii
+123032,123057,25,,Eudulini
+123057,143016,20,,Eubaphe
+143016,143015,10,935,Eubaphe mendica
+49530,123033,27,,Ennominae
+123033,123091,25,,Ennomini
+123091,174546,20,,Caripeta
+174546,205213,10,44,Caripeta divisata
+123091,154447,20,,Lambdina
+154447,154446,10,185,Lambdina fiscellaria
+123091,131674,20,,Tetracis
+131674,144107,10,244,Tetracis crocallata
+131674,131673,10,714,Tetracis cachexiata
+123091,176431,20,,Eutrapela
+176431,205197,10,301,Eutrapela clemataria
+123091,143026,20,,Eusarca
+143026,143024,10,481,Eusarca confusaria
+123091,120473,20,,Prochoerodes
+120473,143518,10,545,Prochoerodes lineola
+123091,143611,20,,Besma
+143611,143610,10,560,Besma quercivoraria
+123091,178314,20,,Patalene
+178314,227307,10,751,Patalene olyzonaria
+123091,176688,20,,Nepytia
+176688,211007,10,761,Nepytia canosaria
+123091,55468,20,,Sabulodes
+55468,55467,10,777,Sabulodes aegrotata
+123091,119940,20,,Ennomos
+119940,154582,10,879,Ennomos magnaria
+123091,81655,20,,Nematocampa
+81655,81656,10,972,Nematocampa resistaria
+123033,124062,25,,Boarmiini
+124062,143183,20,,Iridopsis
+143183,205233,10,48,Iridopsis larvaria
+143183,222284,10,115,Iridopsis defectaria
+124062,124249,20,,Biston
+124249,143517,10,98,Biston betularia
+124062,83091,20,,Epimecis
+83091,83090,10,130,Epimecis hortaria
+124062,321698,20,,Melanchroia
+321698,321697,10,274,Melanchroia chephise
+124062,124226,20,,Ectropis
+124226,143009,10,477,Ectropis crepuscularia
+124062,143973,20,,Protoboarmia
+143973,143867,10,599,Protoboarmia porcelaria
+124062,60772,20,,Phigalia
+60772,209713,10,628,Phigalia titea
+124062,143111,20,,Hypagyrtis
+143111,143110,10,655,Hypagyrtis unipunctata
+124062,63759,20,,Anavitrinella
+63759,63750,10,790,Anavitrinella pampinaria
+123033,202516,25,,Anagogini
+202516,177045,20,,Metanema
+177045,205238,10,50,Metanema inatomaria
+202516,205242,20,,Plagodis
+205242,205241,10,414,Plagodis phlogosaria
+202516,144073,20,,Probole
+144073,502385,10,966,Probole amicaria
+123033,124076,25,,Campaeini
+124076,81682,20,,Campaea
+81682,81681,10,193,Campaea perlata
+123033,124047,25,,Baptini
+124047,125179,20,,Lomographa
+125179,133966,10,384,Lomographa vestaliata
+123033,124041,25,,Macariini
+124041,118494,20,,Macaria
+118494,1293534,13,,Macaria notata
+1293534,118486,10,487,Macaria aemulataria
+118494,736797,10,664,Macaria pustularia
+124041,177934,20,,Heliomata
+177934,194599,10,759,Heliomata cycladata
+124041,211968,20,,Psamatodes
+211968,1293586,13,,Psamatodes abydata
+1293586,228899,10,955,Psamatodes abydata
+123033,202321,25,,Nacophorini
+202321,130004,20,,Phaeoura
+130004,130003,10,878,Phaeoura quernaria
+49530,123037,27,,Sterrhinae
+123037,123078,25,,Sterrhini
+123078,52091,20,,Idaea
+52091,205231,10,47,Idaea dimidiata
+123037,123083,25,,Cosymbiini
+123083,143106,20,,Pleuroprucha
+143106,143105,10,496,Pleuroprucha insulsaria
+123083,81652,20,,Cyclophora
+81652,217970,10,638,Cyclophora pendulinaria
+123037,123079,25,,Timandrini
+123079,118491,20,,Haematopis
+118491,118490,10,792,Haematopis grataria
+123037,123077,25,,Scopulini
+123077,52048,20,,Scopula
+52048,244344,10,837,Scopula rubraria
+52048,81680,10,980,Scopula limboundata
+49530,123036,27,,Geometrinae
+123036,123090,25,,Hemitheini
+123090,1518489,24,,Hemitheina
+1518489,149018,20,,Chlorochlamys
+149018,149017,10,187,Chlorochlamys chloroleucaria
+123036,123085,25,,Nemoriini
+123085,126205,20,,Synchlora
+126205,1051049,11,,Synchlora aerata
+1051049,207924,10,400,Synchlora frondaria
+1051049,126204,10,423,Synchlora aerata
+123085,119897,20,,Nemoria
+119897,203831,10,894,Nemoria bistriaria
+123036,123081,25,,Dysphaniini
+123081,52021,20,,Dysphania
+52021,153102,10,701,Dysphania militaris
+49531,122401,30,,Uraniidae
+122401,123030,27,,Epipleminae
+123030,143477,20,,Calledapteryx
+143477,143476,10,78,Calledapteryx dryopterata
+122401,123027,27,,Uraniinae
+123027,130847,20,,Lyssa
+130847,130846,10,893,Lyssa zampa
+47157,49682,33,,Pyraloidea
+49682,52002,30,,Crambidae
+52002,122491,27,,Pyraustinae
+122491,892833,25,,Pyraustini
+892833,55659,20,,Pyrausta
+55659,1305339,13,,Pyrausta cespitalis
+1305339,491839,10,33,Pyrausta subsequalis
+55659,1305337,13,,Pyrausta aurata
+1305337,126217,10,431,Pyrausta orphisalis
+55659,1305328,13,,Pyrausta nexalis
+1305328,210615,10,724,Pyrausta volupialis
+1305328,335840,10,1017,Pyrausta inornatalis
+55659,1305353,13,,Pyrausta acrionalis
+1305353,142998,10,740,Pyrausta acrionalis
+55659,1305352,13,,Pyrausta tyralis
+1305352,204081,10,919,Pyrausta laticlavia
+1305352,81752,10,998,Pyrausta tyralis
+892833,62425,20,,Sitochroa
+62425,62424,10,648,Sitochroa palealis
+892833,122542,20,,Anania
+122542,55638,10,803,Anania hortulata
+122542,126737,10,833,Anania funebris
+892833,121717,20,,Uresiphita
+121717,121716,10,868,Uresiphita reversalis
+892833,172693,20,,Achyra
+172693,204077,10,918,Achyra rantalis
+52002,122486,27,,Spilomelinae
+122486,892352,25,,Agroterini
+892352,143285,20,,Diastictis
+143285,210607,10,64,Diastictis fracturalis
+892352,130016,20,,Pantographa
+130016,205240,10,337,Pantographa limata
+122486,928024,25,,Udeini
+928024,132446,20,,Conchylodes
+132446,132445,10,170,Conchylodes ovulalis
+928024,126764,20,,Udea
+126764,143615,10,561,Udea rubigalis
+122486,928021,25,,Nomophilini
+928021,58751,20,,Nomophila
+58751,58750,10,173,Nomophila nearctica
+928021,118789,20,,Desmia
+118789,1106113,11,,Desmia funeralis
+1106113,118788,10,521,Desmia funeralis
+928021,173922,20,,Diacme
+173922,218301,10,670,Diacme elealis
+122486,892367,25,,Margaroniini
+892367,176118,20,,Palpita
+176118,207601,10,372,Palpita quadristigmalis
+176118,208112,10,420,Palpita magniferalis
+892367,51949,20,,Diaphania
+51949,151769,10,554,Diaphania hyalinata
+892367,124803,20,,Cydalima
+124803,325295,10,722,Cydalima perspectalis
+122486,892294,25,,Hymeniini
+892294,52044,20,,Spoladea
+52044,52043,10,383,Spoladea recurvalis
+892294,177722,20,,Hymenia
+177722,142995,10,472,Hymenia perspectalis
+122486,892563,25,,Steniini
+892563,173180,20,,Anageshna
+173180,213510,10,398,Anageshna primordialis
+122486,892485,25,,Herpetogrammatini
+892485,143482,20,,Blepharomastix
+143482,143484,10,540,Blepharomastix ranalis
+892485,125046,20,,Herpetogramma
+125046,143008,10,744,Herpetogramma pertextalis
+122486,928023,25,,Lineodini
+928023,143038,20,,Lineodes
+143038,143037,10,768,Lineodes integra
+52002,122538,27,,Crambinae
+122538,349053,25,,Argyriini
+349053,132741,20,,Urola
+132741,132736,10,203,Urola nivalis
+122538,122946,25,,Crambini
+122946,82269,20,,Crambus
+82269,133447,10,298,Crambus agitatellus
+122946,146642,20,,Parapediasia
+146642,553984,10,500,Parapediasia teterrellus
+122946,52905,20,,Microcrambus
+52905,52904,10,754,Microcrambus elegans
+122946,142781,20,,Agriphila
+142781,947590,10,950,Agriphila vulgivagellus
+52002,122952,27,,Glaphyriinae
+122952,174382,20,,Chalcoela
+174382,201342,10,493,Chalcoela iphitalis
+122952,81686,20,,Evergestis
+81686,81685,10,982,Evergestis pallidata
+122952,173878,20,,Dicymolomia
+173878,218424,10,996,Dicymolomia julianalis
+52002,122480,27,,Acentropinae
+122480,199821,20,,Elophila
+199821,335071,10,965,Elophila obliteralis
+49682,49683,30,,Pyralidae
+49683,122925,27,,Phycitinae
+122925,122926,25,,Phycitini
+122926,124186,20,,Plodia
+124186,124184,10,159,Plodia interpunctella
+49683,122934,27,,Chrysauginae
+122934,92958,20,,Galasa
+92958,84024,10,261,Galasa nigrinodis
+49683,122739,27,,Pyralinae
+122739,122928,25,,Pyralini
+122928,129150,20,,Hypsopygia
+129150,343393,10,317,Hypsopygia olinalis
+122928,124622,20,,Pyralis
+124622,199870,10,412,Pyralis farinalis
+49683,122933,27,,Galleriinae
+122933,122935,25,,Tirathabini
+122935,129573,20,,Aphomia
+129573,129572,10,906,Aphomia sociella
+47157,84429,33,,Drepanoidea
+84429,84430,30,,Drepanidae
+84430,123020,27,,Thyatirinae
+123020,468612,25,,Habrosynini
+468612,204700,20,,Pseudothyatira
+204700,204699,10,76,Pseudothyatira cymatophoroides
+468612,124895,20,,Habrosyne
+124895,220826,10,562,Habrosyne scripta
+84430,123016,27,,Drepaninae
+123016,123018,25,,Drepanini
+123018,84431,20,,Drepana
+84431,84428,10,314,Drepana arcuata
+84430,632582,27,,Oretinae
+632582,123019,25,,Oretini
+123019,121571,20,,Oreta
+121571,121534,10,843,Oreta rosea
+47157,55518,33,,Gelechioidea
+55518,423543,30,,Depressariidae
+423543,355080,27,,Stenomatinae
+355080,173115,20,,Antaeotricha
+173115,213740,10,80,Antaeotricha schlaegeri
+55518,81690,30,,Oecophoridae
+81690,205760,27,,Oecophorinae
+205760,479704,25,,Oecophorini
+479704,174568,20,,Callima
+174568,215754,10,666,Callima argenticinctella
+47157,52029,33,,Zygaenoidea
+52029,84165,30,,Limacodidae
+84165,1072427,27,,Limacodinae
+1072427,173085,20,,Apoda
+173085,1094574,10,105,Apoda y-inversa
+1072427,207604,20,,Prolimacodes
+207604,207603,10,374,Prolimacodes badia
+1072427,177324,20,,Lithacodes
+177324,201343,10,614,Lithacodes fasciola
+1072427,136550,20,,Euclea
+136550,136548,10,691,Euclea delphinii
+1072427,177667,20,,Isa
+177667,154469,10,863,Isa textula
+1072427,181039,20,,Acharia
+181039,122228,10,928,Acharia stimulea
+52029,84186,30,,Megalopygidae
+84186,1043738,27,,Megalopyginae
+1043738,84187,20,,Megalopyge
+84187,84185,10,282,Megalopyge opercularis
+52029,52028,30,,Zygaenidae
+52028,124108,27,,Procridinae
+124108,846617,25,,Procridini
+846617,60756,20,,Pyromorpha
+60756,60754,10,442,Pyromorpha dimidiata
+846617,126906,20,,Harrisina
+126906,126905,10,704,Harrisina americana
+47157,47156,33,,Tortricoidea
+47156,47155,30,,Tortricidae
+47155,124615,27,,Tortricinae
+124615,199543,25,,Sparganothini
+199543,146798,20,,Platynota
+146798,146797,10,142,Platynota idaeusalis
+199543,209404,20,,Cenopis
+209404,209405,10,600,Cenopis reticulatana
+124615,199542,25,,Archipini
+199542,132791,20,,Clepsis
+132791,132789,10,205,Clepsis peritana
+199542,143731,20,,Choristoneura
+143731,143728,10,582,Choristoneura rosaceana
+47155,124229,27,,Olethreutinae
+124229,199554,25,,Grapholitini
+199554,47154,20,,Cydia
+47154,148907,10,178,Cydia latiferreana
+47157,53552,33,,Yponomeutoidea
+53552,124078,30,,Attevidae
+124078,53554,20,,Atteva
+53554,116681,10,253,Atteva aurea
+53552,126766,30,,Plutellidae
+126766,126767,20,,Plutella
+126767,911325,11,,Plutella xylostella-australiana
+911325,126765,10,851,Plutella xylostella
+47157,122746,33,,Cossoidea
+122746,51573,30,,Sesiidae
+51573,456401,27,,Sesiinae
+456401,456525,25,,Melittiini
+456525,1409628,20,,Eichlinia
+1409628,1410301,10,284,Eichlinia cucurbitae
+122746,122745,30,,Cossidae
+122745,371634,27,,Cossinae
+371634,126294,20,,Prionoxystus
+126294,126293,10,444,Prionoxystus robiniae
+47157,82789,33,,Thyridoidea
+82789,82790,30,,Thyrididae
+82790,548901,27,,Thyridinae
+548901,82791,20,,Pseudothyris
+82791,82788,10,407,Pseudothyris sepulchralis
+47157,47405,33,,Pterophoroidea
+47405,47404,30,,Pterophoridae
+47404,127452,27,,Pterophorinae
+127452,211075,25,,Oidaematophorini
+211075,124599,20,,Emmelina
+124599,127431,10,590,Emmelina monodactyla
+47157,56583,33,,Lasiocampoidea
+56583,56584,30,,Lasiocampidae
+56584,124919,27,,Lasiocampinae
+124919,124717,25,,Gastropachini
+124717,91047,20,,Phyllodesma
+91047,201281,10,606,Phyllodesma americana
+56584,1523519,27,,Malacosominae
+1523519,61786,20,,Malacosoma
+61786,81663,10,975,Malacosoma disstria
+61786,211100,10,997,Malacosoma americana
+61786,359294,10,1009,Malacosoma californica
+56584,124583,27,,Poecilocampinae
+124583,1523495,25,,Macromphaliini
+1523495,125031,20,,Tolype
+125031,143323,10,986,Tolype velleda
+184884,47822,40,,Diptera
+47822,48091,37,,Brachycera
+48091,372853,35,,Cyclorrhapha
+372853,414448,34,,Aschiza
+414448,49995,30,,Syrphidae
+49995,326181,27,,Eristalinae
+326181,488425,25,,Milesiini
+488425,520027,24,,Tropidiina
+520027,81980,20,,Syritta
+81980,81979,10,6,Syritta pipiens
+326181,479390,25,,Volucellini
+479390,128846,20,,Copestylum
+128846,1340369,15,,Phalacromya
+1340369,1102259,11,,Copestylum violaceum
+1102259,128845,10,738,Copestylum mexicanum
+326181,364082,25,,Eristalini
+364082,520020,24,,Eristalina
+520020,52491,20,,Eristalis
+52491,520029,15,,Eristalis
+520029,55719,10,814,Eristalis tenax
+49995,186841,27,,Syrphinae
+186841,121991,25,,Syrphini
+121991,70210,20,,Melangyna
+70210,1432239,15,,Austrosyrphus
+1432239,338505,10,336,Melangyna novaezelandiae
+121991,58753,20,,Toxomerus
+58753,146632,10,410,Toxomerus politus
+58753,126532,10,463,Toxomerus geminatus
+58753,126889,10,514,Toxomerus marginatus
+121991,52483,20,,Episyrphus
+52483,52482,10,456,Episyrphus balteatus
+121991,118969,20,,Allograpta
+118969,118968,10,550,Allograpta obliqua
+121991,366269,20,,Dioprosopa
+366269,479803,10,931,Dioprosopa clavata
+372853,48089,34,,Schizophora
+48089,342767,33.5,,Calyptratae
+342767,54992,33,,Muscoidea
+54992,68719,30,,Scathophagidae
+68719,936733,27,,Scathophaginae
+936733,1531252,25,,Scathophagini
+1531252,68718,20,,Scathophaga
+68718,132718,10,200,Scathophaga stercoraria
+54992,70144,30,,Muscidae
+70144,622795,27,,Muscinae
+622795,645308,25,,Muscini
+645308,120157,20,,Musca
+120157,120156,10,690,Musca domestica
+342767,356157,33,,Oestroidea
+356157,61860,30,,Calliphoridae
+61860,202179,27,,Luciliinae
+202179,1239927,25,,Luciliini
+1239927,61858,20,,Lucilia
+61858,128824,10,736,Lucilia sericata
+356157,51953,30,,Tachinidae
+51953,366275,27,,Phasiinae
+366275,487989,25,,Gymnosomatini
+487989,129353,20,,Trichopoda
+129353,545762,15,,Galactomyia
+545762,133764,10,872,Trichopoda pennipes
+48089,48088,33.5,,Acalyptratae
+48088,62006,33,,Tephritoidea
+62006,47990,30,,Tephritidae
+47990,59586,27,,Tephritinae
+59586,546030,25,,Dithrycini
+546030,85318,20,,Eurosta
+85318,85317,10,440,Eurosta solidaginis
+62006,125458,30,,Ulidiidae
+125458,528151,27,,Otitinae
+528151,528153,25,,Cephaliini
+528153,126849,20,,Delphinia
+126849,126848,10,512,Delphinia picta
+48091,372865,35,,Orthorrhapha
+372865,564285,34.5,,Stratiomyomorpha
+564285,70127,30,,Stratiomyidae
+70127,711638,27,,Hermetiinae
+711638,82178,20,,Hermetia
+82178,82177,10,28,Hermetia illucens
+372865,354603,33,,Asiloidea
+354603,121526,30,,Mydidae
+121526,553142,27,,Mydinae
+553142,556740,25,,Mydini
+556740,123517,20,,Mydas
+123517,123516,10,73,Mydas clavatus
+354603,47982,30,,Asilidae
+47982,321481,27,,Stenopogoninae
+321481,639478,25,,Enigmomorphini
+639478,122547,20,,Microstylum
+122547,205623,10,88,Microstylum morosum
+47982,326683,27,,Asilinae
+326683,639522,25,,Apocleini
+639522,55774,20,,Promachus
+55774,55773,10,705,Promachus hinei
+639522,61636,20,,Mallophora
+61636,244378,10,840,Mallophora fautrix
+354603,51558,30,,Bombyliidae
+51558,415424,27,,Bombyliinae
+415424,415425,25,,Bombyliini
+415425,51559,20,,Bombylius
+51559,1367215,15,,Bombylius
+1367215,51557,10,304,Bombylius major
+51558,205719,27,,Anthracinae
+205719,207767,25,,Anthracini
+207767,133800,20,,Xenox
+133800,133799,10,355,Xenox tigrinus
+205719,129216,25,,Villini
+129216,117237,20,,Poecilanthrax
+117237,68918,10,435,Poecilanthrax lucifer
+129216,203073,20,,Hemipenthes
+203073,318497,10,981,Hemipenthes sinuosa
+372865,342679,34.5,,Tabanomorpha
+342679,47821,30,,Tabanidae
+47821,332389,27,,Tabaninae
+332389,487467,25,,Tabanini
+487467,49704,20,,Tabanus
+49704,116680,10,252,Tabanus atratus
+342679,60470,30,,Rhagionidae
+60470,1363055,27,,Chrysopilinae
+1363055,61493,20,,Chrysopilus
+61493,61492,10,524,Chrysopilus thoracicus
+47822,154259,37,,Nematocera
+154259,82156,30,,Ptychopteridae
+82156,1349044,27,,Bittacomorphinae
+1349044,82157,20,,Bittacomorpha
+82157,82155,10,24,Bittacomorpha clavipes
+154259,153429,35,,Culicomorpha
+153429,513826,33,,Culicoidea
+513826,52134,30,,Culicidae
+52134,357355,27,,Culicinae
+357355,505234,25,,Aedini
+505234,62989,20,,Aedes
+62989,1112153,15,,Stegomyia
+1112153,62984,10,114,Aedes albopictus
+154259,179916,35,,Tipulomorpha
+179916,51226,33,,Tipuloidea
+51226,70402,30,,Pediciidae
+70402,548103,27,,Pediciinae
+548103,70403,20,,Pedicia
+70403,1389248,15,,Pedicia
+1389248,199998,10,509,Pedicia albivitta
+154259,489328,35,,Bibionomorpha
+489328,56097,30,,Bibionidae
+56097,1227191,27,,Pleciinae
+1227191,127636,20,,Plecia
+127636,127635,10,618,Plecia nearctica
+489328,493389,33,,Sciaroidea
+493389,55699,30,,Cecidomyiidae
+55699,322033,27,,Cecidomyiinae
+322033,495248,26,,Lasiopteridi
+495248,495249,25,,Dasineurini
+495249,83463,20,,Rabdophaga
+83463,203866,10,899,Rabdophaga strobiloides
+154259,774833,35,,Psychodomorpha
+774833,52071,30,,Psychodidae
+52071,326684,27,,Psychodinae
+326684,521655,25,,Paramormiini
+521655,247953,20,,Clogmia
+247953,258813,10,993,Clogmia albipunctata
+184884,47651,40,,Orthoptera
+47651,67688,37,,Caelifera
+67688,700600,35,,Acrididea
+700600,47650,33,,Acridoidea
+47650,49817,30,,Romaleidae
+49817,320677,27,,Romaleinae
+320677,524111,25,,Romaleini
+524111,67652,20,,Romalea
+67652,1501180,10,8,Romalea eques
+67652,466003,10,898,Romalea microptera
+524111,122263,20,,Brachystola
+122263,122262,10,934,Brachystola magna
+47650,47649,30,,Acrididae
+47649,437924,27,,Catantopinae
+437924,465902,25,,Catantopini
+465902,742818,24,,Perbelliina
+742818,198924,20,,Phaulacridium
+198924,394966,10,210,Phaulacridium marginale
+47649,337688,27,,Cyrtacanthacridinae
+337688,523283,25,,Cyrtacanthacridini
+523283,52159,20,,Schistocerca
+52159,1373640,11,,Schistocerca alutacea
+1373640,67327,10,219,Schistocerca obscura
+52159,1373675,11,,Schistocerca nitens
+1373675,52158,10,390,Schistocerca nitens
+52159,1373635,11,,Schistocerca americana
+1373635,69736,10,536,Schistocerca americana
+523283,132893,20,,Anacridium
+132893,132892,10,357,Anacridium aegyptium
+47649,129164,27,,Oedipodinae
+129164,523486,25,,Trimerotropini
+523486,51494,20,,Trimerotropis
+51494,51493,10,292,Trimerotropis pallidipennis
+523486,55002,20,,Dissosteira
+55002,126206,10,685,Dissosteira carolina
+129164,210441,25,,Chortophagini
+210441,126601,20,,Chortophaga
+126601,126600,10,735;824,Chortophaga viridifasciata
+47649,328102,27,,Melanoplinae
+328102,523471,25,,Dactylotini
+523471,174022,20,,Dactylotum
+174022,179324,10,369,Dactylotum bicolor
+328102,205317,20,,Aidemona
+205317,205316,10,396,Aidemona azteca
+328102,523474,25,,Melanoplini
+523474,63523,20,,Melanoplus
+63523,1266323,11,,Melanoplus bivittatus
+1266323,129305,10,717,Melanoplus bivittatus
+63523,63518,10,757,Melanoplus differentialis
+47649,244406,27,,Gomphocerinae
+244406,523307,25,,Mermiriini
+523307,133924,20,,Mermiria
+133924,133923,10,380,Mermiria bivittata
+244406,523295,25,,Amblytropidiini
+523295,129266,20,,Syrbula
+129266,129263,10,786,Syrbula admirabilis
+47649,367006,27,,Leptysminae
+367006,523465,25,,Leptysmini
+523465,67665,20,,Leptysma
+67665,67663,10,595,Leptysma marginicollis
+47651,132694,37,,Ensifera
+132694,358855,35,,Gryllidea
+358855,50158,33,,Grylloidea
+50158,84812,30,,Trigonidiidae
+84812,179347,27,,Trigonidiinae
+179347,523764,25,,Phylloscyrtini
+523764,84404,20,,Phyllopalpus
+84404,84403,10,311,Phyllopalpus pulchellus
+50158,52884,30,,Gryllidae
+52884,122461,27,,Gryllinae
+122461,523728,25,,Gryllini
+523728,1243611,24,,Brachytrupina
+1243611,154342,20,,Gryllodes
+154342,154340,10,848,Gryllodes sigillatus
+132694,488701,35,,Tettigoniidea
+488701,53896,33,,Stenopelmatoidea
+53896,85210,30,,Anostostomatidae
+85210,706486,27,,Anostostomatinae
+706486,1500871,25,,Deinacridini
+1500871,85224,20,,Hemideina
+85224,85227,10,419,Hemideina crassidens
+85224,85221,10,438,Hemideina thoracica
+1500871,85240,20,,Deinacrida
+85240,85235,10,421,Deinacrida rugosa
+53896,53897,30,,Stenopelmatidae
+53897,345039,27,,Stenopelmatinae
+345039,1228213,25,,Stenopelmatini
+1228213,86400,20,616,Ammopelmatus
+488701,48125,33,,Tettigonioidea
+48125,48124,30,,Tettigoniidae
+48124,82546,27,,Tettigoniinae
+82546,523104,25,,Tettigoniini
+523104,133251,20,,Tettigonia
+133251,133250,10,459,Tettigonia viridissima
+48124,48132,27,,Pseudophyllinae
+48132,523085,26,,Pleminiiti
+523085,523110,25,,Pterophyllini
+523110,118953,20,,Pterophylla
+118953,767667,15,,Pterophylla
+767667,118951,10,547,Pterophylla camellifolia
+48124,203979,27,,Conocephalinae
+203979,325335,25,,Conocephalini
+325335,118890,20,,Conocephalus
+118890,767528,15,,Anisoptera
+767528,118961,10,548,Conocephalus brevipennis
+48124,48128,27,,Phaneropterinae
+48128,523091,25,,Microcentrini
+523091,48131,20,,Microcentrum
+48131,84752,10,706,Microcentrum rhombifolium
+48128,1563591,25,,Ephippithytini
+1563591,210943,20,,Caedicia
+210943,210942,10,756,Caedicia simplex
+48128,523093,25,,Phaneropterini
+523093,48130,20,,Phaneroptera
+48130,767486,15,,Phaneroptera
+767486,132070,10,823,Phaneroptera nana
+48128,523087,25,,Scudderiini
+523087,55958,20,,Scudderia
+55958,55957,10,1005,Scudderia furcata
+184884,47201,40,,Hymenoptera
+47201,124417,37,,Apocrita
+124417,326777,35,,Aculeata
+326777,47222,33,,Apoidea
+47222,630955,32,,Anthophila
+630955,47221,30,,Apidae
+47221,199939,27,,Apinae
+199939,538883,25,,Bombini
+538883,52775,20,,Bombus
+52775,538903,15,,Bombus
+538903,57516,10,19,Bombus terrestris
+52775,538900,15,,Pyrobombus
+538900,57689,10,37,Bombus vosnesenskii
+538900,52779,10,461,Bombus bimaculatus
+538900,118970,10,551,Bombus impatiens
+538900,127905,10,643,Bombus ternarius
+538900,128670,10,720,Bombus vagans
+538900,154043,10,816,Bombus huntii
+52775,538902,15,,Thoracobombus
+538902,57690,10,38,Bombus sonorus
+538902,1266534,11,,Bombus fervidus
+1266534,52774,10,460,Bombus fervidus
+538902,56887,10,958,Bombus pensylvanicus
+52775,538890,15,,Cullumanobombus
+538890,120215,10,711,Bombus griseocollis
+199939,121514,25,,Eucerini
+121514,52781,20,,Melissodes
+52781,571345,15,,Melissodes
+571345,567666,10,462,Melissodes bimaculatus
+199939,538904,25,,Apini
+538904,47220,20,,Apis
+47220,578086,15,,Apis
+578086,47219,10,769,Apis mellifera
+47221,244505,27,,Xylocopinae
+244505,574159,25,,Xylocopini
+574159,51111,20,,Xylocopa
+51111,557049,15,,Neoxylocopa
+557049,244216,10,36,Xylocopa sonorina
+51111,571260,15,,Xylocopoides
+571260,51110,10,247,Xylocopa virginica
+51111,571255,15,,Schonnherria
+571255,133788,10,1010,Xylocopa micans
+630955,52777,30,,Megachilidae
+52777,314114,27,,Megachilinae
+314114,541027,25,,Megachilini
+541027,52784,20,,Megachile
+52784,571089,15,,Callomegachile
+571089,52785,10,703,Megachile sculpturalis
+314114,504741,25,,Anthidiini
+504741,57671,20,,Anthidium
+57671,638430,15,,Anthidium
+638430,62453,10,962,Anthidium manicatum
+47222,48742,30,,Sphecidae
+48742,334320,27,,Ammophilinae
+334320,370786,25,,Ammophilini
+370786,83951,20,,Ammophila
+83951,129147,10,243,Ammophila procera
+370786,119091,20,,Eremnophila
+119091,119090,10,568,Eremnophila aureonotata
+48742,470913,27,,Sceliphrinae
+470913,471021,25,,Sceliphrini
+471021,132335,20,,Chalybion
+132335,133790,10,353,Chalybion californicum
+471021,121822,20,,Sceliphron
+121822,121821,10,881,Sceliphron caementarium
+48742,465407,27,,Sphecinae
+465407,518245,25,,Sphecini
+518245,48739,20,,Sphex
+48739,700734,15,,Sphex
+700734,85362,10,447,Sphex ichneumoneus
+700734,48738,10,964,Sphex pensylvanicus
+47222,51955,30,,Crabronidae
+51955,210928,27,,Bembicinae
+210928,210927,25,,Bembicini
+210927,574932,24,,Spheciina
+574932,51956,20,,Sphecius
+51956,51954,10,373,Sphecius speciosus
+326777,48740,33,,Vespoidea
+48740,52747,30,,Vespidae
+52747,84738,27,,Vespinae
+84738,52912,20,,Dolichovespula
+52912,52911,10,35,Dolichovespula maculata
+84738,61356,20,,Vespula
+61356,126155,10,416,Vespula germanica
+61356,233560,10,531,Vespula squamosa
+61356,127777,10,626,Vespula vulgaris
+61356,61355,10,952,Vespula pensylvanica
+84738,54328,20,,Vespa
+54328,54327,10,656,Vespa crabro
+52747,343248,27,,Polistinae
+343248,638567,25,,Polistini
+638567,52756,20,,Polistes
+52756,789375,15,,Polistes
+789375,199179,10,323,Polistes chinensis
+789375,84640,10,1013,Polistes dominula
+52756,789379,15,,Fuscopolistes
+789379,207615,10,375,Polistes apachus
+789379,121792,10,513,Polistes carolina
+789379,52757,10,665,Polistes fuscatus
+789379,120010,10,672,Polistes metricus
+52756,789380,15,,Aphanilopterus
+789380,133791,10,1012,Polistes exclamans
+343248,531700,25,,Epiponini
+531700,154722,20,,Brachygastra
+154722,154721,10,334,Brachygastra mellifica
+52747,119344,27,,Eumeninae
+119344,129692,20,,Eumenes
+129692,1351722,15,,Eumenes
+1351722,133765,10,344,Eumenes fraternus
+119344,126216,20,,Monobia
+126216,126215,10,429,Monobia quadridens
+119344,127788,20,,Ancistrocerus
+127788,318882,10,937,Ancistrocerus gazella
+326777,1269340,33,,Formicoidea
+1269340,47336,30,,Formicidae
+47336,244834,27,,Formicinae
+244834,334375,25,,Camponotini
+334375,62781,20,,Camponotus
+62781,519191,15,,Camponotus
+519191,129902,10,131,Camponotus pennsylvanicus
+244834,637574,25,,Oecophyllini
+637574,52289,20,,Oecophylla
+52289,117293,10,329,Oecophylla smaragdina
+244834,637569,25,,Lasiini
+637569,68146,20,,Prenolepis
+68146,68142,10,330,Prenolepis imparis
+47336,244394,27,,Dolichoderinae
+244394,519188,25,,Leptomyrmecini
+519188,68166,20,,Linepithema
+68166,68165,10,333,Linepithema humile
+244394,519189,25,,Tapinomini
+519189,68995,20,,Liometopum
+68995,68993,10,448,Liometopum occidentale
+47336,69143,27,,Myrmicinae
+69143,322028,25,,Attini
+322028,891179,24,,Attina
+891179,61284,20,,Atta
+61284,151794,10,559,Atta texana
+69143,469104,25,,Pogonomyrmecini
+469104,69114,20,,Pogonomyrmex
+69114,1340200,11,,Pogonomyrmex barbatus
+1340200,194690,10,731,Pogonomyrmex barbatus
+69143,469106,25,,Solenopsidini
+469106,67597,20,,Solenopsis
+67597,1373022,11,,Solenopsis saevissima
+1373022,67598,10,821,Solenopsis invicta
+47336,343353,27,,Pseudomyrmecinae
+343353,69000,20,,Pseudomyrmex
+69000,1418419,11,,Pseudomyrmex gracilis
+1418419,300301,10,679,Pseudomyrmex gracilis
+326777,1269342,33,,Pompiloidea
+1269342,48511,30,,Mutillidae
+48511,145374,27,,Sphaeropthalminae
+145374,1124745,25,,Dasymutillini
+1124745,48513,20,,Dasymutilla
+48513,117221,10,318,Dasymutilla occidentalis
+326777,1269344,33,,Scolioidea
+1269344,51967,30,,Scoliidae
+51967,519143,27,,Scoliinae
+519143,62769,20,,Scolia
+62769,1129479,10,684,Scolia dubia
+124417,981280,35,,Proctotrupomorpha
+981280,55593,33,,Cynipoidea
+55593,55594,30,,Cynipidae
+55594,471867,27,,Cynipinae
+471867,205775,25,,Cynipini
+205775,143875,20,,Amphibolips
+143875,135271,10,535,Amphibolips confluenta
+205775,1452334,20,,Feron
+1452334,1508467,10,641,Feron crystallinum
+1452334,1508477,10,682,Feron kingi
+205775,55596,20,,Andricus
+55596,55887,10,889,Andricus quercuscalifornicus
+981280,342818,33,,Proctotrupoidea
+342818,71006,30,,Pelecinidae
+71006,70995,20,,Pelecinus
+70995,70997,10,689,Pelecinus polyturator
+47201,84643,37,,Symphyta
+84643,49452,33,,Tenthredinoidea
+49452,60628,30,,Tenthredinidae
+60628,337329,27,,Nematinae
+337329,551359,25,,Nematini
+551359,334169,20,,Euura
+334169,1354403,10,285,Euura californica
+49452,53844,30,,Cimbicidae
+53844,812597,27,,Cimbicinae
+812597,62421,20,,Cimbex
+62421,1028452,10,647,Cimbex americanus
+84643,198946,33,,Siricoidea
+198946,53256,30,,Siricidae
+53256,1410343,27,,Tremicinae
+1410343,63276,20,,Tremex
+63276,63275,10,376,Tremex columba
+184884,48112,40,,Mantodea
+48112,1097011,37,,Eumantodea
+1097011,1097013,35,,Schizomantodea
+1097013,1097015,33,,Miomantoidea
+1097015,1097041,30,,Miomantidae
+1097041,570065,27,,Miomantinae
+570065,207584,20,,Miomantis
+207584,207583,10,32,Miomantis caffra
+1097013,1097016,33,,Mantoidea
+1097016,48111,30,,Mantidae
+48111,570088,27,,Orthoderinae
+570088,126825,20,,Orthodera
+126825,394124,10,92,Orthodera novaezealandiae
+48111,570063,27,,Mantinae
+570063,56564,20,,Mantis
+56564,53905,10,617,Mantis religiosa
+48111,570070,27,,Stagmomantinae
+570070,1097068,25,,Stagmomantini
+1097068,82009,20,,Stagmomantis
+82009,119989,10,669,Stagmomantis carolina
+48111,1096984,27,,Tenoderinae
+1096984,1097067,25,,Tenoderini
+1097067,1097119,24,,Tenoderina
+1097119,71035,20,,Tenodera
+71035,71034,10,693,Tenodera sinensis
+184884,47793,40,,Dermaptera
+47793,713334,37,,Neodermaptera
+713334,713335,35,,Epidermaptera
+713335,949883,34.5,,Metadermaptera
+949883,713340,33,,Anisolabidoidea
+713340,245158,30,,Anisolabididae
+245158,713398,27,,Anisolabidinae
+713398,196421,20,,Euborellia
+196421,196419,10,94,Euborellia annulipes
+713335,949881,34.5,,Eteodermaptera
+949881,713337,33,,Forficuloidea
+713337,49528,30,,Forficulidae
+49528,713354,27,,Forficulinae
+713354,61525,20,,Forficula
+61525,61524,11,,Forficula auricularia
+61524,1470430,10,577,Forficula auricularia
+184884,81769,40,,Blattodea
+81769,129743,33,,Blattoidea
+129743,709252,32,,Blattoidae
+709252,82232,30,,Blattidae
+82232,709237,27,,Blattinae
+709237,82233,20,,Periplaneta
+82233,82231,10,236,Periplaneta americana
+81769,81770,33,,Blaberoidea
+81770,84636,30,,Blaberidae
+84636,544535,27,,Panchlorinae
+544535,244908,20,,Panchlora
+244908,244906,10,903,Panchlora nivea
+81770,1425419,30,,Blattellidae
+1425419,253246,20,,Pseudomops
+253246,311163,10,1004,Pseudomops septentrionalis
+184884,47198,40,,Phasmida
+47198,569714,37,,Verophasmatodea
+569714,569716,35,,Anareolatae
+569716,47320,30,,Diapheromeridae
+47320,497652,27,,Diapheromerinae
+497652,504300,25,,Diapheromerini
+504300,84287,20,,Diapheromera
+84287,745843,15,,Diapheromera
+745843,84286,10,297,Diapheromera femorata
+504300,52767,20,,Megaphasma
+52767,52766,10,455,Megaphasma denticrus
+569714,569717,35,,Areolatae
+569717,134120,33,,Pseudophasmatoidea
+134120,134121,30,,Pseudophasmatidae
+134121,536389,27,,Pseudophasmatinae
+536389,520209,25,,Anisomorphini
+520209,134122,20,,Anisomorpha
+134122,134119,10,857,Anisomorpha buprestoides
+184884,48763,40,,Neuroptera
+48763,483236,37,,Hemerobiiformia
+483236,52955,30,,Mantispidae
+52955,474580,27,,Mantispinae
+474580,133449,20,,Climaciella
+133449,133448,10,299,Climaciella brunnea
+184884,47864,40,,Megaloptera
+47864,47863,30,,Corydalidae
+47863,319152,27,,Corydalinae
+319152,47865,20,,Corydalus
+47865,126712,10,494,Corydalus cornutus
+184884,49369,40,,Mecoptera
+49369,51700,30,,Panorpidae
+51700,1261125,27,,Panorpinae
+1261125,51701,20,,Panorpa
+51701,84332,10,794,Panorpa nuptialis
