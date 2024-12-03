@@ -10,11 +10,11 @@ export default function ScanSpeciesPage() {
   const [error, setError] = useState('');
 
   const handleTakePhoto = () => {
-    router.push('/take-photo');
+    router.push('/take-plant');
   };
 
   const handleUploadImage = () => {
-    router.push('/upload-image');
+    // router.push('/upload-plant');
   };
 
   const handleBack = () => {
@@ -23,7 +23,7 @@ export default function ScanSpeciesPage() {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.headerText}>Scan Insect</h1>
+      <h1 style={styles.headerText}>Scan Plant</h1>
       
       <div style={styles.actionContainer}>
         <div onClick={handleTakePhoto} style={styles.actionButton}>
