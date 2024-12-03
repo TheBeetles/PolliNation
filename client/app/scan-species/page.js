@@ -12,12 +12,10 @@ export default function ScanSpeciesPage() {
   verifyUser();
 
   const handleScanPlant = () => {
-    console.log('Scan a Plant clicked');
     router.push('/scan-plant');
   };
 
   const handleScanInsect = () => {
-    console.log('Scan an Insect clicked');
     router.push('/scan-insect');
   };
 

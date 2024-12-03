@@ -2,20 +2,25 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import placeholder from '../images/pollination.png';
-import verifyUser from '../components/verify';
-import styles from '../components/Camera.module.css';
+import placeholder from '../../images/pollination.png';
+import BackButton from '../../components/BackButton'
+import verifyUser from '../../components/verify';
+import React from 'react';
+
+import { useParams } from 'next/navigation';
 
 export default function SavedSpeciesPage() { 
     const router = useRouter();
+    const type = useParams();
+    const toggle = type.type === 'plant' ? true : false;
+
     const [data, setData] = useState([]);
     const [plantImage, setPlantImage] = useState([]);
     const [insectImage, setInsectImage] = useState([]);
-    const [toggle, setToggle] = useState(false);
     verifyUser();
 
     const handleGoBackButton = () => { 
-        router.push('/scan-species');
+        router.push('../saved-species');
     };
 
     useEffect(() => {
@@ -61,13 +66,6 @@ export default function SavedSpeciesPage() {
         };
         response();
     }, [data]);
-const toggleFalse = () => {
-        setToggle(false);
-    }
-        
-    const toggleTrue = () => {
-        setToggle(true);
-    }
     return (
         <div style={{
             position: 'relative',
@@ -77,43 +75,32 @@ const toggleFalse = () => {
             alignItems: 'center',
             padding: '20px',
         }}>
-            <button onClick={handleGoBackButton} style={{
-                position: 'absolute',
-                top: '20px',
-                right: '20px',
-                padding: '10px',
-                fontSize: '16px',
-                cursor: 'pointer',
-                backgroundColor: '#B3E576',
-                color: 'white',
-                borderRadius: '20px',
-                border: 'none',
-            }}>
-                Back
-            </button>
+            <BackButton onClick={handleGoBackButton}/>
             { toggle && <h1 style={{
-                marginBottom: '10px',
-                color: '#B3E576',
-                fontSize: '24px',
+                marginBottom: '20px',
+                color: '#000',
+                fontSize: '45px',
+                fontFamily: 'Verdana, sans-serif',
             }}>
                 Plant List
             </h1>}
             { !toggle && <h1 style={{
-                marginBottom: '10px',
-                color: '#B3E576',
-                fontSize: '24px',
+                marginBottom: '20px',
+                color: '#000',
+                fontSize: '45px',
+                fontFamily: 'Verdana, sans-serif',
             }}>
                 Insect List
             </h1>}
             <div style={{ display: 'flex' }}>
-                <button className={styles.button} onClick={toggleTrue} style={{
+                {/* <button className={styles.button} onClick={toggleTrue} style={{
                 }}>
                     Plants
                 </button>
                 <button className={styles.button} onClick={toggleFalse} style={{
                 }}>
                     Insects
-                </button>
+                </button> */}
             </div>
             <div style={{
                 display: 'flex',
@@ -128,11 +115,12 @@ const toggleFalse = () => {
                     gap: '10px',
                 }}>
                     {plantImage.map(plant => (
-                        <a href={("species-information/" + plant.id)}>
+                        <a href={("../species-information/" + plant.id)}>
                         <div key={plant.id} style={{
                             width: '100px',
                             height: '100px',
-                            border: '2px solid #000000',
+                            border: '2px solid #B3E576',
+                            borderRadius: '50%',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
@@ -144,6 +132,7 @@ const toggleFalse = () => {
                                 width: '100%',
                                 height: '100%',
                                 objectFit: 'cover',
+                                borderRadius: '50%',
                             }}/>
                         </div>
                         </a>
@@ -156,11 +145,12 @@ const toggleFalse = () => {
                     gap: '10px',
                 }}>
                     {insectImage.map(insect => (
-                        <a href={("species-information/" + insect.id)}>
+                        <a href={("../species-information/" + insect.id)}>
                         <div key={insect.id} style={{
                             width: '100px',
                             height: '100px',
-                            border: '2px solid #000000',
+                            border: '2px solid #B3E576',
+                            borderRadius: '50%',
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
@@ -171,6 +161,7 @@ const toggleFalse = () => {
                                 width: '100%',
                                 height: '100%',
                                 objectFit: 'cover',
+                                borderRadius: '50%',
                             }}/>
                         </div>
                         </a>

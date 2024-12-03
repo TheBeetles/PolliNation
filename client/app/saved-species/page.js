@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import plantIcon from '../images/plant.png';
 import insectIcon from '../images/dragonfly.png';
 import verifyUser from '../components/verify';
-import styles from '../components/Camera.module.css';
+import BackButton from '../components/BackButton';
 
 export default function SavedSpeciesPage() {
     const router = useRouter();
@@ -17,11 +17,11 @@ export default function SavedSpeciesPage() {
 
     // Click handlers for plant and insect buttons
     const handlePlantClick = () => {
-        router.push('/saved-plant-info');
+        router.push('/saved-species-select/plant');
     };
 
     const handleInsectClick = () => {
-        router.push('/saved-insect-info');
+        router.push('/saved-species-select/insect');
     };
 
     return (
@@ -38,21 +38,7 @@ export default function SavedSpeciesPage() {
             }}
         >
             {/* Back Button */}
-            <button onClick={handleGoBackButton} style={{
-                position: 'absolute',
-                top: '20px',
-                left: '20px',
-                padding: '10px',
-                fontSize: '16px',
-                cursor: 'pointer',
-                backgroundColor: '#1B5E20',
-                color: 'white',
-                borderRadius: '20px',
-                border: 'none',
-            }}>
-                Back
-            </button>
-
+            <BackButton onClick={handleGoBackButton}/>
             {/* Page Title */}
             <h1 style={{
                 marginBottom: '50px',
