@@ -42,6 +42,8 @@ async def get_species_info(name):
         # Use the Gemini GenerativeModel to generate content
         model = genai.GenerativeModel("gemini-1.5-flash")  # Adjust the model version as needed
         response = model.generate_content(prompt)
+        # delete this:
+        print(f"Raw response for {name}: {response.text}")  # Log the raw response
         return response.text  # Extract the text content
     except Exception as e:
         print(f"Error fetching data for {name}: {e}")
@@ -53,12 +55,22 @@ def parse_species_info(name, gemini_response):
     try:
         # Split the raw response into lines and extract key data
         lines = gemini_response.split("\n")
-        scientific = lines[0].split(":")[1].strip()
-        description = lines[1].split(":")[1].strip()
-        native = lines[2].split(":")[1].strip().lower() == "true"
-        living = lines[3].split(":")[1].strip()
-        future = lines[4].split(":")[1].strip()
-        # Return the data in the desired format
+        for i, line in enumerate(lines):
+            # Start parsing at each key phrase
+            if "Scientific Name:" in line:
+                scientific = line.split(":", 1)[1].strip().strip("*")
+            elif "Description:" in line:
+                description = line.split(":", 1)[1].strip()
+            elif "Native (True/False):" in line:
+                native = line.split(":", 1)[1].strip().lower() == "true"
+            elif "Preferred Living Environment:" in line:
+                living = line.split(":", 1)[1].strip()
+            elif "Suggestions for Future Management:" in line:
+                # Combine all lines after this key phrase for the future management section
+                future = " ".join([l.strip() for l in lines[i + 1:]])
+                break  # Exit the loop after capturing the future management section
+
+        # Return the parsed data
         return {
             name: {
                 "scientific": scientific,
