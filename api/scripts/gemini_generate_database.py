@@ -57,15 +57,15 @@ def parse_species_info(name, gemini_response):
         lines = gemini_response.split("\n")
         for i, line in enumerate(lines):
             # Start parsing at each key phrase
-            if "Scientific Name:" in line:
+            if "scientific name" in line.lower():
                 scientific = line.split(":", 1)[1].strip().strip("*")
-            elif "Description:" in line:
+            elif "description:" in line.lower():
                 description = line.split(":", 1)[1].strip()
-            elif "Native (True/False):" in line:
+            elif "native (true/false):" in line.lower():
                 native = line.split(":", 1)[1].strip().lower() == "true"
-            elif "Preferred Living Environment:" in line:
+            elif "preferred living environment:" in line.lower():
                 living = line.split(":", 1)[1].strip()
-            elif "Suggestions for Future Management:" in line:
+            elif "suggestions for future management:" in line.lower():
                 # Combine all lines after this key phrase for the future management section
                 future = " ".join([l.strip() for l in lines[i + 1:]])
                 break  # Exit the loop after capturing the future management section
