@@ -1,34 +1,23 @@
 .container {
    background-color: #FFFDD0;
    width: 100%;
-   height: 100%;
+   height: 160vh;
    padding: 0;
    margin: 0;
    font-family: 'Inter', sans-serif;
    overflow: hidden;
 }
 
-.content {
+/* .content {
    display: flex;
    align-items: center;
    flex-direction: column;
-}
+   height: 100vh;
+} */
 
 #header {
    font-size: 60px;
    text-align: center;
-}
-
-#imageGrid {
-   display: grid;
-   width: 100%;
-   height: 100vw;
-   grid-template-columns: repeat(32, 1fr);
-   grid-template-rows: repeat(32, 1fr);
-   /* grid-auto-rows: 0; */
-   position: absolute;
-   margin-top: 8em;
-   overflow: hidden;
 }
 
 .speciesImg {
@@ -89,14 +78,56 @@
    transform: translate(-25%, 25%);
 }
 
-#signUp {
+/* #signUp {
    background-color: #C5F681;
    border-radius: 10px;
    padding: 10px;
-   margin-top: 20em;
-   z-index: 5;
+} */
+
+.content {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   position: relative; /* Adjusted for positioning elements inside */
 }
 
-.camera {
-   z-index: 10;
+/* #imageGrid {
+   display: grid;
+   width: 100%;
+   height: auto;
+   grid-template-columns: repeat(32, 1fr);
+   grid-template-rows: repeat(32, 1fr);
+   margin-top: 8em;
+} */
+
+#imageGrid {
+   display: grid;
+   width: 100%;
+   height: 100vw;
+   grid-template-columns: repeat(32, 1fr);
+   grid-template-rows: repeat(32, 1fr);
+   position: absolute;
+   margin-top: 8em;
+   overflow: hidden;
+}
+
+#signUp {
+   background-color: #C5F681;
+   border-radius: 10px;
+   padding: 10px 20px; /* Better padding for visual appeal */
+   font-size: 18px; /* Adjusted for readability */
+   position: relative; /* Position it within the content block */
+   top: 9em; /* Space between the button and image grid */
+   text-align: center;
+   width: auto; /* Adjust width for better centering */
+   margin: 0 auto; /* Ensure it centers below the grid */
+   cursor: pointer; /* Visual cue for interactivity */
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#signUp:hover {
+   transform: translateY(-3px);
+   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* Hover effect */
 }

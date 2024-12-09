@@ -1,9 +1,7 @@
 import styles from '../components/BackButton.module.css';
 
-export default function ArrowButton({ onClick, children }) {
+export default function BackButton({ onClick }) {
   return (
-    <button className={styles.backButton} onClick={onClick}>
-      <span className={styles.arrow}>&larr;</span> {children}
-    </button>
+    <button className={styles.backButton} onClick={onClick}>Back</button>
   );
 }

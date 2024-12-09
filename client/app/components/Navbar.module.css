@@ -6,7 +6,7 @@
    display: flex;
    background-color: #FFFDD0;
    align-items: center;
-   font-family: 'Inter', sans-serif;
+   /* font-family: 'Inter', sans-serif; */
    margin: 0 0.5em;
 }
 
@@ -27,11 +27,14 @@
 .navElement {
    padding: 0 0.75em;
    /* font-weight: 700; */
+   cursor: pointer;
+   border-radius: 20%;
 }
 
 #navLeft {
    display: flex;
    justify-content: flex-start;
+   cursor: pointer;
 }
 
 #navRight {
@@ -41,6 +44,13 @@
 
 #signUp {
    background-color: #C5F681;
+}
+
+.text {
    border-radius: 10px;
    padding: 10px;
+}
+
+.text:hover {
+   text-decoration: underline;
 }

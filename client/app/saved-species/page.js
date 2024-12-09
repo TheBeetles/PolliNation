@@ -37,16 +37,20 @@ export default function SavedSpeciesPage() {
                 fontFamily: 'Verdana, sans-serif', 
             }}
         >
-            {/* Back Button */}
-            <BackButton onClick={handleGoBackButton}/>
-            {/* Page Title */}
-            <h1 style={{
-                marginBottom: '50px',
-                color: '#000',
-                fontSize: '45px',
-            }}>
-                Saved Species
-            </h1>
+            <div style={{display: 'flex', width: '100%'}}>
+                {/* Back Button */}
+                <BackButton onClick={handleGoBackButton}/>
+                {/* Page Title */}
+                <h1 style={{
+                    marginBottom: '50px',
+                    color: '#000',
+                    fontSize: '45px',
+                    flex: 1,
+                    textAlign: 'center',
+                }}>
+                    Saved Species
+                </h1>
+            </div>
 
             {/* Plant and Insect Categories */}
             <div style={{
