@@ -71,6 +71,25 @@ export default function LandingPage() {
             </div>
           </div>
 
+          <div id={styles.statsContainer}>
+          <h2>Our Impact</h2>
+          <div className={styles.stats}>
+            <div className={styles.stat}>
+              <h3>10,000+</h3>
+              <p>Species Identified</p>
+            </div>
+            <div className={styles.stat}>
+              <h3>5,000+</h3>
+              <p>Active Users</p>
+            </div>
+            <div className={styles.stat}>
+              <h3>1M+</h3>
+              <p>Scans Completed</p>
+            </div>
+          </div>
+        </div>
+
+
           <div id={styles.reviewsContainer}>
           <h2>User Reviews</h2>
           <div className={styles.reviews}>

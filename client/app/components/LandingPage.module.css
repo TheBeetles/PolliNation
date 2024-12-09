@@ -1,7 +1,7 @@
 .container {
    background-color: #FFFDD0;
    width: 100%;
-   height: 390vh;
+   height: 450vh;
    padding: 0;
    margin: 0;
    font-family: 'Inter', sans-serif;
@@ -114,7 +114,7 @@
 
 #stepsContainer {
    text-align: center;
-   margin-top: 32em;
+   margin-top: 35em;
  }
  
  .steps {
@@ -160,7 +160,7 @@
 
  #reviewsContainer {
    text-align: center;
-   margin-top: 5em;
+   margin-top: 2em;
    padding: 2em;
    background-color: #FFF7E5;
    border-radius: 12px;
@@ -208,3 +208,58 @@
    font-size: 14px;
    color: #555;
  }
+
+ /* Stats */
+
+ #statsContainer {
+   background-color: #FFF7E5;
+   text-align: center;
+   padding: 2em 1em;
+   border-radius: 12px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   margin: 6em auto;
+   margin-bottom: 0;
+   max-width: 800px;
+ }
+ 
+ #statsContainer h2 {
+   font-size: 28px;
+   color: #333;
+   margin-bottom: 1em;
+   font-weight: bold;
+ }
+ 
+ .stats {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   gap: 20px;
+ }
+ 
+ .stat {
+   background-color: #FFFFFF;
+   border-radius: 12px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+   padding: 1.5em;
+   text-align: center;
+   width: 150px;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+ 
+ .stat:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .stat h3 {
+   font-size: 24px;
+   color: #27AE60;
+   margin: 0;
+ }
+ 
+ .stat p {
+   font-size: 14px;
+   color: #555;
+   margin-top: 0.5em;
+ }
+ 
