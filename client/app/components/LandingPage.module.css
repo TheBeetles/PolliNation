@@ -1,7 +1,7 @@
 .container {
    background-color: #FFFDD0;
    width: 100%;
-   height: 300vh;
+   height: 390vh;
    padding: 0;
    margin: 0;
    font-family: 'Inter', sans-serif;
@@ -93,26 +93,28 @@
 #signUp {
    background-color: #C5F681;
    border-radius: 10px;
-   padding: 10px 20px; /* Better padding for visual appeal */
-   font-size: 18px; /* Adjusted for readability */
-   position: relative; /* Position it within the content block */
-   top: 9em; /* Space between the button and image grid */
+   padding: 10px 20px;
+   font-size: 18px;
+   position: relative;
+   top: 9em;
    text-align: center;
-   width: auto; /* Adjust width for better centering */
-   margin: 0 auto; /* Ensure it centers below the grid */
-   cursor: pointer; /* Visual cue for interactivity */
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+   width: auto;
+   margin: 0 auto;
+   cursor: pointer;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #signUp:hover {
    transform: translateY(-3px);
-   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* Hover effect */
+   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
 }
+
+/* Instruction Steps */
 
 #stepsContainer {
    text-align: center;
-   margin-top: 30em;
+   margin-top: 32em;
  }
  
  .steps {
@@ -121,7 +123,7 @@
    gap: 20px;
    justify-content: center;
    margin: 2em auto;
-   max-width: 500px; /* Limit overall width */
+   max-width: 500px;
  }
  
  .step {
@@ -150,6 +152,59 @@
  }
  
  .step p {
+   font-size: 14px;
+   color: #555;
+ }
+
+ /* Reviews */
+
+ #reviewsContainer {
+   text-align: center;
+   margin-top: 5em;
+   padding: 2em;
+   background-color: #FFF7E5;
+   border-radius: 12px;
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .reviews {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   margin-top: 1em;
+ }
+ 
+ .review {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   background-color: #FFFFFF;
+   border-radius: 12px;
+   padding: 15px;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+   max-width: 600px;
+   width: 100%;
+ }
+ 
+ .reviewAvatar {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+ }
+ 
+ .reviewContent {
+   text-align: left;
+ }
+ 
+ .reviewContent h4 {
+   margin: 0 0 5px 0;
+   font-size: 16px;
+   color: #333;
+ }
+ 
+ .reviewContent p {
+   margin: 0;
    font-size: 14px;
    color: #555;
  }

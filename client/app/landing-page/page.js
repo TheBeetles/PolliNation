@@ -14,7 +14,10 @@ import grasshopper from '../images/grasshopper.jpg';
 import dragonfly from '../images/dragonfly.webp';
 import butterfly from '../images/butterfly.webp';
 
-import camera from '../images/camera.png';
+import accountIcon from '../images/account.png';
+import identifyIcon from '../images/identify.png';
+import cameraIcon from '../images/cameraIcon.png';
+import bookIcon from '../images/book.png';
 
 import styles from '../components/LandingPage.module.css'
 import Navbar from '../components/Navbar.js'
@@ -47,26 +50,53 @@ export default function LandingPage() {
           <h2>How It Works</h2>
           <div className={styles.steps}>
             <div className={styles.step}>
-              <Image src={ladybug} alt="Create Account" className={styles.stepIcon} />
+              <Image src={accountIcon} alt="Create Account" className={styles.stepIcon} />
               <h3>Create an Account</h3>
               <p>Sign up and join our community to start identifying species.</p>
             </div>
             <div className={styles.step}>
-              <Image src={ladybug} alt="Choose Identification" className={styles.stepIcon} />
+              <Image src={identifyIcon} alt="Choose Identification" className={styles.stepIcon} />
               <h3>Choose Identification</h3>
               <p>Select whether to identify a plant or an insect.</p>
             </div>
             <div className={styles.step}>
-              <Image src={ladybug} alt="Upload or Take Photo" className={styles.stepIcon} />
+              <Image src={cameraIcon} alt="Upload or Take Photo" className={styles.stepIcon} />
               <h3>Upload or Take a Photo</h3>
               <p>Use your device's camera or upload an image for analysis.</p>
             </div>
             <div className={styles.step}>
-              <Image src={ladybug} alt="Read About Species" className={styles.stepIcon} />
+              <Image src={bookIcon} alt="Read About Species" className={styles.stepIcon} />
               <h3>Read About the Species</h3>
               <p>Learn fascinating details about the identified species.</p>
             </div>
           </div>
+
+          <div id={styles.reviewsContainer}>
+          <h2>User Reviews</h2>
+          <div className={styles.reviews}>
+            <div className={styles.review}>
+              <Image src={accountIcon} alt="User" className={styles.reviewAvatar} />
+              <div className={styles.reviewContent}>
+                <h4>Bob Rack</h4>
+                <p>"This app is amazing! I've learned so much about the insects in my tomato garden."</p>
+              </div>
+            </div>
+            <div className={styles.review}>
+              <Image src={accountIcon} alt="User" className={styles.reviewAvatar} />
+              <div className={styles.reviewContent}>
+                <h4>Jane Doe</h4>
+                <p>"A must-have for nature enthusiasts. It's accurate and so easy to use."</p>
+              </div>
+            </div>
+            <div className={styles.review}>
+              <Image src={accountIcon} alt="User" className={styles.reviewAvatar} />
+              <div className={styles.reviewContent}>
+                <h4>John Smith</h4>
+                <p>"Identifying plants has never been easier. Highly recommended!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
           <h3 id={styles.signUp} onClick={handleStartClick} style={{ width: '11vw', textAlign: 'center' }}>Start Scanning</h3>
         </div>
