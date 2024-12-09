@@ -40,12 +40,37 @@ export default function LandingPage() {
           <div id={styles.temp5}><Image className={styles.temp} src={cham} alt='species'/></div>
           <div id={styles.temp6}><Image className={styles.temp} src={butterfly} alt='species'/></div>
           <div id={styles.temp7}><Image className={styles.temp} src={wildplant} alt='species'/></div>
-          {/* <div id={styles.temp8}><Image className={styles.temp} src={lanternfly}/></div> */}
           <div id={styles.temp9}><Image className={styles.temp} src={grasshopper} alt='species'/></div>
         </div>
+
+        <div id={styles.stepsContainer}>
+          <h2>How It Works</h2>
+          <div className={styles.steps}>
+            <div className={styles.step}>
+              <Image src={ladybug} alt="Create Account" className={styles.stepIcon} />
+              <h3>Create an Account</h3>
+              <p>Sign up and join our community to start identifying species.</p>
+            </div>
+            <div className={styles.step}>
+              <Image src={ladybug} alt="Choose Identification" className={styles.stepIcon} />
+              <h3>Choose Identification</h3>
+              <p>Select whether to identify a plant or an insect.</p>
+            </div>
+            <div className={styles.step}>
+              <Image src={ladybug} alt="Upload or Take Photo" className={styles.stepIcon} />
+              <h3>Upload or Take a Photo</h3>
+              <p>Use your device's camera or upload an image for analysis.</p>
+            </div>
+            <div className={styles.step}>
+              <Image src={ladybug} alt="Read About Species" className={styles.stepIcon} />
+              <h3>Read About the Species</h3>
+              <p>Learn fascinating details about the identified species.</p>
+            </div>
+          </div>
+
+          <h3 id={styles.signUp} onClick={handleStartClick} style={{ width: '11vw', textAlign: 'center' }}>Start Scanning</h3>
+        </div>
       </div>
-        {/* <Image src={camera} className={styles.camera} alt='camera'/> */}
-        <h3 id={styles.signUp} onClick={handleStartClick} style={{ width: '11vw', textAlign: 'center' }}>Start Scanning</h3>
-   </div>
+    </div>
   );
 }
