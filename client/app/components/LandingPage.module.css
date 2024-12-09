@@ -1,7 +1,7 @@
 .container {
    background-color: #FFFDD0;
    width: 100%;
-   height: 450vh;
+   height: 530vh;
    padding: 0;
    margin: 0;
    font-family: 'Inter', sans-serif;
@@ -185,12 +185,22 @@
    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
    max-width: 600px;
    width: 100%;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+
+ .reviewHover {
+   transform: translateY(-5px);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
  }
  
  .reviewAvatar {
    width: 60px;
    height: 60px;
    border-radius: 50%;
+ }
+
+ .userName {
+   color: #27AE60;
  }
  
  .reviewContent {
@@ -262,4 +272,56 @@
    color: #555;
    margin-top: 0.5em;
  }
+
+ /* FAQ */
+
+ #faqContainer {
+   background-color: #FFF7E5;
+   text-align: center;
+   padding: 2em 1em;
+   border-radius: 12px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   margin: 2em auto;
+   max-width: 800px;
+ }
  
+ #faqContainer h2 {
+   font-size: 28px;
+   color: #333;
+   margin-bottom: 1em;
+   font-weight: bold;
+ }
+ 
+ .faq {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+ 
+ .question {
+   background-color: #FFFFFF;
+   border-radius: 12px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+   padding: 1.5em;
+   text-align: left;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+ 
+ .question:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .question h4 {
+   font-size: 18px;
+   color: #27AE60;
+   margin: 0 0 0.5em;
+   font-weight: bold;
+ }
+ 
+ .question p {
+   font-size: 14px;
+   color: #555;
+   margin: 0;
+   line-height: 1.5;
+ }

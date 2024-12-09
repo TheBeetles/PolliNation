@@ -96,26 +96,41 @@ export default function LandingPage() {
             <div className={styles.review}>
               <Image src={accountIcon} alt="User" className={styles.reviewAvatar} />
               <div className={styles.reviewContent}>
-                <h4>Bob Rack</h4>
+                <h4 className={styles.userName}>Bob Rack</h4>
                 <p>"This app is amazing! I've learned so much about the insects in my tomato garden."</p>
               </div>
             </div>
             <div className={styles.review}>
               <Image src={accountIcon} alt="User" className={styles.reviewAvatar} />
               <div className={styles.reviewContent}>
-                <h4>Jane Doe</h4>
+                <h4 className={styles.userName}>Jane Doe</h4>
                 <p>"A must-have for nature enthusiasts. It's accurate and so easy to use."</p>
               </div>
             </div>
             <div className={styles.review}>
               <Image src={accountIcon} alt="User" className={styles.reviewAvatar} />
               <div className={styles.reviewContent}>
-                <h4>John Smith</h4>
+                <h4 className={styles.userName}>John Smith</h4>
                 <p>"Identifying plants has never been easier. Highly recommended!"</p>
               </div>
             </div>
           </div>
         </div>
+
+        <div id={styles.faqContainer}>
+        <h2>Frequently Asked Questions</h2>
+        <div className={styles.faq}>
+          <div className={styles.question}>
+            <h4>Is the app free?</h4>
+            <p>Yes! The app is completely free to use.</p>
+          </div>
+          <div className={styles.question}>
+            <h4>What types of species can I identify?</h4>
+            <p>You can identify various plants and insects from all over the world.</p>
+          </div>
+        </div>
+      </div>
+
 
           <h3 id={styles.signUp} onClick={handleStartClick} style={{ width: '11vw', textAlign: 'center' }}>Start Scanning</h3>
         </div>
