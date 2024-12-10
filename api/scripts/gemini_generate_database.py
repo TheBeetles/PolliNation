@@ -32,10 +32,11 @@ async def get_species_info(name):
     Provide detailed information for the following species: "{name}".
     Include:
     - Scientific name
-    - Description
+    - Description (its defining characteristics)
     - Whether it is native (true/false)
-    - Preferred living environment
-    - Suggestions for future management
+    - Preferred living environment 
+    - Suggestions for future management (if native, how to support its growth, ex) planting its favorite native plants; if invasive, \
+        how to properly and safely manage its population and eradicate it in environmentally friendly ways)
     Return the data in plain English.
     """
     try:
